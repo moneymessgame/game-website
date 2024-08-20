@@ -2,11 +2,11 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "../ui/button";
 import { navItems } from "@/constants";
 
 import { Orbit } from 'lucide-react'
-import OrbitIcon from '@/components/global/orbitIcon';
+import OrbitIcon from '../ui/OrbitIcon';
 
 
 type Props = {};
@@ -29,7 +29,7 @@ export default function Navbar({}: Props) {
       >
         <div className="flex items-start">
           <Link href="/" className="flex items-center gap-2">
-						<OrbitIcon className="w6 h-6 ml-1 font-thin fill-100 text-white light-line-icon" />
+						<OrbitIcon className="w-5.5 h-5.5 ml-1 font-thin fill-100 text-white light-line-icon" />
             <span className="text-lg font-black uppercase">MoneyMess</span>
           </Link>
         </div>

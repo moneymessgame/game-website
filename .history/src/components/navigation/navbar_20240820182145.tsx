@@ -2,11 +2,11 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "../ui/button";
 import { navItems } from "@/constants";
 
 import { Orbit } from 'lucide-react'
-import OrbitIcon from '@/components/global/orbitIcon';
+import OrbitIcon from '../global/OrbitIcon';
 
 
 type Props = {};

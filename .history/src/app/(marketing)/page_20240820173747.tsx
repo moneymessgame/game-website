@@ -15,7 +15,7 @@ import { cn } from '@/lib/utils';
 import Marquee from '@/components/ui/marquee';
 import { LampContainer } from '@/components/ui/lamp';
 import { Input } from '@/components/ui/input';
-import OrbitIcon from '@/components/global/orbitIcon';
+import OrbitIcon from '@/components/ui/OrbitIcon';
 import {
 	Card,
 	CardContent,
