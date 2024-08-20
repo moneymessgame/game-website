@@ -118,7 +118,7 @@ const HomePage = () => {
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
 							<SectionBadge title="The Process" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+							<h2 className="text-3xl lg:text-4xl font-semibold mt-6">
 								Three Clicks to Your Dream Site
 							</h2>
 							<p className="text-muted-foreground mt-6">
@@ -158,8 +158,8 @@ const HomePage = () => {
 					<Container>
 						<div className="max-w mx-auto text-start md:text-center">
 							<SectionBadge title="Features" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Discover Astra's powerful features
+							<h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+								Discover Astra&appos;s powerful features
 							</h2>
 							<p className="text-muted-foreground mt-6">
 								AstraDynamic offers a range of features to help you build a
@@ -196,7 +196,7 @@ const HomePage = () => {
 					</Container>
 				</Wrapper>
 			</div>
-
+			
 			{/** Price list */}
 
 			<div id="pricingCards">
@@ -205,7 +205,7 @@ const HomePage = () => {
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
 							<SectionBadge title="Pricing" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+							<h2 className="text-3xl lg:text-4xl font-semibold mt-6">
 								Unlock the right plan for your business
 							</h2>
 							<p className="text-muted-foreground mt-6">
@@ -270,7 +270,7 @@ const HomePage = () => {
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
 							<SectionBadge title="Testimonial Replicas" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+							<h2 className="text-3xl lg:text-4xl font-semibold mt-6">
 								Moving Testimonials
 							</h2>
 							<p className="text-muted-foreground mt-6">
@@ -352,7 +352,7 @@ const HomePage = () => {
 					<Container>
 						<LampContainer>
 							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
+								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-semibold mt-8">
 									From Idea to Launch <br /> Faster Than Ever
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto">

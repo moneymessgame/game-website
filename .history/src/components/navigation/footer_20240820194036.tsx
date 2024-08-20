@@ -14,7 +14,7 @@ const Footer = () => {
 
             <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
 
-                <div className="flex flex-col items-left justify-start md:max-w-[200px]">
+                <div className="flex flex-col items-center justify-start md:max-w-[200px]">
                     <div className="flex items-center ">
                         <Link href="/" className="flex items-center gap-2">
                             <OrbitIcon className="w6 h-6 ml-1 font-thin fill-100 text-white light-line-icon" />
@@ -25,7 +25,8 @@ const Footer = () => {
                         Build beautiful, functional websites, without writing code
                     </p>
                     <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                        Created by Kitpes with chill vibes 
+                        Made in India with
+                        <Heart className="w-3.5 h-3.5 ml-1 fill-primary text-primary" />
                     </span>
                 </div>
 

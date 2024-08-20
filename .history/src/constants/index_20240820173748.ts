@@ -1,7 +1,7 @@
 import { Icons } from "@/components";
 
 export const navItems = [
-    { name: "About", link: "/about" },
+    { name: "About", link: "#perks" },
     { name: "Features", link: "#features" },
     { name: "Testimonials", link: "#reviews" },
     { name: "Pricing Cards", link: "#pricingCrads" },

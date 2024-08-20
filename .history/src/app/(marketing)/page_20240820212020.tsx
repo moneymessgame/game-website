@@ -118,7 +118,7 @@ const HomePage = () => {
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
 							<SectionBadge title="The Process" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+							<h2 className="text-3xl lg:text-4xl font-semibold mt-6">
 								Three Clicks to Your Dream Site
 							</h2>
 							<p className="text-muted-foreground mt-6">
@@ -158,8 +158,8 @@ const HomePage = () => {
 					<Container>
 						<div className="max-w mx-auto text-start md:text-center">
 							<SectionBadge title="Features" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Discover Astra's powerful features
+							<h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+								Discover Astra&appos;s powerful features
 							</h2>
 							<p className="text-muted-foreground mt-6">
 								AstraDynamic offers a range of features to help you build a

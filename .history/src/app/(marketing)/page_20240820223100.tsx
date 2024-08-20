@@ -118,7 +118,7 @@ const HomePage = () => {
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
 							<SectionBadge title="The Process" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+							<h2 className="text-3xl lg:text-4xl font-semibold mt-6">
 								Three Clicks to Your Dream Site
 							</h2>
 							<p className="text-muted-foreground mt-6">
