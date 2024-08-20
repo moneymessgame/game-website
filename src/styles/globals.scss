@@ -5,7 +5,7 @@
 @layer base {
   :root {
     /* Name: custom color palette
-       Author: Ilias Ism
+			 Author: MoneyMess
        URL: https://gradient.page */
 
     /* CSS: .bg-gradient { background: var(--gradient) } */
@@ -75,6 +75,16 @@
     --radius: 0.5rem;
   }
 }
+
+/* Import base */
+
+@import "mixins";
+@import "colors";
+@import "easing";
+@import "variables";
+@import "reset";
+
+/* General Styles */
 
 ::selection {
   background-color: hsl(var(--primary));
