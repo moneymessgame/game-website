@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -24,13 +24,14 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
+import Roadmap from '@/components/Roadmap';
 
 export const metadata: Metadata = {
-	title: "Roadmap MoneyMess",
-  robots: {
-    index: true,
-    follow: true,
-  },
+	title: 'Roadmap MoneyMess',
+	robots: {
+		index: true,
+		follow: true,
+	},
 };
 
 const HomePage = () => {
@@ -47,43 +48,62 @@ const HomePage = () => {
 
 					<Container>
 						<div className="flex flex-col items-center justify-center py-20 h-full">
-
-
 							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
-
 									<h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 										RoadMap
 									</h1>
 								</div>
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-								Равным образом постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+									Равным образом постоянный количественный рост и сфера нашей
+									активности требуют определения и уточнения позиций, занимаемых
+									участниками в отношении поставленных задач. Идейные
+									соображения высшего порядка, а также консультация с широким
+									активом влечет за собой процесс внедрения и модернизации
+									системы обучения кадров, соответствует насущным потребностям.
+									Равным образом рамки и место обучения кадров играет важную
+									роль в формировании системы обучения кадров, соответствует
+									насущным потребностям.
 								</p>
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									Повседневная практика показывает, что укрепление и развитие структуры позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации систем массового участия. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации. Таким образом реализация намеченных плановых заданий требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет оценить значение направлений прогрессивного развития.
+									Повседневная практика показывает, что укрепление и развитие
+									структуры позволяет выполнять важные задания по разработке
+									дальнейших направлений развития. Повседневная практика
+									показывает, что укрепление и развитие структуры влечет за
+									собой процесс внедрения и модернизации систем массового
+									участия. Идейные соображения высшего порядка, а также
+									укрепление и развитие структуры позволяет выполнять важные
+									задания по разработке соответствующий условий активизации.
+									Таким образом реализация намеченных плановых заданий требуют
+									от нас анализа системы обучения кадров, соответствует насущным
+									потребностям. Значимость этих проблем настолько очевидна, что
+									сложившаяся структура организации позволяет оценить значение
+									направлений прогрессивного развития.
 								</p>
 							</div>
 							<div className="relative flex items-center py-10 md:py-20 w-full">
 								<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
 								<div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-									<Image
+									{/* <Image
 										src="/assets/dashboard.svg"
 										alt="banner image"
 										width={1200}
 										height={1200}
 										quality={100}
 										className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
-									/>
+									/> */}
 
-									<BorderBeam size={250} duration={12} delay={9} />
+									{/* <BorderBeam size={250} duration={12} delay={9} /> */}
 								</div>
 							</div>
 						</div>
 					</Container>
 				</Wrapper>
 			</div>
+
+			<Roadmap />
 
 			{/** How it works */}
 			<div>
