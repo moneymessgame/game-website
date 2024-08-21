@@ -16,6 +16,10 @@ export const metadata: Metadata = {
 	twitter: {
 		card: 'summary_large_image',
 	},
+	openGraph: {
+		title: 'MoneyMess P2E Game',
+		description: 'MoneyMess is a mini app P2E Game based on Ton & Telegram',
+  },
 };
 
 const font = Inter({ subsets: ['latin'] });
