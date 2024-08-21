@@ -2,9 +2,9 @@ import { Icons } from "@/components";
 
 export const navItems = [
     { name: "About", link: "/about" },
-    { name: "Features", link: "#features" },
-    { name: "Testimonials", link: "#reviews" },
-    { name: "Pricing Cards", link: "#pricingCrads" },
+		{ name: "Roadmap", link: "/roadmap" },
+		{ name: "Tokenomics", link: "/tokenomics" },
+		{ name: "Donate", link: "/donate" },
   ];
 
 export const perks = [

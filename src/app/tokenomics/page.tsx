@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -26,11 +26,11 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: "MoneyMess",
-  robots: {
-    index: true,
-    follow: true,
-  },
+	title: 'Tokenomics of MoneyMess',
+	robots: {
+		index: true,
+		follow: true,
+	},
 };
 
 const HomePage = () => {
@@ -47,15 +47,10 @@ const HomePage = () => {
 
 					<Container>
 						<div className="flex flex-col items-center justify-center py-20 h-full">
-
-
 							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
-									
-									<OrbitIcon className="w-16 h-16 mx-4 text-thin fill-100 text-white thin-line-icon" />
-
 									<h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-										About
+										Tokenomics
 									</h1>
 								</div>
 

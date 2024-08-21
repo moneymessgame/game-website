@@ -26,7 +26,7 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: "MoneyMess",
+	title: "About MoneyMess",
   robots: {
     index: true,
     follow: true,

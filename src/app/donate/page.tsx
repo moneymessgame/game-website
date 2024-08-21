@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -26,11 +26,11 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: "MoneyMess",
-  robots: {
-    index: true,
-    follow: true,
-  },
+	title: 'Donate to MoneyMess',
+	robots: {
+		index: true,
+		follow: true,
+	},
 };
 
 const HomePage = () => {
@@ -47,52 +47,104 @@ const HomePage = () => {
 
 					<Container>
 						<div className="flex flex-col items-center justify-center py-20 h-full">
-
-
 							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
-									
-									<OrbitIcon className="w-16 h-16 mx-4 text-thin fill-100 text-white thin-line-icon" />
-
 									<h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-										About
+										Characters
 									</h1>
 								</div>
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
-									Effortless Pro Sites: Speed, Fun & Peak Performance Guaranteed
+									Choose your character and main trait
 								</p>
-								<div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full ">
-									<Link
-										href="#"
-										className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-neutral-950 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none"
-									>
-										<p className="text-foreground text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
-											✨ {'  '} Craft Your Digital Legacy, Start Now!
-										</p>
-										<Button
-											size="sm"
-											className="rounded-full hidden lg:flex border border-foreground/20 bg-purple-400"
-										>
-											Get Started
-											<ArrowRight className="w-4 h-4 ml-1" />
-										</Button>
-									</Link>
-								</div>
 							</div>
-							<div className="relative flex items-center py-10 md:py-20 w-full">
+							<div className="relative flex items-center w-full">
 								<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
-								<div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-									<Image
-										src="/assets/dashboard.svg"
-										alt="banner image"
-										width={1200}
-										height={1200}
-										quality={100}
-										className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
-									/>
 
-									<BorderBeam size={250} duration={12} delay={9} />
+								<div className="grid grid-cols-1 lg:grid-cols-4 gap-5 w-full md:gap-8 py-10 md:py-20 flex-wrap max-w-6xl">
+									<div className="m-4 hover:m-2">
+										<div className=" -m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
+											<Image
+												src="/cards/dominion.jpeg"
+												alt="banner image"
+												width={300}
+												height={417}
+												quality={100}
+												className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
+											/>
+
+											<BorderBeam
+												size={250}
+												duration={12}
+												delay={9}
+												colorTo={'#9c40ff'}
+												colorFrom={'#ff0f0f'}
+											/>
+										</div>
+									</div>
+
+									<div className="m-4 hover:m-2">
+										<div className=" -m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
+											<Image
+												src="/cards/beauty.jpeg"
+												alt="banner image"
+												width={300}
+												height={417}
+												quality={100}
+												className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
+											/>
+
+											<BorderBeam
+												size={250}
+												duration={12}
+												delay={9}
+												colorTo={'#9c40ff'}
+												colorFrom={'#0ffcff'}
+											/>
+										</div>
+									</div>
+
+									<div className="m-4 hover:m-2">
+										<div className=" -m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
+											<Image
+												src="/cards/popularity.jpeg"
+												alt="banner image"
+												width={300}
+												height={417}
+												quality={100}
+												className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
+											/>
+
+											<BorderBeam
+												size={250}
+												duration={12}
+												delay={9}
+												colorTo={'#9c40ff'}
+												colorFrom={'#ffff0f'}
+											/>
+										</div>
+									</div>
+
+									<div className="m-4 hover:m-2">
+										<div className=" -m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
+											<Image
+												src="/cards/richness.jpeg"
+												alt="banner image"
+												width={300}
+												height={417}
+												quality={100}
+												className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
+											/>
+
+											<BorderBeam
+												size={250}
+												duration={12}
+												delay={9}
+												colorTo={'#9c40ff'}
+												colorFrom={'#0fff0f'}
+											/>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -162,7 +214,7 @@ const HomePage = () => {
 					</Container>
 					<Container>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
 								{features.map((feature) => (
 									<div
 										key={feature.title}

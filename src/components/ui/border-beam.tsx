@@ -16,8 +16,8 @@ export const BorderBeam = ({
     size = 200,
     duration = 15,
     anchor = 90,
-    borderWidth = 2,
-    colorFrom = "#ffaa40",
+    borderWidth = 3,
+    colorFrom = "#0ffcff",
     colorTo = "#9c40ff",
     delay = 0,
 }: BorderBeamProps) => {
@@ -29,8 +29,8 @@ export const BorderBeam = ({
                     "--duration": duration,
                     "--anchor": anchor,
                     "--border-width": borderWidth,
-                    "--color-from": colorFrom,
-                    "--color-to": colorTo,
+                    "--color-from": `${colorFrom}`,
+                    "--color-to": `${colorTo}`,
                     "--delay": `-${delay}s`,
                 } as React.CSSProperties
             }
