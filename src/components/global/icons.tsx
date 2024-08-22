@@ -112,6 +112,16 @@ const Icons: IconType = {
             <path opacity="0.5" d="M10.8564 14.17C11.1497 13.8776 11.1504 13.4027 10.858 13.1094C10.5655 12.816 10.0906 12.8153 9.79733 13.1078L10.8564 14.17ZM8.79636 16.2239L10.8564 14.17L9.79733 13.1078L7.7373 15.1616L8.79636 16.2239ZM16.6641 9.00008C16.1983 9.46445 15.4422 9.46445 14.9764 9.00008L13.9174 10.0623C14.9685 11.1104 16.6719 11.1104 17.7231 10.0623L16.6641 9.00008ZM14.9764 9.00008C14.5119 8.53695 14.5119 7.787 14.9764 7.32387L13.9174 6.26161C12.8649 7.31089 12.8649 9.01305 13.9174 10.0623L14.9764 9.00008ZM14.9764 7.32387C15.4422 6.85949 16.1983 6.85949 16.6641 7.32387L17.7231 6.26161C16.6719 5.21358 14.9685 5.21358 13.9174 6.26161L14.9764 7.32387ZM16.6641 7.32387C17.1286 7.787 17.1286 8.53695 16.6641 9.00008L17.7231 10.0623C18.7756 9.01305 18.7756 7.31089 17.7231 6.26161L16.6641 7.32387Z" fill="white" />
         </svg>
     ),
+		handshake: (props: LucideProps) => (
+			<svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="m11 17 2 2a1 1 0 1 0 3-3" fill="none" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+					<path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" fill="none" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+					<path d="m21 3 1 11h-2" fill="none" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+					<path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" fill="none" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+					<path d="M3 4h8" fill="none" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+			</svg>
+	),
+	
     feature: (props: LucideProps) => (
         <svg {...props} width="328" height="401" viewBox="0 0 328 401" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="131" y="56" width="60" height="315" fill="url(#paint0_linear_50_493)" />

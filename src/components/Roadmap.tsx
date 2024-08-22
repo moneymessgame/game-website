@@ -42,6 +42,7 @@ export default function Roadmap() {
 							border: '1px solid rgba(0, 0, 0, 0.05)',
 							textAlign: 'left',
 							padding: '1.3rem 2rem',
+							borderRadius: '1rem',
 
 						}}
 						contentArrowStyle={{

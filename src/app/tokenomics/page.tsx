@@ -55,7 +55,9 @@ const HomePage = () => {
 								</div>
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
-									Effortless Pro Sites: Speed, Fun & Peak Performance Guaranteed
+									Ready to become the No.1 in the universe? Start pumping up
+									your own planet, form intergalactic alliances with your
+									friends, and get ready for even more fun
 								</p>
 								<div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full ">
 									<Link

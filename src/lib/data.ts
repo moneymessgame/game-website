@@ -92,7 +92,6 @@ export const roadmapData = [
 		title: [
 			'On-chain infrastructure development',
 			'"Partner" blockchain announcements',
-			'TGE',
 		],
 		icon: React.createElement(Heart),
 		date: '2th Quarter 2025',
