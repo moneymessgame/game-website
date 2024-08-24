@@ -39,12 +39,11 @@ const HomePage = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
+		
 			{/**Hero section */}
-
-			<div>
+			{/* <section>
 				<Wrapper>
 					<div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]" />
-
 					<Container>
 						<div className="flex flex-col items-center justify-center py-20 h-full">
 							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
@@ -95,10 +94,10 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</section> */}
 
 			{/** How it works */}
-			<div>
+			{/* <section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
@@ -132,11 +131,10 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</section> */}
 
 			{/* Features */}
-
-			<div id="features">
+			{/* <section id="features">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
 					<div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
@@ -180,11 +178,10 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</section> */}
 
 			{/** Price list */}
-
-			<div id="pricingCards">
+			{/* <section id="pricingCards">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -246,10 +243,10 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</section> */}
 
 			{/** Testimonials */}
-			<div id="reviews">
+			{/* <section id="reviews">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -329,10 +326,10 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</section> */}
 
 			{/** Newsletter */}
-			<div>
+			{/* <section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
 						<LampContainer>
@@ -393,7 +390,7 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</section> */}
 		</div>
 	);
 };

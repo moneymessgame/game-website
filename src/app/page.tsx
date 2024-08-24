@@ -40,9 +40,9 @@ const HomePage = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
-
+			
 			{/**Header */}
-			<div>
+			<section>
 				<Wrapper>
 					<div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]" />
 
@@ -118,7 +118,7 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</section>
 
 			{/**Characters */}
 			<CardSection
@@ -159,25 +159,25 @@ const HomePage = () => {
 				cards={[
 					{
 						src: '/cards/planet1.png',
-						alt: 'Dominion character',
+						alt: 'Attractive planet',
 						colorTo: '#9c40ff',
 						colorFrom: '#ff0f0f',
 					},
 					{
 						src: '/cards/planet2.png',
-						alt: 'Beauty character',
+						alt: 'Powerful planet',
 						colorTo: '#9c40ff',
 						colorFrom: '#0ffcff',
 					},
 					{
 						src: '/cards/planet3.png',
-						alt: 'Popularity character',
+						alt: 'Rich planet',
 						colorTo: '#9c40ff',
 						colorFrom: '#ffff0f',
 					},
 					{
 						src: '/cards/planet4.png',
-						alt: 'Richness character',
+						alt: 'Popular planet',
 						colorTo: '#9c40ff',
 						colorFrom: '#0fff0f',
 					},
@@ -185,16 +185,25 @@ const HomePage = () => {
 			/>
 
 			{/** How it works */}
-			<div>
+			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
+						<div className="max-w-md mx-auto text-start md:text-center flex flex-col justify-center items-center">
+							<Image
+								src="/cards/rock.png"
+								alt="planets"
+								width={300}
+								height={300}
+								quality={100}
+							/>
 							{/* <SectionBadge title="The Process" /> */}
-							<h2 className="text-4xl md:text-5xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+							<h2 className="text-4xl mt-8 md:text-5xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 								And have fun!
 							</h2>
 							<p className="text-muted-foreground mt-6">
-							Because the main goal is to have fun and bring you something more exciting than a simple Telegram clicker. So buckle up and let's get started!
+								Because the main goal is to have fun and bring you something
+								more exciting than a simple Telegram clicker. So buckle up and
+								let's get started!
 							</p>
 						</div>
 					</Container>
@@ -219,7 +228,7 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</section>
 
 			{/* Features */}
 			{/* <div id="features">

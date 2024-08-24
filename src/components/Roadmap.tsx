@@ -26,7 +26,7 @@ export default function Roadmap() {
 	};
 
 	return (
-		<section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+		<section id="roadmap" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
 			<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 text-center mb-10">
 				ROADMAP
 			</h2>

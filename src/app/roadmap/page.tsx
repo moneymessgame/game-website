@@ -2,7 +2,14 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
+import {
+	ArrowRight,
+	ChevronRight,
+	Gamepad2,
+	Send,
+	UserIcon,
+	Zap,
+} from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
 import { BorderBeam } from '@/components/ui/border-beam';
@@ -40,12 +47,10 @@ const HomePage = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
-			{/**Hero section */}
-
-			<div>
+			{/**Description */}
+			<section>
 				<Wrapper>
 					<div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]" />
-
 					<Container>
 						<div className="flex flex-col items-center justify-center py-20 h-full">
 							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
@@ -56,57 +61,20 @@ const HomePage = () => {
 								</div>
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									Равным образом постоянный количественный рост и сфера нашей
-									активности требуют определения и уточнения позиций, занимаемых
-									участниками в отношении поставленных задач. Идейные
-									соображения высшего порядка, а также консультация с широким
-									активом влечет за собой процесс внедрения и модернизации
-									системы обучения кадров, соответствует насущным потребностям.
-									Равным образом рамки и место обучения кадров играет важную
-									роль в формировании системы обучения кадров, соответствует
-									насущным потребностям.
+								Our game is an exciting Play2Earn project where players collect and develop unique planets and characters, each with four main attributes: <strong>Attractiveness, Power, Wealth, and Popularity</strong>. The game features 38 unique characters, each possessing special abilities that influence these attributes. A key part of the gameplay is social interaction, allowing players to connect with friends through an integrated Telegram interface.
 								</p>
-
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									Повседневная практика показывает, что укрепление и развитие
-									структуры позволяет выполнять важные задания по разработке
-									дальнейших направлений развития. Повседневная практика
-									показывает, что укрепление и развитие структуры влечет за
-									собой процесс внедрения и модернизации систем массового
-									участия. Идейные соображения высшего порядка, а также
-									укрепление и развитие структуры позволяет выполнять важные
-									задания по разработке соответствующий условий активизации.
-									Таким образом реализация намеченных плановых заданий требуют
-									от нас анализа системы обучения кадров, соответствует насущным
-									потребностям. Значимость этих проблем настолько очевидна, что
-									сложившаяся структура организации позволяет оценить значение
-									направлений прогрессивного развития.
+								The Roadmap outlines important stages of the game's development, starting with the <strong>Main Game Launch</strong>, introducing all key gameplay mechanics. Following the launch, a <strong>Referral System</strong> will be implemented to attract new players and expand the community. Regular <strong>Daily Rewards</strong> and unique <strong>Special Cards</strong> will add motivation and variety to the gameplay. To enhance player convenience, an <strong>in-game Wallet</strong> will be integrated, allowing for direct management of cryptocurrency assets within the game. We are also actively working on <strong>On-chain infrastructure development</strong> and planning <strong>Partner Blockchain Announcements</strong> to ensure the sustainable growth of the project and strengthen its position within the blockchain community.
 								</p>
-							</div>
-							<div className="relative flex items-center py-10 md:py-20 w-full">
-								<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
-								<div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-									{/* <Image
-										src="/assets/dashboard.svg"
-										alt="banner image"
-										width={1200}
-										height={1200}
-										quality={100}
-										className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
-									/> */}
-
-									{/* <BorderBeam size={250} duration={12} delay={9} /> */}
-								</div>
 							</div>
 						</div>
+						<Roadmap />
 					</Container>
 				</Wrapper>
-			</div>
-
-			<Roadmap />
+			</section>
 
 			{/** How it works */}
-			<div>
+			{/* <div>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
@@ -140,11 +108,10 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</div> */}
 
 			{/* Features */}
-
-			<div id="features">
+			{/* <div id="features">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
 					<div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
@@ -188,11 +155,10 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</div> */}
 
 			{/** Price list */}
-
-			<div id="pricingCards">
+			{/* <div id="pricingCards">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -254,10 +220,10 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</div> */}
 
 			{/** Testimonials */}
-			<div id="reviews">
+			{/* <div id="reviews">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -337,71 +303,8 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</div>
+			</div> */}
 
-			{/** Newsletter */}
-			<div>
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<Container>
-						<LampContainer>
-							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
-									From Idea to Launch <br /> Faster Than Ever
-								</h2>
-								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
-									Craft stunning frontends with AstraDynamic&appos;s modern
-									component library and fluid animation tools
-								</p>
-								<Button variant="white" className="mt-6" asChild>
-									<Link href="/sign-in">
-										Get started for free
-										<ArrowRight className="w-4 h-4 ml-2" />
-									</Link>
-								</Button>
-							</div>
-						</LampContainer>
-					</Container>
-					<Container className="relative z-[999999]">
-						<div className="flex items-center justify-center w-full -mt-40">
-							<div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between w-full px-4 md:px-8 rounded-lg lg:rounded-2xl border border-border/80 py-4 md:py-8">
-								<div className="flex flex-col items-start gap-4 w-full">
-									<h4 className="text-xl md:text-2xl font-semibold text-purple-400">
-										Follow my twitter account
-									</h4>
-									<p className="text-base text-muted-foreground">
-										Be up to date with my new undertakings ,Projects and more
-									</p>
-								</div>
-								<div className="flex flex-col items-start gap-2 md:min-w-80 mt-5 md:mt-0 w-full md:w-max">
-									<form
-										action="#"
-										className="flex flex-col md:flex-row items-center gap-2 w-full md:max-w-xs"
-									>
-										<Input
-											required
-											type="email"
-											placeholder="Enter your email"
-											className="focus-visible:ring-0 focus-visible:ring-transparent focus-visible:border-primary duration-300 w-full"
-										/>
-										<Button
-											type="submit"
-											size="sm"
-											variant="secondary"
-											className="w-full md:w-max"
-										>
-											Subscribe
-										</Button>
-									</form>
-									<p className="text-xs p-3 text-muted-foreground">
-										By subscribing you agree with our{' '}
-										<Link href="#">Privacy Policy</Link>
-									</p>
-								</div>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</div>
 		</div>
 	);
 };
