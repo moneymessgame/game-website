@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -24,13 +24,14 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
+import CardSection from '@/components/CardSection';
 
 export const metadata: Metadata = {
-	title: "About MoneyMess",
-  robots: {
-    index: true,
-    follow: true,
-  },
+	title: 'About MoneyMess',
+	robots: {
+		index: true,
+		follow: true,
+	},
 };
 
 const HomePage = () => {
@@ -39,324 +40,79 @@ const HomePage = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
-			{/**Hero section */}
-			{/* <div>
+			{/** About us */}
+			<section>
 				<Wrapper>
 					<div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]" />
-
 					<Container>
-						<div className="flex flex-col items-center justify-center py-20 h-full">
-
-
+						<div className="flex flex-col items-center justify-center py-20 h-full ">
 							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
-									
-									<OrbitIcon className="w-16 h-16 mx-4 text-thin fill-100 text-white thin-line-icon" />
-
-									<h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-										About
+									<h1 className="text-4xl mb-5 md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+										About Us
 									</h1>
 								</div>
-
-								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
-									Effortless Pro Sites: Speed, Fun & Peak Performance Guaranteed
+								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
+									Our team is a young and dynamic group of blockchain and
+									technology enthusiasts, united by a shared vision of creating
+									something more than just a game—an entire metaverse. We are
+									passionate believers in the power of innovation and
+									creativity, with each of us pouring a piece of ourselves into
+									this project, striving to bring something extraordinary to the
+									world beyond just a mobile app.
 								</p>
-								<div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full ">
-									<Link
-										href="#"
-										className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-neutral-950 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none"
-									>
-										<p className="text-foreground text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
-											✨ {'  '} Craft Your Digital Legacy, Start Now!
-										</p>
-										<Button
-											size="sm"
-											className="rounded-full hidden lg:flex border border-foreground/20 bg-purple-400"
-										>
-											Get Started
-											<ArrowRight className="w-4 h-4 ml-1" />
-										</Button>
-									</Link>
-								</div>
-							</div>
-							<div className="relative flex items-center py-10 md:py-20 w-full">
-								<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
-								<div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-									<Image
-										src="/assets/dashboard.svg"
-										alt="banner image"
-										width={1200}
-										height={1200}
-										quality={100}
-										className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
-									/>
-
-									<BorderBeam size={250} duration={12} delay={9} />
-								</div>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</div> */}
-
-			{/** How it works */}
-			{/* <div>
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="The Process" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Three Clicks to Your Dream Site
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								Vision to Reality in 3 Simple Steps
-							</p>
-						</div>
-					</Container>
-					<Container>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
-								{perks.map((perk) => (
-									<div
-										key={perk.title}
-										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
-									>
-										<div className="flex items-center justify-center">
-											<perk.icon className="w-8 h-8" />
-										</div>
-										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
-										<p className="text-muted-foreground mt-2 text-start lg:text-start">
-											{perk.info}
-										</p>
-									</div>
-								))}
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</div> */}
-
-			{/* Features */}
-			{/* <div id="features">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
-					<div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
-					<Container>
-						<div className="max-w mx-auto text-start md:text-center">
-							<SectionBadge title="Features" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Discover Astra's powerful features
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								AstraDynamic offers a range of features to help you build a
-								stunning website in no time
-							</p>
-						</div>
-					</Container>
-					<Container>
-						<div className="flex items-center justify-center mx-auto mt-8">
-							<Icons.feature className="w-auto h-80" />
-						</div>
-					</Container>
-					<Container>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8">
-								{features.map((feature) => (
-									<div
-										key={feature.title}
-										className="flex flex-col items-start lg:items-start px-0 md:px-0"
-									>
-										<div className="flex items-center justify-center">
-											<feature.icon className="w-8 h-8" />
-										</div>
-										<h3 className="text-lg font-medium mt-4">
-											{feature.title}
-										</h3>
-										<p className="text-muted-foreground mt-2 text-start lg:text-start">
-											{feature.info}
-										</p>
-									</div>
-								))}
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</div> */}
-
-			{/** Price list */}
-			{/* <div id="pricingCards">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
-					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="Pricing" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Unlock the right plan for your business
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								Choose the best plan for your business and start building your
-								dream website today
-							</p>
-						</div>
-					</Container>
-					<Container className="flex items-center justify-center">
-						<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full md:gap-8 py-10 md:py-20 flex-wrap max-w-4xl">
-							{pricingCards.map((card) => (
-								<Card
-									key={card.title}
-									className={cn(
-										'flex flex-col w-full border-neutral-700',
-										card.title === 'Unlimited Saas' && 'border-2 border-primary'
-									)}
-								>
-									<CardHeader className="border-b border-border">
-										<span>{card.title}</span>
-										<CardTitle
-											className={cn(
-												card.title !== 'Unlimited Saas' &&
-													'text-muted-foreground'
-											)}
-										>
-											{card.price}
-										</CardTitle>
-										<CardDescription>{card.description}</CardDescription>
-									</CardHeader>
-									<CardContent className="pt-6 space-y-3">
-										{card.features.map((feature) => (
-											<div key={feature} className="flex items-center gap-2">
-												<Zap className="w-4 h-4 fill-primary text-primary" />
-												<p>{feature}</p>
-											</div>
-										))}
-									</CardContent>
-									<CardFooter className="mt-auto">
-										<Link
-											href="#"
-											className={cn(
-												'w-full text-center text-primary-foreground bg-primary p-2 rounded-md text-sm font-medium',
-												card.title !== 'Unlimited Saas' &&
-													'!bg-foreground !text-background'
-											)}
-										>
-											{card.buttonText}
-										</Link>
-									</CardFooter>
-								</Card>
-							))}
-						</div>
-					</Container>
-				</Wrapper>
-			</div> */}
-
-			{/** Testimonials */}
-			{/* <div id="reviews">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
-					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="Testimonial Replicas" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Moving Testimonials
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								Discover how AstraDynamic elevates web design across industries.
-								See what developers are saying online
-							</p>
-						</div>
-					</Container>
-
-					<Container>
-						<div className="py-10 md:py-20 w-full">
-							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
-								<Marquee pauseOnHover className="[--duration:20s] select-none">
-									{firstRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
-										</figure>
-									))}
-								</Marquee>
-								<Marquee
-									reverse
-									pauseOnHover
-									className="[--duration:20s] select-none"
-								>
-									{secondRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
-										</figure>
-									))}
-								</Marquee>
-								<div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background"></div>
-								<div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background"></div>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</div> */}
-
-			{/** Newsletter */}
-			{/* <div>
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<Container>
-						<LampContainer>
-							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
-									From Idea to Launch <br /> Faster Than Ever
-								</h2>
-								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
-									Craft stunning frontends with AstraDynamic&appos;s modern
-									component library and fluid animation tools
+								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
+									We have crafted a unique world where the heroes aren’t always
+									who they seem to be. Perhaps they remind you of someone from
+									real life, or maybe you’ve stumbled into a parallel reality.
+									Our project is filled with mysteries and surprises, and it’s
+									up to you to decide what’s real and what’s merely an illusion.
+									We’re not just building a game; we’re creating a world that
+									will immerse you in its captivating and multi-layered story.{' '}
 								</p>
-								<Button variant="white" className="mt-6" asChild>
-									<Link href="/sign-in">
-										Get started for free
-										<ArrowRight className="w-4 h-4 ml-2" />
-									</Link>
-								</Button>
 							</div>
-						</LampContainer>
+						</div>
 					</Container>
-
 				</Wrapper>
-			</div> */}
+			</section>
+
+			{/** Team */}
+			<div className="flex justify-center mb-20">
+				<CardSection
+					title="Team"
+					description="Meet the team behind MoneyMess"
+					cards={[
+						{
+							src: '/cards/ihor.png',
+							alt: 'Founder and CEO',
+							colorTo: '#9c40ff',
+							colorFrom: '#ff0f0f',
+						},
+						{
+							src: '/cards/irine.png',
+							alt: 'Co-founder and CTO',
+							colorTo: '#9c40ff',
+							colorFrom: '#0ffcff',
+						},
+						{
+							src: '/cards/gus.png',
+							alt: 'Creative inspirer',
+							colorTo: '#9c40ff',
+							colorFrom: '#ffff0f',
+						},
+					]}
+					columns={3}
+				/>
+			</div>
+
+			<Image
+				className="absolute "
+				src="/cards/stone.png"
+				alt="planets"
+				width={200}
+				height={200}
+				style={{ right: '50px', bottom: '-190px', transform: 'rotate(9deg)' }}
+			/>
 		</div>
 	);
 };

@@ -39,7 +39,6 @@ const Footer = () => {
 					<Container className="relative z-[999999] ">
 						<div className="flex items-center justify-center w-full -mt-40">
 							<div className="flex md:flex-row items-start md:items-center justify-start md:justify-between w-full px-4 md:px-8 rounded-lg lg:rounded-2xl border border-border/80 py-4 md:py-8">
-								
 								<div className="flex flex-col items-start gap-4 max-w-md">
 									<div className="flex items-center gap-2 cursor-pointer group">
 										<h4 className="text-xl md:text-2xl font-semibold text-purple-400">
@@ -58,8 +57,10 @@ const Footer = () => {
 								<div className="hidden md:flex relative items-center w-full mt-4">
 									<div className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-blue-950 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] shadow-background/40 select-none hover:shadow-background/60">
 										<Link
-											href="https://t.me/@moneymesschannel"
+											href="https://t.me/moneymesschannel"
 											className="hover:text-foreground/80"
+											target="_blank"
+											rel="noopener noreferrer"
 										>
 											<Button
 												size="sm"
@@ -70,8 +71,10 @@ const Footer = () => {
 											</Button>
 										</Link>
 										<Link
-											href="https://t.me/@moneymesschannelru"
+											href="https://t.me/moneymesschannelru"
 											className="hover:text-foreground/80"
+											target="_blank"
+											rel="noopener noreferrer"
 										>
 											<Button
 												size="sm"
@@ -103,7 +106,6 @@ const Footer = () => {
 										</span>
 									</div>
 								</div>
-								
 							</div>
 						</div>
 						<div className="border-t border-border/40 flex items-center justify-center">
