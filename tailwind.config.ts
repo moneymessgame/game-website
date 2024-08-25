@@ -112,6 +112,14 @@ module.exports = {
         "marquee": "marquee var(--duration) linear infinite",
       },
     },
+		// screens: {
+		// 	'xs': '480px',  // Синхронизация с $xs
+		// 	'sm': '576px',  // Синхронизация с $sm
+		// 	'md': '768px',  // Синхронизация с $md
+		// 	'lg': '992px',  // Синхронизация с $lg
+		// 	'xl': '1200px', // Синхронизация с $xl
+		// 	'2xl': '1400px' // Синхронизация с $xxl
+		// },
   },
   plugins: [require("tailwindcss-animate")],
 };

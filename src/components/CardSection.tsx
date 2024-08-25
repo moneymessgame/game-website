@@ -24,7 +24,8 @@ const CardSection: React.FC<CardSectionProps> = ({ title, description, cards, co
         </div>
         <div className="relative flex items-center w-full">
           <div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
-          <div className={`grid grid-cols-1 lg:grid-cols-${columns} gap-5 w-full md:gap-8 py-10 md:py-20 flex-wrap max-w-6xl`}>
+					<div className={`grid grid-cols-1 lg:grid-cols-${columns} gap-5 w-full 
+					  md:gap-8 py-10 md:py-20 flex-wrap max-w-6xl`}>
             {cards.map((card, index) => (
               <Card
                 key={index}

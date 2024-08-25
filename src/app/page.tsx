@@ -12,6 +12,7 @@ import SectionBadge from '@/components/ui/section-badge';
 import { perks, reviews } from '@/constants';
 import Marquee from '@/components/ui/marquee';
 import OrbitIcon from '@/components/global/orbitIcon';
+import CardSection from '@/components/CardSection';
 import {
 	Card,
 	CardContent,
@@ -20,7 +21,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
-import CardSection from '@/components/CardSection';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
