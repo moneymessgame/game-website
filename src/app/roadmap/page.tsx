@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 	},
 };
 
-const HomePage = () => {
+const RoadMap = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);
 
@@ -84,4 +84,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default RoadMap;

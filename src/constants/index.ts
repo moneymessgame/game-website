@@ -3,7 +3,7 @@ import { Icons } from '@/components';
 export const navItems = [
 	{ name: 'About', link: '/about' },
 	{ name: 'Roadmap', link: '/roadmap' },
-	{ name: 'Tokenomics', link: '/tokenomics' },
+	{ name: 'Whitepaper', link: '/whitepaper' },
 	{ name: 'Donate', link: '/donate' },
 ];
 

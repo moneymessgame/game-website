@@ -26,14 +26,14 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Tokenomics of MoneyMess',
+	title: 'Whitepaper of MoneyMess',
 	robots: {
 		index: true,
 		follow: true,
 	},
 };
 
-const HomePage = () => {
+const Whitepaper = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);
 
@@ -49,7 +49,7 @@ const HomePage = () => {
 							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
 									<h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-										Tokenomics
+										Whitepaper
 									</h1>
 								</div>
 
@@ -395,4 +395,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default Whitepaper;

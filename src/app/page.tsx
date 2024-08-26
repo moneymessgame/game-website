@@ -2,25 +2,12 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, ChevronRight, Send, UserIcon, Zap } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
-import { BorderBeam } from '@/components/ui/border-beam';
-import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
 import { perks, reviews } from '@/constants';
-import Marquee from '@/components/ui/marquee';
 import OrbitIcon from '@/components/global/orbitIcon';
 import CardSection from '@/components/CardSection';
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -36,7 +23,6 @@ const HomePage = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
-			
 			{/**Header */}
 			<section>
 				<Wrapper>
@@ -196,7 +182,7 @@ const HomePage = () => {
 							<h2 className="text-4xl mt-8 md:text-5xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 								And have fun!
 							</h2>
-							<p className="text-muted-foreground mt-6">
+							<p className="text-center text-muted-foreground mt-6 ">
 								Because the main goal is to have fun and bring you something
 								more exciting than a simple Telegram clicker. So buckle up and
 								let's get started!
@@ -215,7 +201,7 @@ const HomePage = () => {
 											<perk.icon className="w-8 h-8" />
 										</div>
 										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
-										<p className="text-muted-foreground mt-2 text-start lg:text-start">
+										<p className="text-muted-foreground mt-2 text-justify">
 											{perk.info}
 										</p>
 									</div>
