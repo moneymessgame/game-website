@@ -60,7 +60,7 @@ export default function Navbar({}: Props) {
 						href="#"
 						className={buttonVariants({
 							size: 'sm',
-							className: 'flex bg-purple-500 hover:bg-purple-400 gap-3 px-8 py-5',
+							className: 'flex bg-ring hover:bg-purple-400 gap-3 px-8 py-5',
 						})}
 					>
 						<Gamepad2 className="h-6 w-6" />

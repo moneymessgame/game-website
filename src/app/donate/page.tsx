@@ -41,7 +41,7 @@ const Donate = () => {
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
 
 			{/** How it works */}
-			{/* <section>
+			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
@@ -75,10 +75,10 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section> */}
+			</section>
 
 			{/* Features */}
-			{/* <section id="features">
+			<section id="features">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
 					<div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
@@ -122,10 +122,10 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section> */}
+			</section>
 
 			{/** Price list */}
-			{/* <section id="pricingCards">
+			<section id="pricingCards">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -187,10 +187,10 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section> */}
+			</section>
 
 			{/** Testimonials */}
-			{/* <section id="reviews">
+			<section id="reviews">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -270,10 +270,10 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section> */}
+			</section>
 
 			{/** Newsletter */}
-			{/* <section>
+			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
 						<LampContainer>
@@ -334,7 +334,7 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section> */}
+			</section>
 		</div>
 	);
 };
