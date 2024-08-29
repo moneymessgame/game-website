@@ -2,10 +2,10 @@ import Image from 'next/image';
 import { BorderBeam } from '@/components/ui/border-beam';
 
 interface CardProps {
-	src: string;
-	alt: string;
-	colorTo: string;
-	colorFrom: string;
+  src: string;
+  alt: string;
+  colorTo: string;
+  colorFrom: string;
 }
 
 const Card: React.FC<CardProps> = ({ src, alt, colorTo, colorFrom }) => (

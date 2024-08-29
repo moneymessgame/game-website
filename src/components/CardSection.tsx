@@ -1,4 +1,4 @@
-import Card from './Card';
+import CardFlip from './CardFlip';
 import Container from '@/components/global/container';
 
 interface CardSectionProps {
@@ -27,10 +27,12 @@ const CardSection: React.FC<CardSectionProps> = ({ title, description, cards, co
           <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-${columns} gap-5  
             md:gap-8 py-10 md:py-20 max-w-6xl`}>
             {cards.map((card, index) => (
-              <Card
+              <CardFlip
                 key={index}
-                src={card.src}
-                alt={card.alt}
+                srcFront={card.srcFront}
+                srcBack={card.srcBack}
+                altFront={card.altFront}
+                altBack={card.altBack}
                 colorTo={card.colorTo}
                 colorFrom={card.colorFrom}
               />

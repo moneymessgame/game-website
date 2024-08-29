@@ -8,6 +8,7 @@ import Container from '@/components/global/container';
 import { perks, reviews } from '@/constants';
 import OrbitIcon from '@/components/global/orbitIcon';
 import CardSection from '@/components/CardSection';
+import CardFlip from '@/components/CardFlip';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -103,7 +104,7 @@ const HomePage = () => {
 			</section>
 
 			{/**Characters */}
-			<CardSection
+			{/* <CardSection
 				title="Characters"
 				description="Choose your character and his/her main trait"
 				cards={[
@@ -130,6 +131,46 @@ const HomePage = () => {
 						alt: 'Richness character',
 						colorTo: '#9c40ff',
 						colorFrom: '#0fff0f',
+					},
+				]}
+			/> */}
+			{/**Characters */}
+			<CardSection
+				title="Characters"
+				description="Choose your character and his/her main trait"
+				cards={[
+					{
+						srcFront: '/cards/dominion.jpeg',
+						srcBack: '/cards/beauty.jpeg',
+						altFront: 'Dominion character',
+						altBack: 'Dominion character',
+						colorTo: '#9c40ff',
+						colorFrom: '#ff0f0f',
+					},
+					// Добавьте остальные карточки
+					{
+						srcFront: '/cards/beauty.jpeg',
+						srcBack: '/cards/dominion.jpeg',
+						altFront: 'Beauty character',
+						altBack: 'Richness character',
+						colorTo: '#9c40ff',
+						colorFrom: '#0ffcff',
+					},
+					{
+						srcFront: '/cards/popularity.jpeg',
+						srcBack: '/cards/dominion.jpeg',
+						altFront: 'Popularity character',
+						altBack: 'Popularity character',
+						colorTo: '#9c40ff',
+						colorFrom: '#0ffcff',
+					},
+					{
+						srcFront: '/cards/richness.jpeg',
+						srcBack: '/cards/dominion.jpeg',
+						altFront: 'Popularity character',
+						altBack: 'Richness character',
+						colorTo: '#9c40ff',
+						colorFrom: '#0ffcff',
 					},
 				]}
 			/>

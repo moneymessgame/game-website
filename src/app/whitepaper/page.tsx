@@ -24,6 +24,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
+import CardFlip from '@/components/CardFlip';
 
 export const metadata: Metadata = {
 	title: 'Whitepaper of MoneyMess',
@@ -38,8 +39,26 @@ const Whitepaper = () => {
 	const secondRow = reviews.slice(reviews.length / 2);
 
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
-		
+		<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+			<Image
+				src="/cards/rock.png"
+				alt="planets"
+				width={300}
+				height={300}
+				quality={100}
+				className="mx-auto block"
+			/>
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+					illo explicabo laudantium quisquam numquam saepe fugit repellat
+					mollitia, enim, libero deleniti quam necessitatibus vel ab quod, porro
+					exercitationem sequi possimus! Exercitationem amet, nostrum molestias
+					cum labore commodi ducimus quas accusantium rem, doloribus sapiente
+					voluptas ipsa error non accusamus sequi at.
+				</p>
+			</div>
+
 			{/**Hero section */}
 			{/* <section>
 				<Wrapper>
