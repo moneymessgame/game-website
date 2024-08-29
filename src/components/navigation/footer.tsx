@@ -15,7 +15,6 @@ const Footer = () => {
 			<div className="hidden lg:block absolute bottom-0 -left-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
 
 			<div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
-
 				<div className="flex flex-col items-start justify-content md:max-w-[200px]">
 					<div className="flex items-start">
 						<Link href="/" className="flex items-center gap-2">
@@ -23,14 +22,10 @@ const Footer = () => {
 							<span className="text-lg font-black uppercase">MoneyMess</span>
 						</Link>
 					</div>
-                    <p className="text-muted-foreground mt-4 text-sm text-start">
-                        Build beautiful, functional websites, without writing code
-                    </p>
-                    <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                        Made in India with
-                        <Heart className="w-3.5 h-3.5 ml-1 fill-primary text-primary" />
-                    </span>
-                </div>
+					<p className="text-muted-foreground mt-4 text-sm text-start">
+						Made by KitPes with chill vibes 💙💛
+					</p>
+				</div>
 
 				<div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">
 					<div className="md:grid md:grid-cols-2 md:gap-8">
@@ -66,7 +61,7 @@ const Footer = () => {
 										href=""
 										className="hover:text-foreground transition-all duration-300"
 									>
-									<strong>X</strong> (Twitter)
+										<strong>X</strong> (Twitter)
 									</Link>
 								</li>
 							</ul>
