@@ -64,7 +64,7 @@ export default function Navbar({}: Props) {
 						})}
 					>
 						<Gamepad2 className="h-6 w-6" />
-						<span className="text-lg font-bold">Play</span>
+						<span className="text-lg font-black uppercase">Play</span>
 					</Link>
 				</div>
 			</div>
