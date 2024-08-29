@@ -25,6 +25,7 @@ import {
 	CardTitle,
 } from '@/components/ui/card';
 import CardSection from '@/components/CardSection';
+import TeamSection from '@/components/TeamSection';
 
 export const metadata: Metadata = {
 	title: 'About MoneyMess',
@@ -78,7 +79,7 @@ const HomePage = () => {
 
 			{/** Team */}
 			<div className="flex justify-center mb-20">
-				<CardSection
+				<TeamSection
 					title="Team"
 					description="Meet the team behind MoneyMess"
 					cards={[
@@ -111,7 +112,7 @@ const HomePage = () => {
 				alt="planets"
 				width={200}
 				height={200}
-				style={{ right: '50px', bottom: '-190px', transform: 'rotate(9deg)' }}
+				style={{ right: '140px', bottom: '-5px', transform: 'rotate(12deg)' }}
 			/>
 		</div>
 	);
