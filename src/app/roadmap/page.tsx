@@ -78,7 +78,7 @@ const RoadMap = () => {
 				alt="planets"
 				width={200}
 				height={200}
-				style={{ left: '50px', bottom: '-180px'}}
+				style={{ left: '90px', bottom: '-80px'}}
 			/>
 		</div>
 	);

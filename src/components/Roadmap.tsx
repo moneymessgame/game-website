@@ -9,8 +9,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import { roadmapData } from '@/lib/data';
 import { useTheme } from 'next-themes';
 import { motion, useInView } from 'framer-motion';
-import Link from 'next/link';
-import { BorderBeam } from './ui/border-beam';
 
 export default function Roadmap() {
 	const { theme } = useTheme();
@@ -43,7 +41,6 @@ export default function Roadmap() {
 							textAlign: 'left',
 							padding: '1.3rem 2rem',
 							borderRadius: '1rem',
-
 						}}
 						contentArrowStyle={{
 							borderRight:
@@ -66,19 +63,11 @@ export default function Roadmap() {
 							transition={{ duration: 1, delay: index * 0.5 }}
 						>
 							<div className="flex flex-row justify-between">
+								<div></div>
 							</div>
-							<ul
-								className="!mt-2 !font-normal text-white/75 list-disc ml-5"
-								style={{ minHeight: '200px', minWidth: '900px'}}
-							>
-								{Array.isArray(item.title) ? (
-									item.title.map((titleItem, idx) => (
-										<li key={idx} className="mb-5 font-black">{titleItem}</li>
-									))
-								) : (
-									<li>{item.title}</li>
-								)}
-							</ul>
+							<p className="!mt-2 !font-semibold dark:text-white/75">
+								{item.description}
+							</p>
 						</motion.div>
 					</VerticalTimelineElement>
 				))}
