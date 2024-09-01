@@ -8,19 +8,19 @@ interface DocsConfig {
 export const docsConfig: DocsConfig = {
   mainNav: [
     {
-      title: "How it works?",
+      title: "About",
       href: "/how-it-works",
     },
     {
-      title: "Demo",
+      title: "WhitePaper",
       href: "/demo-imit",
     },
     {
-      title: "Early-stage investments",
+      title: "Roadmap",
       href: "/early-stage",
     },
     {
-      title: "Test",
+      title: "Donate",
       href: "/test",
     },
   ],
