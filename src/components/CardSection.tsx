@@ -14,7 +14,7 @@ const CardSection: React.FC<CardSectionProps> = ({ title, description, cards, co
       <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
           <div className="flex items-center justify-center">
-            <h2 className="text-4xl md:text-5xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+            <h2 className="text-4xl md:text-5xl lg:text-xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
               {title}
             </h2>
           </div>

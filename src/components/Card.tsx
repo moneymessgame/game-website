@@ -9,7 +9,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ src, alt, colorTo, colorFrom }) => (
-  <div className="m-4 hover:m-3">
+  <div className="m-4">
 		<div className=" -m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
       <Image
         src={src}

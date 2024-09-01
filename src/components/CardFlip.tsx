@@ -33,7 +33,7 @@ const CardFlip: React.FC<CardFlipProps> = ({
 	}
 
 	return (
-		<div className="m-4 hover:m-3" onClick={handleFlip}>
+		<div className="m-4" onClick={handleFlip}>
 			<div className="flip-card w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
 				<BorderBeam
 					size={250}
@@ -46,7 +46,7 @@ const CardFlip: React.FC<CardFlipProps> = ({
 					className="flip-card-inner w-[100%] h-[100%] "
 					initial={false}
 					animate={{ rotateY: isFlipped ? 180 : 0 }}
-					transition={{ duration: 0.6, animationDirection: 'normal' }}
+					transition={{ duration: 0.1, animationDirection: 'normal' }}
 					onAnimationComplete={() => setIsAnimated(false)}
 				>
 					<div className="flip-card-front w-[100%] h-[100%]">

@@ -220,7 +220,7 @@ const HomePage = () => {
 								quality={100}
 							/>
 							{/* <SectionBadge title="The Process" /> */}
-							<h2 className="text-4xl mt-8 md:text-5xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+							<h2 className="text-4xl mt-8 md:text-5xl lg:text-xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 								And have fun!
 							</h2>
 							<p className="text-center text-muted-foreground mt-6 ">

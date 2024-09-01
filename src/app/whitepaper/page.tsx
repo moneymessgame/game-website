@@ -39,26 +39,67 @@ const Whitepaper = () => {
 	const secondRow = reviews.slice(reviews.length / 2);
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
-			<Image
-				src="/cards/rock.png"
-				alt="planets"
-				width={300}
-				height={300}
-				quality={100}
-				className="mx-auto block"
-			/>
-			<div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-					illo explicabo laudantium quisquam numquam saepe fugit repellat
-					mollitia, enim, libero deleniti quam necessitatibus vel ab quod, porro
-					exercitationem sequi possimus! Exercitationem amet, nostrum molestias
-					cum labore commodi ducimus quas accusantium rem, doloribus sapiente
-					voluptas ipsa error non accusamus sequi at.
-				</p>
+		<div>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+				<Image
+					src="/cards/rock.png"
+					alt="planets"
+					width={300}
+					height={300}
+					quality={100}
+					className="mx-auto block"
+				/>
+				<div className='px-6'>
+					<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+						<SectionBadge title="The Process" />
+						<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+							Three Clicks to Your Dream Site
+						</h2>
+						<p className="text-muted-foreground mt-6">
+							Vision to Reality in 3 Simple Steps
+						</p>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+						illo explicabo laudantium quisquam numquam saepe fugit repellat
+						mollitia, enim, libero deleniti quam necessitatibus vel ab quod, porro
+						exercitationem sequi possimus! Exercitationem amet, nostrum molestias
+						cum labore commodi ducimus quas accusantium rem, doloribus sapiente
+						voluptas ipsa error non accusamus sequi at.
+					</p>
+				</div>
 			</div>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
 
+				<div className='px-6'>
+					<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+						<SectionBadge title="The Process" />
+						<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+							Three Clicks to Your Dream Site
+						</h2>
+						<p className="text-muted-foreground mt-6">
+							Vision to Reality in 3 Simple Steps
+						</p>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+						illo explicabo laudantium quisquam numquam saepe fugit repellat
+						mollitia, enim, libero deleniti quam necessitatibus vel ab quod, porro
+						exercitationem sequi possimus! Exercitationem amet, nostrum molestias
+						cum labore commodi ducimus quas accusantium rem, doloribus sapiente
+						voluptas ipsa error non accusamus sequi at.
+					</p>
+				</div>
+
+				<Image
+					src="/cards/rock.png"
+					alt="planets"
+					width={300}
+					height={300}
+					quality={100}
+					className="mx-auto block"
+				/>				
+			</div>
 			{/**Hero section */}
 			{/* <section>
 				<Wrapper>
