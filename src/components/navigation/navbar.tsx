@@ -27,7 +27,7 @@ export default function Navbar({}: Props) {
         md:max-w-screen-xl"
 			>
 				<div className="flex items-start">
-					<Link href="/" className="flex items-center gap-2">
+					<Link href="/" className="flex items-center gap-2 py-2">
 						<OrbitIcon className="w6 h-6 ml-1 font-thin fill-100 text-white light-line-icon" />
 						<span className="text-lg font-black uppercase">MoneyMess</span>
 					</Link>
