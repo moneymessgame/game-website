@@ -38,16 +38,15 @@ const Donate = () => {
 	const secondRow = reviews.slice(reviews.length / 2);
 
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
+		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
 
-			<section id="title">
-                <Wrapper className="flex flex-col items-center justify-center py-2 relative">
+            <section id="title">
+                <Wrapper className="flex flex-col items-center justify-center py-12 relative">
                     <Container>
 						<LampContainer>
 							<div className="flex flex-col items-center justify-center relative w-full text-center">
 								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
-									A great idea is born with <br /> the help of small contributions
-									
+									From Idea to Launch <br /> Faster Than Ever
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
 									Craft stunning frontends with AstraDynamic&appos;s modern
@@ -67,7 +66,7 @@ const Donate = () => {
 
 			{/** How it works */}
 			<section>
-				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
+				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
 						<div className="max-w-md mx-auto text-start md:text-center">
 							<SectionBadge title="The Process" />

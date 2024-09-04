@@ -10,12 +10,6 @@ import OrbitIcon from '@/components/global/orbitIcon';
 import CardSection from '@/components/CardSection';
 import CardFlip from '@/components/CardFlip';
 
-import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
-import SectionBadge from '@/components/ui/section-badge';
-import Marquee from '@/components/ui/marquee';
-
-import { cn } from '@/lib/utils';
-
 export const metadata: Metadata = {
 	title: 'MoneyMess',
 	robots: {
@@ -25,8 +19,8 @@ export const metadata: Metadata = {
 };
 
 const HomePage = () => {
-	const firstRow = reviews.slice(0, reviews.length / 2);
-	const secondRow = reviews.slice(reviews.length / 2);
+	// const firstRow = reviews.slice(0, reviews.length / 2);
+	// const secondRow = reviews.slice(reviews.length / 2);
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
@@ -109,7 +103,37 @@ const HomePage = () => {
 				</Wrapper>
 			</section>
 
-
+			{/**Characters */}
+			{/* <CardSection
+				title="Characters"
+				description="Choose your character and his/her main trait"
+				cards={[
+					{
+						src: '/cards/dominion.jpeg',
+						alt: 'Dominion character',
+						colorTo: '#9c40ff',
+						colorFrom: '#ff0f0f',
+					},
+					{
+						src: '/cards/beauty.jpeg',
+						alt: 'Beauty character',
+						colorTo: '#9c40ff',
+						colorFrom: '#0ffcff',
+					},
+					{
+						src: '/cards/popularity.jpeg',
+						alt: 'Popularity character',
+						colorTo: '#9c40ff',
+						colorFrom: '#ffff0f',
+					},
+					{
+						src: '/cards/richness.jpeg',
+						alt: 'Richness character',
+						colorTo: '#9c40ff',
+						colorFrom: '#0fff0f',
+					},
+				]}
+			/> */}
 			{/**Characters */}
 			<CardSection
 				title="Characters"
@@ -151,89 +175,37 @@ const HomePage = () => {
 				]}
 			/>
 
-
-			{/** Testimonials */}
-			<section id="reviews">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
-					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="Testimonial Replicas" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Moving Testimonials
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								Discover how AstraDynamic elevates web design across industries.
-								See what developers are saying online
-							</p>
-						</div>
-					</Container>
-					<Container>
-						<div className="py-10 md:py-20 w-full">
-							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
-								<Marquee pauseOnHover className="[--duration:20s] select-none">
-									{firstRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
-										</figure>
-									))}
-								</Marquee>
-								<Marquee
-									reverse
-									pauseOnHover
-									className="[--duration:20s] select-none"
-								>
-									{secondRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
-										</figure>
-									))}
-								</Marquee>
-								<div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background"></div>
-								<div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background"></div>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</section>
+			{/**Planets */}
+			{/* <CardSection
+				title="Planets"
+				description="...then pick your planet's main trait"
+				cards={[
+					{
+						src: '/cards/planet1.png',
+						alt: 'Attractive planet',
+						colorTo: '#9c40ff',
+						colorFrom: '#ff0f0f',
+					},
+					{
+						src: '/cards/planet2.png',
+						alt: 'Powerful planet',
+						colorTo: '#9c40ff',
+						colorFrom: '#0ffcff',
+					},
+					{
+						src: '/cards/planet3.png',
+						alt: 'Rich planet',
+						colorTo: '#9c40ff',
+						colorFrom: '#ffff0f',
+					},
+					{
+						src: '/cards/planet4.png',
+						alt: 'Popular planet',
+						colorTo: '#9c40ff',
+						colorFrom: '#0fff0f',
+					},
+				]}
+			/> */}
 
 			{/** How it works */}
 			<section>
