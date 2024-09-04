@@ -30,6 +30,7 @@ const HomePage = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
+
 			{/**Header */}
 			<section>
 				<Wrapper>
@@ -49,9 +50,8 @@ const HomePage = () => {
 									<span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
 									<span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/40"></span>
 									<span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1.5">
-										<OrbitIcon className="w-6 h-6 font-thin fill-100 text-white light-line-icon" />
-										<span className="text-lg font-black uppercase">
-											MoneyMess
+										<span className="text-lg font-black">
+											Tap2Earn game
 										</span>
 									</span>
 								</button>
@@ -71,39 +71,7 @@ const HomePage = () => {
 									your own planet, form intergalactic alliances with your
 									friends, and get ready for even more fun.
 								</p>
-								{/* <div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full ">
-									<Link
-										href="#"
-										className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-neutral-950 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none"
-									>
-										<p className="text-foreground text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
-											✨ {'  '} Craft Your Digital Legacy, Start Now!
-										</p>
-										<Button
-											size="sm"
-											className="rounded-full hidden lg:flex border border-foreground/20 bg-purple-400"
-										>
-											Get Started
-											<ArrowRight className="w-4 h-4 ml-1" />
-										</Button>
-									</Link>
-								</div> */}
 							</div>
-							{/* <div className="relative flex items-center py-10 md:py-20 w-full">
-								<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
-								<div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-									<Image
-										src="/assets/dashboard.svg"
-										alt="banner image"
-										width={1200}
-										height={1200}
-										quality={100}
-										className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
-									/>
-
-									<BorderBeam size={250} duration={12} delay={9} />
-								</div>
-							</div> */}
 						</div>
 					</Container>
 				</Wrapper>
@@ -160,7 +128,7 @@ const HomePage = () => {
 						<div className="max-w-md mx-auto text-start md:text-center">
 							<SectionBadge title="Testimonial Replicas" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Moving Testimonials
+								What do the characters think about the game?
 							</h2>
 							<p className="text-muted-foreground mt-6">
 								Discover how AstraDynamic elevates web design across industries.
