@@ -9,19 +9,19 @@ export const docsConfig: DocsConfig = {
   mainNav: [
     {
       title: "About",
-      href: "/about",
+      href: "/how-it-works",
     },
     {
       title: "WhitePaper",
-      href: "/whitepaper",
+      href: "/demo-imit",
     },
     {
       title: "Roadmap",
-      href: "/roadmap",
+      href: "/early-stage",
     },
     {
       title: "Donate",
-      href: "/donate",
+      href: "/test",
     },
   ],
   sidebarNav: [
