@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'How to Earn with Crypto Games',
+	description: 'How to Earn with Crypto Games on Telegram',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'How to Earn with Crypto Games',
+		description: 'How to Earn with Crypto Games on Telegram',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

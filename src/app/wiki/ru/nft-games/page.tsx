@@ -26,13 +26,20 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'Игры с NFT',
+	description: 'Как они работают и как заработать',
 	robots: {
 		index: true,
 		follow: true,
 	},
+	openGraph: {
+		title: 'Игры с NFT',
+		description: 'Как они работают и как заработать',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
+	},
 };
-
 const Donate = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);

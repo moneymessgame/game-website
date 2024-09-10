@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'Passive Income',
+	description: 'Top Strategies for Play2Earn Games',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'Passive Income in Games',
+		description: 'Top Strategies for Play2Earn Games',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

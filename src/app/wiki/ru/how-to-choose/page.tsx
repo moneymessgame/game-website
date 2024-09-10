@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'Как выбрать первую Play2Earn игру',
+	description: 'Как выбрать первую Play2Earn игру для заработка без вложений',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'Как выбрать первую Play2Earn игру',
+		description: 'Как выбрать первую Play2Earn игру для заработка без вложений',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

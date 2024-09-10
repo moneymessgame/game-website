@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'NFT Games',
+	description: 'How Do They Work and How to Earn',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'NFT Games',
+		description: 'How Do They Work and How to Earn',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 
@@ -39,10 +47,9 @@ const Donate = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
-
-            <section id="title">
-                <Wrapper className="flex flex-col items-center justify-center py-12 relative">
-                    <Container>
+			<section id="title">
+				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+					<Container>
 						<LampContainer>
 							<div className="flex flex-col items-center justify-center relative w-full text-center">
 								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
@@ -61,8 +68,8 @@ const Donate = () => {
 							</div>
 						</LampContainer>
 					</Container>
-                </Wrapper>
-            </section>
+				</Wrapper>
+			</section>
 
 			{/** How it works */}
 			<section>

@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'TON and Crypto Games',
+	description: 'How to Earn with TON Tokens',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'TON and Crypto Games',
+		description: 'How to Earn with TON Tokens',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

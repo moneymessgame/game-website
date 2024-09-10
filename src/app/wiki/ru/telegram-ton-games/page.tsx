@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'Как зарабатывать на криптоиграх',
+	description: 'Как зарабатывать на криптоиграх в Telegram',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'Как зарабатывать на криптоиграх',
+		description: 'Как зарабатывать на криптоиграх в Telegram',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'How to Choose Your First Play2Earn Game',
+	description: 'How to Choose Your First Play2Earn Game to Earn Without Investment',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'How to Choose Your First Play2Earn Game',
+		description: 'How to Choose Your First Play2Earn Game to Earn Without Investment',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

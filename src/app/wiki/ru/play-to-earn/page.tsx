@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'Что такое Play2Earn',
+	description: 'Как на этом заработать',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'Что такое Play2Earn',
+		description: 'Как на этом заработать',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

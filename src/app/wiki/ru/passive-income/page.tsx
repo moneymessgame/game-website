@@ -26,10 +26,18 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'Пассивный доход',
+	description: 'Лучшие стратегии для Play2Earn игр',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'Пассивный доход на играх',
+		description: 'Лучшие стратегии для Play2Earn игр',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 
