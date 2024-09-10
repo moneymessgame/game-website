@@ -25,7 +25,9 @@ import {
 	CardTitle,
 } from '@/components/ui/card';
 
+import { WobbleCard } from '@/components/ui/wobble-card';
 import styles from './test.module.scss';
+import CardDemo from '@/components/blocks/cards-demo-2';
 
 export const metadata: Metadata = {
 	title: 'Donate to MoneyMess',
@@ -47,7 +49,7 @@ const Donate = () => {
 					<Container>
 						<LampContainer>
 							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
+								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase">
 									NFT games: <br /> how do they work and how to Earn?
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
@@ -65,8 +67,94 @@ const Donate = () => {
 							</div>
 						</LampContainer>
 					</Container>
-                </Wrapper>
-            </section>
+        </Wrapper>
+      </section>
+
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
+								<CardDemo/>
+								<CardDemo/>
+								<CardDemo/>
+								<CardDemo/>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+								<p className="text-base md:text-lg text-foreground/80 mt-6">
+								The Roadmap outlines important stages of the game's development, starting with the <strong>Main Game Launch</strong>, introducing all key gameplay mechanics. Following the launch, a <strong>Referral System</strong> will be implemented to attract new players and expand the community. Regular <strong>Daily Rewards</strong> and unique <strong>Special Cards</strong> will add motivation and variety to the gameplay. To enhance player convenience, an <strong>in-game Wallet</strong> will be integrated, allowing for direct management of cryptocurrency assets within the game. We are also actively working on <strong>On-chain infrastructure development</strong> and planning <strong>Partner Blockchain Announcements</strong> to ensure the sustainable growth of the project and strengthen its position within the blockchain community.
+								</p>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+					<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+      <WobbleCard
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+        className=""
+      >
+        <div className="max-w-xs">
+					<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+            Gippity AI powers the entire universe
+          </h2>
+          <p className="mt-4 text-left  text-base/6 text-neutral-200">
+            With over 100,000 mothly active bot users, Gippity AI is the most
+            popular AI platform for developers.
+          </p>
+        </div>
+        <Image
+          src="/assets/linear.webp"
+          width={500}
+          height={500}
+          alt="linear demo image"
+          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+        />
+      </WobbleCard>
+      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+          No shirt, no shoes, no weapons.
+        </h2>
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+          If someone yells “stop!”, goes limp, or taps out, the fight is over.
+        </p>
+      </WobbleCard>
+      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <div className="max-w-sm">
+					<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+            Signup for blazing-fast cutting-edge state of the art Gippity AI
+            wrapper today!
+          </h2>
+          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+            With over 100,000 mothly active bot users, Gippity AI is the most
+            popular AI platform for developers.
+          </p>
+        </div>
+        <Image
+          src="/assets/linear.webp"
+          width={500}
+          height={500}
+          alt="linear demo image"
+          className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
+        />
+      </WobbleCard>
+    </div>
+					</Container>
+				</Wrapper>
+			</section>
 
 			{/** How it works */}
 			<section id="about">
