@@ -70,7 +70,7 @@ const Donate = () => {
 				</Wrapper>
 			</section>
 
-			<section>
+			{/* 	<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
 						<div className="px-6">
@@ -86,13 +86,18 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section>
+			</section> */}
 
-			{/* <section>
+			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
 							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+								<Container>
+									<div className="flex items-center justify-center mx-auto mt-8">
+										<Icons.feature className="w-auto h-80" />
+									</div>
+								</Container>
 								<p className="text-base md:text-lg text-foreground/80 mt-6">
 									NFT games represent a cutting-edge trend in the video game
 									industry, combining blockchain technology and gaming. These
@@ -105,13 +110,14 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section> */}
+			</section>
 
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-16 relative">
 					<Container>
 						<div className="max-w-md mx-auto text-center">
-							<h2 className="text-xl lg:text-4xl font-black uppercase ">
+							<SectionBadge title="NFT" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
 								What are NFTs and how do they work in games?
 							</h2>
 						</div>
@@ -160,92 +166,17 @@ const Donate = () => {
 			</section>
 
 			<section>
-				<Wrapper className="flex flex-col items-center justify-center relative">
-					<Container>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
-								<CardDemo />
-								<CardDemo />
-								<CardDemo />
-								<CardDemo />
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</section>
-
-			<section>
-				<Wrapper className="flex flex-col items-center justify-center relative">
-					<Container>
-						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-							<WobbleCard
-								containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-								className=""
-							>
-								<div className="max-w-xs">
-									<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-										Gippity AI powers the entire universe
-									</h2>
-									<p className="mt-4 text-left  text-base/6 text-neutral-200">
-										With over 100,000 mothly active bot users, Gippity AI is the
-										most popular AI platform for developers.
-									</p>
-								</div>
-								<Image
-									src="/assets/linear.webp"
-									width={500}
-									height={500}
-									alt="linear demo image"
-									className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-								/>
-							</WobbleCard>
-							<WobbleCard containerClassName="col-span-1 min-h-[300px]">
-								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-									No shirt, no shoes, no weapons.
-								</h2>
-								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-									If someone yells “stop!”, goes limp, or taps out, the fight is
-									over.
-								</p>
-							</WobbleCard>
-							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-								<div className="max-w-sm">
-									<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-										Signup for blazing-fast cutting-edge state of the art
-										Gippity AI wrapper today!
-									</h2>
-									<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-										With over 100,000 mothly active bot users, Gippity AI is the
-										most popular AI platform for developers.
-									</p>
-								</div>
-								<Image
-									src="/assets/linear.webp"
-									width={500}
-									height={500}
-									alt="linear demo image"
-									className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
-								/>
-							</WobbleCard>
-						</div>
-					</Container>
-				</Wrapper>
-			</section>
-
-			{/* Features */}
-			<section id="features">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
 					<div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
 						<div className="max-w mx-auto text-center">
-							<SectionBadge title="Features" />
+							<SectionBadge title="Earn" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Discover Astra's powerful features
+								How to Earn in NFT Games?
 							</h2>
 							<p className="text-muted-foreground mt-6">
-								AstraDynamic offers a range of features to help you build a
-								stunning website in no time
+								There are several main ways to earn in NFT games:
 							</p>
 						</div>
 					</Container>
@@ -256,7 +187,7 @@ const Donate = () => {
 					</Container>
 					<Container>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8">
 								{features.map((feature) => (
 									<div
 										key={feature.title}
@@ -273,6 +204,95 @@ const Donate = () => {
 										</p>
 									</div>
 								))}
+							</div>
+							<p className="mt-10">
+								These earning methods open new horizons for players, allowing
+								them not only to enjoy the game but also to gain real financial
+								benefits.
+							</p>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="max-w-xl mx-auto text-center">
+							<SectionBadge title="Successful Games" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								Examples of Successful NFT Games
+							</h2>
+						</div>
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+							<WobbleCard
+								containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+								className=""
+							>
+								<div className="max-w-xs">
+									<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+										CryptoKitties
+									</h2>
+									<p className="mt-4 text-left  text-base/6 text-neutral-200">
+										This game was one of the first popular NFT games, allowing
+										players to collect, breed, and trade unique digital cats.
+										Each CryptoKitty is a unique NFT with its characteristics.
+									</p>
+								</div>
+								<Image
+									src="/assets/cryptokitties.png"
+									width={500}
+									height={500}
+									alt="linear demo image"
+									className="absolute -right-4 lg:-right-[10%] grayscale filter -bottom-10 object-contain rounded-2xl"
+								/>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 min-h-[300px]">
+								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+									Axie Infinity
+								</h2>
+								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+									In this game, players collect and breed creatures called Axie.
+									Players can earn Smooth Love Potion (SLP) tokens, which can be
+									exchanged for cryptocurrency. Axie Infinity has attracted over
+									2 million active users and significantly impacted the NFT
+									gaming market.
+								</p>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+								<div className="max-w-sm">
+									<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+										Decentraland
+									</h2>
+									<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+										This is a virtual world where users can buy, develop, and
+										rent virtual land plots. Decentraland offers a rich and
+										diverse gaming experience that includes both social and
+										commercial opportunities.
+									</p>
+								</div>
+								<Image
+									src="/assets/linear.webp"
+									width={500}
+									height={500}
+									alt="linear demo image"
+									className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
+								/>
+							</WobbleCard>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
+								<CardDemo />
+								<CardDemo />
+								<CardDemo />
+								<CardDemo />
 							</div>
 						</div>
 					</Container>

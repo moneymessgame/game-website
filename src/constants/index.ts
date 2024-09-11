@@ -21,41 +21,41 @@ export const perks = [
 	{
 		icon: Icons.launch,
 		title: 'Purchase NFTs',
-		info: 'Want to buy a unique planet, star, or even Earth? That\'s something we have too! You can acquire a special NFT and expand your gaming possibilities.',
+		info: "Want to buy a unique planet, star, or even Earth? That's something we have too! You can acquire a special NFT and expand your gaming possibilities.",
 	},
 ];
 
 export const features = [
 	{
 		icon: Icons.bolt,
-		title: 'Fast Setup',
-		info: 'Craft stunning frontends in minutes with our intuitive component library.',
+		title: 'Token Mining',
+		info: 'Many NFT games use the Play-to-Earn model. In such games, players can earn in-game tokens by completing tasks, winning battles, or participating in tournaments. These tokens can be sold on cryptocurrency exchanges for real money.',
 	},
 	{
 		icon: Icons.palette,
-		title: 'Customizable Templates',
-		info: 'Choose from a variety of modern UI elements and customize them to fit your design.',
+		title: 'Reselling NFT Items',
+		info: 'On NFT game platforms like OpenSea or Rarible, players can buy or sell unique game items, characters, or land plots. The prices of these items can vary significantly depending on demand and rarity, opening up opportunities for profit.',
 	},
 	{
 		icon: Icons.seo,
-		title: 'SEO Optimized',
-		info: 'Optimized components ensure your website performs smoothly across browsers.',
+		title: 'Renting In-Game Items',
+		info: 'In metaverse games like Decentraland or The Sandbox, players can buy land or other assets and rent them out. This allows for a steady income from tenants who use these resources for their purposes.',
 	},
-	{
-		icon: Icons.monitor,
-		title: 'Responsive Design',
-		info: 'Responsive design templates guarantee your site looks great on all devices.',
-	},
-	{
-		icon: Icons.shop,
-		title: 'Online Shops',
-		info: 'Elevate user experience with seamless animations and interactive elements.',
-	},
-	{
-		icon: Icons.server,
-		title: 'Vercel Hosting',
-		info: 'Boost development with ready-to-use ShadCN components and Framer Motion effects.',
-	},
+	// {
+	// 	icon: Icons.monitor,
+	// 	title: 'Responsive Design',
+	// 	info: 'Responsive design templates guarantee your site looks great on all devices.',
+	// },
+	// {
+	// 	icon: Icons.shop,
+	// 	title: 'Online Shops',
+	// 	info: 'Elevate user experience with seamless animations and interactive elements.',
+	// },
+	// {
+	// 	icon: Icons.server,
+	// 	title: 'Vercel Hosting',
+	// 	info: 'Boost development with ready-to-use ShadCN components and Framer Motion effects.',
+	// },
 ];
 
 export const pricingCards = [
