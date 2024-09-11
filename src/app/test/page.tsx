@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
+import { ArrowRight, ChevronRight, Gem, UserIcon, Zap } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
 import { BorderBeam } from '@/components/ui/border-beam';
@@ -43,7 +43,6 @@ const Donate = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
-
 			<section id="title">
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
@@ -53,10 +52,11 @@ const Donate = () => {
 									NFT games: <br /> how do they work and how to Earn?
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
-								NFT games represent a cutting-edge trend in the video game industry, combining blockchain technology and gaming. 
+									NFT games represent a cutting-edge trend in the video game
+									industry, combining blockchain technology and gaming.
 								</p>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
-								3 min read 
+									3 min read
 								</p>
 								<Button variant="white" className="mt-6" asChild>
 									<Link href="#about">
@@ -67,18 +67,107 @@ const Donate = () => {
 							</div>
 						</LampContainer>
 					</Container>
-        </Wrapper>
-      </section>
+				</Wrapper>
+			</section>
+
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="px-6">
+							<div className="max-w-lg mx-auto text-start md:text-center pb-10"></div>
+							<p className="text-base md:text-lg text-foreground/80 mt-6">
+								NFT games represent a cutting-edge trend in the video game
+								industry, combining blockchain technology and gaming. These
+								games offer unique opportunities for players who want not only
+								to have fun but also to earn from their virtual assets. In this
+								article, we will discuss what NFT games are, how they work, and
+								what earning strategies are available to players.
+							</p>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* <section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+								<p className="text-base md:text-lg text-foreground/80 mt-6">
+									NFT games represent a cutting-edge trend in the video game
+									industry, combining blockchain technology and gaming. These
+									games offer unique opportunities for players who want not only
+									to have fun but also to earn from their virtual assets. In
+									this article, we will discuss what NFT games are, how they
+									work, and what earning strategies are available to players.
+								</p>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section> */}
+
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center py-16 relative">
+					<Container>
+						<div className="max-w-md mx-auto text-center">
+							<h2 className="text-xl lg:text-4xl font-black uppercase ">
+								What are NFTs and how do they work in games?
+							</h2>
+						</div>
+					</Container>
+					<Container>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
+								<div className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4">
+									<div className="flex items-center justify-center">
+										<Gem className="w-10 h-10 pb-2 text-muted-foreground" />
+									</div>
+									<p className="mt-2 text-start lg:text-start">
+										<strong> NFT (Non-Fungible Token) </strong> is a unique
+										digital asset recorded on the blockchain, representing an
+										item or object with individual characteristics. Unlike
+										fungible tokens like Bitcoin, NFTs cannot be replaced,
+										making them ideal for creating unique digital items.
+									</p>
+								</div>
+								<div className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4">
+									<div className="flex items-center justify-center">
+										<Gem className="w-10 h-10 pb-2 text-muted-foreground" />
+									</div>
+									<p className="mt-2 text-start lg:text-start">
+										In the context of games, <strong>NFTs</strong> can be used
+										to create unique characters, items, or even entire game
+										worlds. These assets can be bought, sold, or traded on
+										specialized platforms, providing players with the
+										opportunity to earn from their virtual achievements.
+									</p>
+								</div>
+								<div className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4">
+									<div className="flex items-center justify-center">
+										<Gem className="w-10 h-10 pb-2 text-muted-foreground" />
+									</div>
+									<p className="mt-2 text-start lg:text-start">
+										<strong>NFTs</strong> in games add uniqueness and value to
+										every element, making the gameplay more engaging and
+										profitable.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
 
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
 							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
-								<CardDemo/>
-								<CardDemo/>
-								<CardDemo/>
-								<CardDemo/>
+								<CardDemo />
+								<CardDemo />
+								<CardDemo />
+								<CardDemo />
 							</div>
 						</div>
 					</Container>
@@ -88,106 +177,56 @@ const Donate = () => {
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
-								<p className="text-base md:text-lg text-foreground/80 mt-6">
-								The Roadmap outlines important stages of the game's development, starting with the <strong>Main Game Launch</strong>, introducing all key gameplay mechanics. Following the launch, a <strong>Referral System</strong> will be implemented to attract new players and expand the community. Regular <strong>Daily Rewards</strong> and unique <strong>Special Cards</strong> will add motivation and variety to the gameplay. To enhance player convenience, an <strong>in-game Wallet</strong> will be integrated, allowing for direct management of cryptocurrency assets within the game. We are also actively working on <strong>On-chain infrastructure development</strong> and planning <strong>Partner Blockchain Announcements</strong> to ensure the sustainable growth of the project and strengthen its position within the blockchain community.
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+							<WobbleCard
+								containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+								className=""
+							>
+								<div className="max-w-xs">
+									<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+										Gippity AI powers the entire universe
+									</h2>
+									<p className="mt-4 text-left  text-base/6 text-neutral-200">
+										With over 100,000 mothly active bot users, Gippity AI is the
+										most popular AI platform for developers.
+									</p>
+								</div>
+								<Image
+									src="/assets/linear.webp"
+									width={500}
+									height={500}
+									alt="linear demo image"
+									className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+								/>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 min-h-[300px]">
+								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+									No shirt, no shoes, no weapons.
+								</h2>
+								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+									If someone yells “stop!”, goes limp, or taps out, the fight is
+									over.
 								</p>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</section>
-
-			<section>
-				<Wrapper className="flex flex-col items-center justify-center relative">
-					<Container>
-					<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-      <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-        className=""
-      >
-        <div className="max-w-xs">
-					<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-            Gippity AI powers the entire universe
-          </h2>
-          <p className="mt-4 text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
-          </p>
-        </div>
-        <Image
-          src="/assets/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-        />
-      </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-          No shirt, no shoes, no weapons.
-        </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          If someone yells “stop!”, goes limp, or taps out, the fight is over.
-        </p>
-      </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="max-w-sm">
-					<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-            Signup for blazing-fast cutting-edge state of the art Gippity AI
-            wrapper today!
-          </h2>
-          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
-          </p>
-        </div>
-        <Image
-          src="/assets/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
-        />
-      </WobbleCard>
-    </div>
-					</Container>
-				</Wrapper>
-			</section>
-
-			{/** How it works */}
-			<section id="about">
-				<Wrapper className="flex flex-col items-center justify-center py-16 relative">
-					<Container>
-						<div className="max-w-md mx-auto text-center">
-							<SectionBadge title="The Process" />
-							<h2 className="text-xl lg:text-4xl font-black uppercase ">
-								What are NFTs and how do they work in games?
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								Vision to Reality in 3 Simple Steps
-							</p>
-						</div>
-					</Container>
-					<Container>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
-								{perks.map((perk) => (
-									<div
-										key={perk.title}
-										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
-									>
-										<div className="flex items-center justify-center">
-											<perk.icon className="w-8 h-8" />
-										</div>
-										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
-										<p className="text-muted-foreground mt-2 text-start lg:text-start">
-											{perk.info}
-										</p>
-									</div>
-								))}
-							</div>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+								<div className="max-w-sm">
+									<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+										Signup for blazing-fast cutting-edge state of the art
+										Gippity AI wrapper today!
+									</h2>
+									<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+										With over 100,000 mothly active bot users, Gippity AI is the
+										most popular AI platform for developers.
+									</p>
+								</div>
+								<Image
+									src="/assets/linear.webp"
+									width={500}
+									height={500}
+									alt="linear demo image"
+									className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
+								/>
+							</WobbleCard>
 						</div>
 					</Container>
 				</Wrapper>
@@ -241,7 +280,7 @@ const Donate = () => {
 			</section>
 
 			{/** Price list */}
-			<section id="pricingCards">
+			{/* <section id="pricingCards">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -303,10 +342,10 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section>
+			</section> */}
 
 			{/** Testimonials */}
-			<section id="reviews">
+			{/* <section id="reviews">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -386,10 +425,10 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section>
+			</section> */}
 
 			{/** Newsletter */}
-			<section>
+			{/* <section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
 						<LampContainer>
@@ -450,7 +489,7 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section>
+			</section> */}
 		</div>
 	);
 };
