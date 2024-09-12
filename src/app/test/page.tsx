@@ -84,8 +84,8 @@ const Donate = () => {
 									<div className="flex items-center justify-center mx-auto mt-8">
 										<Image
 											src="/assets/img2.webp"
-											width={350}
-											height={350}
+											width={500}
+											height={500}
 											alt="linear demo image"
 											className="rounded-2xl"
 										/>
@@ -257,9 +257,9 @@ const Donate = () => {
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
 							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
 								<Image
-									src="/assets/crypto2.webp"
-									width={350}
-									height={350}
+									src="/assets/crypto1.webp"
+									width={500}
+									height={500}
 									alt="linear demo image"
 									className="absolute -right-10 md:-right-[40%] lg:-right-[-3%] -bottom-10 object-contain rounded-2xl"
 								/>
