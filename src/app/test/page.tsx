@@ -9,7 +9,7 @@ import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { features, perks, pricingCards, reviews } from '@/constants';
+import { features, perks, NFTGames, reviews } from '@/constants';
 import { Icons } from '@/components';
 import { cn } from '@/lib/utils';
 import Marquee from '@/components/ui/marquee';
@@ -43,6 +43,7 @@ const Donate = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
+			{/** Lamp Header */}
 			<section id="title">
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
@@ -70,35 +71,30 @@ const Donate = () => {
 				</Wrapper>
 			</section>
 
-			{/* 	<section>
-				<Wrapper className="flex flex-col items-center justify-center relative">
-					<Container>
-						<div className="px-6">
-							<div className="max-w-lg mx-auto text-start md:text-center pb-10"></div>
-							<p className="text-base md:text-lg text-foreground/80 mt-6">
-								NFT games represent a cutting-edge trend in the video game
-								industry, combining blockchain technology and gaming. These
-								games offer unique opportunities for players who want not only
-								to have fun but also to earn from their virtual assets. In this
-								article, we will discuss what NFT games are, how they work, and
-								what earning strategies are available to players.
-							</p>
-						</div>
-					</Container>
-				</Wrapper>
-			</section> */}
-
+			{/** Intro */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
+						<div className="max-w-xl mx-auto text-center">
+							<SectionBadge title="Introduction" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								How to Start Playing and Investing in NFT Games
+							</h2>
+						</div>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
 							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
-								<Container>
+							<Container>
 									<div className="flex items-center justify-center mx-auto mt-8">
-										<Icons.feature className="w-auto h-80" />
+										<Image
+											src="/assets/img2.png"
+											width={350}
+											height={350}
+											alt="linear demo image"
+											className="rounded-2xl"
+										/>
 									</div>
 								</Container>
-								<p className="text-base md:text-lg text-foreground/80 mt-6">
+								<p className="text-base md:text-lg text-foreground/80 mt-6  flex items-center justify-center">
 									NFT games represent a cutting-edge trend in the video game
 									industry, combining blockchain technology and gaming. These
 									games offer unique opportunities for players who want not only
@@ -112,6 +108,7 @@ const Donate = () => {
 				</Wrapper>
 			</section>
 
+			{/** What are NFTs */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-16 relative">
 					<Container>
@@ -165,6 +162,49 @@ const Donate = () => {
 				</Wrapper>
 			</section>
 
+			{/** Successful NFT Games */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
+					<Container>
+						<div className="max-w-xl mx-auto text-center">
+							<SectionBadge title="Successful NFT Games" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								Examples of Successful NFT Games
+							</h2>
+						</div>
+					</Container>
+					<Container className="flex items-center justify-center">
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full md:gap-8 py-10 md:py-20 flex-wrap max-w-4xl">
+							
+							{NFTGames.map((card) => (
+								<Card
+								
+									key={card.title}
+									className={cn(
+										'flex flex-col w-full border-neutral-700',
+										card.title === 'Unlimited Saas' && 'border-2 border-primary'
+									)}
+								>
+									<CardHeader className="border-b border-border">
+										<span>{card.title}</span>
+										<CardTitle
+											className={cn(
+												card.title !== 'Unlimited Saas' &&
+													'text-muted-foreground'
+											)}
+										>
+										</CardTitle>
+										<CardDescription>{card.description}</CardDescription>
+									</CardHeader>
+								</Card>
+							))}
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/** How to Earn in NFT Games */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
@@ -215,68 +255,84 @@ const Donate = () => {
 				</Wrapper>
 			</section>
 
+			{/** WobbleCard */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
 						<div className="max-w-xl mx-auto text-center">
-							<SectionBadge title="Successful Games" />
+							<SectionBadge title="Play & Invest" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
-								Examples of Successful NFT Games
+								How to Start Playing and Investing in NFT Games
 							</h2>
 						</div>
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+								<Image
+									src="/assets/crypto2.png"
+									width={350}
+									height={350}
+									alt="linear demo image"
+									className="absolute -right-10 md:-right-[40%] lg:-right-[-3%] -bottom-10 object-contain rounded-2xl"
+								/>
+								<div className="max-w-sm">
+									<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+										1. Choosing a Game
+									</h2>
+									<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+										Explore various NFT games and choose the one that aligns
+										with your interests and goals. Familiarize yourself with the
+										game mechanics, in-game tokens, and earning opportunities.
+									</p>
+								</div>
+							</WobbleCard>
 							<WobbleCard
 								containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
 								className=""
 							>
 								<div className="max-w-xs">
 									<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-										CryptoKitties
+										2. Creating a Cryptocurrency Wallet
 									</h2>
 									<p className="mt-4 text-left  text-base/6 text-neutral-200">
-										This game was one of the first popular NFT games, allowing
-										players to collect, breed, and trade unique digital cats.
-										Each CryptoKitty is a unique NFT with its characteristics.
+										To buy and store NFTs, you will need a cryptocurrency wallet
+										that supports the token standard used in the chosen game.
 									</p>
 								</div>
 								<Image
-									src="/assets/cryptokitties.png"
-									width={500}
-									height={500}
+									src="/assets/crypto.png"
+									width={350}
+									height={350}
 									alt="linear demo image"
-									className="absolute -right-4 lg:-right-[10%] grayscale filter -bottom-10 object-contain rounded-2xl"
+									className="absolute -right-4 lg:-right-[5%]  filter -bottom-10 object-contain rounded-2xl"
 								/>
 							</WobbleCard>
 							<WobbleCard containerClassName="col-span-1 min-h-[300px]">
 								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-									Axie Infinity
+									3. Purchasing NFTs
 								</h2>
 								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-									In this game, players collect and breed creatures called Axie.
-									Players can earn Smooth Love Potion (SLP) tokens, which can be
-									exchanged for cryptocurrency. Axie Infinity has attracted over
-									2 million active users and significantly impacted the NFT
-									gaming market.
+									Use exchange platforms or the game's internal marketplaces to
+									buy unique game items or assets. Assess their value and rarity
+									to make profitable investments.
 								</p>
 							</WobbleCard>
 							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
 								<div className="max-w-sm">
 									<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
-										Decentraland
+										4. Participating in the Game
 									</h2>
 									<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-										This is a virtual world where users can buy, develop, and
-										rent virtual land plots. Decentraland offers a rich and
-										diverse gaming experience that includes both social and
-										commercial opportunities.
+										Play the game, complete tasks, earn tokens, and manage your
+										NFTs. Regular participation in the game can increase your
+										chances of obtaining more valuable items.
 									</p>
 								</div>
 								<Image
-									src="/assets/linear.webp"
-									width={500}
-									height={500}
+									src="/assets/crypto3.png"
+									width={350}
+									height={350}
 									alt="linear demo image"
-									className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
+									className="absolute -right-10 md:-right-[40%] lg:-right-[0%] -bottom-10 object-contain rounded-2xl"
 								/>
 							</WobbleCard>
 						</div>
@@ -284,6 +340,57 @@ const Donate = () => {
 				</Wrapper>
 			</section>
 
+			{/* Conclusion */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative pt-10">
+					<Container>
+						<div className="max-w-xl mx-auto text-center">
+							<SectionBadge title="Conclusion" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								How to Start Playing and Investing in NFT Games
+							</h2>
+						</div>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+								<Container>
+									<div className="flex items-center justify-center mx-auto mt-8">
+										<Image
+											src="/assets/cat.png"
+											width={500}
+											height={500}
+											alt="linear demo image"
+											className="rounded-2xl"
+										/>
+									</div>
+								</Container>
+								<p className="text-base md:text-lg text-foreground/80 flex items-center justify-center">
+									NFT games represent a rapidly developing segment of the gaming
+									industry that combines elements of blockchain technology and
+									gaming. **NFT** tokens used in such games allow the creation
+									of unique digital assets that can be bought, sold, or traded,
+									generating income for their owners.
+									<br />
+									However, it is important to remember the risks associated with
+									investing in NFT games. The **value** of NFTs and in-game
+									tokens can fluctuate depending on market demand and the
+									dynamics of the game itself. Therefore, it is crucial to study
+									carefully the market, understand the game mechanics, and
+									invest only what you are willing to lose.
+									<br />
+									NFT games are not just a form of entertainment but also an
+									opportunity to become part of a growing ecosystem where your
+									virtual achievements can bring real rewards. Understanding the
+									basics, researching successful projects, and wisely managing
+									your digital assets will help you effectively leverage the
+									potential of NFT games and maximize your profits.
+								</p>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Article Cards */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
@@ -299,70 +406,6 @@ const Donate = () => {
 				</Wrapper>
 			</section>
 
-			{/** Price list */}
-			{/* <section id="pricingCards">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
-					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="Pricing" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Unlock the right plan for your business
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								Choose the best plan for your business and start building your
-								dream website today
-							</p>
-						</div>
-					</Container>
-					<Container className="flex items-center justify-center">
-						<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full md:gap-8 py-10 md:py-20 flex-wrap max-w-4xl">
-							{pricingCards.map((card) => (
-								<Card
-									key={card.title}
-									className={cn(
-										'flex flex-col w-full border-neutral-700',
-										card.title === 'Unlimited Saas' && 'border-2 border-primary'
-									)}
-								>
-									<CardHeader className="border-b border-border">
-										<span>{card.title}</span>
-										<CardTitle
-											className={cn(
-												card.title !== 'Unlimited Saas' &&
-													'text-muted-foreground'
-											)}
-										>
-											{card.price}
-										</CardTitle>
-										<CardDescription>{card.description}</CardDescription>
-									</CardHeader>
-									<CardContent className="pt-6 space-y-3">
-										{card.features.map((feature) => (
-											<div key={feature} className="flex items-center gap-2">
-												<Zap className="w-4 h-4 fill-primary text-primary" />
-												<p>{feature}</p>
-											</div>
-										))}
-									</CardContent>
-									<CardFooter className="mt-auto">
-										<Link
-											href="#"
-											className={cn(
-												'w-full text-center text-primary-foreground bg-primary p-2 rounded-md text-sm font-medium',
-												card.title !== 'Unlimited Saas' &&
-													'!bg-foreground !text-background'
-											)}
-										>
-											{card.buttonText}
-										</Link>
-									</CardFooter>
-								</Card>
-							))}
-						</div>
-					</Container>
-				</Wrapper>
-			</section> */}
 
 			{/** Testimonials */}
 			{/* <section id="reviews">

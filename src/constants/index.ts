@@ -58,23 +58,17 @@ export const features = [
 	// },
 ];
 
-export const pricingCards = [
+export const NFTGames = [
 	{
-		title: 'Starter',
-		description: 'Perfect for trying out plura',
-		price: 'Free',
-		duration: '',
-		highlight: 'Key features',
+		title: 'CryptoKitties',
+		description: 'This game was one of the first popular NFT games, allowing players to collect, breed, and trade unique digital cats. Each CryptoKitty is a unique NFT with its characteristics.',
 		buttonText: 'Start for free',
 		features: ['Limited projects', '1 Team member', 'Basic features'],
 		priceId: '',
 	},
 	{
-		title: 'Unlimited Saas',
-		description: 'The ultimate agency kit',
-		price: '$199',
-		duration: 'month',
-		highlight: 'Key features',
+		title: 'Axie Infinity',
+		description: 'In this game, players collect and breed creatures called Axie. Players can earn Smooth Love Potion (SLP) tokens, which can be exchanged for cryptocurrency. Axie Infinity has attracted over 2 million active users and significantly impacted the NFT gaming market.',
 		buttonText: 'Upgrade to Pro',
 		features: [
 			'Unlimited projects',
@@ -85,11 +79,8 @@ export const pricingCards = [
 		priceId: 'price_1OYxkqFj9oKEERu1KfJGWxgN',
 	},
 	{
-		title: 'Enterprise',
-		description: 'For serious agency owners',
-		price: '$399',
-		duration: 'month',
-		highlight: 'Everything in Starter, plus',
+		title: 'Decentraland',
+		description: 'This is a virtual world where users can buy, develop, and rent virtual land plots. Decentraland offers a rich and diverse gaming experience that includes both social and commercial opportunities.',
 		buttonText: 'Upgrade to Enterprise',
 		features: [
 			'Unlimited projects',
