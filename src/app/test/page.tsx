@@ -38,9 +38,6 @@ export const metadata: Metadata = {
 };
 
 const Donate = () => {
-	const firstRow = reviews.slice(0, reviews.length / 2);
-	const secondRow = reviews.slice(reviews.length / 2);
-
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
 			{/** Lamp Header */}
@@ -60,7 +57,7 @@ const Donate = () => {
 									3 min read
 								</p>
 								<Button variant="white" className="mt-6" asChild>
-									<Link href="#about">
+									<Link href="#intro">
 										Read more
 										<ArrowRight className="w-4 h-4 ml-2" />
 									</Link>
@@ -75,7 +72,7 @@ const Donate = () => {
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
-						<div className="max-w-xl mx-auto text-center">
+						<div className="max-w-xl mx-auto text-center" id="intro">
 							<SectionBadge title="Introduction" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
 								How to Start Playing and Investing in NFT Games
@@ -83,10 +80,10 @@ const Donate = () => {
 						</div>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
 							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
-							<Container>
+								<Container>
 									<div className="flex items-center justify-center mx-auto mt-8">
 										<Image
-											src="/assets/img2.png"
+											src="/assets/img2.webp"
 											width={350}
 											height={350}
 											alt="linear demo image"
@@ -176,10 +173,8 @@ const Donate = () => {
 					</Container>
 					<Container className="flex items-center justify-center">
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full md:gap-8 py-10 md:py-20 flex-wrap max-w-4xl">
-							
 							{NFTGames.map((card) => (
 								<Card
-								
 									key={card.title}
 									className={cn(
 										'flex flex-col w-full border-neutral-700',
@@ -193,8 +188,7 @@ const Donate = () => {
 												card.title !== 'Unlimited Saas' &&
 													'text-muted-foreground'
 											)}
-										>
-										</CardTitle>
+										></CardTitle>
 										<CardDescription>{card.description}</CardDescription>
 									</CardHeader>
 								</Card>
@@ -245,11 +239,6 @@ const Donate = () => {
 									</div>
 								))}
 							</div>
-							<p className="mt-10">
-								These earning methods open new horizons for players, allowing
-								them not only to enjoy the game but also to gain real financial
-								benefits.
-							</p>
 						</div>
 					</Container>
 				</Wrapper>
@@ -268,7 +257,7 @@ const Donate = () => {
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
 							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
 								<Image
-									src="/assets/crypto2.png"
+									src="/assets/crypto2.webp"
 									width={350}
 									height={350}
 									alt="linear demo image"
@@ -299,7 +288,7 @@ const Donate = () => {
 									</p>
 								</div>
 								<Image
-									src="/assets/crypto.png"
+									src="/assets/crypto.webp"
 									width={350}
 									height={350}
 									alt="linear demo image"
@@ -328,7 +317,7 @@ const Donate = () => {
 									</p>
 								</div>
 								<Image
-									src="/assets/crypto3.png"
+									src="/assets/crypto3.webp"
 									width={350}
 									height={350}
 									alt="linear demo image"
@@ -355,7 +344,7 @@ const Donate = () => {
 								<Container>
 									<div className="flex items-center justify-center mx-auto mt-8">
 										<Image
-											src="/assets/cat.png"
+											src="/assets/cat.jpg"
 											width={500}
 											height={500}
 											alt="linear demo image"
@@ -405,7 +394,6 @@ const Donate = () => {
 					</Container>
 				</Wrapper>
 			</section>
-
 
 			{/** Testimonials */}
 			{/* <section id="reviews">

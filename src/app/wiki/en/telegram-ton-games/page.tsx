@@ -9,7 +9,7 @@ import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { features, perks, pricingCards, reviews } from '@/constants';
+import { features, perks, NFTGames, reviews } from '@/constants';
 import { Icons } from '@/components';
 import { cn } from '@/lib/utils';
 import Marquee from '@/components/ui/marquee';
@@ -133,7 +133,7 @@ const Donate = () => {
 			</section>
 
 			{/** Price list */}
-			<section id="pricingCards">
+			{/* <section id="pricingCards">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
@@ -195,7 +195,7 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section>
+			</section> */}
 
 			{/** Testimonials */}
 			<section id="reviews">

@@ -9,7 +9,7 @@ import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { features, perks, pricingCards, reviews } from '@/constants';
+import { features, perks, NFTGames, reviews } from '@/constants';
 import { Icons } from '@/components';
 import { cn } from '@/lib/utils';
 import Marquee from '@/components/ui/marquee';
