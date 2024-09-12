@@ -28,9 +28,9 @@ export const perks = [
 export const wikiRu = [
 	{
 		icon: Icons.bolt,
-		title: 'Заголовок на русском',
-		info: 'Description',
-		href: '/docs/token-mining',
+		title: 'Игры с NFT',
+		info: 'Как они работают и как заработать',
+		href: '/wiki/ru/nft-games',
 	},
 	{
 		icon: Icons.palette,
@@ -67,9 +67,9 @@ export const wikiRu = [
 export const wikiEn = [
 	{
 		icon: Icons.bolt,
-		title: 'Token Mining',
-		info: 'Description',
-		href: '/docs/token-mining',
+		title: 'NFT games',
+		info: 'How do they work and how to Earn',
+		href: '/wiki/en/nft-games',
 	},
 	{
 		icon: Icons.palette,
@@ -119,54 +119,53 @@ export const features = [
 		title: 'Renting In-Game Items',
 		info: 'In metaverse games like Decentraland or The Sandbox, players can buy land or other assets and rent them out. This allows for a steady income from tenants who use these resources for their purposes.',
 	},
-	// {
-	// 	icon: Icons.monitor,
-	// 	title: 'Responsive Design',
-	// 	info: 'Responsive design templates guarantee your site looks great on all devices.',
-	// },
-	// {
-	// 	icon: Icons.shop,
-	// 	title: 'Online Shops',
-	// 	info: 'Elevate user experience with seamless animations and interactive elements.',
-	// },
-	// {
-	// 	icon: Icons.server,
-	// 	title: 'Vercel Hosting',
-	// 	info: 'Boost development with ready-to-use ShadCN components and Framer Motion effects.',
-	// },
+];
+
+export const featuresRu = [
+	{
+		icon: Icons.bolt,
+		title: 'Добыча токенов',
+		info: 'Многие NFT-игры используют модель Play-to-Earn (играй, чтобы заработать). В таких играх игроки могут зарабатывать внутриигровые токены за выполнение заданий, победу в битвах или участие в турнирах. Эти токены могут быть проданы на криптовалютных биржах за реальные деньги.',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Перепродажа NFT-объектов',
+		info: 'На платформах NFT-игр, таких как OpenSea или Rarible, игроки могут купить или продать уникальные игровые предметы, персонажей или земельные участки. Цены на эти объекты могут значительно меняться в зависимости от спроса и редкости, что открывает возможности для прибыли.',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Аренда внутриигровых объектов',
+		info: 'В играх-метавселенных, таких как Decentraland или The Sandbox, игроки могут покупать землю или другие активы и сдавать их в аренду. Это позволяет получать стабильный доход от арендаторов, которые используют эти ресурсы для своих целей.',
+	},
 ];
 
 export const NFTGames = [
 	{
 		title: 'CryptoKitties',
 		description: 'This game was one of the first popular NFT games, allowing players to collect, breed, and trade unique digital cats. Each CryptoKitty is a unique NFT with its characteristics.',
-		buttonText: 'Start for free',
-		features: ['Limited projects', '1 Team member', 'Basic features'],
-		priceId: '',
 	},
 	{
 		title: 'Axie Infinity',
 		description: 'In this game, players collect and breed creatures called Axie. Players can earn Smooth Love Potion (SLP) tokens, which can be exchanged for cryptocurrency. Axie Infinity has attracted over 2 million active users and significantly impacted the NFT gaming market.',
-		buttonText: 'Upgrade to Pro',
-		features: [
-			'Unlimited projects',
-			'5 Team members',
-			'Advanced design tools',
-			'Customizable domain',
-		],
-		priceId: 'price_1OYxkqFj9oKEERu1KfJGWxgN',
 	},
 	{
 		title: 'Decentraland',
 		description: 'This is a virtual world where users can buy, develop, and rent virtual land plots. Decentraland offers a rich and diverse gaming experience that includes both social and commercial opportunities.',
-		buttonText: 'Upgrade to Enterprise',
-		features: [
-			'Unlimited projects',
-			'Unlimited Team members',
-			'Custom branding',
-			'Priority support (24/7)',
-		],
-		priceId: 'price_1OYxkqFj9oKEERu1NbKUxXxN',
+	},
+];
+
+export const NFTGamesRu = [
+	{
+		title: 'CryptoKitties',
+		description: 'Эта игра стала одной из первых популярных NFT-игр, позволяя игрокам коллекционировать, разводить и торговать уникальными цифровыми кошками. Каждый CryptoKitty представляет собой уникальный NFT с собственными характеристиками.',
+	},
+	{
+		title: 'Axie Infinity',
+		description: 'В этой игре игроки собирают и разводят существа, называемые Axie. Игроки могут зарабатывать токены Smooth Love Potion (SLP), которые можно обменивать на криптовалюту. Axie Infinity привлекла более 2 миллионов активных пользователей и оказала значительное влияние на рынок NFT-игр.',
+	},
+	{
+		title: 'Decentraland',
+		description: 'Это виртуальный мир, где пользователи могут покупать, развивать и сдавать в аренду виртуальные участки земли. Decentraland предлагает богатый и разнообразный игровой опыт, который включает как социальные, так и коммерческие возможности.',
 	},
 ];
 

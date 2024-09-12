@@ -83,7 +83,7 @@ const Donate = () => {
 								<Container>
 									<div className="flex items-center justify-center mx-auto mt-8">
 										<Image
-											src="/assets/img2.webp"
+											src="/assets/img1.jpg"
 											width={500}
 											height={500}
 											alt="linear demo image"
@@ -257,9 +257,9 @@ const Donate = () => {
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
 							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
 								<Image
-									src="/assets/crypto1.webp"
-									width={500}
-									height={500}
+									src="/assets/crypto2.webp"
+									width={350}
+									height={350}
 									alt="linear demo image"
 									className="absolute -right-10 md:-right-[40%] lg:-right-[-3%] -bottom-10 object-contain rounded-2xl"
 								/>
@@ -320,7 +320,7 @@ const Donate = () => {
 									src="/assets/crypto3.webp"
 									width={350}
 									height={350}
-									alt="linear demo image"
+									alt="Participate in the game"
 									className="absolute -right-10 md:-right-[40%] lg:-right-[0%] -bottom-10 object-contain rounded-2xl"
 								/>
 							</WobbleCard>
@@ -355,12 +355,12 @@ const Donate = () => {
 								<p className="text-base md:text-lg text-foreground/80 flex items-center justify-center">
 									NFT games represent a rapidly developing segment of the gaming
 									industry that combines elements of blockchain technology and
-									gaming. **NFT** tokens used in such games allow the creation
+									gaming. NFT tokens used in such games allow the creation
 									of unique digital assets that can be bought, sold, or traded,
 									generating income for their owners.
 									<br />
 									However, it is important to remember the risks associated with
-									investing in NFT games. The **value** of NFTs and in-game
+									investing in NFT games. The value of NFTs and in-game
 									tokens can fluctuate depending on market demand and the
 									dynamics of the game itself. Therefore, it is crucial to study
 									carefully the market, understand the game mechanics, and

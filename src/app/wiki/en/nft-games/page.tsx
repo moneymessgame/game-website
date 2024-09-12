@@ -2,35 +2,28 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, ChevronRight, Gem, UserIcon, Zap } from 'lucide-react';
+import { ArrowRight, Gem } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
-import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { features, perks, NFTGames, reviews } from '@/constants';
+import { features, NFTGames } from '@/constants';
 import { Icons } from '@/components';
 import { cn } from '@/lib/utils';
-import Marquee from '@/components/ui/marquee';
 import { LampContainer } from '@/components/ui/lamp';
-import { Input } from '@/components/ui/input';
-import OrbitIcon from '@/components/global/orbitIcon';
 import {
 	Card,
-	CardContent,
 	CardDescription,
-	CardFooter,
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
 
 import { WobbleCard } from '@/components/ui/wobble-card';
-import styles from './test.module.scss';
 import CardDemo from '@/components/blocks/cards-demo-2';
 
 export const metadata: Metadata = {
-	title: 'Donate to MoneyMess',
+	title: 'NFT Games: How Do They Work and How to Earn',
 	robots: {
 		index: true,
 		follow: true,
@@ -46,7 +39,7 @@ const Article1 = () => {
 					<Container>
 						<LampContainer>
 							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase">
+								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase w-[70%]">
 									NFT games: <br /> how do they work and how to Earn?
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
@@ -75,7 +68,7 @@ const Article1 = () => {
 						<div className="max-w-xl mx-auto text-center" id="intro">
 							<SectionBadge title="Introduction" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
-								How to Start Playing and Investing in NFT Games
+								NFT Games: Merging Fun and Profit in the Blockchain Era
 							</h2>
 						</div>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
@@ -83,9 +76,9 @@ const Article1 = () => {
 								<Container>
 									<div className="flex items-center justify-center mx-auto mt-8">
 										<Image
-											src="/assets/img2.webp"
-											width={350}
-											height={350}
+											src="/assets/img1.jpg"
+											width={500}
+											height={500}
 											alt="linear demo image"
 											className="rounded-2xl"
 										/>
@@ -320,7 +313,7 @@ const Article1 = () => {
 									src="/assets/crypto3.webp"
 									width={350}
 									height={350}
-									alt="linear demo image"
+									alt="Participate in the game"
 									className="absolute -right-10 md:-right-[40%] lg:-right-[0%] -bottom-10 object-contain rounded-2xl"
 								/>
 							</WobbleCard>
@@ -336,7 +329,7 @@ const Article1 = () => {
 						<div className="max-w-xl mx-auto text-center">
 							<SectionBadge title="Conclusion" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
-								How to Start Playing and Investing in NFT Games
+								NFT Games: Virtual Assets and Real Opportunities
 							</h2>
 						</div>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
@@ -344,7 +337,7 @@ const Article1 = () => {
 								<Container>
 									<div className="flex items-center justify-center mx-auto mt-8">
 										<Image
-											src="/assets/cat.webp"
+											src="/assets/cat.jpg"
 											width={500}
 											height={500}
 											alt="linear demo image"
@@ -355,16 +348,16 @@ const Article1 = () => {
 								<p className="text-base md:text-lg text-foreground/80 flex items-center justify-center">
 									NFT games represent a rapidly developing segment of the gaming
 									industry that combines elements of blockchain technology and
-									gaming. **NFT** tokens used in such games allow the creation
-									of unique digital assets that can be bought, sold, or traded,
+									gaming. NFT tokens used in such games allow the creation of
+									unique digital assets that can be bought, sold, or traded,
 									generating income for their owners.
 									<br />
 									However, it is important to remember the risks associated with
-									investing in NFT games. The **value** of NFTs and in-game
-									tokens can fluctuate depending on market demand and the
-									dynamics of the game itself. Therefore, it is crucial to study
-									carefully the market, understand the game mechanics, and
-									invest only what you are willing to lose.
+									investing in NFT games. The value of NFTs and in-game tokens
+									can fluctuate depending on market demand and the dynamics of
+									the game itself. Therefore, it is crucial to study carefully
+									the market, understand the game mechanics, and invest only
+									what you are willing to lose.
 									<br />
 									NFT games are not just a form of entertainment but also an
 									opportunity to become part of a growing ecosystem where your
@@ -394,153 +387,6 @@ const Article1 = () => {
 					</Container>
 				</Wrapper>
 			</section>
-
-			{/** Testimonials */}
-			{/* <section id="reviews">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
-					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="Testimonial Replicas" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Moving Testimonials
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								Discover how AstraDynamic elevates web design across industries.
-								See what developers are saying online
-							</p>
-						</div>
-					</Container>
-					<Container>
-						<div className="py-10 md:py-20 w-full">
-							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
-								<Marquee pauseOnHover className="[--duration:20s] select-none">
-									{firstRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
-										</figure>
-									))}
-								</Marquee>
-								<Marquee
-									reverse
-									pauseOnHover
-									className="[--duration:20s] select-none"
-								>
-									{secondRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
-										</figure>
-									))}
-								</Marquee>
-								<div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background"></div>
-								<div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background"></div>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</section> */}
-
-			{/** Newsletter */}
-			{/* <section>
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<Container>
-						<LampContainer>
-							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
-									From Idea to Launch <br /> Faster Than Ever
-								</h2>
-								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
-									Craft stunning frontends with AstraDynamic&appos;s modern
-									component library and fluid animation tools
-								</p>
-								<Button variant="white" className="mt-6" asChild>
-									<Link href="/sign-in">
-										Get started for free
-										<ArrowRight className="w-4 h-4 ml-2" />
-									</Link>
-								</Button>
-							</div>
-						</LampContainer>
-					</Container>
-					<Container className="relative z-[999999]">
-						<div className="flex items-center justify-center w-full -mt-40">
-							<div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between w-full px-4 md:px-8 rounded-lg lg:rounded-2xl border border-border/80 py-4 md:py-8">
-								<div className="flex flex-col items-start gap-4 w-full">
-									<h4 className="text-xl md:text-2xl font-semibold text-purple-400">
-										Follow my twitter account
-									</h4>
-									<p className="text-base text-muted-foreground">
-										Be up to date with my new undertakings ,Projects and more
-									</p>
-								</div>
-								<div className="flex flex-col items-start gap-2 md:min-w-80 mt-5 md:mt-0 w-full md:w-max">
-									<form
-										action="#"
-										className="flex flex-col md:flex-row items-center gap-2 w-full md:max-w-xs"
-									>
-										<Input
-											required
-											type="email"
-											placeholder="Enter your email"
-											className="focus-visible:ring-0 focus-visible:ring-transparent focus-visible:border-primary duration-300 w-full"
-										/>
-										<Button
-											type="submit"
-											size="sm"
-											variant="secondary"
-											className="w-full md:w-max"
-										>
-											Subscribe
-										</Button>
-									</form>
-									<p className="text-xs p-3 text-muted-foreground">
-										By subscribing you agree with our{' '}
-										<Link href="#">Privacy Policy</Link>
-									</p>
-								</div>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</section> */}
 		</div>
 	);
 };

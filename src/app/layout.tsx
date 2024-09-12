@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     yandex: 'yandex',
     yahoo: 'yahoo',
 	},
-	category: 'web3games',
+	category: 'web3',
 };
 
 const font = Inter({ subsets: ['latin'] });
