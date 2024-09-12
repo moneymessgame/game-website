@@ -25,6 +25,84 @@ export const perks = [
 	},
 ];
 
+export const wikiRu = [
+	{
+		icon: Icons.bolt,
+		title: 'Заголовок на русском',
+		info: 'Description',
+		href: '/docs/token-mining',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Заголовок NFT',
+		info: 'Description',
+		href: '/docs/reselling-nft-items',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Renting In-Game Items',
+		info: 'Description',
+		href: '/docs/renting-in-game-items',
+	},
+	{
+		icon: Icons.bolt,
+		title: 'Token Mining',
+		info: 'Description',
+		href: '/docs/token-mining',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Reselling NFT Items',
+		info: 'Description',
+		href: '/docs/reselling-nft-items',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Renting In-Game Items',
+		info: 'Description',
+		href: '/docs/renting-in-game-items',
+	},
+]
+
+export const wikiEn = [
+	{
+		icon: Icons.bolt,
+		title: 'Token Mining',
+		info: 'Description',
+		href: '/docs/token-mining',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Reselling NFT Items',
+		info: 'Description',
+		href: '/docs/reselling-nft-items',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Renting In-Game Items',
+		info: 'Description',
+		href: '/docs/renting-in-game-items',
+	},
+	{
+		icon: Icons.bolt,
+		title: 'Token Mining',
+		info: 'Description',
+		href: '/docs/token-mining',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Reselling NFT Items',
+		info: 'Description',
+		href: '/docs/reselling-nft-items',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Renting In-Game Items',
+		info: 'Description',
+		href: '/docs/renting-in-game-items',
+	},
+]
+
 export const features = [
 	{
 		icon: Icons.bolt,

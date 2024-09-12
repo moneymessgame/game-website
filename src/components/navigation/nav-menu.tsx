@@ -16,39 +16,7 @@ import {
 } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
 
-const components: { title: string; href: string; description: string }[] = [
-	{
-		title: 'NFT Games',
-		href: '/docs/primitives/alert-dialog',
-		description: 'How Do They Work and How to Earn',
-	},
-	{
-		title: 'What is Play2Earn',
-		href: '/docs/primitives/hover-card',
-		description: 'And How to Make Money with It',
-	},
-	{
-		title: 'How to Choose Your First Play2Earn Game',
-		href: '/docs/primitives/progress',
-		description:
-			'How to Choose Your First Play2Earn Game to Earn Without Investment',
-	},
-	{
-		title: 'Passive Income in Games',
-		href: '/docs/primitives/scroll-area',
-		description: 'Top Strategies for Play2Earn Games',
-	},
-	{
-		title: 'How to Earn with Crypto Games',
-		href: '/docs/primitives/tooltip',
-		description: 'How to Earn with Crypto Games on Telegram',
-	},
-	{
-		title: 'TON and Crypto Games',
-		href: '/docs/primitives/tabs',
-		description: 'How to Earn with TON Tokens',
-	},
-];
+import { wikiRu, wikiEn } from '@/constants';
 
 export function NavMenu() {
 	return (
@@ -90,21 +58,37 @@ export function NavMenu() {
 						</NavigationMenuContent>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuTrigger>WIKI</NavigationMenuTrigger>
+						<NavigationMenuTrigger>WIKI EN</NavigationMenuTrigger>
 						<NavigationMenuContent>
 							<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-								{components.map((component) => (
+								{wikiEn.map((component) => (
 									<ListItem
 										key={component.title}
 										title={component.title}
 										href={component.href}
 									>
-										{component.description}
+										{component.info}
 									</ListItem>
 								))}
 							</ul>
 						</NavigationMenuContent>
 					</NavigationMenuItem>
+					<NavigationMenuItem>
+						<NavigationMenuTrigger>WIKI RU</NavigationMenuTrigger>
+						<NavigationMenuContent>
+							<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+								{wikiRu.map((component) => (
+									<ListItem
+										key={component.title}
+										title={component.title}
+										href={component.href}
+									>
+										{component.info}
+									</ListItem>
+								))}
+							</ul>
+						</NavigationMenuContent>
+					</NavigationMenuItem>					
 					<NavigationMenuItem>
 						<Link href="/donate" legacyBehavior passHref>
 							<NavigationMenuLink className={navigationMenuTriggerStyle()}>
