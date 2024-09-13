@@ -29,7 +29,6 @@ const AllArticles = () => {
 									time="3 min read"
 									title="NFT Games:"
 									description="How Do They Work and How to Earn"
-
 								/>
 								<CardDemo
 									backgroundImage='bg-[url("/assets/bg2.jpg")] bg-cover'

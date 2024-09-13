@@ -25,45 +25,6 @@ export const perks = [
 	},
 ];
 
-export const wikiRu = [
-	{
-		icon: Icons.bolt,
-		title: 'Игры с NFT',
-		info: 'Как они работают и как заработать',
-		href: '/wiki/ru/nft-games',
-	},
-	{
-		icon: Icons.palette,
-		title: 'Что такое Play2Earn',
-		info: 'И как на этом заработать',
-		href: '/wiki/ru/play-to-earn',
-	},
-	{
-		icon: Icons.seo,
-		title: 'Как зарабатывать на криптоиграх в Telegram',
-		info: 'И какие существуют стратегии и механизмы.',
-		href: '/wiki/ru/earn-with-games',
-	},
-	{
-		icon: Icons.bolt,
-		title: 'TON и криптоигры:',
-		info: 'Как зарабатывать на играх с TON токенами',
-		href: '/wiki/ru/ton-games',
-	},
-	{
-		icon: Icons.palette,
-		title: 'Как выбрать первую P2E игру',
-		info: 'Ответим на эти вопросы и предложим стратегии для успешного старта.',
-		href: '/wiki/ru/choose-first-game',
-	},
-	{
-		icon: Icons.seo,
-		title: 'Пассивный доход на играх:',
-		info: 'Лучшие стратегии для Play2Earn игр',
-		href: '/wiki/ru/passive-income',
-	},
-]
-
 export const wikiEn = [
 	{
 		icon: Icons.bolt,
@@ -100,6 +61,45 @@ export const wikiEn = [
 		title: 'Passive Income in Games:',
 		info: 'Top Strategies for Play2Earn Games',
 		href: '/wiki/en/passive-income',
+	},
+]
+
+export const wikiRu = [
+	{
+		icon: Icons.bolt,
+		title: 'Игры с NFT',
+		info: 'Как они работают и как заработать',
+		href: '/wiki/ru/nft-games',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Что такое Play2Earn',
+		info: 'И как на этом заработать',
+		href: '/wiki/ru/play-to-earn',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Как зарабатывать на криптоиграх в Telegram',
+		info: 'И какие существуют стратегии и механизмы.',
+		href: '/wiki/ru/earn-with-games',
+	},
+	{
+		icon: Icons.bolt,
+		title: 'TON и криптоигры:',
+		info: 'Как зарабатывать на играх с TON токенами',
+		href: '/wiki/ru/ton-games',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Как выбрать первую P2E игру',
+		info: 'Ответим на эти вопросы и предложим стратегии для успешного старта.',
+		href: '/wiki/ru/choose-first-game',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Пассивный доход на играх:',
+		info: 'Лучшие стратегии для Play2Earn игр',
+		href: '/wiki/ru/passive-income',
 	},
 ]
 
@@ -166,6 +166,24 @@ export const NFTGamesRu = [
 	{
 		title: 'Decentraland',
 		description: 'Это виртуальный мир, где пользователи могут покупать, развивать и сдавать в аренду виртуальные участки земли. Decentraland предлагает богатый и разнообразный игровой опыт, который включает как социальные, так и коммерческие возможности.',
+	},
+];
+
+export const playToEarnRu = [
+	{
+		icon: Icons.bolt,
+		title: 'NFT (невзаимозаменяемые токены):',
+		info: 'В большинстве P2E игр используются NFT для представления уникальных игровых предметов, персонажей или активов. Эти NFT могут быть куплены, проданы или обменяны, что позволяет игрокам зарабатывать деньги.',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Криптовалюты:',
+		info: 'Игроки зарабатывают криптовалюту, которую можно обменять на фиатные деньги или другие цифровые активы. Часто используются токены, специфичные для конкретной игры, но также могут быть задействованы и более универсальные криптовалюты, такие как биткойн или эфириум.',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Игровая экономика:',
+		info: 'Игры имеют свои внутренние экономические системы, которые позволяют игрокам зарабатывать деньги за выполнение задач, участие в боях, торговлю и другие активности.',
 	},
 ];
 

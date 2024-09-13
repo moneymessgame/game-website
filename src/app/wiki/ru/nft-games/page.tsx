@@ -20,7 +20,6 @@ import {
 } from '@/components/ui/card';
 
 import { WobbleCard } from '@/components/ui/wobble-card';
-import CardDemo from '@/components/blocks/cards-demo-2';
 
 export const metadata: Metadata = {
 	title: 'Игры с NFT: как они работают и как заработать',
@@ -42,7 +41,7 @@ const Article1Ru = () => {
 								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase w-[70%]">
 									Игры с NFT: <br /> как они работают и как заработать?
 								</h2>
-								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
+								<p className="text-muted-foreground mt-6 max-w-md mx-auto text-justify">
 									NFT-игры представляют собой революционное направление в
 									индустрии видеоигр, объединяющее блокчейн-технологии и
 									гейминг.
@@ -375,22 +374,6 @@ const Article1Ru = () => {
 									цифровыми активами помогут вам эффективно использовать
 									потенциал NFT-игр и извлекать из них максимальную прибыль.
 								</p>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</section>
-
-			{/* Article Cards */}
-			<section>
-				<Wrapper className="flex flex-col items-center justify-center relative">
-					<Container>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
-								<CardDemo />
-								<CardDemo />
-								<CardDemo />
-								<CardDemo />
 							</div>
 						</div>
 					</Container>

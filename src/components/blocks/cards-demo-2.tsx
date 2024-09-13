@@ -28,7 +28,6 @@ export default function CardDemo({
 					backgroundImage
 				)}
 			>
-				{/* Затемнение при ховере */}
 				<div className="absolute inset-0 bg-black opacity-50 transition-opacity duration-300 group-hover/card:opacity-0"></div>
 				<div className="flex flex-row items-center space-x-4 z-10 relative">
 					<Image

@@ -42,7 +42,7 @@ const Article1 = () => {
 								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase w-[70%]">
 									NFT games: <br /> how do they work and how to Earn?
 								</h2>
-								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
+								<p className="text-muted-foreground mt-6 max-w-md mx-auto ">
 									NFT games represent a cutting-edge trend in the video game
 									industry, combining blockchain technology and gaming.
 								</p>
@@ -366,22 +366,6 @@ const Article1 = () => {
 									your digital assets will help you effectively leverage the
 									potential of NFT games and maximize your profits.
 								</p>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</section>
-
-			{/* Article Cards */}
-			<section>
-				<Wrapper className="flex flex-col items-center justify-center relative">
-					<Container>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
-								<CardDemo />
-								<CardDemo />
-								<CardDemo />
-								<CardDemo />
 							</div>
 						</div>
 					</Container>

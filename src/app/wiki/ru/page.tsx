@@ -32,8 +32,8 @@ const AllArticles = () => {
 								/>
 								<CardDemo
 									backgroundImage='bg-[url("/assets/bg2.jpg")] bg-cover'
-									avatarSrc="/cards/ihor.png"
-									author="Ihor"
+									avatarSrc="/cards/irine.png"
+									author="Irine"
 									time="4 мин."
 									title="Что такое Play2Earn"
 									description="И как на этом заработать"
