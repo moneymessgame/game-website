@@ -62,7 +62,7 @@ export const wikiEn = [
 		info: 'Top Strategies for Play2Earn Games',
 		href: '/wiki/en/passive-income',
 	},
-]
+];
 
 export const wikiRu = [
 	{
@@ -101,7 +101,7 @@ export const wikiRu = [
 		info: 'Лучшие стратегии для Play2Earn игр',
 		href: '/wiki/ru/passive-income',
 	},
-]
+];
 
 export const features = [
 	{
@@ -142,30 +142,36 @@ export const featuresRu = [
 export const NFTGames = [
 	{
 		title: 'CryptoKitties',
-		description: 'This game was one of the first popular NFT games, allowing players to collect, breed, and trade unique digital cats. Each CryptoKitty is a unique NFT with its characteristics.',
+		description:
+			'This game was one of the first popular NFT games, allowing players to collect, breed, and trade unique digital cats. Each CryptoKitty is a unique NFT with its characteristics.',
 	},
 	{
 		title: 'Axie Infinity',
-		description: 'In this game, players collect and breed creatures called Axie. Players can earn Smooth Love Potion (SLP) tokens, which can be exchanged for cryptocurrency. Axie Infinity has attracted over 2 million active users and significantly impacted the NFT gaming market.',
+		description:
+			'In this game, players collect and breed creatures called Axie. Players can earn Smooth Love Potion (SLP) tokens, which can be exchanged for cryptocurrency. Axie Infinity has attracted over 2 million active users and significantly impacted the NFT gaming market.',
 	},
 	{
 		title: 'Decentraland',
-		description: 'This is a virtual world where users can buy, develop, and rent virtual land plots. Decentraland offers a rich and diverse gaming experience that includes both social and commercial opportunities.',
+		description:
+			'This is a virtual world where users can buy, develop, and rent virtual land plots. Decentraland offers a rich and diverse gaming experience that includes both social and commercial opportunities.',
 	},
 ];
 
 export const NFTGamesRu = [
 	{
 		title: 'CryptoKitties',
-		description: 'Эта игра стала одной из первых популярных NFT-игр, позволяя игрокам коллекционировать, разводить и торговать уникальными цифровыми кошками. Каждый CryptoKitty представляет собой уникальный NFT с собственными характеристиками.',
+		description:
+			'Эта игра стала одной из первых популярных NFT-игр, позволяя игрокам коллекционировать, разводить и торговать уникальными цифровыми кошками. Каждый CryptoKitty представляет собой уникальный NFT с собственными характеристиками.',
 	},
 	{
 		title: 'Axie Infinity',
-		description: 'В этой игре игроки собирают и разводят существа, называемые Axie. Игроки могут зарабатывать токены Smooth Love Potion (SLP), которые можно обменивать на криптовалюту. Axie Infinity привлекла более 2 миллионов активных пользователей и оказала значительное влияние на рынок NFT-игр.',
+		description:
+			'В этой игре игроки собирают и разводят существа, называемые Axie. Игроки могут зарабатывать токены Smooth Love Potion (SLP), которые можно обменивать на криптовалюту. Axie Infinity привлекла более 2 миллионов активных пользователей и оказала значительное влияние на рынок NFT-игр.',
 	},
 	{
 		title: 'Decentraland',
-		description: 'Это виртуальный мир, где пользователи могут покупать, развивать и сдавать в аренду виртуальные участки земли. Decentraland предлагает богатый и разнообразный игровой опыт, который включает как социальные, так и коммерческие возможности.',
+		description:
+			'Это виртуальный мир, где пользователи могут покупать, развивать и сдавать в аренду виртуальные участки земли. Decentraland предлагает богатый и разнообразный игровой опыт, который включает как социальные, так и коммерческие возможности.',
 	},
 ];
 
@@ -184,6 +190,24 @@ export const playToEarnRu = [
 		icon: Icons.seo,
 		title: 'Игровая экономика:',
 		info: 'Игры имеют свои внутренние экономические системы, которые позволяют игрокам зарабатывать деньги за выполнение задач, участие в боях, торговлю и другие активности.',
+	},
+];
+
+export const playToEarn = [
+	{
+		icon: Icons.bolt,
+		title: 'NFTs (Non-Fungible Tokens):',
+		info: 'Most P2E games use NFTs to represent unique in-game items, characters, or assets. These NFTs can be bought, sold, or traded, allowing players to make money.',
+	},
+	{
+		icon: Icons.palette,
+		title: 'Cryptocurrencies:',
+		info: 'Players earn cryptocurrency, which can be exchanged for fiat money or other digital assets. Often, tokens specific to a particular game are used, but more universal cryptocurrencies like Bitcoin or Ethereum may also be involved.',
+	},
+	{
+		icon: Icons.seo,
+		title: 'In-game Economy:',
+		info: 'Games have their internal economic systems, allowing players to earn money by completing tasks, participating in battles, trading, and other activities.',
 	},
 ];
 

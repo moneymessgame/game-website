@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 	},
 };
 
-const Article1 = () => {
+const Article = () => {
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
 			{/** Lamp Header */}
@@ -79,7 +79,7 @@ const Article1 = () => {
 											src="/assets/img1.jpg"
 											width={500}
 											height={500}
-											alt="linear demo image"
+											alt="Play2Earn demo image"
 											className="rounded-2xl"
 										/>
 									</div>
@@ -375,4 +375,4 @@ const Article1 = () => {
 	);
 };
 
-export default Article1;
+export default Article;

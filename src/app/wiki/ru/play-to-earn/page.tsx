@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 	},
 };
 
-const Article1Ru = () => {
+const ArticleRu = () => {
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
 			{/** Lamp Header */}
@@ -89,7 +89,7 @@ const Article1Ru = () => {
 											src="/assets/img2.jpg"
 											width={400}
 											height={400}
-											alt="linear demo image"
+											alt="Play2Earn demo image"
 											className="rounded-2xl"
 										/>
 									</div>
@@ -206,8 +206,117 @@ const Article1Ru = () => {
 					</Container>
 				</Wrapper>
 			</section>
+
+			{/** WobbleCard */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="max-w-xl mx-auto text-center">
+							<SectionBadge title="Играй и зарабатывай" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-12">
+								Как начать играть и зарабатывать
+							</h2>
+						</div>
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+							<WobbleCard containerClassName="col-span-1 min-h-[300px]">
+								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+									1. Выбор игры:
+								</h2>
+								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+									Исследуйте различные P2E игры и выберите ту, которая вам
+									наиболее интересна. Обратите внимание на репутацию игры, её
+									экономическую модель и отзывы игроков.
+								</p>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 min-h-[300px]">
+								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+									2. Создание кошелька:
+								</h2>
+								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+									Для участия в играх на блокчейне вам потребуется
+									криптовалютный кошелёк (например, MetaMask), чтобы хранить
+									свои токены и NFT.
+								</p>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 min-h-[300px]">
+								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+									3. Покупка NFT или токенов:
+								</h2>
+								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+									В некоторых играх нужно приобрести начальные активы, такие как
+									NFT или токены. Убедитесь, что вы понимаете, как и где делать
+									эти покупки безопасно.
+								</p>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 min-h-[300px]">
+								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+									4. Активное участие:
+								</h2>
+								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+									Начните играть в игру, выполнять задания, участвовать в
+									соревнованиях и торговать активами, чтобы зарабатывать.
+								</p>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 lg:col-span-2 min-h-[300px]">
+								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+									5. Монетизация:
+								</h2>
+								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+									Если вы накопите достаточное количество ценного контента или
+									токенов, вы сможете обменивать их на деньги или криптовалюту
+									через специальные платформы или биржи.
+								</p>
+								<Image
+									src="/assets/boy.png"
+									width={350}
+									height={350}
+									alt="Crypto"
+									className="absolute -right-4 lg:-right-[0%]  filter -bottom-10 object-contain rounded-2xl"
+								/>
+							</WobbleCard>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Conclusion */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative pt-10 mt-16">
+					<Container>
+						<div className="max-w-xl mx-auto text-center">
+							<SectionBadge title="Заключение" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+								Заключение
+							</h2>
+						</div>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+								<p className="text-base md:text-lg text-foreground/80 flex items-center justify-center">
+									Play2Earn открывает новые возможности для геймеров, позволяя
+									им зарабатывать деньги на своём увлечении. Тем не менее, важно
+									понимать потенциальные риски и быть готовым к нестабильности
+									рынка. Если вы хотите попробовать свои силы в этой модели,
+									выберите надёжные игры, изучите их особенности и начните
+									зарабатывать, играя!
+								</p>
+								<Container>
+									<div className="flex items-center justify-center mx-auto mt-8">
+										<Image
+											src="/assets/cat2.jpg"
+											width={400}
+											height={400}
+											alt="linear demo image"
+											className="rounded-2xl"
+										/>
+									</div>
+								</Container>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
 		</div>
 	);
 };
 
-export default Article1Ru;
+export default ArticleRu;
