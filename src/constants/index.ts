@@ -175,6 +175,42 @@ export const NFTGamesRu = [
 	},
 ];
 
+export const TonTokens = [
+	{
+		title: 'Purchasing in-game assets:',
+		description:
+			'Such as weapons, skins, characters, and other items.',
+	},
+	{
+		title: 'Participating in game events and tournaments:',
+		description:
+			'Some games allow players to place bets or pay for participation in competitions.',
+	},
+	{
+		title: 'Earning through gameplay:',
+		description:
+			'By completing quests, winning battles, or obtaining rare items, players can earn tokens that can then be withdrawn or exchanged for real money.',
+	},
+];
+
+export const TonTokensRu = [
+	{
+		title: 'Покупки внутриигровых активов:',
+		description:
+			'Покупки внутриигровых активов: Такие как оружие, скины, персонажи и другие предметы.',
+	},
+	{
+		title: 'Участия в игровых событиях и турнирах:',
+		description:
+			'Некоторые игры позволяют игрокам делать ставки или платить за участие в соревнованиях.',
+	},
+	{
+		title: 'Заработка через игровой процесс:',
+		description:
+			'Выполняя задания, побеждая в битвах или добывая редкие предметы, игроки могут получать токены, которые затем можно вывести или обменять на реальные деньги.',
+	},
+];
+
 export const playToEarnRu = [
 	{
 		icon: Icons.bolt,
@@ -270,3 +306,66 @@ export const reviews = [
 		body: "I'm at a loss for words. This is amazing. I love it.",
 	},
 ];
+
+export const projects = [
+  {
+    title: "1.  Choose a game:",
+    description:
+      "Explore the games available on the TON platform and select one that interests you and has good player reviews.",
+  },
+  {
+    title: "2. Set up a TON wallet:",
+    description:
+      "To start playing, you'll need a TON wallet where you can receive tokens and store your in-game assets.",
+  },
+  {
+    title: "3. Learn the game mechanics:",
+    description:
+      "Before starting, carefully study the game’s rules, its economy, and ways to earn.",
+  },
+  {
+    title: "4. Engage with the community:",
+    description:
+      "Join gaming communities to exchange experiences, tips, and get up-to-date information on new releases and updates.",
+  },
+  {
+    title: "5. Be cautious and safe:",
+    description:
+      "Make sure the game you plan to invest your time and money in is secure and free of signs of fraud.",
+  },
+	{
+    imageUrl: "/assets/cat6.png",
+  },
+];
+
+export const projectsRu = [
+  {
+		title: "1.  Советы по началу игры:",
+    description:
+      "Исследуйте доступные на платформе TON игры и выберите ту, которая вам интересна и имеет хорошие отзывы от игроков.",
+  },
+  {
+    title: "2. Настройка кошелька TON:",
+    description:
+      "Для начала игры вам понадобится кошелек TON, куда вы сможете получать токены и хранить свои игровые активы.",
+  },
+  {
+    title: "3. Изучение игровых механик:",
+    description:
+      "Перед тем как начать, внимательно изучите правила игры, ее экономику и способы заработка.",
+  },
+  {
+    title: "4. Общение с сообществом:",
+    description:
+      "Присоединяйтесь к игровым сообществам, чтобы обмениваться опытом, советами и получать актуальную информацию о новинках и обновлениях.",
+  },
+  {
+    title: "5. Осторожность и безопасность:",
+    description:
+      "Убедитесь, что игра, в которую вы собираетесь инвестировать свое время и деньги, безопасна и не имеет признаков мошенничества.",
+  },
+	{
+    imageUrl: "/assets/cat6.png",
+  },
+];
+

@@ -49,7 +49,7 @@ const HomePage = () => {
 						<div className="flex flex-col items-center justify-center py-20 h-full ">
 							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
-									<h1 className="text-4xl mb-5 md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+									<h1 className="text-4xl mb-5 md:text-6xl lg:text-xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 										About Us
 									</h1>
 								</div>

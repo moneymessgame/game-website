@@ -80,6 +80,35 @@ const Donate = () => {
 						</div>
 					</Container>
 					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full ">
+							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
+								<div className="flex items-center justify-center">
+									<h1 className="text-4xl mb-5 md:text-6xl lg:text-xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+										About Us
+									</h1>
+								</div>
+								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
+									Our team is a young and dynamic group of blockchain and
+									technology enthusiasts, united by a shared vision of creating
+									something more than just a game—an entire metaverse. We are
+									passionate believers in the power of innovation and
+									creativity, with each of us pouring a piece of ourselves into
+									this project, striving to bring something extraordinary to the
+									world beyond just a mobile app.
+								</p>
+								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
+									We have crafted a unique world where the heroes aren’t always
+									who they seem to be. Perhaps they remind you of someone from
+									real life, or maybe you’ve stumbled into a parallel reality.
+									Our project is filled with mysteries and surprises, and it’s
+									up to you to decide what’s real and what’s merely an illusion.
+									We’re not just building a game; we’re creating a world that
+									will immerse you in its captivating and multi-layered story.{' '}
+								</p>
+							</div>
+						</div>
+					</Container>
+					<Container>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
 							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
 								{perks.map((perk) => (
@@ -230,6 +259,7 @@ const Donate = () => {
 							</p>
 						</div>
 					</Container>
+					
 					<Container>
 						<div className="py-10 md:py-20 w-full">
 							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
