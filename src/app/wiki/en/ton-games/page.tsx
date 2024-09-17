@@ -43,7 +43,7 @@ const Article = () => {
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
 			{/** Lamp Header */}
-			<section id="title">
+			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
 						<LampContainer>
@@ -247,6 +247,7 @@ const Article = () => {
 				</Wrapper>
 			</section>
 
+			{/* Hover Cards */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative pt-10 mt-6">
 					<Container>
