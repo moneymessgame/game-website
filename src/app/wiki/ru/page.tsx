@@ -66,7 +66,7 @@ const AllArticles = () => {
 									backgroundImage='bg-[url("/assets/bg4.jpg")] bg-cover'
 									avatarSrc="/cards/gus.png"
 									author="Irine"
-									time="2 мин."
+									time="5 мин."
 									title="Пассивный доход на играх:"
 									description="Лучшие стратегии для Play2Earn игр"
 								/>

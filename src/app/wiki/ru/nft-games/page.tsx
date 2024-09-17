@@ -27,6 +27,14 @@ export const metadata: Metadata = {
 		index: true,
 		follow: true,
 	},
+	openGraph: {
+		title: 'Игры с NFT: как они работают и как заработать',
+		description:
+			'Игры с NFT: как они работают и как заработать',
+		type: 'article',
+		publishedTime: '2024-09-22T00:21:00.000Z',
+		authors: 'MoneyMess',
+	},
 };
 
 const ArticleRu = () => {

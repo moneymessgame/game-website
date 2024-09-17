@@ -8,17 +8,8 @@ import Wrapper from '@/components/global/wrapper';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { playToEarn, NFTGamesRu } from '@/constants';
-import { Icons } from '@/components';
-import { cn } from '@/lib/utils';
+import { playToEarn } from '@/constants';
 import { LampContainer } from '@/components/ui/lamp';
-import {
-	Card,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
-
 import { WobbleCard } from '@/components/ui/wobble-card';
 
 export const metadata: Metadata = {
@@ -26,6 +17,14 @@ export const metadata: Metadata = {
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'What is Play2Earn and How to Make Money with It',
+		description:
+			'What is Play2Earn and How to Make Money with It',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

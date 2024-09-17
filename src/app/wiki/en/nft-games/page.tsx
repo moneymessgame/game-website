@@ -20,13 +20,20 @@ import {
 } from '@/components/ui/card';
 
 import { WobbleCard } from '@/components/ui/wobble-card';
-import CardDemo from '@/components/blocks/cards-demo-2';
 
 export const metadata: Metadata = {
 	title: 'NFT Games: How Do They Work and How to Earn',
 	robots: {
 		index: true,
 		follow: true,
+	},
+	openGraph: {
+		title: 'NFT Games: How Do They Work and How to Earn',
+		description:
+			'NFT Games: How Do They Work and How to Earn',
+		type: 'article',
+		publishedTime: '2024-09-22T00:21:00.000Z',
+		authors: 'MoneyMess',
 	},
 };
 

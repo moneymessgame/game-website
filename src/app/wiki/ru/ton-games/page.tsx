@@ -2,14 +2,13 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, Gamepad2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { playToEarnRu, TonTokensRu, projectsRu } from '@/constants';
-import { Icons } from '@/components';
+import { TonTokensRu } from '@/constants';
 import { cn } from '@/lib/utils';
 import { LampContainer } from '@/components/ui/lamp';
 import {
@@ -20,7 +19,6 @@ import {
 } from '@/components/ui/card';
 
 import { WobbleCard } from '@/components/ui/wobble-card';
-import { HoverEffect } from '@/components/ui/card-hover-effect';
 import CardHover from '@/components/CardHover';
 
 export const metadata: Metadata = {
@@ -123,7 +121,7 @@ const ArticleRu = () => {
 				</Wrapper>
 			</section>
 
-			{/** Successful NFT Games */}
+			{/** How TON works with NFT Games */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>

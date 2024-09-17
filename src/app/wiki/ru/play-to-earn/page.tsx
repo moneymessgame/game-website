@@ -8,17 +8,8 @@ import Wrapper from '@/components/global/wrapper';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { playToEarnRu, NFTGamesRu } from '@/constants';
-import { Icons } from '@/components';
-import { cn } from '@/lib/utils';
+import { playToEarnRu } from '@/constants';
 import { LampContainer } from '@/components/ui/lamp';
-import {
-	Card,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
-
 import { WobbleCard } from '@/components/ui/wobble-card';
 
 export const metadata: Metadata = {
@@ -27,13 +18,21 @@ export const metadata: Metadata = {
 		index: true,
 		follow: true,
 	},
+	openGraph: {
+		title: 'Что такое Play2Earn и как на этом заработать',
+		description:
+			'Что такое Play2Earn и как на этом заработать',
+		type: 'article',
+		publishedTime: '2024-09-12T00:19:00.000Z',
+		authors: 'MoneyMess',
+	},
 };
 
 const ArticleRu = () => {
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
 			{/** Lamp Header */}
-			<section id="title">
+			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
 						<LampContainer>

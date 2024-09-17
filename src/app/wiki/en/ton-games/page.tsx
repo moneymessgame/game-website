@@ -2,14 +2,13 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, Gamepad2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { playToEarnRu, TonTokens, projects } from '@/constants';
-import { Icons } from '@/components';
+import { TonTokens } from '@/constants';
 import { cn } from '@/lib/utils';
 import { LampContainer } from '@/components/ui/lamp';
 import {
@@ -18,9 +17,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
-
 import { WobbleCard } from '@/components/ui/wobble-card';
-import { HoverEffect } from '@/components/ui/card-hover-effect';
 import CardHover from '@/components/CardHover';
 
 export const metadata: Metadata = {

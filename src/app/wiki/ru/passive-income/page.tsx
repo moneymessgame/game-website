@@ -5,25 +5,10 @@ import React from 'react';
 import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
-import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { features, perks, NFTGames, reviews } from '@/constants';
-import { Icons } from '@/components';
-import { cn } from '@/lib/utils';
-import Marquee from '@/components/ui/marquee';
 import { LampContainer } from '@/components/ui/lamp';
-import { Input } from '@/components/ui/input';
-import OrbitIcon from '@/components/global/orbitIcon';
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
 import { BentoGridDemo } from '@/components/BentoGridSecondDemoRu';
 import { WobbleCard } from '@/components/ui/wobble-card';
 
@@ -158,13 +143,13 @@ const ArticleRu = () => {
 							</p>
 						</div>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-2">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-2 ">
 								{/* Левая колонка с картинкой */}
 								<div className="flex items-center justify-center mx-auto">
 									<Image
 										src="/assets/strategies1.jpg"
-										width={350}
-										height={350}
+										width={400}
+										height={400}
 										alt="Strategies"
 										className="rounded-2xl"
 									/>
@@ -200,8 +185,8 @@ const ArticleRu = () => {
 								<div className="flex items-center justify-center mx-auto">
 									<Image
 										src="/assets/strategies2.jpg"
-										width={350}
-										height={350}
+										width={400}
+										height={400}
 										alt="Strategies"
 										className="rounded-2xl"
 									/>
@@ -234,8 +219,8 @@ const ArticleRu = () => {
 								<div className="flex items-center justify-center mx-auto">
 									<Image
 										src="/assets/strategies3.jpg"
-										width={350}
-										height={350}
+										width={400}
+										height={400}
 										alt="Strategies"
 										className="rounded-2xl"
 									/>
@@ -268,8 +253,8 @@ const ArticleRu = () => {
 								<div className="flex items-center justify-center mx-auto">
 									<Image
 										src="/assets/strategies4.jpg"
-										width={350}
-										height={350}
+										width={400}
+										height={400}
 										alt="Strategies"
 										className="rounded-2xl"
 									/>
@@ -349,7 +334,7 @@ const ArticleRu = () => {
 					</Container>
 				</Wrapper>
 			</section>
-			
+
 			{/* Conclusion */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative pt-10">

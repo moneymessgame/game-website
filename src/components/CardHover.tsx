@@ -7,7 +7,6 @@ import { HoverEffect } from './ui/card-hover-effect';
 import { projects, projectsRu } from '@/constants';
 
 const CardHover = ({ isRussian }: { isRussian: boolean }) => {
-  // В зависимости от значения isRussian выбираем данные
   const items = isRussian ? projectsRu : projects;
 
   return (
