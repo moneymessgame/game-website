@@ -42,7 +42,7 @@ export const wikiEn = [
 		icon: Icons.seo,
 		title: 'How to Earn with Crypto Games on Telegram',
 		info: 'And what strategies and mechanisms exist.',
-		href: '/wiki/en/earn-with-games',
+		href: '/wiki/en/telegram-ton-games',
 	},
 	{
 		icon: Icons.bolt,
@@ -81,7 +81,7 @@ export const wikiRu = [
 		icon: Icons.seo,
 		title: 'Как зарабатывать на криптоиграх в Telegram',
 		info: 'И какие существуют стратегии и механизмы.',
-		href: '/wiki/ru/earn-with-games',
+		href: '/wiki/ru/telegram-ton-games',
 	},
 	{
 		icon: Icons.bolt,
@@ -118,6 +118,42 @@ export const features = [
 		icon: Icons.seo,
 		title: 'Renting In-Game Items',
 		info: 'In metaverse games like Decentraland or The Sandbox, players can buy land or other assets and rent them out. This allows for a steady income from tenants who use these resources for their purposes.',
+	},
+];
+
+export const clickersEn = [
+	{
+		icon: Icons.palette,
+		title: 'Farmers: An Effective Way to Earn',
+		info: 'Farmers are services that are part of crypto games, allowing users to earn digital assets. They offer users the ability to accumulate in-game resources, which can be exchanged for real money or cryptocurrency. Farmers operate on the principle of completing various tasks within the game, for which users are rewarded.',
+	},
+	{
+		icon: Icons.bolt,
+		title: 'Clickers: Simplicity and Accessibility',
+		info: 'Clickers on Telegram have become an important part of crypto games due to their simplicity and accessibility. They are services that automate the completion of click-based tasks, allowing users to earn digital coins or other resources that can be exchanged for fiat or cryptocurrency.',
+	},
+	{ 
+		icon: Icons.seo,
+		title: 'Miners: A New Earning Format',
+		info: 'Miners are applications that use the user\'s computing power to mine cryptocurrency. There are also versions of such applications on Telegram, allowing anyone to earn cryptocurrency using their smartphone. Miners typically require setup and connection to a pool to stabilize income, after which the mining process becomes automated.',
+	},
+];
+
+export const clickersRu = [
+	{
+		icon: Icons.palette,
+		title: 'Фармилки: Эффективный Способ Заработка',
+		info: 'Фармилки — это сервисы, которые являются частью криптоигр и позволяют зарабатывать цифровые активы. Они предлагают пользователям накапливать игровые ресурсы, которые можно обменять на реальные деньги или криптовалюту. Фармилки работают по принципу выполнения различных заданий внутри игры, за что пользователи получают вознаграждение.',
+	},
+	{
+		icon: Icons.bolt,
+		title: 'Тапалки: Простота и Доступность',
+		info: 'Тапалки в Telegram стали важной частью криптоигр благодаря своей простоте и доступности. Они представляют собой сервисы, которые автоматизируют выполнение кликовых заданий, позволяя пользователям зарабатывать цифровые монеты или другие ресурсы, которые можно обменять на фиат или криптовалюту.',
+	},
+	{
+		icon: Icons.seo,
+		title: 'Майнеры: Новый Формат Заработка',
+		info: 'Майнеры — это приложения, использующие вычислительные мощности пользователя для добычи криптовалюты. В Telegram также существуют версии таких приложений, которые позволяют каждому пользователю зарабатывать криптовалюту, используя свой смартфон. Майнеры обычно требуют настройки и подключения к пулу, чтобы стабилизировать доход, после чего процесс добычи становится автоматизированным.',
 	},
 ];
 
@@ -178,8 +214,7 @@ export const NFTGamesRu = [
 export const TonTokens = [
 	{
 		title: 'Purchasing in-game assets:',
-		description:
-			'Such as weapons, skins, characters, and other items.',
+		description: 'Such as weapons, skins, characters, and other items.',
 	},
 	{
 		title: 'Participating in game events and tournaments:',
@@ -308,64 +343,63 @@ export const reviews = [
 ];
 
 export const projects = [
-  {
-    title: "1.  Choose a game:",
-    description:
-      "Explore the games available on the TON platform and select one that interests you and has good player reviews.",
-  },
-  {
-    title: "2. Set up a TON wallet:",
-    description:
-      "To start playing, you'll need a TON wallet where you can receive tokens and store your in-game assets.",
-  },
-  {
-    title: "3. Learn the game mechanics:",
-    description:
-      "Before starting, carefully study the game’s rules, its economy, and ways to earn.",
-  },
-  {
-    title: "4. Engage with the community:",
-    description:
-      "Join gaming communities to exchange experiences, tips, and get up-to-date information on new releases and updates.",
-  },
-  {
-    title: "5. Be cautious and safe:",
-    description:
-      "Make sure the game you plan to invest your time and money in is secure and free of signs of fraud.",
-  },
 	{
-    imageUrl: "/assets/cat6.png",
-  },
+		title: '1.  Choose a game:',
+		description:
+			'Explore the games available on the TON platform and select one that interests you and has good player reviews.',
+	},
+	{
+		title: '2. Set up a TON wallet:',
+		description:
+			"To start playing, you'll need a TON wallet where you can receive tokens and store your in-game assets.",
+	},
+	{
+		title: '3. Learn the game mechanics:',
+		description:
+			'Before starting, carefully study the game’s rules, its economy, and ways to earn.',
+	},
+	{
+		title: '4. Engage with the community:',
+		description:
+			'Join gaming communities to exchange experiences, tips, and get up-to-date information on new releases and updates.',
+	},
+	{
+		title: '5. Be cautious and safe:',
+		description:
+			'Make sure the game you plan to invest your time and money in is secure and free of signs of fraud.',
+	},
+	{
+		imageUrl: '/assets/cat6.png',
+	},
 ];
 
 export const projectsRu = [
-  {
-		title: "1.  Советы по началу игры:",
-    description:
-      "Исследуйте доступные на платформе TON игры и выберите ту, которая вам интересна и имеет хорошие отзывы от игроков.",
-  },
-  {
-    title: "2. Настройка кошелька TON:",
-    description:
-      "Для начала игры вам понадобится кошелек TON, куда вы сможете получать токены и хранить свои игровые активы.",
-  },
-  {
-    title: "3. Изучение игровых механик:",
-    description:
-      "Перед тем как начать, внимательно изучите правила игры, ее экономику и способы заработка.",
-  },
-  {
-    title: "4. Общение с сообществом:",
-    description:
-      "Присоединяйтесь к игровым сообществам, чтобы обмениваться опытом, советами и получать актуальную информацию о новинках и обновлениях.",
-  },
-  {
-    title: "5. Осторожность и безопасность:",
-    description:
-      "Убедитесь, что игра, в которую вы собираетесь инвестировать свое время и деньги, безопасна и не имеет признаков мошенничества.",
-  },
 	{
-    imageUrl: "/assets/cat6.png",
-  },
+		title: '1.  Советы по началу игры:',
+		description:
+			'Исследуйте доступные на платформе TON игры и выберите ту, которая вам интересна и имеет хорошие отзывы от игроков.',
+	},
+	{
+		title: '2. Настройка кошелька TON:',
+		description:
+			'Для начала игры вам понадобится кошелек TON, куда вы сможете получать токены и хранить свои игровые активы.',
+	},
+	{
+		title: '3. Изучение игровых механик:',
+		description:
+			'Перед тем как начать, внимательно изучите правила игры, ее экономику и способы заработка.',
+	},
+	{
+		title: '4. Общение с сообществом:',
+		description:
+			'Присоединяйтесь к игровым сообществам, чтобы обмениваться опытом, советами и получать актуальную информацию о новинках и обновлениях.',
+	},
+	{
+		title: '5. Осторожность и безопасность:',
+		description:
+			'Убедитесь, что игра, в которую вы собираетесь инвестировать свое время и деньги, безопасна и не имеет признаков мошенничества.',
+	},
+	{
+		imageUrl: '/assets/cat6.png',
+	},
 ];
-

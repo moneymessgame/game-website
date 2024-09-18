@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
 import { Button } from '@/components/ui/button';

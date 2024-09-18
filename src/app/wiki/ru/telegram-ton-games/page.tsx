@@ -2,28 +2,17 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
-import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
-import { features, perks, NFTGames, reviews } from '@/constants';
-import { Icons } from '@/components';
-import { cn } from '@/lib/utils';
-import Marquee from '@/components/ui/marquee';
+
 import { LampContainer } from '@/components/ui/lamp';
-import { Input } from '@/components/ui/input';
-import OrbitIcon from '@/components/global/orbitIcon';
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
+import SectionBadge from '@/components/ui/section-badge';
+import { Icons } from '@/components';
+import { clickersRu } from '@/constants';
+import { WobbleCard } from '@/components/ui/wobble-card';
 
 export const metadata: Metadata = {
 	title: 'Как зарабатывать на криптоиграх',
@@ -41,65 +30,55 @@ export const metadata: Metadata = {
 	},
 };
 
-const Donate = () => {
-	const firstRow = reviews.slice(0, reviews.length / 2);
-	const secondRow = reviews.slice(reviews.length / 2);
-
+const ArticleRu = () => {
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
-
-			{/** How it works */}
+		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
+			{/** Lamp Header */}
 			<section>
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="The Process" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Three Clicks to Your Dream Site
-							</h2>
-							<p className="text-muted-foreground mt-6">
-								Vision to Reality in 3 Simple Steps
-							</p>
-						</div>
-					</Container>
-					<Container>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
-								{perks.map((perk) => (
-									<div
-										key={perk.title}
-										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
-									>
-										<div className="flex items-center justify-center">
-											<perk.icon className="w-8 h-8" />
-										</div>
-										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
-										<p className="text-muted-foreground mt-2 text-start lg:text-start">
-											{perk.info}
-										</p>
-									</div>
-								))}
+						<LampContainer>
+							<div className="flex flex-col items-center justify-center relative w-full text-center">
+								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase w-[65%]">
+									Как зарабатывать на криптоиграх в Telegram
+								</h2>
+								<p className="text-muted-foreground mt-6 max-w-xl mx-auto text-justify">
+									Кликеры и тапалки в Telegram набирают популярность как способ
+									заработка на выполнении простых действий. Эти приложения и
+									боты позволяют пользователям зарабатывать, выполняя кликовые
+									задания с помощью смартфона, что делает их доступными и
+									привлекательными для широкой аудитории. Кликеры — это
+									приложения, которые требуют от пользователя совершать
+									различные действия, такие как клики или нажатия на экран, за
+									что начисляется награда. Тапалки автоматизируют этот процесс,
+									что позволяет зарабатывать больше, затрачивая меньше усилий.
+								</p>
+								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
+									5 мин.
+								</p>
+								<Button variant="white" className="mt-6" asChild>
+									<Link href="#intro">
+										Читать далее
+										<ArrowRight className="w-4 h-4 ml-2" />
+									</Link>
+								</Button>
 							</div>
-						</div>
+						</LampContainer>
 					</Container>
 				</Wrapper>
 			</section>
 
-			{/* Features */}
-			<section id="features">
+			{/** How to Earn in NFT Games */}
+			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
 					<div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
-						<div className="max-w mx-auto text-start md:text-center">
-							<SectionBadge title="Features" />
+						<div className="max-w mx-auto text-center">
+							<SectionBadge title="Типы Криптоигр" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Discover Astra's powerful features
+								Типы Криптоигр
 							</h2>
-							<p className="text-muted-foreground mt-6">
-								AstraDynamic offers a range of features to help you build a
-								stunning website in no time
-							</p>
 						</div>
 					</Container>
 					<Container>
@@ -109,8 +88,8 @@ const Donate = () => {
 					</Container>
 					<Container>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-8">
-								{features.map((feature) => (
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8">
+								{clickersRu.map((feature) => (
 									<div
 										key={feature.title}
 										className="flex flex-col items-start lg:items-start px-0 md:px-0"
@@ -132,212 +111,174 @@ const Donate = () => {
 				</Wrapper>
 			</section>
 
-			{/** Price list */}
-			{/* <section id="pricingCards">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
+			{/** WobbleCard */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative mt-12">
 					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="Pricing" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Unlock the right plan for your business
+						<div className="max-w-xl mx-auto text-center">
+							<SectionBadge title="Заработок на Криптоиграх" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								Как Зарабатывать на Криптоиграх в Telegram
 							</h2>
-							<p className="text-muted-foreground mt-6">
-								Choose the best plan for your business and start building your
-								dream website today
+							<p className="text-muted-foreground mt-6 mb-12 max-w-xl mx-auto text-justify">
+								Чтобы начать зарабатывать на криптоиграх в Telegram, нужно
+								выполнить несколько шагов:
 							</p>
 						</div>
-					</Container>
-					<Container className="flex items-center justify-center">
-						<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full md:gap-8 py-10 md:py-20 flex-wrap max-w-4xl">
-							{pricingCards.map((card) => (
-								<Card
-									key={card.title}
-									className={cn(
-										'flex flex-col w-full border-neutral-700',
-										card.title === 'Unlimited Saas' && 'border-2 border-primary'
-									)}
-								>
-									<CardHeader className="border-b border-border">
-										<span>{card.title}</span>
-										<CardTitle
-											className={cn(
-												card.title !== 'Unlimited Saas' &&
-													'text-muted-foreground'
-											)}
-										>
-											{card.price}
-										</CardTitle>
-										<CardDescription>{card.description}</CardDescription>
-									</CardHeader>
-									<CardContent className="pt-6 space-y-3">
-										{card.features.map((feature) => (
-											<div key={feature} className="flex items-center gap-2">
-												<Zap className="w-4 h-4 fill-primary text-primary" />
-												<p>{feature}</p>
-											</div>
-										))}
-									</CardContent>
-									<CardFooter className="mt-auto">
-										<Link
-											href="#"
-											className={cn(
-												'w-full text-center text-primary-foreground bg-primary p-2 rounded-md text-sm font-medium',
-												card.title !== 'Unlimited Saas' &&
-													'!bg-foreground !text-background'
-											)}
-										>
-											{card.buttonText}
-										</Link>
-									</CardFooter>
-								</Card>
-							))}
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] bg-yellow-800">
+								<Image
+									src="/assets/pair3.png"
+									width={350}
+									height={350}
+									alt="Income image"
+									className="absolute -right-10 md:-right-[40%] lg:-right-[-3%] -bottom-10 object-contain rounded-2xl"
+								/>
+								<div className="max-w-sm">
+									<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+										1. Выбор бота или приложения:
+									</h2>
+									<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+										Найдите надежного бота или приложение с хорошей репутацией.
+										Обратите внимание на отзывы и рейтинг.
+									</p>
+								</div>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px] bg-green-800">
+								<div className="max-w-xs">
+									<h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+										2. Регистрация и настройка:
+									</h2>
+									<p className="mt-4 text-left  text-base/6 text-neutral-200">
+										Создайте учетную запись с указанием реальных данных.
+										Настройте параметры личного кабинета и подключите кошелек,
+										если необходимо.
+									</p>
+								</div>
+								<Image
+									src="/assets/pair1.png"
+									width={350}
+									height={350}
+									alt="Income image"
+									className="absolute -right-4 lg:-right-[5%]  filter -bottom-10 object-contain rounded-2xl"
+								/>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 min-h-[300px] bg-pink-800">
+								<h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+									3. Выполнение заданий:
+								</h2>
+								<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+									Выполняйте задания, за которые платят. Это могут быть кликовые
+									задания, участие в фармилках или запуск майнера.
+								</p>
+							</WobbleCard>
+							<WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] bg-blue-800">
+								<div className="max-w-sm">
+									<h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-black uppercase tracking-[-0.015em] text-white">
+										4. Вывод прибыли:
+									</h2>
+									<p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+										Накопленную криптовалюту или игровые ресурсы можно вывести
+										на кошелек или обменять на фиат через биржи или внутренние
+										обменники.
+									</p>
+								</div>
+								<Image
+									src="/assets/pair2.png"
+									width={340}
+									height={340}
+									alt="Income image"
+									className="absolute -right-10 md:-right-[40%] lg:-right-[0%] -bottom-10 object-contain rounded-2xl"
+								/>
+							</WobbleCard>
 						</div>
 					</Container>
 				</Wrapper>
-			</section> */}
+			</section>
 
-			{/** Testimonials */}
-			<section id="reviews">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
+			{/** History */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative mt-20">
 					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
-							<SectionBadge title="Testimonial Replicas" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Moving Testimonials
+						<div className="max-w-xl mx-auto text-center" id="intro">
+							<SectionBadge title="История" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								История Появления Криптоигр
 							</h2>
-							<p className="text-muted-foreground mt-6">
-								Discover how AstraDynamic elevates web design across industries.
-								See what developers are saying online
+							<p className="text-muted-foreground mt-6 max-w-xl mx-auto text-justify">
+								Идея заработка на криптозаданиях появилась осенью 2023 года
+								благодаря команде Open Builders. Первым успешным продуктом,
+								который получил признание криптосообщества, стал Ноткоин. Этот
+								проект прошел несколько этапов развития:
 							</p>
 						</div>
-					</Container>
-					<Container>
-						<div className="py-10 md:py-20 w-full">
-							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
-								<Marquee pauseOnHover className="[--duration:20s] select-none">
-									{firstRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
-										</figure>
-									))}
-								</Marquee>
-								<Marquee
-									reverse
-									pauseOnHover
-									className="[--duration:20s] select-none"
-								>
-									{secondRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
-										</figure>
-									))}
-								</Marquee>
-								<div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background"></div>
-								<div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background"></div>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+								<Container>
+									<div className="flex items-center justify-center mx-auto mt-8">
+										<Image
+											src="/assets/smile.jpg"
+											width={500}
+											height={500}
+											alt="Income image"
+											className="rounded-2xl"
+										/>
+									</div>
+								</Container>
+								<p className="text-base md:text-lg text-foreground/80 mt-6  flex items-center justify-center">
+									- Beta-версия: Запуск теста игры осенью 2023 года.
+									<br />
+									<br />
+									- Релиз: В январе 2024 года после завершения тестов число
+									пользователей превысило 5 миллионов.
+									<br />
+									<br />
+									- Популяризация: В течение 30 дней после релиза аудитория игры
+									достигла 20 миллионов пользователей, что привлекло внимание
+									TON Foundation.
+									<br />
+									<br />
+									Проект Ноткоин стал отправной точкой для множества других
+									криптоигр и тапалок в Telegram, которые продолжают набирать
+									популярность.
+								</p>
 							</div>
 						</div>
 					</Container>
 				</Wrapper>
 			</section>
 
-			{/** Newsletter */}
+			{/* Conclusion */}
 			<section>
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+				<Wrapper className="flex flex-col items-center justify-center relative pt-10 mt-12">
 					<Container>
-						<LampContainer>
-							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
-									From Idea to Launch <br /> Faster Than Ever
-								</h2>
-								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
-									Craft stunning frontends with AstraDynamic&appos;s modern
-									component library and fluid animation tools
-								</p>
-								<Button variant="white" className="mt-6" asChild>
-									<Link href="/sign-in">
-										Get started for free
-										<ArrowRight className="w-4 h-4 ml-2" />
-									</Link>
-								</Button>
-							</div>
-						</LampContainer>
-					</Container>
-					<Container className="relative z-[999999]">
-						<div className="flex items-center justify-center w-full -mt-40">
-							<div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between w-full px-4 md:px-8 rounded-lg lg:rounded-2xl border border-border/80 py-4 md:py-8">
-								<div className="flex flex-col items-start gap-4 w-full">
-									<h4 className="text-xl md:text-2xl font-semibold text-purple-400">
-										Follow my twitter account
-									</h4>
-									<p className="text-base text-muted-foreground">
-										Be up to date with my new undertakings ,Projects and more
-									</p>
-								</div>
-								<div className="flex flex-col items-start gap-2 md:min-w-80 mt-5 md:mt-0 w-full md:w-max">
-									<form
-										action="#"
-										className="flex flex-col md:flex-row items-center gap-2 w-full md:max-w-xs"
-									>
-										<Input
-											required
-											type="email"
-											placeholder="Enter your email"
-											className="focus-visible:ring-0 focus-visible:ring-transparent focus-visible:border-primary duration-300 w-full"
+						<div className="max-w-xl mx-auto text-center">
+							<SectionBadge title="Заключение" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								Заключение
+							</h2>
+						</div>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-5">
+								<Container>
+									<div className="flex items-center justify-center mx-auto">
+										<Image
+											src="/assets/game.jpg"
+											width={350}
+											height={350}
+											alt="Conclusion"
+											className="rounded-2xl"
 										/>
-										<Button
-											type="submit"
-											size="sm"
-											variant="secondary"
-											className="w-full md:w-max"
-										>
-											Subscribe
-										</Button>
-									</form>
-									<p className="text-xs p-3 text-muted-foreground">
-										By subscribing you agree with our{' '}
-										<Link href="#">Privacy Policy</Link>
-									</p>
-								</div>
+									</div>
+								</Container>
+								<p className="text-base md:text-lg text-foreground/80 flex items-center justify-center">
+									Заработок на криптоиграх в Telegram — это интересный и
+									доступный способ получить дополнительный доход. С помощью
+									тапалок, кликеров и майнеров пользователи могут зарабатывать
+									криптовалюту или фиат, выполняя простые действия на своем
+									смартфоне. Автоматизация процессов и низкий порог входа делают
+									такие игры привлекательными для широкой аудитории.
+								</p>
 							</div>
 						</div>
 					</Container>
@@ -347,4 +288,4 @@ const Donate = () => {
 	);
 };
 
-export default Donate;
+export default ArticleRu;

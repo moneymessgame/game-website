@@ -42,7 +42,7 @@ const AllArticles = () => {
 									backgroundImage='bg-[url("/assets/bg3.jpg")] bg-cover'
 									avatarSrc="/cards/irine.png"
 									author="Irine"
-									time="3 мин."
+									time="5 мин."
 									title="Как зарабатывать на криптоиграх в Telegram"
 									description="Как можно зарабатывать с помощью криптоигр в Telegram и какие существуют стратегии и механизмы."
 								/>
