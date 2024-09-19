@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
+import Spline from '@splinetool/react-spline/next';
 
 import Wrapper from '@/components/global/wrapper';
 import { BorderBeam } from '@/components/ui/border-beam';
@@ -39,15 +40,14 @@ const Donate = () => {
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
-
 			<section id="title">
-                <Wrapper className="flex flex-col items-center justify-center py-2 relative">
-                    <Container>
+				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
+					<Container>
 						<LampContainer>
 							<div className="flex flex-col items-center justify-center relative w-full text-center">
 								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8">
-									A great idea is born with <br /> the help of small contributions
-									
+									A great idea is born with <br /> the help of small
+									contributions
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
 									Craft stunning frontends with AstraDynamic&appos;s modern
@@ -62,8 +62,8 @@ const Donate = () => {
 							</div>
 						</LampContainer>
 					</Container>
-                </Wrapper>
-            </section>
+				</Wrapper>
+			</section>
 
 			{/** How it works */}
 			<section>
@@ -259,7 +259,7 @@ const Donate = () => {
 							</p>
 						</div>
 					</Container>
-					
+
 					<Container>
 						<div className="py-10 md:py-20 w-full">
 							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
@@ -389,6 +389,10 @@ const Donate = () => {
 						</div>
 					</Container>
 				</Wrapper>
+			</section>
+
+			<section>
+				<Spline scene="https://prod.spline.design/ZGKEzNMiOW15ql-9/scene.splinecode" />
 			</section>
 		</div>
 	);
