@@ -11,6 +11,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { docsConfig } from "@/constants/docs"
 import { cn } from "@/lib/utils"
 
+import { navItems } from '@/constants';
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
 
@@ -56,15 +57,15 @@ export function MobileNav() {
       <SheetContent side="left" className="pr-0">
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="flex flex-col space-y-3">
-            {docsConfig.mainNav?.map(
+            {navItems?.map(
               (item) =>
-                item.href && (
+                item.link && (
                   <MobileLink
-                    key={item.href}
-                    href={item.href}
+                    key={item.name}
+                    href={item.link}
                     onOpenChange={setOpen}
                   >
-                    {item.title}
+                    {item.name}
                   </MobileLink>
                 )
             )}

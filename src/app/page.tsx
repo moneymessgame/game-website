@@ -85,7 +85,7 @@ const HomePage = () => {
 				cards={[
 					{
 						srcFront: '/cards/dominion.jpeg',
-						srcBack: '/cards/beauty.jpeg',
+						srcBack: '/cards/card-back.jpg',
 						altFront: 'Dominion character',
 						altBack: 'Dominion character',
 						colorTo: '#9c40ff',
@@ -94,7 +94,7 @@ const HomePage = () => {
 					// Добавьте остальные карточки
 					{
 						srcFront: '/cards/beauty.jpeg',
-						srcBack: '/cards/dominion.jpeg',
+						srcBack: '/cards/card-back.jpg',
 						altFront: 'Beauty character',
 						altBack: 'Richness character',
 						colorTo: '#9c40ff',
@@ -102,19 +102,19 @@ const HomePage = () => {
 					},
 					{
 						srcFront: '/cards/popularity.jpeg',
-						srcBack: '/cards/dominion.jpeg',
+						srcBack: '/cards/card-back.jpg',
 						altFront: 'Popularity character',
 						altBack: 'Popularity character',
 						colorTo: '#9c40ff',
-						colorFrom: '#0ffcff',
+						colorFrom: '#ffff0f',
 					},
 					{
 						srcFront: '/cards/richness.jpeg',
-						srcBack: '/cards/dominion.jpeg',
+						srcBack: '/cards/card-back.jpg',
 						altFront: 'Popularity character',
 						altBack: 'Richness character',
 						colorTo: '#9c40ff',
-						colorFrom: '#0ffcff',
+						colorFrom: '#0fff0f',
 					},
 				]}
 			/>

@@ -3,8 +3,9 @@
 import * as React from 'react';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
-import { Icons } from '@/components/icons';
+import OrbitIcon from '@/components/global/orbitIcon';
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -33,15 +34,23 @@ export function NavMenu() {
 											className="flex h-full w-full select-none flex-col justify-end rounded-md bg-ring p-6 no-underline outline-none focus:shadow-md"
 											href="/"
 										>
-											<Icons.logo className="h-6 w-6" />
-											<div className="mb-2 mt-4 text-xl font-black uppercase">
+											<div className='flex w-6 h-6 items-center justify-center '>
+												<OrbitIcon className="w-6 h-6 font-light fill-200 text-white light-line-icon" />
+											</div>
+											
+											<div className=" mt-2 text-xl font-black uppercase">
 												moneymess
 											</div>
-											<p className="text-sm leading-tight text-white">
-												Beautifully designed components that you can copy and
-												paste into your apps. Accessible. Customizable. Open
-												Source.
+											<p className="mb-2 text-sm leading-tight text-white">
+												Tap2Earn mini app
 											</p>
+											<Image
+												src="/game/qr-moneymess.jpg"
+												alt="QR code"
+												width={200}
+												height={200}
+												className="rounded-xl"
+											/>
 										</a>
 									</NavigationMenuLink>
 								</li>
