@@ -54,13 +54,13 @@ export function NavMenu() {
 										</a>
 									</NavigationMenuLink>
 								</li>
-								<ListItem href="/docs" title="About">
+								<ListItem href="/about" title="About">
 									Re-usable components built using Radix UI and Tailwind CSS.
 								</ListItem>
-								<ListItem href="/docs/installation" title="WhitePaper">
+								<ListItem href="/whitepaper" title="WhitePaper">
 									How to install dependencies and structure your app.
 								</ListItem>
-								<ListItem href="/docs/primitives/typography" title="Roadmap">
+								<ListItem href="/roadmap" title="Roadmap">
 									Styles for headings, paragraphs, lists...etc
 								</ListItem>
 							</ul>

@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { docsConfig } from "@/constants/docs"
 import { cn } from "@/lib/utils"
 
 import { navItems } from '@/constants';
@@ -70,7 +69,7 @@ export function MobileNav() {
                 )
             )}
           </div>
-          <div className="flex flex-col space-y-2">
+          {/* <div className="flex flex-col space-y-2">
             {docsConfig.sidebarNav.map((item, index) => (
               <div key={index} className="flex flex-col space-y-3 pt-6">
                 <h4 className="font-medium">{item.title}</h4>
@@ -98,7 +97,7 @@ export function MobileNav() {
                   ))}
               </div>
             ))}
-          </div>
+          </div> */}
         </ScrollArea>
       </SheetContent>
     </Sheet>
