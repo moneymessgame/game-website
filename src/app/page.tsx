@@ -77,6 +77,72 @@ const HomePage = () => {
 				</Wrapper>
 			</section>
 
+			<section>
+				<Wrapper className='relative'>
+
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-attractiveness w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								
+								<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+									<CardFlip 
+										srcFront="/cards/dominion.jpeg"
+										srcBack="/cards/card-back.jpg"
+										altFront="Dominion character"
+										altBack="Dominion character"
+										colorTo="#ddd"
+										colorFrom="#ff0f0f"
+									/>
+									<div className='px-6'>
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="The Process" />
+										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+											Three Clicks to Your Dream Site
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+										illo explicabo laudantium quisquam numquam saepe fugit repellat
+										mollitia, enim, libero deleniti quam necessitatibus vel ab quod, porro
+										exercitationem sequi possimus! Exercitationem amet, nostrum molestias
+										cum labore commodi ducimus quas accusantium rem, doloribus sapiente
+										voluptas ipsa error non accusamus sequi at.
+									</p>
+
+									</div>
+
+								</div>
+
+								<div className='px-6'>
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										<SectionBadge title="The Process" />
+										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+											Three Clicks to Your Dream Site
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+										illo explicabo laudantium quisquam numquam saepe fugit repellat
+										mollitia, enim, libero deleniti quam necessitatibus vel ab quod, porro
+										exercitationem sequi possimus! Exercitationem amet, nostrum molestias
+										cum labore commodi ducimus quas accusantium rem, doloribus sapiente
+										voluptas ipsa error non accusamus sequi at.
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</Container>
+				</Wrapper>						
+			</section>
 
 			{/**Characters */}
 			<CardSection

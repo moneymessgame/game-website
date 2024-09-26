@@ -8,6 +8,7 @@ import Navbar from '@/components/navigation/navbar';
 import Footer from '@/components/navigation/footer';
 
 export const metadata: Metadata = {
+	metadataBase: new URL('http://localhost:3000'),
 	title: {
 		default: 'MoneyMess',
 		template: '%s - P2E Telegram mini app game based on Ton',
