@@ -313,34 +313,34 @@ export const bentoCards = [
 
 export const reviews = [
 	{
-		name: 'Prakash',
-		username: '@pak',
-		body: "I've never seen anything like this before. It's amazing. I love it.",
+		name: 'Povel Durev',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
 	},
 	{
-		name: 'Raj',
-		username: '@raj',
-		body: "I don't know what to say. I'm speechless. This is amazing.",
+		name: 'Jackie Chwan',
+		username: '@chwan',
+		body: "The game is as cool as I am.",
 	},
 	{
-		name: 'Rasna',
-		username: '@rasna',
-		body: "I'm at a loss for words. This is amazing. I love it.",
+		name: 'Steven Kong',
+		username: '@kong',
+		body: "Starting to play isn't that scary after all.",
 	},
 	{
-		name: 'Jishan',
-		username: '@jishan',
-		body: "I'm at a loss for words. This is amazing. I love it.",
+		name: 'Margo Robo',
+		username: '@robo',
+		body: "I turned out beautiful and interesting in the game.",
 	},
 	{
-		name: 'Polo',
-		username: '@pol',
-		body: "I'm at a loss for words. This is amazing. I love it.",
+		name: 'Divine Johnzon',
+		username: '@johnzon',
+		body: "I'm a character in the game? Seriously?",
 	},
 	{
-		name: 'James',
-		username: '@james',
-		body: "I'm at a loss for words. This is amazing. I love it.",
+		name: 'Jeff Besos',
+		username: '@besos',
+		body: "Want to go to space? Play this game.",
 	},
 ];
 

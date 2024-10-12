@@ -14,6 +14,8 @@ import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
 import SectionBadge from '@/components/ui/section-badge';
 import Marquee from '@/components/ui/marquee';
 
+import { FocusCards } from "@/components/ui/focus-cards"
+
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -27,6 +29,33 @@ export const metadata: Metadata = {
 const HomePage = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);
+
+	const cards = [
+		{
+		  title: "Forest Adventure",
+		  src: "/cards/card-back.jpg",
+		},
+		{
+		  title: "Valley of life",
+		  src: "/cards/card-back.jpg",
+		},
+		{
+		  title: "Sala behta hi jayega",
+		  src: "/cards/card-back.jpg",
+		},
+		{
+		  title: "Camping is for pros",
+		  src: "/cards/card-back.jpg",
+		},
+		{
+		  title: "The road not taken",
+		  src: "/cards/card-back.jpg",
+		},
+		{
+		  title: "The First Rule",
+		  src: "/cards/card-back.jpg",
+		},
+	  ];
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
@@ -79,6 +108,8 @@ const HomePage = () => {
 					</Container>
 				</Wrapper>
 			</section>
+
+			<FocusCards cards={cards} />
 
 			{/**Characters */}
 			<CardSection
