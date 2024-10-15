@@ -50,9 +50,8 @@ const CardFlip: React.FC<CardFlipProps> = ({
 					onAnimationComplete={() => setIsAnimated(false)}
 				>
 					<div className="flip-card-front w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
-						<div className="w-[100%] h-[100%] absolute  z-10 bg-gradient-to-t from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"></div>
+						<div className="w-[100%] h-[100%] absolute  z-10 bg-gradient-to-t from-indigo-500 from-10% via-[] via-30% to-[#091737] to-90%"></div>
 
-						
 						<Image
 							src={srcFront}
 							alt={altFront}
@@ -62,11 +61,15 @@ const CardFlip: React.FC<CardFlipProps> = ({
 							className="absolute z-20 object-cover w-[329px] h-[390px] bottom-0 object-center overflow-hidden"
 						/>
 
-						<div className='absolute  w-[100%] h-[100%] z-30 bg-gradient-to-t to-30% from-indigo-500  bottom-0'></div>
-						
-						<div className='absolute z-50 bottom-2 left-2 text-left'>
-							<h1 className='text-foreground text-3xl font-black text-left'>Name</h1>
-							<h2 className='text-foreground text-xl font-black text-left'>{altFront}</h2>
+						<div className="absolute  w-[100%] h-[100%] z-30 bg-gradient-to-t to-30% from-indigo-500  bottom-0"></div>
+
+						<div className="absolute z-50 bottom-2 left-2 text-left">
+							<h1 className="text-foreground text-3xl font-black text-left">
+								Name
+							</h1>
+							<h2 className="text-foreground text-xl font-black text-left">
+								{altFront}
+							</h2>
 						</div>
 					</div>
 					<div className="flip-card-back w-[100%] h-[100%] z-50 absolute top-0 left-0 backface-hidden">
