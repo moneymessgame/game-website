@@ -15,9 +15,7 @@ import SectionBadge from '@/components/ui/section-badge';
 import Marquee from '@/components/ui/marquee';
 
 import { FocusCards } from '@/components/ui/focus-cards';
-
 import { cn } from '@/lib/utils';
-import CopyToClipboard from '@/components/ui/copy-to-clipboard';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -30,7 +28,6 @@ export const metadata: Metadata = {
 const HomePage = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);
-	// const textToCopy = "Click!!!"
 
 	const cards = [
 		{
@@ -135,7 +132,7 @@ const HomePage = () => {
 						colorFrom: '#0ffcff',
 					},
 					{
-						srcFront: '/characters/middle/card03.png',
+						srcFront: '/characters/middle/card25.png',
 						srcBack: '/cards/card-back.jpg',
 						altFront: 'Popularity character',
 						altBack: 'Popularity character',
@@ -143,7 +140,7 @@ const HomePage = () => {
 						colorFrom: '#ffff0f',
 					},
 					{
-						srcFront: '/characters/middle/card04.png',
+						srcFront: '/characters/middle/card20.png',
 						srcBack: '/cards/card-back.jpg',
 						altFront: 'Popularity character',
 						altBack: 'Richness character',
@@ -166,8 +163,14 @@ const HomePage = () => {
 									What do the characters think about the game?
 								</h2>
 								<p className="text-muted-foreground mt-6">
-									Discover how AstraDynamic elevates web design across
-									industries. See what developers are saying online
+									Find out what the characters really think about the game! Each
+									of them has their own unique perspective, reflecting their
+									personality and experiences. Some are excited about the
+									innovative features, while others are surprised by the
+									unexpected twists in the gameplay. Their reactions range from
+									curiosity to admiration, giving players a deeper insight into
+									the world of MoneyMess and its impact on its virtual
+									inhabitants.
 								</p>
 							</div>
 						</div>
@@ -283,7 +286,6 @@ const HomePage = () => {
 					</Container>
 				</Wrapper>
 			</section>
-
 		</div>
 	);
 };

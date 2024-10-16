@@ -74,7 +74,7 @@ const Donate = () => {
 							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900 gap-7">
 								<div>
 									<p>
-										Copy the address of our wallet <br /> in the TON network:
+										TON wallet:
 									</p>
 									<CopyToClipboard
 										text={'UQBgfOQ1ukrW_-cWsYFMy7rM_RtkO-VL8UpN3Rg68jjNAzIy'}
@@ -83,8 +83,7 @@ const Donate = () => {
 								</div>
 								<div>
 									<p>
-										Copy the address of our wallet <br /> in the ETHEREUM
-										network:
+										ETHEREUM wallet:
 									</p>
 									<CopyToClipboard
 										text={'0x357d8fA29bb2C6a65EC34AD744C887fBab6CCF01'}
@@ -93,7 +92,7 @@ const Donate = () => {
 								</div>
 								<div>
 									<p>
-										Copy the address of our wallet <br /> in the SOLANA network:
+										SOLANA wallet:
 									</p>
 									<CopyToClipboard
 										text={'91aLofMAABaNAc8n62yet3Y23czjmnmGVRGhZGhbRcsL'}
