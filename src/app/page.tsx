@@ -14,9 +14,10 @@ import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
 import SectionBadge from '@/components/ui/section-badge';
 import Marquee from '@/components/ui/marquee';
 
-import { FocusCards } from "@/components/ui/focus-cards"
+import { FocusCards } from '@/components/ui/focus-cards';
 
 import { cn } from '@/lib/utils';
+import CopyToClipboard from '@/components/ui/copy-to-clipboard';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -29,37 +30,37 @@ export const metadata: Metadata = {
 const HomePage = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);
+	// const textToCopy = "Click!!!"
 
 	const cards = [
 		{
-		  title: "Forest Adventure",
-		  src: "/cards/card-back.jpg",
+			title: 'Forest Adventure',
+			src: '/cards/card-back.jpg',
 		},
 		{
-		  title: "Valley of life",
-		  src: "/cards/card-back.jpg",
+			title: 'Valley of life',
+			src: '/cards/card-back.jpg',
 		},
 		{
-		  title: "Sala behta hi jayega",
-		  src: "/cards/card-back.jpg",
+			title: 'Sala behta hi jayega',
+			src: '/cards/card-back.jpg',
 		},
 		{
-		  title: "Camping is for pros",
-		  src: "/cards/card-back.jpg",
+			title: 'Camping is for pros',
+			src: '/cards/card-back.jpg',
 		},
 		{
-		  title: "The road not taken",
-		  src: "/cards/card-back.jpg",
+			title: 'The road not taken',
+			src: '/cards/card-back.jpg',
 		},
 		{
-		  title: "The First Rule",
-		  src: "/cards/card-back.jpg",
+			title: 'The First Rule',
+			src: '/cards/card-back.jpg',
 		},
-	  ];
+	];
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
-
 			{/**Header */}
 			<section>
 				<Wrapper>
@@ -79,9 +80,7 @@ const HomePage = () => {
 									<span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
 									<span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/40"></span>
 									<span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1.5">
-										<span className="text-lg font-black">
-											Tap2Earn game
-										</span>
+										<span className="text-lg font-black">Tap2Earn game</span>
 									</span>
 								</button>
 							</Link>
@@ -96,8 +95,10 @@ const HomePage = () => {
 								</div>
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
-									I envy you, lucky one, because you’ve found the game, the one you've heard so much about, 
-									the one you’ve seen in your dreams and fantasies. An incredible, fantastic, magical game – MoneyMess.
+									I envy you, lucky one, because you’ve found the game, the one
+									you've heard so much about, the one you’ve seen in your dreams
+									and fantasies. An incredible, fantastic, magical game –
+									MoneyMess.
 								</p>
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
@@ -149,10 +150,8 @@ const HomePage = () => {
 						colorTo: '#9c40ff',
 						colorFrom: '#0fff0f',
 					},
-					
 				]}
 			/>
-
 
 			{/** Testimonials */}
 			<section id="reviews">
@@ -160,20 +159,19 @@ const HomePage = () => {
 					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
 
 					<Container>
-						<div className='px-6'>
+						<div className="px-6">
 							<div className="max-w-lg mx-auto text-start md:text-center pb-10">
 								<SectionBadge title="Testimonial Replicas" />
 								<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
 									What do the characters think about the game?
 								</h2>
 								<p className="text-muted-foreground mt-6">
-									Discover how AstraDynamic elevates web design across industries.
-									See what developers are saying online
+									Discover how AstraDynamic elevates web design across
+									industries. See what developers are saying online
 								</p>
 							</div>
 						</div>
 
-					
 						<div className="py-10 md:py-20 w-full">
 							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
 								<Marquee pauseOnHover className="[--duration:20s] select-none">
@@ -285,6 +283,7 @@ const HomePage = () => {
 					</Container>
 				</Wrapper>
 			</section>
+
 		</div>
 	);
 };

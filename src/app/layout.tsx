@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google';
 import { Montserrat } from 'next/font/google';
 import Navbar from '@/components/navigation/navbar';
 import Footer from '@/components/navigation/footer';
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
 	metadataBase: new URL('http://localhost:3000'),
@@ -94,6 +95,7 @@ export default function RootLayout({
 					<Navbar />
 					{children}
 					<Footer />
+					<Toaster />
 				</div>
 			</body>
 		</html>

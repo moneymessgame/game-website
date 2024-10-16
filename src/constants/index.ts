@@ -3,7 +3,7 @@ import { Icons } from '@/components';
 export const navItems = [
 	{ name: 'About', link: '/about' },
 	{ name: 'Roadmap', link: '/roadmap' },
-	{ name: 'Whitepaper', link: '/whitepaper' },
+	{ name: 'First Season', link: '/first-season' },
 	{ name: 'Wiki Eng', link: '/wiki/en' },
 	{ name: 'Wiki Ru', link: '/wiki/ru' },
 	{ name: 'Donate', link: '/donate' },
