@@ -2,8 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { CalendarIcon, MailIcon } from 'lucide-react';
-
+import { MailIcon } from 'lucide-react';
 import { ny } from '@/lib/util';
 import { buttonVariants } from '@/components/ui/button';
 import { Dock, DockIcon } from './ui/dock';
@@ -17,7 +16,6 @@ import {
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 const Icons = {
-	calendar: (props: IconProps) => <CalendarIcon {...props} />,
 	email: (props: IconProps) => <MailIcon {...props} />,
 	linkedin: (props: IconProps) => (
 		<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
@@ -38,60 +36,97 @@ const Icons = {
 	),
 };
 
-const DATA = {
-	contact: {
-		social: {
-			LinkedIn: {
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/irina-semichasova',
-				icon: Icons.linkedin,
-			},
-			email: {
-				name: 'Send Email',
-				url: 'mailto:isemichasova@gmail.com',
-				icon: Icons.email,
-			},
-			GitHub: {
-				name: 'GitHub',
-				url: 'https://github.com/moneymessgame',
-				icon: Icons.github,
-			},
-		},
-	},
+type DockDemoProps = {
+	email: string;
+	linkedIn: string;
+	gitHub: string;
 };
 
-export function DockDemo() {
+export function DockDemo({ email, linkedIn, gitHub }: DockDemoProps) {
+	const socialLinks = {
+		LinkedIn: {
+			name: 'LinkedIn',
+			url: linkedIn,
+		},
+		Email: {
+			name: 'Email',
+			url: `mailto:${email}`,
+		},
+		GitHub: {
+			name: 'GitHub',
+			url: gitHub,
+		},
+	};
+
 	return (
 		<div className="flex w-full max-w-xs flex-col items-center justify-center overflow-hidden rounded-lg border border-red md:shadow-xl">
+			<Dock>
+				<DockIcon icon={Icons.linkedin}>
+					<TooltipProvider>
+						<Tooltip>
+							<TooltipTrigger asChild>
+								<Link
+									href={socialLinks.LinkedIn.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="LinkedIn"
+									className={ny(
+										buttonVariants({ variant: 'ghost', size: 'icon' }),
+										'size-12 rounded-full'
+									)}
+								>
+									<Icons.linkedin className="h-5 w-5" />
+								</Link>
+							</TooltipTrigger>
+							<TooltipContent>{socialLinks.LinkedIn.name}</TooltipContent>
+						</Tooltip>
+					</TooltipProvider>
+				</DockIcon>
 
-			<TooltipProvider>
-				<Dock>
-					{Object.entries(DATA.contact.social).map(([name, social]) => (
-						<DockIcon key={name}>
-							<Tooltip>
-								<TooltipTrigger asChild>
-									<Link
-										href={social.url}
-										target="_blank"
-										rel="noopener noreferrer"
-										aria-label={social.name}
-										className={ny(
-											buttonVariants({ variant: 'ghost', size: 'icon' }),
-											'size-12 rounded-full'
-										)}
-									>
-										<social.icon className="size-5" />
-									</Link>
-								</TooltipTrigger>
-								<TooltipContent>
-									<p>{name}</p>
-								</TooltipContent>
-							</Tooltip>
-						</DockIcon>
-					))}
-				</Dock>
-			</TooltipProvider>
+				<DockIcon icon={Icons.email}>
+					<TooltipProvider>
+						<Tooltip>
+							<TooltipTrigger asChild>
+								<Link
+									href={socialLinks.Email.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Email"
+									className={ny(
+										buttonVariants({ variant: 'ghost', size: 'icon' }),
+										'size-12 rounded-full'
+									)}
+								>
+									<Icons.email className="h-5 w-5" />
+								</Link>
+							</TooltipTrigger>
+							<TooltipContent>{socialLinks.Email.name}</TooltipContent>
+						</Tooltip>
+					</TooltipProvider>
+				</DockIcon>
+
+				<DockIcon icon={Icons.github}>
+					<TooltipProvider>
+						<Tooltip>
+							<TooltipTrigger asChild>
+								<Link
+									href={socialLinks.GitHub.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="GitHub"
+									className={ny(
+										buttonVariants({ variant: 'ghost', size: 'icon' }),
+										'size-12 rounded-full'
+									)}
+								>
+									<Icons.github className="h-5 w-5" />
+								</Link>
+							</TooltipTrigger>
+							<TooltipContent>{socialLinks.GitHub.name}</TooltipContent>
+						</Tooltip>
+					</TooltipProvider>
+				</DockIcon>
+			</Dock>
 		</div>
 	);
 }
-

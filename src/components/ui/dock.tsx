@@ -6,6 +6,7 @@ import { type VariantProps, cva } from 'class-variance-authority';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 import { ny } from '@/lib/util';
+import { IconProps } from '../DockDemo';
 
 export interface DockProps extends VariantProps<typeof dockVariants> {
 	className?: string;
@@ -78,6 +79,7 @@ export interface DockIconProps {
 	className?: string;
 	children?: React.ReactNode;
 	props?: PropsWithChildren;
+	icon: (props: IconProps) => JSX.Element; 
 }
 
 function DockIcon({

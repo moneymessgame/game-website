@@ -43,14 +43,21 @@ const TeamSection: React.FC<TeamSectionProps> = ({
 								colorFrom={card.colorFrom}
 							/>
 						))}
-						<DockDemo />
-						<DockDemo />
-						<DockDemo />
-						{/* <DockDemo
-							email="example@example.com"
-							LinkedIn="https://linkedin.com/in/example"
-							GitHub="https://github.com/example"
-						/> */}
+						<DockDemo
+							email="moneymessgame@gmail.com"
+							linkedIn="https://www.linkedin.com/in/mafstat"
+							gitHub="https://github.com/moneymessgame"
+						/>
+						<DockDemo
+							email="isemichasova@gmail.com"
+							linkedIn="https://www.linkedin.com/in/irina-semichasova"
+							gitHub="https://github.com/Irine7"
+						/>
+						<DockDemo
+							email="moneymessgame@gmail.com"
+							linkedIn="https://www.linkedin.com/in/mafstat"
+							gitHub="https://github.com/moneymessgame"
+						/>
 					</div>
 				</div>
 			</div>
