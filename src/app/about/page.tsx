@@ -26,7 +26,6 @@ import {
 } from '@/components/ui/card';
 import CardSection from '@/components/CardSection';
 import TeamSection from '@/components/TeamSection';
-
 import CardFlip from '@/components/CardFlip';
 
 export const metadata: Metadata = {
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
 	},
 };
 
-const HomePage = () => {
+const AboutUs = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);
 
@@ -74,7 +73,10 @@ const HomePage = () => {
 			{/** About us */}
 			<section>
 				<Wrapper>
-					<div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]"  id="intro"/>
+					<div
+						className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]"
+						id="intro"
+					/>
 					<Container>
 						<div className="flex flex-col items-center justify-center pt-10 pb-20 h-full ">
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
@@ -139,4 +141,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default AboutUs;
