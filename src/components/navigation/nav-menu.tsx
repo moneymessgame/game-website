@@ -34,10 +34,10 @@ export function NavMenu() {
 											className="flex h-full w-full select-none flex-col justify-end rounded-md bg-ring p-6 no-underline outline-none focus:shadow-md"
 											href="/"
 										>
-											<div className='flex w-6 h-6 items-center justify-center '>
+											<div className="flex w-6 h-6 items-center justify-center ">
 												<OrbitIcon className="w-6 h-6 font-light fill-200 text-white light-line-icon" />
 											</div>
-											
+
 											<div className=" mt-2 text-xl font-black uppercase">
 												moneymess
 											</div>
@@ -55,13 +55,13 @@ export function NavMenu() {
 									</NavigationMenuLink>
 								</li>
 								<ListItem href="/about" title="About Us">
-									Re-usable components built using Radix UI and Tailwind CSS.
+									Meet the team behind MoneyMess
 								</ListItem>
 								<ListItem href="/first-season" title="First Season">
-									How to install dependencies and structure your app.
+									Behind the scenes
 								</ListItem>
 								<ListItem href="/roadmap" title="Roadmap">
-									Styles for headings, paragraphs, lists...etc
+									Outlines important stages of the app
 								</ListItem>
 							</ul>
 						</NavigationMenuContent>
@@ -97,7 +97,7 @@ export function NavMenu() {
 								))}
 							</ul>
 						</NavigationMenuContent>
-					</NavigationMenuItem>					
+					</NavigationMenuItem>
 					<NavigationMenuItem>
 						<Link href="/donate" legacyBehavior passHref>
 							<NavigationMenuLink className={navigationMenuTriggerStyle()}>
