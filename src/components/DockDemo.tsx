@@ -59,74 +59,72 @@ export function DockDemo({ email, linkedIn, gitHub }: DockDemoProps) {
 	};
 
 	return (
-		<div className="flex w-full max-w-xs flex-col items-center justify-center overflow-hidden rounded-lg border border-red md:shadow-xl">
-			<Dock>
-				<DockIcon icon={Icons.linkedin}>
-					<TooltipProvider>
-						<Tooltip>
-							<TooltipTrigger asChild>
-								<Link
-									href={socialLinks.LinkedIn.url}
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label="LinkedIn"
-									className={ny(
-										buttonVariants({ variant: 'ghost', size: 'icon' }),
-										'size-12 rounded-full'
-									)}
-								>
-									<Icons.linkedin className="h-5 w-5" />
-								</Link>
-							</TooltipTrigger>
-							<TooltipContent>{socialLinks.LinkedIn.name}</TooltipContent>
-						</Tooltip>
-					</TooltipProvider>
-				</DockIcon>
+		<Dock>
+			<DockIcon icon={Icons.linkedin}>
+				<TooltipProvider>
+					<Tooltip>
+						<TooltipTrigger asChild>
+							<Link
+								href={socialLinks.LinkedIn.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="LinkedIn"
+								className={ny(
+									buttonVariants({ variant: 'ghost', size: 'icon' }),
+									'size-12 rounded-full'
+								)}
+							>
+								<Icons.linkedin className="h-5 w-5" />
+							</Link>
+						</TooltipTrigger>
+						<TooltipContent>{socialLinks.LinkedIn.name}</TooltipContent>
+					</Tooltip>
+				</TooltipProvider>
+			</DockIcon>
 
-				<DockIcon icon={Icons.email}>
-					<TooltipProvider>
-						<Tooltip>
-							<TooltipTrigger asChild>
-								<Link
-									href={socialLinks.Email.url}
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label="Email"
-									className={ny(
-										buttonVariants({ variant: 'ghost', size: 'icon' }),
-										'size-12 rounded-full'
-									)}
-								>
-									<Icons.email className="h-5 w-5" />
-								</Link>
-							</TooltipTrigger>
-							<TooltipContent>{socialLinks.Email.name}</TooltipContent>
-						</Tooltip>
-					</TooltipProvider>
-				</DockIcon>
+			<DockIcon icon={Icons.email}>
+				<TooltipProvider>
+					<Tooltip>
+						<TooltipTrigger asChild>
+							<Link
+								href={socialLinks.Email.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Email"
+								className={ny(
+									buttonVariants({ variant: 'ghost', size: 'icon' }),
+									'size-12 rounded-full'
+								)}
+							>
+								<Icons.email className="h-5 w-5" />
+							</Link>
+						</TooltipTrigger>
+						<TooltipContent>{socialLinks.Email.name}</TooltipContent>
+					</Tooltip>
+				</TooltipProvider>
+			</DockIcon>
 
-				<DockIcon icon={Icons.github}>
-					<TooltipProvider>
-						<Tooltip>
-							<TooltipTrigger asChild>
-								<Link
-									href={socialLinks.GitHub.url}
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label="GitHub"
-									className={ny(
-										buttonVariants({ variant: 'ghost', size: 'icon' }),
-										'size-12 rounded-full'
-									)}
-								>
-									<Icons.github className="h-5 w-5" />
-								</Link>
-							</TooltipTrigger>
-							<TooltipContent>{socialLinks.GitHub.name}</TooltipContent>
-						</Tooltip>
-					</TooltipProvider>
-				</DockIcon>
-			</Dock>
-		</div>
+			<DockIcon icon={Icons.github}>
+				<TooltipProvider>
+					<Tooltip>
+						<TooltipTrigger asChild>
+							<Link
+								href={socialLinks.GitHub.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="GitHub"
+								className={ny(
+									buttonVariants({ variant: 'ghost', size: 'icon' }),
+									'size-12 rounded-full'
+								)}
+							>
+								<Icons.github className="h-5 w-5" />
+							</Link>
+						</TooltipTrigger>
+						<TooltipContent>{socialLinks.GitHub.name}</TooltipContent>
+					</Tooltip>
+				</TooltipProvider>
+			</DockIcon>
+		</Dock>
 	);
 }

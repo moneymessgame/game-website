@@ -1,7 +1,7 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
+import { Metadata } from 'next';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';

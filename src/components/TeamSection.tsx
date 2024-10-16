@@ -1,6 +1,5 @@
 import Card from './Card';
 import Container from '@/components/global/container';
-import { DockDemo } from './DockDemo';
 
 interface TeamSectionProps {
 	title: string;
@@ -32,7 +31,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({
 					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
 					<div
 						className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-${columns} gap-5  
-            md:gap-8 py-10 md:py-20 max-w-6xl`}
+            md:gap-4 py-10 md:py-20 max-w-6xl`}
 					>
 						{cards.map((card, index) => (
 							<Card
@@ -41,23 +40,13 @@ const TeamSection: React.FC<TeamSectionProps> = ({
 								alt={card.alt}
 								colorTo={card.colorTo}
 								colorFrom={card.colorFrom}
+								email={card.email}
+								linkedIn={card.linkedIn}
+								gitHub={card.gitHub}
+								hyperText={card.hyperText}
+								subtitle={card.subtitle}
 							/>
 						))}
-						<DockDemo
-							email="moneymessgame@gmail.com"
-							linkedIn="https://www.linkedin.com/in/mafstat"
-							gitHub="https://github.com/moneymessgame"
-						/>
-						<DockDemo
-							email="isemichasova@gmail.com"
-							linkedIn="https://www.linkedin.com/in/irina-semichasova"
-							gitHub="https://github.com/Irine7"
-						/>
-						<DockDemo
-							email="moneymessgame@gmail.com"
-							linkedIn="https://www.linkedin.com/in/mafstat"
-							gitHub="https://github.com/moneymessgame"
-						/>
 					</div>
 				</div>
 			</div>

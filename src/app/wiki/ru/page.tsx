@@ -1,5 +1,5 @@
-import { Metadata } from 'next';
 import React from 'react';
+import { Metadata } from 'next';
 
 import Wrapper from '@/components/global/wrapper';
 import Container from '@/components/global/container';

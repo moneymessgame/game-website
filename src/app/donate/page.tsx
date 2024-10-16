@@ -1,29 +1,13 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
-import { BorderBeam } from '@/components/ui/border-beam';
 import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
-import { features, perks, NFTGames, reviews } from '@/constants';
-import { Icons } from '@/components';
-import { cn } from '@/lib/utils';
-import Marquee from '@/components/ui/marquee';
 import { LampContainer } from '@/components/ui/lamp';
-import { Input } from '@/components/ui/input';
-import OrbitIcon from '@/components/global/orbitIcon';
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
 import { Cover } from '@/components/ui/cover';
 import CopyToClipboard from '@/components/ui/copy-to-clipboard';
 
@@ -36,9 +20,6 @@ export const metadata: Metadata = {
 };
 
 const Donate = () => {
-	const firstRow = reviews.slice(0, reviews.length / 2);
-	const secondRow = reviews.slice(reviews.length / 2);
-
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
 			<section>

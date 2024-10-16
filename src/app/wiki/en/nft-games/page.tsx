@@ -1,7 +1,7 @@
+import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { ArrowRight, Gem } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
@@ -18,7 +18,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
-
 import { WobbleCard } from '@/components/ui/wobble-card';
 
 export const metadata: Metadata = {

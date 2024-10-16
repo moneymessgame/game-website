@@ -12,6 +12,9 @@ interface CardFlipProps {
 	altBack: string;
 	colorTo: string;
 	colorFrom: string;
+	email?: string; 
+	linkedIn?: string; 
+	gitHub?: string;
 }
 
 const CardFlip: React.FC<CardFlipProps> = ({

@@ -1,36 +1,9 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import {
-	ArrowRight,
-	ChevronRight,
-	Gamepad2,
-	Send,
-	UserIcon,
-	Zap,
-} from 'lucide-react';
+import Image from 'next/image';
+import { Metadata } from 'next';
 
 import Wrapper from '@/components/global/wrapper';
-import { BorderBeam } from '@/components/ui/border-beam';
-import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
-import { features, perks, NFTGames, reviews } from '@/constants';
-import { Icons } from '@/components';
-import { cn } from '@/lib/utils';
-import Marquee from '@/components/ui/marquee';
-import { LampContainer } from '@/components/ui/lamp';
-import { Input } from '@/components/ui/input';
-import OrbitIcon from '@/components/global/orbitIcon';
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
 import Roadmap from '@/components/Roadmap';
 
 export const metadata: Metadata = {
@@ -42,9 +15,6 @@ export const metadata: Metadata = {
 };
 
 const RoadMap = () => {
-	const firstRow = reviews.slice(0, reviews.length / 2);
-	const secondRow = reviews.slice(reviews.length / 2);
-
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
 			{/**Description */}
@@ -61,10 +31,32 @@ const RoadMap = () => {
 								</div>
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-								Our game is an exciting Play2Earn project where players collect and develop unique planets and characters, each with four main attributes: <strong>Attractiveness, Power, Wealth, and Popularity</strong>. The game features 38 unique characters, each possessing special abilities that influence these attributes. A key part of the gameplay is social interaction, allowing players to connect with friends through an integrated Telegram interface.
+									Our game is an exciting Play2Earn project where players
+									collect and develop unique planets and characters, each with
+									four main attributes:{' '}
+									<strong>Attractiveness, Power, Wealth, and Popularity</strong>
+									. The game features 38 unique characters, each possessing
+									special abilities that influence these attributes. A key part
+									of the gameplay is social interaction, allowing players to
+									connect with friends through an integrated Telegram interface.
 								</p>
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-								The Roadmap outlines important stages of the game's development, starting with the <strong>Main Game Launch</strong>, introducing all key gameplay mechanics. Following the launch, a <strong>Referral System</strong> will be implemented to attract new players and expand the community. Regular <strong>Daily Rewards</strong> and unique <strong>Special Cards</strong> will add motivation and variety to the gameplay. To enhance player convenience, an <strong>in-game Wallet</strong> will be integrated, allowing for direct management of cryptocurrency assets within the game. We are also actively working on <strong>On-chain infrastructure development</strong> and planning <strong>Partner Blockchain Announcements</strong> to ensure the sustainable growth of the project and strengthen its position within the blockchain community.
+									The Roadmap outlines important stages of the game's
+									development, starting with the{' '}
+									<strong>Main Game Launch</strong>, introducing all key
+									gameplay mechanics. Following the launch, a{' '}
+									<strong>Referral System</strong> will be implemented to
+									attract new players and expand the community. Regular{' '}
+									<strong>Daily Rewards</strong> and unique{' '}
+									<strong>Special Cards</strong> will add motivation and variety
+									to the gameplay. To enhance player convenience, an{' '}
+									<strong>in-game Wallet</strong> will be integrated, allowing
+									for direct management of cryptocurrency assets within the
+									game. We are also actively working on{' '}
+									<strong>On-chain infrastructure development</strong> and
+									planning <strong>Partner Blockchain Announcements</strong> to
+									ensure the sustainable growth of the project and strengthen
+									its position within the blockchain community.
 								</p>
 							</div>
 						</div>
@@ -78,7 +70,7 @@ const RoadMap = () => {
 				alt="planets"
 				width={200}
 				height={200}
-				style={{ left: '90px', bottom: '-80px'}}
+				style={{ left: '90px', bottom: '-80px' }}
 			/>
 		</div>
 	);

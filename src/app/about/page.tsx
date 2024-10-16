@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
@@ -37,7 +36,6 @@ export const metadata: Metadata = {
 };
 
 const AboutUs = () => {
-
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
 			{/** Lamp Header */}
@@ -108,28 +106,43 @@ const AboutUs = () => {
 			</section>
 
 			{/** Team */}
-			<div className="flex justify-center mb-20">
+			<div className="flex justify-center">
 				<TeamSection
 					title="Team"
 					description="Meet the team behind MoneyMess"
 					cards={[
 						{
 							src: '/cards/ihor.png',
-							alt: 'Founder and CEO',
+							alt: 'Founder & CEO',
 							colorTo: '#9c40ff',
 							colorFrom: '#ff0f0f',
+							email: 'moneymessgame@gmail.com',
+							linkedIn: 'https://www.linkedin.com/in/mafstat',
+							gitHub: 'https://github.com/moneymessgame',
+							hyperText: 'Founder & CTO',
+							subtitle: 'They say I\'m the visionary and mastermind behind our project, laying the backbone of the entire system. But honestly, I prefer to see myself as just a humble contributor to a fantastic team effort. My technical expertise helps shape the architecture of our game\’s metaverse, and to integrate blockchain for processing transactions. With a deep passion for AI, blockchain, and Web3, I\’m constantly pushing the limits of innovation, ensuring that every technical element aligns with our ambitious vision.'
 						},
 						{
 							src: '/cards/irine.png',
-							alt: 'Co-founder and CTO',
+							alt: 'Co-founder & WebDev',
 							colorTo: '#9c40ff',
 							colorFrom: '#0ffcff',
+							email: 'isemichasova@gmail.com',
+							linkedIn: 'https://www.linkedin.com/in/irina-semichasova',
+							gitHub: 'https://github.com/Irine7',
+							hyperText: 'Co-founder & WebDev',
+							subtitle: 'A constant learner and a driving force behind our tech innovations. They say I lay the foundation of the project. My thoughts? Let\’s push boundaries and innovate! I\’m responsible for building and perfecting our Telegram mini app, handling both client and server sides. Developing seamless web application, and optimizing Play2Earn mechanics are my primary focus. I make sure our interfaces shine, and constantly optimize processes to ensure top-quality code and an exceptional user experience.',
 						},
 						{
 							src: '/cards/gus.png',
 							alt: 'Creative inspirer',
 							colorTo: '#9c40ff',
 							colorFrom: '#ffff0f',
+							email: 'moneymessgame@gmail.com',
+							linkedIn: 'https://www.linkedin.com/in/mafstat',
+							gitHub: 'https://github.com/moneymessgame',
+							hyperText: 'Creative inspirer',
+							subtitle: 'Just a cute and charming guy. They say I\'m the heart and core of the team. And what do I think? Hmm... Let\’s hardcore! I\’m always here to lift spirits and motivate everyone around me. I thrive on collaboration, helping to turn ideas into reality. I believe in embracing challenges and exploring new possibilities. This is it! Together, we\’re building something extraordinary, and I can\’t wait to see where this journey takes us. Let\’s make magic happen!',
 						},
 					]}
 					columns={3}

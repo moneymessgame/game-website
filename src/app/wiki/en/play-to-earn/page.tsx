@@ -1,7 +1,7 @@
+import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { ArrowRight, Gamepad2 } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
