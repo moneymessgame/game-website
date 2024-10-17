@@ -1,12 +1,9 @@
-import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image';
+import Link from 'next/link';
+
 import { buttonVariants } from '@/components/ui/button';
-import { navItems } from '@/constants';
-
-import { Gamepad2, Orbit } from 'lucide-react';
+import { Gamepad2, ScrollText } from 'lucide-react';
 import OrbitIcon from '@/components/global/orbitIcon';
-
 import { MobileNav } from '@/components/navigation/mobile-nav';
 import { NavMenu } from '@/components/navigation/nav-menu';
 
@@ -47,7 +44,7 @@ export default function Navbar({}: Props) {
 							className: 'flex bg-ring hover:bg-accent gap-3 px-8 py-5',
 						})}
 					>
-						<Gamepad2 className="h-6 w-6" />
+						<ScrollText className="h-6 w-6" />
 						<span className="text-lg font-black uppercase">Whitepaper</span>
 					</Link>
 					<Link
