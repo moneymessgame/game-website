@@ -8,14 +8,12 @@ import Container from '@/components/global/container';
 import { perks, reviews } from '@/constants';
 import OrbitIcon from '@/components/global/orbitIcon';
 import CardSection from '@/components/CardSection';
-import CardFlip from '@/components/CardFlip';
-
-import { ArrowRight, ChevronRight, UserIcon, Zap } from 'lucide-react';
+import { UserIcon } from 'lucide-react';
 import SectionBadge from '@/components/ui/section-badge';
 import Marquee from '@/components/ui/marquee';
-
 import { FocusCards } from '@/components/ui/focus-cards';
 import { cn } from '@/lib/utils';
+import { TweetComponent } from '@/components/TweetComponent';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -53,6 +51,75 @@ const HomePage = () => {
 		{
 			title: 'The First Rule',
 			src: '/cards/card-back.jpg',
+		},
+	];
+
+	const tweets = [
+		{
+			username: 'Elan',
+			handle: 'elan_mosk',
+			avatarUrl: '/characters/middle/card01.png',
+			replyTo: 'povel_durev',
+			text: 'The only way is up—join me in the adventure!',
+			time: '7:57 PM',
+			date: 'Jan 7, 2024',
+			likes: '20K',
+			replies: 395,
+		},
+		{
+			username: 'Madronna',
+			handle: 'Madronna',
+			avatarUrl: '/characters/middle/card15.png',
+			replyTo: 'jackie_chwan',
+			text: "I'm loving how easy it is to join the fun!",
+			time: '10:10 AM',
+			date: 'Jan 5, 2024',
+			likes: '4.7K',
+			replies: 477,
+		},
+		{
+			username: 'Divine',
+			handle: 'divine_johnzon',
+			avatarUrl: '/characters/middle/card37.png',
+			replyTo: 'steven_kong',
+			text: "Diving in was the best choice I've made today!",
+			time: '1:30 PM',
+			date: 'Sep 15, 2024',
+			likes: '5.5K',
+			replies: 203,
+		},
+		{
+			username: 'Makhomes',
+			handle: 'pat_makhomes',
+			avatarUrl: '/characters/middle/card14.png',
+			replyTo: 'jeff_besos',
+			text: 'This game is almost as awesome as my last victory!',
+			time: '3:45 PM',
+			date: 'Aug 6, 2024',
+			likes: '8.1K',
+			replies: 308,
+		},
+		{
+			username: 'Ri',
+			handle: 'ri_anna',
+			avatarUrl: '/characters/middle/card10.png',
+			replyTo: 'divine_johnzon',
+			text: "Wait, I'm a hero? Let's do this! Shine bright like a diamond. Whoaaa",
+			time: '5:00 PM',
+			date: 'Nov 7, 2024',
+			likes: '7.6K',
+			replies: 512,
+		},
+		{
+			username: 'Ursula',
+			handle: 'ursula_fonder_line',
+			avatarUrl: '/characters/middle/card05.png',
+			replyTo: 'margo_robo',
+			text: 'Feeling fierce and fabulous in the game!',
+			time: '6:15 PM',
+			date: 'Jan 23, 2024',
+			likes: '2.1K',
+			replies: 345,
 		},
 	];
 
@@ -154,7 +221,6 @@ const HomePage = () => {
 			<section id="reviews">
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
-
 					<Container>
 						<div className="px-6">
 							<div className="max-w-lg mx-auto text-start md:text-center pb-10">
@@ -236,6 +302,33 @@ const HomePage = () => {
 								<div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-background"></div>
 								<div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-background"></div>
 							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Tweets */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+					<Container>
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+							{tweets.map((tweet, index) => {
+								return (
+									<div key={index} className={`shadow-md rounded-lg p-4 `}>
+										<TweetComponent
+											username={tweet.username}
+											handle={tweet.handle}
+											avatarUrl={tweet.avatarUrl}
+											replyTo={tweet.replyTo}
+											text={tweet.text}
+											time={tweet.time}
+											date={tweet.date}
+											likes={tweet.likes}
+											replies={tweet.replies}
+										/>
+									</div>
+								);
+							})}
 						</div>
 					</Container>
 				</Wrapper>

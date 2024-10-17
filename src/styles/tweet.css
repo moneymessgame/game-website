@@ -1,0 +1,65 @@
+.tweet-container {
+  background-color: #1e1e2f;
+  color: white;
+  border: 1px solid #2f2f3f;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 400px;
+  font-family: sans-serif;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.handle, .follow {
+  color: #8899a6;
+}
+
+.follow {
+  margin-left: 8px;
+}
+
+.tweet-reply {
+  color: #8899a6;
+  margin-top: 8px;
+}
+
+.tweet-content {
+  margin: 16px 0;
+}
+
+.tweet-footer {
+  font-size: 14px;
+  color: #8899a6;
+}
+
+.tweet-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.like, .reply-icon, .share {
+  cursor: pointer;
+}
+
+.tweet-replies {
+  color: #1da1f2;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
