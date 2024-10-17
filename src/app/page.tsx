@@ -12,6 +12,9 @@ import { UserIcon } from 'lucide-react';
 import SectionBadge from '@/components/ui/section-badge';
 import Marquee from '@/components/ui/marquee';
 import { FocusCards } from '@/components/ui/focus-cards';
+
+import { TextGenerateEffectDemo } from '@/components/TextGenerateEffectDemo';
+
 import { cn } from '@/lib/utils';
 import { TweetComponent } from '@/components/TweetComponent';
 
@@ -30,7 +33,7 @@ const HomePage = () => {
 	const cards = [
 		{
 			title: 'Forest Adventure',
-			src: '/cards/card-back.jpg',
+			src: '/cards/1card.jpg',
 		},
 		{
 			title: 'Valley of life',
@@ -124,7 +127,7 @@ const HomePage = () => {
 	];
 
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
+		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 pt-8">
 			{/**Header */}
 			<section>
 				<Wrapper>
@@ -149,7 +152,7 @@ const HomePage = () => {
 								</button>
 							</Link>
 
-							<div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
+							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
 									<OrbitIcon className="w-16 h-16 mx-4 text-thin fill-100 text-white thin-line-icon" />
 
@@ -171,6 +174,22 @@ const HomePage = () => {
 							</div>
 						</div>
 					</Container>
+				</Wrapper>
+			</section>
+
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+
+					<Container>
+						<div className="flex flex-col text-xl items-center max-w-3xl w-11/12 md:w-full">
+							<TextGenerateEffectDemo
+								subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. This is a city where every strategy and decision you make can shift the balance of power, and legendary figures become your allies in the battle for power, popularity, richness and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices. Each decision impacts the growth of your characters, boosting specific traits. The right strategy is the key to victory!"
+							/>
+
+						</div>
+					</Container>
+
 				</Wrapper>
 			</section>
 
