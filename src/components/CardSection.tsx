@@ -6,9 +6,11 @@ interface CardSectionProps {
 	description: string;
 	cards: any[];
 	columns?: number;
-	email?: string; 
-	linkedIn?: string; 
+	email?: string;
+	linkedIn?: string;
 	gitHub?: string;
+	colorTo: string;
+	colorFrom: string;
 }
 
 const CardSection: React.FC<CardSectionProps> = ({
@@ -31,7 +33,7 @@ const CardSection: React.FC<CardSectionProps> = ({
 					</p>
 				</div>
 				<div className="relative flex items-center">
-					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
 					<div
 						className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-${columns} gap-5  
             md:gap-8 py-10 md:py-20 max-w-6xl`}
@@ -48,7 +50,6 @@ const CardSection: React.FC<CardSectionProps> = ({
 								email={card.email}
 								linkedIn={card.linkedIn}
 								gitHub={card.gitHub}
-								
 							/>
 						))}
 					</div>

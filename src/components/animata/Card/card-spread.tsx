@@ -78,7 +78,7 @@ export default function CardSpread() {
 				{
 					'origin-bottom transition-all duration-500 ease-in-out hover:-rotate-[15deg]':
 						!isExpanded,
-					'gap-3': isExpanded,
+					'gap-3': isExpanded, // Добавлено gap для развернутого состояния
 				}
 			)}
 		>
@@ -93,12 +93,13 @@ export default function CardSpread() {
 						className={cn(
 							'transition-all duration-500 ease-in-out',
 							{
-								absolute: !isExpanded,
+								absolute: !isExpanded, // Оставляем absolute только для свернутого состояния
 								'origin-bottom': !isExpanded,
 							},
 							!isExpanded && item.rotationClass,
 							isExpanded && item.revealClass
 						)}
+						style={{ zIndex: index }} // Задаем индекс, чтобы карточки не перекрывались
 					>
 						<item.component />
 					</div>
@@ -107,3 +108,4 @@ export default function CardSpread() {
 		</div>
 	);
 }
+

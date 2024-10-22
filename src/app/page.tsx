@@ -186,13 +186,9 @@ const HomePage = () => {
 
 					<Container>
 						<div className="flex flex-col text-xl items-center max-w-3xl w-11/12 md:w-full">
-							<TextGenerateEffectDemo
-								subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. This is a city where every strategy and decision you make can shift the balance of power, and legendary figures become your allies in the battle for power, popularity, richness and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices. Each decision impacts the growth of your characters, boosting specific traits. The right strategy is the key to victory!"
-							/>
-
+							<TextGenerateEffectDemo subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. This is a city where every strategy and decision you make can shift the balance of power, and legendary figures become your allies in the battle for power, popularity, richness and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices. Each decision impacts the growth of your characters, boosting specific traits. The right strategy is the key to victory!" />
 						</div>
 					</Container>
-
 				</Wrapper>
 			</section>
 
@@ -211,7 +207,6 @@ const HomePage = () => {
 						colorTo: '#9c40ff',
 						colorFrom: '#ff0f0f',
 					},
-					// Добавьте остальные карточки
 					{
 						srcFront: '/characters/middle/card02.png',
 						srcBack: '/cards/card-back.jpg',
@@ -237,6 +232,8 @@ const HomePage = () => {
 						colorFrom: '#0fff0f',
 					},
 				]}
+				colorTo={''}
+				colorFrom={''}
 			/>
 
 			{/** Testimonials */}

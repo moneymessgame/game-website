@@ -13,8 +13,8 @@ interface CardFlipProps {
 	altBack: string;
 	colorTo: string;
 	colorFrom: string;
-	email?: string; 
-	linkedIn?: string; 
+	email?: string;
+	linkedIn?: string;
 	gitHub?: string;
 }
 
@@ -54,12 +54,15 @@ const CardFlip: React.FC<CardFlipProps> = ({
 					onAnimationComplete={() => setIsAnimated(false)}
 				>
 					<div className="flip-card-front w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
-						<GameCardFront 
-							srcFront={'/characters/middle/card01.png'}
-							colorTo={'red'}
-							colorFrom={'ccc'}
-							name={'Name'} 
-							altFront={''}						/>
+						<GameCardFront
+							srcFront={srcFront}
+							colorTo={colorTo}
+							colorFrom={colorFrom}
+							// colorTo={'red'}
+							// colorFrom={'ccc'}
+							name={'Name'}
+							altFront={''}
+						/>
 					</div>
 					<div className="flip-card-back w-[100%] h-[100%] z-50 absolute top-0 left-0 backface-hidden">
 						<Image
