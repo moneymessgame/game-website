@@ -39,7 +39,7 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 		/>
 
 		<div
-			className={`absolute  w-[100%] h-[100%] z-30 bg-gradient-to-t to-30% from-[#ff0f0f]  bottom-0`}
+			className={`absolute  w-[100%] h-[100%] z-30 bg-gradient-to-t to-30% from-[${colorFrom}]  bottom-0`}
 		/>
 
 		<div className="absolute z-50 bottom-2 left-2 text-left">
