@@ -59,6 +59,9 @@ importers:
       '@tsparticles/slim':
         specifier: ^3.5.0
         version: 3.5.0
+      animata:
+        specifier: ^1.1.0
+        version: 1.1.0
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -833,6 +836,9 @@ packages:
 
   '@types/react@18.3.3':
     resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
+
+  animata@1.1.0:
+    resolution: {integrity: sha512-Ht1tor65R1flkTh3EDyncGOL0rZmOxE2FfT1m5tYKxrYquDT599ozhfEgX44raXqvFzsJeqkExKHU41k9UeZzg==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -2227,6 +2233,8 @@ snapshots:
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
+
+  animata@1.1.0: {}
 
   ansi-regex@5.0.1: {}
 

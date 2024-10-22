@@ -17,6 +17,7 @@ import { TextGenerateEffectDemo } from '@/components/TextGenerateEffectDemo';
 
 import { cn } from '@/lib/utils';
 import { TweetComponent } from '@/components/TweetComponent';
+import CardSpread from '@/components/animata/Card/card-spread';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -160,6 +161,8 @@ const HomePage = () => {
 										MoneyMess
 									</h1>
 								</div>
+
+								<CardSpread />
 
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
 									I envy you, lucky one, because you’ve found the game, the one
