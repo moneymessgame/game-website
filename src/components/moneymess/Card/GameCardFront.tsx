@@ -7,7 +7,7 @@ interface GameCardFrontProps {
 	altFront: string;
 	colorTo: string;
 	colorFrom: string;
-	name: string;
+	name?: string;
 }
 
 const GameCardFront: React.FC<GameCardFrontProps> = ({

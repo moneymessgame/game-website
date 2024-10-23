@@ -11,12 +11,15 @@ interface CardSectionProps {
 	gitHub?: string;
 	colorTo: string;
 	colorFrom: string;
+	name?: string,
+	srcBack?: string;
 }
 
 const CardSection: React.FC<CardSectionProps> = ({
 	title,
 	description,
 	cards,
+	srcBack,
 	columns = 4,
 }) => (
 	<div>
@@ -50,6 +53,7 @@ const CardSection: React.FC<CardSectionProps> = ({
 								email={card.email}
 								linkedIn={card.linkedIn}
 								gitHub={card.gitHub}
+								name={card.name}
 							/>
 						))}
 					</div>

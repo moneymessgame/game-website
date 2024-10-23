@@ -12,12 +12,11 @@ import { UserIcon } from 'lucide-react';
 import SectionBadge from '@/components/ui/section-badge';
 import Marquee from '@/components/ui/marquee';
 import { FocusCards } from '@/components/ui/focus-cards';
-
 import { TextGenerateEffectDemo } from '@/components/TextGenerateEffectDemo';
-
 import { cn } from '@/lib/utils';
 import { TweetComponent } from '@/components/TweetComponent';
 import CardSpread from '@/components/animata/Card/card-spread';
+import characters from '@/constants/characters';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -127,6 +126,43 @@ const HomePage = () => {
 		},
 	];
 
+	interface CharacterType {
+		srcFront: string;
+		srcBack: string;
+		altFront: string;
+		altBack: string;
+		colorTo: string;
+		colorFrom: string;
+		name: string;
+		characteristic: string;
+	}
+
+	const getRandomCharacters = (count: number): CharacterType[] => {
+		const uniqueCharacters = new Map<string, CharacterType>();
+		const shuffled = [...characters].sort(() => 0.5 - Math.random());
+
+		for (const character of shuffled) {
+			if (!uniqueCharacters.has(character.characteristic)) {
+				const newCharacter: CharacterType = {
+					srcFront: character.srcFront || '',
+					srcBack: '/cards/card-back.jpg',
+					altFront: character.altFront || '',
+					altBack: character.altBack || '',
+					colorTo: character.colorTo || '',
+					colorFrom: character.colorFrom || '',
+					name: character.name || '',
+					characteristic: character.characteristic || '',
+				};
+				uniqueCharacters.set(character.characteristic, newCharacter);
+			}
+			if (uniqueCharacters.size >= count) break;
+		}
+
+		return Array.from(uniqueCharacters.values()).slice(0, count);
+	};
+
+	const randomCharacters = getRandomCharacters(4);
+
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 pt-8">
 			{/**Header */}
@@ -195,7 +231,7 @@ const HomePage = () => {
 			<FocusCards cards={cards} />
 
 			{/**Characters */}
-			<CardSection
+			{/* <CardSection
 				title="Characters"
 				description="Choose your character and his/her main trait"
 				cards={[
@@ -206,6 +242,7 @@ const HomePage = () => {
 						altBack: 'Dominion character',
 						colorTo: '#9c40ff',
 						colorFrom: '#ff0f0f',
+						name: 'Elan Mosk',
 					},
 					{
 						srcFront: '/characters/middle/card02.png',
@@ -214,6 +251,7 @@ const HomePage = () => {
 						altBack: 'Richness character',
 						colorTo: '#9c40ff',
 						colorFrom: '#0ffcff',
+						name: 'Kim Kong-fun',
 					},
 					{
 						srcFront: '/characters/middle/card25.png',
@@ -222,6 +260,7 @@ const HomePage = () => {
 						altBack: 'Richness character',
 						colorTo: '#9c40ff',
 						colorFrom: '#ffff0f',
+						name: 'Charleez Tiron',
 					},
 					{
 						srcFront: '/characters/middle/card20.png',
@@ -230,8 +269,25 @@ const HomePage = () => {
 						altBack: 'Popularity character',
 						colorTo: '#9c40ff',
 						colorFrom: '#0fff0f',
+						name: 'Papi Frank',
 					},
 				]}
+				colorTo={''}
+				colorFrom={''}
+			/> */}
+
+			<CardSection
+				title="Characters"
+				description="Choose your character and his/her main trait"
+				cards={randomCharacters.map((character) => ({
+					srcFront: character.srcFront,
+					srcBack: character.srcBack, // Теперь srcBack всегда доступен
+					altFront: character.altFront,
+					altBack: character.altBack,
+					colorTo: character.colorTo,
+					colorFrom: character.colorFrom,
+					name: character.name,
+				}))}
 				colorTo={''}
 				colorFrom={''}
 			/>
