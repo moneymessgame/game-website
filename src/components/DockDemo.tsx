@@ -12,6 +12,7 @@ import {
 	TooltipProvider,
 	TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { DockDemoProps } from '@/types/dock-demo';
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -34,12 +35,6 @@ const Icons = {
 			></path>
 		</svg>
 	),
-};
-
-type DockDemoProps = {
-	email: string;
-	linkedIn: string;
-	gitHub: string;
 };
 
 export function DockDemo({ email, linkedIn, gitHub }: DockDemoProps) {

@@ -1,12 +1,5 @@
-import Icons from '@/components/global/icons';
-import { ArrowRight, Gamepad2, Heart, Send } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
-
 import OrbitIcon from '@/components/global/orbitIcon';
-import { Button } from '../ui/button';
-import Container from '../global/container';
-import Wrapper from '../global/wrapper';
 
 const Footer = () => {
 	return (
@@ -49,7 +42,6 @@ const Footer = () => {
 									</Link>
 								</li>
 								<li className="mt-2">
-					
 									<Link
 										href=""
 										className="hover:text-foreground transition-all duration-300"

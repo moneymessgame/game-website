@@ -14,9 +14,11 @@ import Marquee from '@/components/ui/marquee';
 import { FocusCards } from '@/components/ui/focus-cards';
 import { TextGenerateEffectDemo } from '@/components/TextGenerateEffectDemo';
 import { cn } from '@/lib/utils';
+import { CharacterType } from '@/types/main-page'
 import { TweetComponent } from '@/components/TweetComponent';
 import CardSpread from '@/components/animata/Card/card-spread';
-import characters from '@/constants/characters';
+import { cards, tweets } from '@/constants/index';
+import { getRandomCharacters } from '@/utils/characterUtils';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -29,137 +31,6 @@ export const metadata: Metadata = {
 const HomePage = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);
-
-	const cards = [
-		{
-			title: 'Forest Adventure',
-			src: '/cards/1card.jpg',
-		},
-		{
-			title: 'Valley of life',
-			src: '/cards/card-back.jpg',
-		},
-		{
-			title: 'Sala behta hi jayega',
-			src: '/cards/card-back.jpg',
-		},
-		{
-			title: 'Camping is for pros',
-			src: '/cards/card-back.jpg',
-		},
-		{
-			title: 'The road not taken',
-			src: '/cards/card-back.jpg',
-		},
-		{
-			title: 'The First Rule',
-			src: '/cards/card-back.jpg',
-		},
-	];
-
-	const tweets = [
-		{
-			username: 'Elan',
-			handle: 'elan_mosk',
-			avatarUrl: '/characters/middle/card01.png',
-			replyTo: 'povel_durev',
-			text: 'The only way is up—join me in the adventure!',
-			time: '7:57 PM',
-			date: 'Jan 7, 2024',
-			likes: '20K',
-			replies: 395,
-		},
-		{
-			username: 'Madronna',
-			handle: 'Madronna',
-			avatarUrl: '/characters/middle/card15.png',
-			replyTo: 'jackie_chwan',
-			text: "I'm loving how easy it is to join the fun!",
-			time: '10:10 AM',
-			date: 'Jan 5, 2024',
-			likes: '4.7K',
-			replies: 477,
-		},
-		{
-			username: 'Divine',
-			handle: 'divine_johnzon',
-			avatarUrl: '/characters/middle/card37.png',
-			replyTo: 'steven_kong',
-			text: "Diving in was the best choice I've made today!",
-			time: '1:30 PM',
-			date: 'Sep 15, 2024',
-			likes: '5.5K',
-			replies: 203,
-		},
-		{
-			username: 'Makhomes',
-			handle: 'pat_makhomes',
-			avatarUrl: '/characters/middle/card14.png',
-			replyTo: 'jeff_besos',
-			text: 'This game is almost as awesome as my last victory!',
-			time: '3:45 PM',
-			date: 'Aug 6, 2024',
-			likes: '8.1K',
-			replies: 308,
-		},
-		{
-			username: 'Ri',
-			handle: 'ri_anna',
-			avatarUrl: '/characters/middle/card10.png',
-			replyTo: 'divine_johnzon',
-			text: "Wait, I'm a hero? Let's do this! Shine bright like a diamond. Whoaaa",
-			time: '5:00 PM',
-			date: 'Nov 7, 2024',
-			likes: '7.6K',
-			replies: 512,
-		},
-		{
-			username: 'Ursula',
-			handle: 'ursula_fonder_line',
-			avatarUrl: '/characters/middle/card05.png',
-			replyTo: 'margo_robo',
-			text: 'Feeling fierce and fabulous in the game!',
-			time: '6:15 PM',
-			date: 'Jan 23, 2024',
-			likes: '2.1K',
-			replies: 345,
-		},
-	];
-
-	interface CharacterType {
-		srcFront: string;
-		srcBack: string;
-		altFront: string;
-		altBack: string;
-		colorTo: string;
-		colorFrom: string;
-		name: string;
-		characteristic: string;
-	}
-
-	const getRandomCharacters = (count: number): CharacterType[] => {
-		const uniqueCharacters = new Map<string, CharacterType>();
-		const shuffled = [...characters].sort(() => 0.5 - Math.random());
-
-		for (const character of shuffled) {
-			if (!uniqueCharacters.has(character.characteristic)) {
-				const newCharacter: CharacterType = {
-					srcFront: character.srcFront || '',
-					srcBack: '/cards/card-back.jpg',
-					altFront: character.altFront || '',
-					altBack: character.altBack || '',
-					colorTo: character.colorTo || '',
-					colorFrom: character.colorFrom || '',
-					name: character.name || '',
-					characteristic: character.characteristic || '',
-				};
-				uniqueCharacters.set(character.characteristic, newCharacter);
-			}
-			if (uniqueCharacters.size >= count) break;
-		}
-
-		return Array.from(uniqueCharacters.values()).slice(0, count);
-	};
 
 	const randomCharacters = getRandomCharacters(4);
 
@@ -281,7 +152,7 @@ const HomePage = () => {
 				description="Choose your character and his/her main trait"
 				cards={randomCharacters.map((character) => ({
 					srcFront: character.srcFront,
-					srcBack: character.srcBack, // Теперь srcBack всегда доступен
+					srcBack: character.srcBack,
 					altFront: character.altFront,
 					altBack: character.altBack,
 					colorTo: character.colorTo,

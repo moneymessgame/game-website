@@ -81,15 +81,6 @@ const characters = [
 		colorTo: '#9c40ff',
 		colorFrom: '#0fff0f',
 	},
-	{
-		name: 'Christian Penaldo',
-		characteristic: 'Richness',
-		srcFront: '/characters/middle/card09.png',
-		altFront: 'Richness character',
-		altBack: 'Richness character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
-	},
 	{ name: 'Tyler Sweeft', characteristic: 'Richness' },
 
 	// Popularity
@@ -271,6 +262,15 @@ const characters = [
 		colorFrom: '#ff0f0f',
 	},
 	{ name: 'Buyonce', characteristic: 'Dominion' },
+	{
+		name: 'Christian Penaldo',
+		characteristic: 'Richness',
+		srcFront: '/characters/middle/card09.png',
+		altFront: 'Richness character',
+		altBack: 'Richness character',
+		colorTo: '#9c40ff',
+		colorFrom: '#ff0f0f',
+	},
 	{
 		name: 'Tim Brody',
 		characteristic: 'Dominion',

@@ -1,25 +1,11 @@
 import CardFlip from './CardFlip';
 import Container from '@/components/global/container';
-
-interface CardSectionProps {
-	title: string;
-	description: string;
-	cards: any[];
-	columns?: number;
-	email?: string;
-	linkedIn?: string;
-	gitHub?: string;
-	colorTo: string;
-	colorFrom: string;
-	name?: string,
-	srcBack?: string;
-}
+import { CardSectionProps } from '@/types/card-section';
 
 const CardSection: React.FC<CardSectionProps> = ({
 	title,
 	description,
 	cards,
-	srcBack,
 	columns = 4,
 }) => (
 	<div>

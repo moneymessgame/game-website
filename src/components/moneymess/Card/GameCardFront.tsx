@@ -1,14 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-
-interface GameCardFrontProps {
-	srcFront: string;
-	altFront: string;
-	colorTo: string;
-	colorFrom: string;
-	name?: string;
-}
+import { GameCardFrontProps } from '@/types/game-card-front';
 
 const GameCardFront: React.FC<GameCardFrontProps> = ({
 	srcFront,

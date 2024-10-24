@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -16,7 +15,6 @@ import {
 	navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
-
 import { wikiRu, wikiEn } from '@/constants';
 
 export function NavMenu() {

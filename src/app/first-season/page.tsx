@@ -140,6 +140,7 @@ const FirstSeason = () => {
 										colorFrom="#ff0f0f"
 									/>
 								</div>
+								
 
 								<div className="w-[285px]">
 									<div className="mx-auto text-start pb-10">

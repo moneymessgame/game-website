@@ -1,17 +1,6 @@
+import { TweetProps } from '@/types/tweets';
 import * as React from 'react';
 import '../styles/tweet.css';
-
-type TweetProps = {
-	username: string;
-	handle: string;
-	avatarUrl: string;
-	replyTo: string;
-	text: string;
-	time: string;
-	date: string;
-	likes: string;
-	replies: number;
-};
 
 export const TweetComponent: React.FC<TweetProps> = ({
 	username,

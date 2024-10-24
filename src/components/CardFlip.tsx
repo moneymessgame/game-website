@@ -5,19 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { BorderBeam } from '@/components/ui/border-beam';
 import GameCardFront from '@/components/moneymess/Card/GameCardFront';
-
-interface CardFlipProps {
-	srcFront: string;
-	srcBack: string;
-	altFront: string;
-	altBack: string;
-	colorTo: string;
-	colorFrom: string;
-	email?: string;
-	linkedIn?: string;
-	gitHub?: string;
-	name?: string;
-}
+import { CardFlipProps } from '@/types/card-flip';
 
 const CardFlip: React.FC<CardFlipProps> = ({
 	srcFront,

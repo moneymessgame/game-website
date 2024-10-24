@@ -1,12 +1,6 @@
 import Card from './Card';
 import Container from '@/components/global/container';
-
-interface TeamSectionProps {
-	title: string;
-	description: string;
-	cards: any[];
-	columns?: number;
-}
+import { TeamSectionProps } from '@/types/team-section';
 
 const TeamSection: React.FC<TeamSectionProps> = ({
 	title,
