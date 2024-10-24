@@ -7,18 +7,16 @@ import Wrapper from '@/components/global/wrapper';
 import Container from '@/components/global/container';
 import { perks, reviews } from '@/constants';
 import OrbitIcon from '@/components/global/orbitIcon';
-import CardSection from '@/components/CardSection';
 import { UserIcon } from 'lucide-react';
 import SectionBadge from '@/components/ui/section-badge';
 import Marquee from '@/components/ui/marquee';
 import { FocusCards } from '@/components/ui/focus-cards';
 import { TextGenerateEffectDemo } from '@/components/TextGenerateEffectDemo';
 import { cn } from '@/lib/utils';
-import { CharacterType } from '@/types/main-page'
 import { TweetComponent } from '@/components/TweetComponent';
 import CardSpread from '@/components/animata/Card/card-spread';
 import { cards, tweets } from '@/constants/index';
-import { getRandomCharacters } from '@/utils/characterUtils';
+import CardSectionGenerate from '@/components/CardSectionGenerate';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -31,8 +29,6 @@ export const metadata: Metadata = {
 const HomePage = () => {
 	const firstRow = reviews.slice(0, reviews.length / 2);
 	const secondRow = reviews.slice(reviews.length / 2);
-
-	const randomCharacters = getRandomCharacters(4);
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 pt-8">
@@ -63,21 +59,19 @@ const HomePage = () => {
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
 									<OrbitIcon className="w-16 h-16 mx-4 text-thin fill-100 text-white thin-line-icon" />
-
-									<h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+									<h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center mb-10 bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 										MoneyMess
 									</h1>
 								</div>
 
 								<CardSpread />
 
-								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
+								<p className="text-base md:text-lg text-foreground/80 mt-28 text-center">
 									I envy you, lucky one, because you’ve found the game, the one
 									you've heard so much about, the one you’ve seen in your dreams
 									and fantasies. An incredible, fantastic, magical game –
 									MoneyMess.
 								</p>
-
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
 									Onward to adventure!
 								</p>
@@ -90,7 +84,6 @@ const HomePage = () => {
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
 					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
-
 					<Container>
 						<div className="flex flex-col text-xl items-center max-w-3xl w-11/12 md:w-full">
 							<TextGenerateEffectDemo subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. This is a city where every strategy and decision you make can shift the balance of power, and legendary figures become your allies in the battle for power, popularity, richness and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices. Each decision impacts the growth of your characters, boosting specific traits. The right strategy is the key to victory!" />
@@ -147,20 +140,10 @@ const HomePage = () => {
 				colorFrom={''}
 			/> */}
 
-			<CardSection
+			<CardSectionGenerate
 				title="Characters"
 				description="Choose your character and his/her main trait"
-				cards={randomCharacters.map((character) => ({
-					srcFront: character.srcFront,
-					srcBack: character.srcBack,
-					altFront: character.altFront,
-					altBack: character.altBack,
-					colorTo: character.colorTo,
-					colorFrom: character.colorFrom,
-					name: character.name,
-				}))}
-				colorTo={''}
-				colorFrom={''}
+				numberOfCharacters={4}
 			/>
 
 			{/** Testimonials */}

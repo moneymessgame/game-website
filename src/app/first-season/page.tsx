@@ -9,6 +9,8 @@ import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
 import { LampContainer } from '@/components/ui/lamp';
 import CardFlip from '@/components/CardFlip';
+import CardSection from '@/components/CardSection';
+import { getRandomCharacters } from '@/utils/characterUtils';
 
 export const metadata: Metadata = {
 	title: 'First season of MoneyMess',
@@ -19,28 +21,28 @@ export const metadata: Metadata = {
 };
 
 const FirstSeason = () => {
+	const randomCharacters = getRandomCharacters(1);
+
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
-
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
-						<LampContainer>
-							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8 w-[80%]">
-									A great idea is born with <br /> the help of small
-									contributions
-								</h2>
-								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
-									From small contributions, a great idea takes shape.
-								</p>
-								<Button variant="white" className="mt-6" asChild>
-									<Link href="#intro">
-										Read more
-										<ArrowRight className="w-4 h-4 ml-2" />
-									</Link>
-								</Button>
-							</div>
-						</LampContainer>
+					<LampContainer>
+						<div className="flex flex-col items-center justify-center relative w-full text-center">
+							<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8 w-[80%]">
+								A great idea is born with <br /> the help of small contributions
+							</h2>
+							<p className="text-muted-foreground mt-6 max-w-md mx-auto">
+								From small contributions, a great idea takes shape.
+							</p>
+							<Button variant="white" className="mt-6" asChild>
+								<Link href="#intro">
+									Read more
+									<ArrowRight className="w-4 h-4 ml-2" />
+								</Link>
+							</Button>
+						</div>
+					</LampContainer>
 				</Wrapper>
 			</section>
 
@@ -55,10 +57,30 @@ const FirstSeason = () => {
 									<div className="flex flex-col items-center justify-center py-10 h-full">
 										<div className="grid grid-cols-1 md:grid-cols-2 gap-10 col-span-1 xl:col-span-2 justify-items-center items-center">
 											<div>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a.</p>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
 											</div>
 											<div>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a.</p>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -80,7 +102,17 @@ const FirstSeason = () => {
 												/>
 											</div>
 											<div>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a.</p>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -94,10 +126,30 @@ const FirstSeason = () => {
 									<div className="flex flex-col items-center justify-center h-full">
 										<div className="grid grid-cols-1 md:grid-cols-2 gap-10 col-span-1 xl:col-span-2 justify-items-center items-center">
 											<div>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a.</p>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
 											</div>
 											<div>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a.</p>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -109,10 +161,30 @@ const FirstSeason = () => {
 									<div className="flex flex-col items-center justify-center h-full">
 										<div className="grid grid-cols-1 md:grid-cols-2 gap-10 col-span-1 xl:col-span-2 justify-items-center items-center">
 											<div>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a.</p>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
 											</div>
 											<div>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a. Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio rerum dicta nesciunt? Laudantium inventore, ratione distinctio numquam aperiam temporibus veniam quos quam doloremque vel ipsum aspernatur mollitia, accusamus a.</p>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -140,7 +212,6 @@ const FirstSeason = () => {
 										colorFrom="#ff0f0f"
 									/>
 								</div>
-								
 
 								<div className="w-[285px]">
 									<div className="mx-auto text-start pb-10">

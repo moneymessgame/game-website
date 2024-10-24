@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 import Notes, { NotesCard } from '@/components/animata/Widget/notes';
 import ShoppingList from '@/components/animata/Widget/shopping-list';
-import GameCardFront from '@/components/moneymess/Card/GameCardFront';
 import { cn } from '@/lib/utils';
+import CardSectionGenerate from '@/components/CardSectionGenerate';
 
 function Reminders() {
 	return (
@@ -15,19 +15,8 @@ function Reminders() {
 				{ title: 'book museum tickets' },
 				{ title: 'buy groceries', checked: true },
 				{ title: 'call mom' },
+				{ title: 'call dad' },
 			]}
-		/>
-	);
-}
-
-function GameCardFrontFunc() {
-	return (
-		<GameCardFront
-			name={''}
-			srcFront={'/characters/middle/card01.png'}
-			altFront={''}
-			colorTo={''}
-			colorFrom={''}
 		/>
 	);
 }
@@ -43,29 +32,56 @@ function RemodelNotes() {
 	);
 }
 
+// function GameCardFrontFunc() {
+// 	return (
+// 		<GameCardFront
+// 			name={'Hero Name'}
+// 			srcFront={'/characters/middle/card01.png'}
+// 			altFront={'Character Description'}
+// 			colorTo={'#ff5733'}
+// 			colorFrom={'#33c1ff'}
+// 		/>
+// 	);
+// }
+
+function CardSectionFunction() {
+	return <CardSectionGenerate />;
+}
+
 const cards = [
 	{
-		component: Notes,
+		component: CardSectionFunction,
 		rotationClass: '',
 		revealClass: '-rotate-[2deg]',
 	},
 	{
-		component: GameCardFrontFunc,
+		component: CardSectionFunction,
 		rotationClass: 'group-hover:rotate-[15deg]',
 		revealClass: 'rotate-[3deg] translate-y-2',
 	},
 
 	{
-		component: RemodelNotes,
+		component: CardSectionFunction,
 		rotationClass: 'group-hover:rotate-[30deg]',
 		revealClass: '-rotate-[2deg] translate-x-1',
 	},
 
 	{
-		component: Reminders,
+		component: CardSectionFunction,
 		rotationClass: 'group-hover:rotate-[45deg]',
 		revealClass: 'rotate-[2deg]',
 	},
+	// {
+	// 	component: RemodelNotes,
+	// 	rotationClass: 'group-hover:rotate-[30deg]',
+	// 	revealClass: '-rotate-[2deg] translate-x-1',
+	// },
+
+	// {
+	// 	component: Reminders,
+	// 	rotationClass: 'group-hover:rotate-[45deg]',
+	// 	revealClass: 'rotate-[2deg]',
+	// },
 ];
 
 export default function CardSpread() {
@@ -78,7 +94,7 @@ export default function CardSpread() {
 				{
 					'origin-bottom transition-all duration-500 ease-in-out hover:-rotate-[15deg]':
 						!isExpanded,
-					'gap-3': isExpanded, // Добавлено gap для развернутого состояния
+					'gap-3': isExpanded,
 				}
 			)}
 		>
@@ -93,13 +109,13 @@ export default function CardSpread() {
 						className={cn(
 							'transition-all duration-500 ease-in-out',
 							{
-								absolute: !isExpanded, // Оставляем absolute только для свернутого состояния
+								absolute: !isExpanded,
 								'origin-bottom': !isExpanded,
 							},
 							!isExpanded && item.rotationClass,
 							isExpanded && item.revealClass
 						)}
-						style={{ zIndex: index }} // Задаем индекс, чтобы карточки не перекрывались
+						style={{ zIndex: index }}
 					>
 						<item.component />
 					</div>
@@ -108,4 +124,3 @@ export default function CardSpread() {
 		</div>
 	);
 }
-
