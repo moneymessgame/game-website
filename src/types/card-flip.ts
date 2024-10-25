@@ -9,4 +9,6 @@ export interface CardFlipProps {
 	linkedIn?: string;
 	gitHub?: string;
 	name?: string;
+	enableAnimation?: boolean;
+	showBorderBeam?: boolean;
 }

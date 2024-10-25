@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -15,6 +14,8 @@ const CardFlip: React.FC<CardFlipProps> = ({
 	colorTo,
 	colorFrom,
 	name,
+	enableAnimation = true,
+	showBorderBeam = true,
 }) => {
 	const [isFlipped, setIsFlipped] = useState(false);
 	const [isAnimated, setIsAnimated] = useState(false);
@@ -26,21 +27,25 @@ const CardFlip: React.FC<CardFlipProps> = ({
 		}
 	}
 
+	const FlipContainer = enableAnimation ? motion.div : 'div';
+
 	return (
 		<div className="m-4" onClick={handleFlip}>
 			<div className="flip-card w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-				<BorderBeam
-					size={250}
-					duration={12}
-					delay={9}
-					colorTo={colorTo}
-					colorFrom={colorFrom}
-				/>
-				<motion.div
+				{showBorderBeam && (
+					<BorderBeam
+						size={250}
+						duration={12}
+						delay={9}
+						colorTo={colorTo}
+						colorFrom={colorFrom}
+					/>
+				)}
+				<FlipContainer
 					className="flip-card-inner w-[100%] h-[100%]"
 					initial={false}
-					animate={{ rotateY: isFlipped ? 180 : 0 }}
-					transition={{ duration: 0.1, animationDirection: 'normal' }}
+					animate={enableAnimation ? { rotateY: isFlipped ? 180 : 0 } : undefined}
+					transition={enableAnimation ? { duration: 0.1 } : undefined}
 					onAnimationComplete={() => setIsAnimated(false)}
 				>
 					<div className="flip-card-front w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
@@ -62,7 +67,7 @@ const CardFlip: React.FC<CardFlipProps> = ({
 							className="rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1 ring-border"
 						/>
 					</div>
-				</motion.div>
+				</FlipContainer>
 			</div>
 		</div>
 	);

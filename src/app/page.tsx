@@ -144,6 +144,7 @@ const HomePage = () => {
 				title="Characters"
 				description="Choose your character and his/her main trait"
 				numberOfCharacters={4}
+				showBorderBeam={true}
 			/>
 
 			{/** Testimonials */}

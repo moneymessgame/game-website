@@ -8,6 +8,8 @@ export interface CardSectionProps {
 	gitHub?: string;
 	colorTo: string;
 	colorFrom: string;
-	name?: string,
+	name?: string;
 	srcBack?: string;
+	enableAnimation?: boolean;
+	showBorderBeam?: boolean;
 }

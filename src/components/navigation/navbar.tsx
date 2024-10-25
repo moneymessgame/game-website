@@ -48,7 +48,7 @@ export default function Navbar({}: Props) {
 						<span className="text-lg font-black uppercase">Whitepaper</span>
 					</Link>
 					<Link
-						href="#"
+						href="https://t.me/moneymessbot"
 						className={buttonVariants({
 							size: 'sm',
 							className: 'flex bg-ring hover:bg-accent gap-3 px-8 py-5',

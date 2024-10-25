@@ -7,6 +7,8 @@ const CardSection: React.FC<CardSectionProps> = ({
 	description,
 	cards,
 	columns = 4,
+	enableAnimation = true, 
+	showBorderBeam = true,
 }) => (
 	<div>
 		<Container>
@@ -40,6 +42,8 @@ const CardSection: React.FC<CardSectionProps> = ({
 								linkedIn={card.linkedIn}
 								gitHub={card.gitHub}
 								name={card.name}
+								enableAnimation={enableAnimation}
+								showBorderBeam={showBorderBeam}
 							/>
 						))}
 					</div>

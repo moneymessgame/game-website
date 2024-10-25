@@ -6,6 +6,7 @@ import Notes, { NotesCard } from '@/components/animata/Widget/notes';
 import ShoppingList from '@/components/animata/Widget/shopping-list';
 import { cn } from '@/lib/utils';
 import CardSectionGenerate from '@/components/CardSectionGenerate';
+import Card from '@/components/Card';
 
 function Reminders() {
 	return (
@@ -45,7 +46,7 @@ function RemodelNotes() {
 // }
 
 function CardSectionFunction() {
-	return <CardSectionGenerate />;
+	return <CardSectionGenerate showBorderBeam={false} enableAnimation={false} />
 }
 
 const cards = [

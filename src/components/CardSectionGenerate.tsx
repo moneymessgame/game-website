@@ -9,7 +9,9 @@ import { CardSectionGenerateProps } from '@/types/card-section-generate';
 export default function CardSectionGenerate({
 	title = '',
 	description = '',
-	numberOfCharacters = 1, // Устанавливаем значение по умолчанию
+	numberOfCharacters = 1,
+	enableAnimation = true,
+	showBorderBeam = true,
 }: CardSectionGenerateProps) {
 	// Создание состояния для случайных персонажей
 	const [randomCharacters, setRandomCharacters] = useState<CharacterType[]>([]);
@@ -24,6 +26,8 @@ export default function CardSectionGenerate({
 		<CardSection
 			title={title}
 			description={description}
+			enableAnimation={enableAnimation}
+			showBorderBeam={showBorderBeam}
 			cards={randomCharacters.map((character) => ({
 				srcFront: character.srcFront,
 				srcBack: character.srcBack,
