@@ -6,7 +6,7 @@ const characters = [
 		srcFront: '/characters/middle/card34.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
 	{
@@ -15,7 +15,7 @@ const characters = [
 		srcFront: '/characters/middle/card24.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
 	{
@@ -24,7 +24,7 @@ const characters = [
 		srcFront: '/characters/middle/card18.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
 	{
@@ -33,7 +33,7 @@ const characters = [
 		srcFront: '/characters/middle/card31.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
 	{
@@ -42,7 +42,7 @@ const characters = [
 		srcFront: '/characters/middle/card11.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
 	{
@@ -51,7 +51,7 @@ const characters = [
 		srcFront: '/characters/middle/card28.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
 	{
@@ -60,7 +60,7 @@ const characters = [
 		srcFront: '/characters/middle/card35.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
 	{
@@ -69,7 +69,7 @@ const characters = [
 		srcFront: '/characters/middle/card04.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
 	{
@@ -78,10 +78,10 @@ const characters = [
 		srcFront: '/characters/middle/card38.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 	},
-	{ name: 'Tyler Sweeft', characteristic: 'Richness' },
+	//{ name: 'Tyler Sweeft', characteristic: 'Richness' },
 
 	// Popularity
 	{
@@ -90,7 +90,7 @@ const characters = [
 		srcFront: '/characters/middle/card23.png',
 		altFront: 'Popularity character',
 		altBack: 'Popularity character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 	},
 	{
@@ -99,7 +99,7 @@ const characters = [
 		srcFront: '/characters/middle/card03.png',
 		altFront: 'Popularity character',
 		altBack: 'Popularity character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 	},
 	{
@@ -108,7 +108,7 @@ const characters = [
 		srcFront: '/characters/middle/card26.png',
 		altFront: 'Popularity character',
 		altBack: 'Popularity character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 	},
 	{
@@ -117,7 +117,7 @@ const characters = [
 		srcFront: '/characters/middle/card13.png',
 		altFront: 'Popularity character',
 		altBack: 'Popularity character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 	},
 	{
@@ -126,7 +126,7 @@ const characters = [
 		srcFront: '/characters/middle/card17.png',
 		altFront: 'Popularity character',
 		altBack: 'Popularity character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 	},
 	{
@@ -135,7 +135,7 @@ const characters = [
 		srcFront: '/characters/middle/card16.png',
 		altFront: 'Popularity character',
 		altBack: 'Popularity character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 	},
 	{
@@ -144,7 +144,7 @@ const characters = [
 		srcFront: '/characters/middle/card27.png',
 		altFront: 'Popularity character',
 		altBack: 'Popularity character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 	},
 	{
@@ -153,11 +153,11 @@ const characters = [
 		srcFront: '/characters/middle/card30.png',
 		altFront: 'Popularity character',
 		altBack: 'Popularity character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 	},
-	{ name: 'Donna Gaga', characteristic: 'Popularity' },
-	{ name: 'Zandaia', characteristic: 'Popularity' },
+	//{ name: 'Donna Gaga', characteristic: 'Popularity' },
+	//{ name: 'Zandaia', characteristic: 'Popularity' },
 
 	// Attractiveness
 	{
@@ -166,7 +166,7 @@ const characters = [
 		srcFront: '/characters/middle/card14.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -175,7 +175,7 @@ const characters = [
 		srcFront: '/characters/middle/card01.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -184,7 +184,7 @@ const characters = [
 		srcFront: '/characters/middle/card22.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -193,7 +193,7 @@ const characters = [
 		srcFront: '/characters/middle/card25.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -202,7 +202,7 @@ const characters = [
 		srcFront: '/characters/middle/card33.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -211,7 +211,7 @@ const characters = [
 		srcFront: '/characters/middle/card07.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -220,7 +220,7 @@ const characters = [
 		srcFront: '/characters/middle/card19.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -229,7 +229,7 @@ const characters = [
 		srcFront: '/characters/middle/card05.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -238,7 +238,7 @@ const characters = [
 		srcFront: '/characters/middle/card02.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 	{
@@ -247,7 +247,7 @@ const characters = [
 		srcFront: '/characters/middle/card36.png',
 		altFront: 'Attractiveness character',
 		altBack: 'Attractiveness character',
-		colorTo: '#9c40ff',
+		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 	},
 
@@ -258,18 +258,18 @@ const characters = [
 		srcFront: '/characters/middle/card08.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
-	{ name: 'Buyonce', characteristic: 'Dominion' },
+	//{ name: 'Buyonce', characteristic: 'Dominion' },
 	{
 		name: 'Christian Penaldo',
 		characteristic: 'Richness',
 		srcFront: '/characters/middle/card09.png',
 		altFront: 'Richness character',
 		altBack: 'Richness character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Tim Brody',
@@ -277,8 +277,8 @@ const characters = [
 		srcFront: '/characters/middle/card29.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Madronna',
@@ -286,8 +286,8 @@ const characters = [
 		srcFront: '/characters/middle/card15.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Divine Johnzon',
@@ -295,8 +295,8 @@ const characters = [
 		srcFront: '/characters/middle/card37.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Papa Frank',
@@ -304,8 +304,8 @@ const characters = [
 		srcFront: '/characters/middle/card20.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Opra Winfred',
@@ -313,8 +313,8 @@ const characters = [
 		srcFront: '/characters/middle/card12.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Steven Kong',
@@ -322,8 +322,8 @@ const characters = [
 		srcFront: '/characters/middle/card06.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Chaquira',
@@ -331,8 +331,8 @@ const characters = [
 		srcFront: '/characters/middle/card32.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Emma Vatson',
@@ -340,8 +340,8 @@ const characters = [
 		srcFront: '/characters/middle/card21.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 	{
 		name: 'Ri Anna',
@@ -349,8 +349,8 @@ const characters = [
 		srcFront: '/characters/middle/card10.png',
 		altFront: 'Dominion character',
 		altBack: 'Dominion character',
-		colorTo: '#9c40ff',
-		colorFrom: '#ff0f0f',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
 	},
 ];
 

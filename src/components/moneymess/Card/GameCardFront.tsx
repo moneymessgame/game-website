@@ -13,7 +13,7 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 	<>
 		<div
 			style={{
-				background: `linear-gradient(to top, ${colorFrom}, ${colorTo})`,
+				background: `linear-gradient(to top, #080936, #1315A3, #0859E9)`,
 			}}
 			className="w-[100%] h-[100%] absolute z-10"
 		/>
@@ -28,16 +28,12 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 		/>
 
 		<div
-			className={`absolute  w-[100%] h-[100%] z-30 bg-gradient-to-t to-30% bottom-0`}
+			className={`absolute  w-[100%] h-[100%] z-30 bg-gradient-to-t to-30% from-[#080936] bottom-0`}
 		/>
 
-		{/* <div
-			className={`absolute  w-[100%] h-[100%] z-30 bg-gradient-to-t to-30% from-[${colorFrom}] bottom-0`}
-		/> */}
-
 		<div className="absolute z-50 bottom-2 left-2 text-left">
-			<h1 className="text-foreground text-3xl font-black text-left">{name}</h1>
-			<h2 className="text-foreground text-xl font-black text-left">
+			<h1 className="text-foreground text-2xl font-light text-left">{name}</h1>
+			<h2 className="text-foreground text-md font-black text-left">
 				{altFront}
 			</h2>
 		</div>

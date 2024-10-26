@@ -90,7 +90,7 @@ export default function CardSpread() {
 	return (
 		<div
 			className={cn(
-				'group relative flex min-h-80 min-w-52 items-center transition-all duration-500 ease-in-out',
+				'group relative flex min-h-80 min-w-52 items-center transition-all duration-500 ease-in-out cursor-pointer',
 				{
 					'origin-bottom transition-all duration-500 ease-in-out hover:-rotate-[15deg]':
 						!isExpanded,

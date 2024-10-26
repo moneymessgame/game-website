@@ -30,7 +30,7 @@ const FirstSeason = () => {
 					<LampContainer>
 						<div className="flex flex-col items-center justify-center relative w-full text-center">
 							<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8 w-[80%]">
-								A great idea is born with <br /> the help of small contributions
+								moneymess <br /> first season started right now
 							</h2>
 							<p className="text-muted-foreground mt-6 max-w-md mx-auto">
 								From small contributions, a great idea takes shape.

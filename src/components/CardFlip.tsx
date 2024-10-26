@@ -29,13 +29,13 @@ const CardFlip: React.FC<CardFlipProps> = ({
 	return (
 		<div className="m-4" onClick={handleFlip}>
 			<div className="flip-card w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-				<BorderBeam
+				{/* <BorderBeam
 					size={250}
 					duration={12}
 					delay={9}
 					colorTo={colorTo}
 					colorFrom={colorFrom}
-				/>
+				/> */}
 				<motion.div
 					className="flip-card-inner w-[100%] h-[100%]"
 					initial={false}
@@ -49,7 +49,7 @@ const CardFlip: React.FC<CardFlipProps> = ({
 							colorTo={colorTo}
 							colorFrom={colorFrom}
 							name={name}
-							altFront={''}
+							altFront={altFront}
 						/>
 					</div>
 					<div className="flip-card-back w-[100%] h-[100%] z-50 absolute top-0 left-0 backface-hidden">

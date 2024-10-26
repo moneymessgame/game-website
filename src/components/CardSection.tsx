@@ -1,6 +1,7 @@
 import CardFlip from './CardFlip';
 import Container from '@/components/global/container';
 import { CardSectionProps } from '@/types/card-section';
+import GameCardFront from '@/components/moneymess/Card/GameCardFront';
 
 const CardSection: React.FC<CardSectionProps> = ({
 	title,
@@ -28,19 +29,18 @@ const CardSection: React.FC<CardSectionProps> = ({
             md:gap-8 py-10 md:py-20 max-w-6xl`}
 					>
 						{cards.map((card, index) => (
-							<CardFlip
-								key={index}
-								srcFront={card.srcFront}
-								srcBack={card.srcBack}
-								altFront={card.altFront}
-								altBack={card.altBack}
-								colorTo={card.colorTo}
-								colorFrom={card.colorFrom}
-								email={card.email}
-								linkedIn={card.linkedIn}
-								gitHub={card.gitHub}
-								name={card.name}
-							/>
+							<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
+								<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
+									<GameCardFront
+										key={index}
+										srcFront={card.srcFront}
+										colorTo={card.colorTo}
+										colorFrom={card.colorFrom}
+										name={card.name}
+										altFront={card.altFront}
+									/>
+								</div>
+							</div>
 						))}
 					</div>
 				</div>

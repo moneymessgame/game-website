@@ -36,18 +36,6 @@ export default function Navbar({}: Props) {
 
 				<div className="flex items-center gap-4">
 					<Link
-						href="/Whitepaper En.pdf"
-						target="_blank"
-						rel="noopener noreferrer"
-						className={buttonVariants({
-							size: 'sm',
-							className: 'flex bg-ring hover:bg-accent gap-3 px-8 py-5',
-						})}
-					>
-						<ScrollText className="h-6 w-6" />
-						<span className="text-lg font-black uppercase">Whitepaper</span>
-					</Link>
-					<Link
 						href="#"
 						className={buttonVariants({
 							size: 'sm',
