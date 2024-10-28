@@ -64,17 +64,37 @@ const HomePage = () => {
 									</h1>
 								</div>
 
-								<CardSpread />
+								<div className="relative flex items-center">
+									<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
 
-								<p className="text-base md:text-lg text-foreground/80 mt-28 text-center">
-									I envy you, lucky one, because you’ve found the game, the one
-									you've heard so much about, the one you’ve seen in your dreams
-									and fantasies. An incredible, fantastic, magical game –
-									MoneyMess.
-								</p>
-								<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
-									Onward to adventure!
-								</p>
+									
+										<Image
+											src="/assets/hero-2.png"
+											alt="MoneyMess"
+											width={800}
+											height={546}
+											quality={80}
+											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
+										/>
+
+										
+									
+								</div>
+
+								<div className="-m-30">
+									<p className="text-base md:text-lg text-foreground/80 text-center">
+										I envy you, lucky one, because you’ve found the game, the one
+										you've heard so much about, the one you’ve seen in your dreams
+										and fantasies. An incredible, fantastic, magical game –
+										MoneyMess.
+									</p>
+									<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
+										Onward to adventure!
+									</p>
+								</div>
+								
+
+
 							</div>
 						</div>
 					</Container>
