@@ -69,13 +69,31 @@ const HomePage = () => {
 
 									
 										<Image
-											src="/assets/hero-2.png"
+											src="/assets/hero-4.png"
 											alt="MoneyMess"
-											width={800}
-											height={546}
+											width={700}
+											height={482}
 											quality={80}
 											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
 										/>
+
+										{/* <Image
+											src="/assets/hero-3.png"
+											alt="MoneyMess"
+											width={400}
+											height={830}
+											quality={80}
+											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
+										/> */}
+
+										{/* <Image
+											src="/assets/hero-5.png"
+											alt="MoneyMess"
+											width={700}
+											height={454}
+											quality={80}
+											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
+										/> */}
 
 										
 									
