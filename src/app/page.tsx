@@ -58,7 +58,6 @@ const HomePage = () => {
 
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<div className="flex items-center justify-center">
-									<OrbitIcon className="w-16 h-16 mx-4 text-thin fill-100 text-white thin-line-icon" />
 									<h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-black uppercase text-center mb-10 bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 										MoneyMess
 									</h1>
@@ -73,8 +72,7 @@ const HomePage = () => {
 											alt="MoneyMess"
 											width={700}
 											height={482}
-											quality={80}
-											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
+											className="z-20 object-cover min-w-full min-h-full bottom-0 object-center overflow-hidden"
 										/>
 
 										{/* <Image
@@ -121,7 +119,7 @@ const HomePage = () => {
 
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
-					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
 					<Container>
 						<div className="flex flex-col text-xl items-center max-w-3xl w-11/12 md:w-full">
 							<TextGenerateEffectDemo subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. This is a city where every strategy and decision you make can shift the balance of power, and legendary figures become your allies in the battle for power, popularity, richness and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices. Each decision impacts the growth of your characters, boosting specific traits. The right strategy is the key to victory!" />
@@ -130,7 +128,7 @@ const HomePage = () => {
 				</Wrapper>
 			</section>
 
-			<FocusCards cards={cards} />
+			{/* <FocusCards cards={cards} /> */}
 
 			{/**Characters */}
 			{/* <CardSection
@@ -183,6 +181,87 @@ const HomePage = () => {
 				description="Choose your character and his/her main trait"
 				numberOfCharacters={4}
 			/>
+
+			{/** Intro */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="max-w-xl mx-auto text-center" id="intro">
+							<SectionBadge title="Introduction" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								How to Start Playing and Investing in NFT Games
+							</h2>
+						</div>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+								<Container>
+									<div className="relative flex items-center justify-center mx-auto mt-8">
+										<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
+										
+										<Image
+											src="/assets/hero-3.png"
+											alt="MoneyMess"
+											width={400}
+											height={830}
+											quality={80}
+											className="z-20 object-cover w-[400px] h-[830px] bottom-0 object-center overflow-hidden"
+										/>
+									</div>
+								</Container>
+								<p className="text-base md:text-lg text-foreground/80 mt-6  flex items-center justify-center">
+									NFT games represent a cutting-edge trend in the video game
+									industry, combining blockchain technology and gaming. These
+									games offer unique opportunities for players who want not only
+									to have fun but also to earn from their virtual assets. In
+									this article, we will discuss what NFT games are, how they
+									work, and what earning strategies are available to players.
+								</p>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/** Intro */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center relative">
+					<Container>
+						<div className="max-w-xl mx-auto text-center" id="intro">
+							<SectionBadge title="Introduction" />
+							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+								How to Start Playing and Investing in NFT Games
+							</h2>
+						</div>
+						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+								<p className="text-base md:text-lg text-foreground/80 mt-6  flex items-center justify-center">
+									NFT games represent a cutting-edge trend in the video game
+									industry, combining blockchain technology and gaming. These
+									games offer unique opportunities for players who want not only
+									to have fun but also to earn from their virtual assets. In
+									this article, we will discuss what NFT games are, how they
+									work, and what earning strategies are available to players.
+								</p>
+								<Container>
+									<div className="relative flex items-center justify-center mx-auto mt-8">
+										<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
+										
+										<Image
+											src="/assets/hero-5.png"
+											alt="MoneyMess"
+											width={700}
+											height={454}
+											quality={80}
+											className="z-20 object-cover  min-w-full min-h-full bottom-0 object-center overflow-hidden"
+										/>
+									</div>
+								</Container>
+								
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
 
 			{/** Testimonials */}
 			<section id="reviews">
