@@ -59,9 +59,15 @@ importers:
       '@tsparticles/slim':
         specifier: ^3.5.0
         version: 3.5.0
+      '@types/canvas-confetti':
+        specifier: ^1.6.4
+        version: 1.6.4
       animata:
         specifier: ^1.1.0
         version: 1.1.0
+      canvas-confetti:
+        specifier: ^1.9.3
+        version: 1.9.3
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -822,6 +828,9 @@ packages:
   '@tsparticles/updater-stroke-color@3.5.0':
     resolution: {integrity: sha512-29X1zER+W9IBDv0nTD/jRXnu5rEU7uv7+W1N0B6leBipjAY24sg7Kub2SvXAaBKz6kHHWuCeccBOwIiiTpDqMA==}
 
+  '@types/canvas-confetti@1.6.4':
+    resolution: {integrity: sha512-fNyZ/Fdw/Y92X0vv7B+BD6ysHL4xVU5dJcgzgxLdGbn8O3PezZNIJpml44lKM0nsGur+o/6+NZbZeNTt00U1uA==}
+
   '@types/node@20.16.1':
     resolution: {integrity: sha512-zJDo7wEadFtSyNz5QITDfRcrhqDvQI1xQNQ0VoizPjM/dVAODqqIUWbJPkvsxmTI0MYRGRikcdjMPhOssnPejQ==}
 
@@ -897,6 +906,9 @@ packages:
 
   caniuse-lite@1.0.30001651:
     resolution: {integrity: sha512-9Cf+Xv1jJNe1xPZLGuUXLNkE1BoDkqRqYyFJ9TDYSqhduqA4hu4oR9HluGoWYQC/aj8WHjsGVV+bwkh0+tegRg==}
+
+  canvas-confetti@1.9.3:
+    resolution: {integrity: sha512-rFfTURMvmVEX1gyXFgn5QMn81bYk70qa0HLzcIOSVEyl57n6o9ItHeBtUSWdvKAPY0xlvBHno4/v3QPrT83q9g==}
 
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
@@ -2215,6 +2227,8 @@ snapshots:
     dependencies:
       '@tsparticles/engine': 3.5.0
 
+  '@types/canvas-confetti@1.6.4': {}
+
   '@types/node@20.16.1':
     dependencies:
       undici-types: 6.19.8
@@ -2280,6 +2294,8 @@ snapshots:
   camelcase-css@2.0.1: {}
 
   caniuse-lite@1.0.30001651: {}
+
+  canvas-confetti@1.9.3: {}
 
   chokidar@3.6.0:
     dependencies:

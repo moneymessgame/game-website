@@ -18,6 +18,8 @@ import CardSpread from '@/components/animata/Card/card-spread';
 import { cards, tweets } from '@/constants/index';
 import CardSectionGenerate from '@/components/CardSectionGenerate';
 
+import NumberTicker from "@/components/ui/number-ticker";
+
 export const metadata: Metadata = {
 	title: 'MoneyMess',
 	robots: {
@@ -66,6 +68,10 @@ const HomePage = () => {
 								<div className="relative flex items-center">
 									<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
 
+									<div className="absolute top-0 left-0 z-10 whitespace-pre-wrap text-9xl font-thin tracking-tighter text-white">
+										<NumberTicker value={5.67} decimalPlaces={2} />	
+									</div>
+
 									
 										<Image
 											src="/assets/hero-4.png"
@@ -97,6 +103,8 @@ const HomePage = () => {
 									
 								</div>
 
+								
+
 								<div className="-m-30">
 									<p className="text-base md:text-lg text-foreground/80 text-center">
 										I envy you, lucky one, because you’ve found the game, the one
@@ -119,9 +127,9 @@ const HomePage = () => {
 
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
-					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
 					<Container>
-						<div className="flex flex-col text-xl items-center max-w-3xl w-11/12 md:w-full">
+						<div className="flex flex-col text-4xl font-thin tracking-tighter leading-10 max-w-5xl w-11/12 md:w-full">
 							<TextGenerateEffectDemo subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. This is a city where every strategy and decision you make can shift the balance of power, and legendary figures become your allies in the battle for power, popularity, richness and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices. Each decision impacts the growth of your characters, boosting specific traits. The right strategy is the key to victory!" />
 						</div>
 					</Container>
@@ -208,7 +216,7 @@ const HomePage = () => {
 										/>
 									</div>
 								</Container>
-								<p className="text-base md:text-lg text-foreground/80 mt-6  flex items-center justify-center">
+								<p className="text-base md:text-lg text-foreground/80 mt-6 px-4 flex items-center justify-center">
 									NFT games represent a cutting-edge trend in the video game
 									industry, combining blockchain technology and gaming. These
 									games offer unique opportunities for players who want not only
@@ -234,7 +242,7 @@ const HomePage = () => {
 						</div>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
 							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
-								<p className="text-base md:text-lg text-foreground/80 mt-6  flex items-center justify-center">
+								<p className="text-base md:text-lg text-foreground/80 mt-6 px-4  flex items-center justify-center">
 									NFT games represent a cutting-edge trend in the video game
 									industry, combining blockchain technology and gaming. These
 									games offer unique opportunities for players who want not only
@@ -354,10 +362,10 @@ const HomePage = () => {
 			</section>
 
 			{/* Tweets */}
-			<section>
+			{/* <section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
 					<Container>
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2">
 							{tweets.map((tweet, index) => {
 								return (
 									<div key={index} className={`shadow-md rounded-lg p-4 `}>
@@ -378,7 +386,7 @@ const HomePage = () => {
 						</div>
 					</Container>
 				</Wrapper>
-			</section>
+			</section> */}
 
 			{/** How it works */}
 			<section>
