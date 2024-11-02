@@ -39,6 +39,8 @@ const CardSection: React.FC<CardSectionProps> = ({
 											colorTo={card.colorTo}
 											colorFrom={card.colorFrom}
 											name={card.name}
+											characteristic={card.characteristic}
+											number={card.number}
 											altFront={card.altFront}
 										/>
 									</div>

@@ -10,6 +10,9 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 	colorTo,
 	colorFrom,
 	name,
+	characteristic,
+	number,
+	
 }) => (
 	<>
 		<div
@@ -42,10 +45,11 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 		/>
 
 		<div className="absolute z-50 top-2 left-2 text-left">
-			<SectionBadge title="Introduction" />
+			<SectionBadge title={characteristic} />
 		</div>
 
 		<div className="absolute z-50 bottom-2 left-2 text-left">
+			<div className="text-foreground text-2xl font-black text-left">{number}</div>
 			<h1 className="text-foreground text-2xl font-black text-left">{name}</h1>
 			<h2 className="text-foreground text-md font-light text-left">
 				{altFront}

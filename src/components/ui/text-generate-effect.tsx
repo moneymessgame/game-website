@@ -53,7 +53,7 @@ export const TextGenerateEffect = ({
 	return (
 		<div>
 			<div className="mt-4">
-				<div className=" dark:text-white text-black text-justify text-xxl leading-10 tracking-wide p-4">
+				<div className=" dark:text-white text-black text-xxl leading-10 tracking-wide p-4">
 					{renderSubtitle()}
 				</div>
 			</div>

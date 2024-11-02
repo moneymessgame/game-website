@@ -4,4 +4,6 @@ export interface GameCardFrontProps {
 	colorTo: string;
 	colorFrom: string;
 	name?: string;
+	number?: string;
+	characteristic?: string;
 }

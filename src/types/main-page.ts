@@ -6,5 +6,6 @@ export interface CharacterType {
 	colorTo: string;
 	colorFrom: string;
 	name: string;
+	number: string;
 	characteristic: string;
 }

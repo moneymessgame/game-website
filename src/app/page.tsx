@@ -20,6 +20,13 @@ import CardSectionGenerate from '@/components/CardSectionGenerate';
 
 import NumberTicker from "@/components/ui/number-ticker";
 
+import PulsatingButton from "@/components/ui/pulsating-button";
+
+import characters from '@/constants/characters';
+import CardSection from '@/components/CardSection';
+
+import GameCardFront from '@/components/moneymess/Card/GameCardFront';
+
 export const metadata: Metadata = {
 	title: 'MoneyMess',
 	robots: {
@@ -29,8 +36,8 @@ export const metadata: Metadata = {
 };
 
 const HomePage = () => {
-	const firstRow = reviews.slice(0, reviews.length / 2);
-	const secondRow = reviews.slice(reviews.length / 2);
+	const firstRow = characters.slice(0, characters.length / 2);
+	const secondRow = characters.slice( characters.length / 2);
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 pt-8">
@@ -68,9 +75,7 @@ const HomePage = () => {
 								<div className="relative flex items-center">
 									<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
 
-									<div className="absolute top-0 left-0 z-10 whitespace-pre-wrap text-9xl font-thin tracking-tighter text-white">
-										<NumberTicker value={5.67} decimalPlaces={2} />	
-									</div>
+									
 
 									
 										<Image
@@ -126,10 +131,10 @@ const HomePage = () => {
 			</section>
 
 			<section>
-				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
+				<Wrapper className="flex flex-col items-center justify-center pb-20 relative">
 					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
 					<Container>
-						<div className="flex flex-col text-4xl font-thin tracking-tighter leading-10 max-w-5xl w-11/12 md:w-full">
+						<div className="flex flex-col text-2xl font-thin tracking-tighter leading-10 max-w-4xl w-11/12 md:w-full">
 							<TextGenerateEffectDemo subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. This is a city where every strategy and decision you make can shift the balance of power, and legendary figures become your allies in the battle for power, popularity, richness and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices. Each decision impacts the growth of your characters, boosting specific traits. The right strategy is the key to victory!" />
 						</div>
 					</Container>
@@ -184,11 +189,11 @@ const HomePage = () => {
 				colorFrom={''}
 			/> */}
 
-			<CardSectionGenerate
+			{/* <CardSectionGenerate
 				title="Characters"
 				description="Choose your character and his/her main trait"
 				numberOfCharacters={4}
-			/>
+			/> */}
 
 			{/** Intro */}
 			<section>
@@ -196,8 +201,8 @@ const HomePage = () => {
 					<Container>
 						<div className="max-w-xl mx-auto text-center" id="intro">
 							<SectionBadge title="Introduction" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
-								How to Start Playing and Investing in NFT Games
+							<h2 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
+								What challenges will players face in the game?
 							</h2>
 						</div>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
@@ -216,56 +221,52 @@ const HomePage = () => {
 										/>
 									</div>
 								</Container>
-								<p className="text-base md:text-lg text-foreground/80 mt-6 px-4 flex items-center justify-center">
-									NFT games represent a cutting-edge trend in the video game
-									industry, combining blockchain technology and gaming. These
-									games offer unique opportunities for players who want not only
-									to have fun but also to earn from their virtual assets. In
-									this article, we will discuss what NFT games are, how they
-									work, and what earning strategies are available to players.
-								</p>
-							</div>
-						</div>
-					</Container>
-				</Wrapper>
-			</section>
-
-			{/** Intro */}
-			<section>
-				<Wrapper className="flex flex-col items-center justify-center relative">
-					<Container>
-						<div className="max-w-xl mx-auto text-center" id="intro">
-							<SectionBadge title="Introduction" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
-								How to Start Playing and Investing in NFT Games
-							</h2>
-						</div>
-						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
-								<p className="text-base md:text-lg text-foreground/80 mt-6 px-4  flex items-center justify-center">
-									NFT games represent a cutting-edge trend in the video game
-									industry, combining blockchain technology and gaming. These
-									games offer unique opportunities for players who want not only
-									to have fun but also to earn from their virtual assets. In
-									this article, we will discuss what NFT games are, how they
-									work, and what earning strategies are available to players.
-								</p>
 								<Container>
-									<div className="relative flex items-center justify-center mx-auto mt-8">
-										<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
+									<div className="text-base md:text-lg text-foreground/80 p-4 items-center justify-center">
+										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+											Collect and gather unique game cards
+										</h2>
+										<p>
+											Expand your collection of game cards, level up acquired characters, creating a unique personality for each one. Turn your game card into an NFT.
+										</p>
+										<Link
+											href="https://t.me/moneymesschannel"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<PulsatingButton
+												className='mt-8'
+											>Play right now
+											</PulsatingButton>
+										</Link>
 										
-										<Image
-											src="/assets/hero-5.png"
-											alt="MoneyMess"
-											width={700}
-											height={454}
-											quality={80}
-											className="z-20 object-cover  min-w-full min-h-full bottom-0 object-center overflow-hidden"
-										/>
+									</div>
+									<div className="text-base md:text-lg text-foreground/80 p-4 items-center justify-center">
+										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+											First season of MoneyMess
+										</h2>
+										<p>
+											Complete various exciting tasks and quests daily. Level up your character in four attributes: 
+											<span className='text-[#ffff0f]'>dominion</span>, 
+											<span className='text-[#0ffcff]'>popularity</span>, 
+											<span className='text-[#0fff0f]'>richness</span> and 
+											<span className='text-[#ff0f0f]'>attractiveness</span>. 
+										</p>
+										<Link
+											href="https://t.me/moneymesschannel"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<PulsatingButton
+												className='mt-8'
+											>More details about the first season
+											</PulsatingButton>
+										</Link>
+										
 									</div>
 								</Container>
-								
 							</div>
+								
 						</div>
 					</Container>
 				</Wrapper>
@@ -273,30 +274,23 @@ const HomePage = () => {
 
 			{/** Testimonials */}
 			<section id="reviews">
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+				<Wrapper className="flex flex-col items-center justify-center relative">
 					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
 						<div className="px-6">
-							<div className="max-w-lg mx-auto text-start md:text-center pb-10">
-								<SectionBadge title="Testimonial Replicas" />
-								<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-									What do the characters think about the game?
+							<div className="max-w-md md:max-w-xl mx-auto text-center" id="intro">
+								<SectionBadge title="Game cards" />
+								<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
+									Unique characters with individual personalities
 								</h2>
-								<p className="text-muted-foreground mt-6">
-									Find out what the characters really think about the game! Each
-									of them has their own unique perspective, reflecting their
-									personality and experiences. Some are excited about the
-									innovative features, while others are surprised by the
-									unexpected twists in the gameplay. Their reactions range from
-									curiosity to admiration, giving players a deeper insight into
-									the world of MoneyMess and its impact on its virtual
-									inhabitants.
-								</p>
 							</div>
 						</div>
 
-						<div className="py-10 md:py-20 w-full">
+						<div className="py-10 w-full">
 							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
+
+								<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]" />
+
 								<Marquee pauseOnHover className="[--duration:20s] select-none">
 									{firstRow.map((review) => (
 										<figure
@@ -307,19 +301,26 @@ const HomePage = () => {
 											)}
 										>
 											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
+											
+												<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
+													<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
+														<GameCardFront
+															key={review.name}
+															srcFront={review.srcFront}
+															colorTo={review.colorTo}
+															colorFrom={review.colorFrom}
+															name={review.name}
+															characteristic={review.characteristic}
+															number={review.number}
+															altFront={review.altFront}
+														/>
+													</div>
 												</div>
+					
 											</div>
-											<blockquote className="mt-2 text-sm">
+											{/* <blockquote className="mt-2 text-sm">
 												{review.body}
-											</blockquote>
+											</blockquote> */}
 										</figure>
 									))}
 								</Marquee>
@@ -337,19 +338,23 @@ const HomePage = () => {
 											)}
 										>
 											<div className="flex flex-row items-center gap-2">
-												<UserIcon className="w-6 h-6" />
-												<div className="flex flex-col">
-													<figcaption className="text-sm font-medium">
-														{review.name}
-													</figcaption>
-													<p className="text-xs font-medium text-muted-foreground">
-														{review.username}
-													</p>
+											
+												<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
+													<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
+														<GameCardFront
+															key={review.name}
+															srcFront={review.srcFront}
+															colorTo={review.colorTo}
+															colorFrom={review.colorFrom}
+															name={review.name}
+															characteristic={review.characteristic}
+															number={review.number}
+															altFront={review.altFront}
+														/>
+													</div>
 												</div>
+					
 											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote>
 										</figure>
 									))}
 								</Marquee>
@@ -391,7 +396,7 @@ const HomePage = () => {
 			{/** How it works */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<Container>
+					{/* <Container>
 						<div className="max-w-md mx-auto text-start md:text-center flex flex-col justify-center items-center">
 							<Image
 								src="/cards/rock.png"
@@ -400,7 +405,7 @@ const HomePage = () => {
 								height={300}
 								quality={100}
 							/>
-							{/* <SectionBadge title="The Process" /> */}
+							
 							<h2 className="text-4xl mt-8 md:text-5xl lg:text-xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 								And have fun!
 							</h2>
@@ -410,7 +415,7 @@ const HomePage = () => {
 								let's get started!
 							</p>
 						</div>
-					</Container>
+					</Container> */}
 					<Container>
 						<div className="flex flex-col items-center justify-center py-10 md:py-10 w-full">
 							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
@@ -419,9 +424,14 @@ const HomePage = () => {
 										key={perk.title}
 										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
 									>
-										<div className="flex items-center justify-center">
+
+										{/* <div className="flex items-center justify-center">
 											<perk.icon className="w-8 h-8" />
+										</div> */}
+										<div className="whitespace-pre-wrap text-6xl font-thin tracking-tighter text-white">
+											<NumberTicker value={perk.value} />	
 										</div>
+										
 										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
 										<p className="text-muted-foreground mt-2 text-justify">
 											{perk.info}

@@ -13,16 +13,19 @@ export const perks = [
 	{
 		icon: Icons.auth,
 		title: 'Create and Develop',
-		info: 'Become the overlord of your own planet. Develop and level up your chosen character. Conquer new territories and expand your empire. Master unique abilities and lead your character to greatness',
+		value: 566,
+		info: 'Develop and level up your chosen character. Conquer new territories and expand your empire. Master unique abilities and lead your character to greatness',
 	},
 	{
 		icon: Icons.handshake,
 		title: 'Form Alliances',
+		value: 256,
 		info: 'Invite friends and form strategic alliances with them. Combine resources and support each other in achieving common goals. Forming such alliances will help strengthen your position, and working together will lead to greater success than working alone.',
 	},
 	{
 		icon: Icons.launch,
 		title: 'Purchase NFTs',
+		value: 55430,
 		info: "Want to buy a unique planet, star, or even Earth? That's something we have too! You can acquire a special NFT and expand your gaming possibilities.",
 	},
 ];

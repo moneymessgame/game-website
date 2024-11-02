@@ -32,6 +32,8 @@ export default function CardSectionGenerate({
 				colorTo: character.colorTo,
 				colorFrom: character.colorFrom,
 				name: character.name,
+				characteristic: character.characteristic,
+				number: character.number,
 			}))}
 			colorTo={''}
 			colorFrom={''}
