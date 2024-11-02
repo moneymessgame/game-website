@@ -18,9 +18,9 @@ import CardSpread from '@/components/animata/Card/card-spread';
 import { cards, tweets } from '@/constants/index';
 import CardSectionGenerate from '@/components/CardSectionGenerate';
 
-import NumberTicker from "@/components/ui/number-ticker";
+import NumberTicker from '@/components/ui/number-ticker';
 
-import PulsatingButton from "@/components/ui/pulsating-button";
+import PulsatingButton from '@/components/ui/pulsating-button';
 
 import characters from '@/constants/characters';
 import CardSection from '@/components/CardSection';
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
 const HomePage = () => {
 	const firstRow = characters.slice(0, characters.length / 2);
-	const secondRow = characters.slice( characters.length / 2);
+	const secondRow = characters.slice(characters.length / 2);
 
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 pt-8">
@@ -75,18 +75,15 @@ const HomePage = () => {
 								<div className="relative flex items-center">
 									<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
 
-									
+									<Image
+										src="/assets/hero-4.png"
+										alt="MoneyMess"
+										width={700}
+										height={482}
+										className="z-20 object-cover min-w-full min-h-full bottom-0 object-center overflow-hidden"
+									/>
 
-									
-										<Image
-											src="/assets/hero-4.png"
-											alt="MoneyMess"
-											width={700}
-											height={482}
-											className="z-20 object-cover min-w-full min-h-full bottom-0 object-center overflow-hidden"
-										/>
-
-										{/* <Image
+									{/* <Image
 											src="/assets/hero-3.png"
 											alt="MoneyMess"
 											width={400}
@@ -95,7 +92,7 @@ const HomePage = () => {
 											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
 										/> */}
 
-										{/* <Image
+									{/* <Image
 											src="/assets/hero-5.png"
 											alt="MoneyMess"
 											width={700}
@@ -103,27 +100,19 @@ const HomePage = () => {
 											quality={80}
 											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
 										/> */}
-
-										
-									
 								</div>
-
-								
 
 								<div className="-m-30">
 									<p className="text-base md:text-lg text-foreground/80 text-center">
-										I envy you, lucky one, because you’ve found the game, the one
-										you've heard so much about, the one you’ve seen in your dreams
-										and fantasies. An incredible, fantastic, magical game –
-										MoneyMess.
+										I envy you, lucky one, because you’ve found the game, the
+										one you've heard so much about, the one you’ve seen in your
+										dreams and fantasies. An incredible, fantastic, magical game
+										– MoneyMess.
 									</p>
 									<p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
 										Onward to adventure!
 									</p>
 								</div>
-								
-
-
 							</div>
 						</div>
 					</Container>
@@ -134,8 +123,10 @@ const HomePage = () => {
 				<Wrapper className="flex flex-col items-center justify-center pb-20 relative">
 					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-full -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
 					<Container>
-						<div className="flex flex-col text-2xl font-thin tracking-tighter leading-10 max-w-4xl w-11/12 md:w-full">
-							<TextGenerateEffectDemo subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. This is a city where every strategy and decision you make can shift the balance of power, and legendary figures become your allies in the battle for power, popularity, richness and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices. Each decision impacts the growth of your characters, boosting specific traits. The right strategy is the key to victory!" />
+						<div className="flex flex-col text-2xl font-thin text-center tracking-tighter leading-10 max-w-4xl w-11/12 md:w-full">
+							<TextGenerateEffectDemo
+								subtitle="Welcome to MoneyMess — an alternate reality where the world’s most famous and influential personalities are at the heart of a sprawling game metropolis. In this city, every strategy and decision you make can shift the balance of power, allowing legendary figures to become your allies in the battle for power, popularity, wealth, and attractiveness. MoneyMess is a unique collectible card game, built on the TON blockchain and integrated into Telegram. Every day brings new text-based quests with multiple choices, where each decision impacts your characters' growth and boosts specific traits. The right strategy is the key to victory!"
+							/>
 						</div>
 					</Container>
 				</Wrapper>
@@ -205,12 +196,13 @@ const HomePage = () => {
 								What challenges will players face in the game?
 							</h2>
 						</div>
+						
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
+							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 ">
+								{/* Image */}
 								<Container>
 									<div className="relative flex items-center justify-center mx-auto mt-8">
-										<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
-										
+										<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem] " />
 										<Image
 											src="/assets/hero-3.png"
 											alt="MoneyMess"
@@ -221,53 +213,53 @@ const HomePage = () => {
 										/>
 									</div>
 								</Container>
+								{/* Text */}
 								<Container>
-									<div className="text-base md:text-lg text-foreground/80 p-4 items-center justify-center">
+									<div className="text-base md:text-lg text-foreground/80 p-4 justify-center">
 										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
 											Collect and gather unique game cards
 										</h2>
 										<p>
-											Expand your collection of game cards, level up acquired characters, creating a unique personality for each one. Turn your game card into an NFT.
+											Expand your collection of game cards, level up acquired
+											characters, creating a unique personality for each one.
+											Turn your game card into an NFT.
 										</p>
 										<Link
 											href="https://t.me/moneymesschannel"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											<PulsatingButton
-												className='mt-8'
-											>Play right now
+											<PulsatingButton className="mt-8">
+												Play right now
 											</PulsatingButton>
 										</Link>
-										
 									</div>
 									<div className="text-base md:text-lg text-foreground/80 p-4 items-center justify-center">
 										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
 											First season of MoneyMess
 										</h2>
 										<p>
-											Complete various exciting tasks and quests daily. Level up your character in four attributes: 
-											<span className='text-[#ffff0f]'>dominion</span>, 
-											<span className='text-[#0ffcff]'>popularity</span>, 
-											<span className='text-[#0fff0f]'>richness</span> and 
-											<span className='text-[#ff0f0f]'>attractiveness</span>. 
+											Complete various exciting tasks and quests daily. Level up
+											your character in four attributes:&nbsp;
+											<span className="text-[#ffff0f]">dominion</span>,&nbsp;
+											<span className="text-[#0ffcff]">popularity</span>,&nbsp;
+											<span className="text-[#0fff0f]">richness</span> and&nbsp;
+											<span className="text-[#ff0f0f]">attractiveness</span>.
 										</p>
 										<Link
 											href="https://t.me/moneymesschannel"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											<PulsatingButton
-												className='mt-8'
-											>More details about the first season
+											<PulsatingButton className="mt-8">
+												More details about the first season
 											</PulsatingButton>
 										</Link>
-										
 									</div>
 								</Container>
 							</div>
-								
 						</div>
+						
 					</Container>
 				</Wrapper>
 			</section>
@@ -278,7 +270,10 @@ const HomePage = () => {
 					<div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div>
 					<Container>
 						<div className="px-6">
-							<div className="max-w-md md:max-w-xl mx-auto text-center" id="intro">
+							<div
+								className="max-w-md md:max-w-xl mx-auto text-center"
+								id="intro"
+							>
 								<SectionBadge title="Game cards" />
 								<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
 									Unique characters with individual personalities
@@ -288,7 +283,6 @@ const HomePage = () => {
 
 						<div className="py-10 w-full">
 							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
-
 								<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]" />
 
 								<Marquee pauseOnHover className="[--duration:20s] select-none">
@@ -301,7 +295,6 @@ const HomePage = () => {
 											)}
 										>
 											<div className="flex flex-row items-center gap-2">
-											
 												<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
 													<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
 														<GameCardFront
@@ -316,7 +309,6 @@ const HomePage = () => {
 														/>
 													</div>
 												</div>
-					
 											</div>
 											{/* <blockquote className="mt-2 text-sm">
 												{review.body}
@@ -338,7 +330,6 @@ const HomePage = () => {
 											)}
 										>
 											<div className="flex flex-row items-center gap-2">
-											
 												<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
 													<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
 														<GameCardFront
@@ -353,7 +344,6 @@ const HomePage = () => {
 														/>
 													</div>
 												</div>
-					
 											</div>
 										</figure>
 									))}
@@ -424,14 +414,13 @@ const HomePage = () => {
 										key={perk.title}
 										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
 									>
-
 										{/* <div className="flex items-center justify-center">
 											<perk.icon className="w-8 h-8" />
 										</div> */}
 										<div className="whitespace-pre-wrap text-6xl font-thin tracking-tighter text-white">
-											<NumberTicker value={perk.value} />	
+											<NumberTicker value={perk.value} />
 										</div>
-										
+
 										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
 										<p className="text-muted-foreground mt-2 text-justify">
 											{perk.info}
