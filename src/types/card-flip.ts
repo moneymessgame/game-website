@@ -1,5 +1,6 @@
 export interface CardFlipProps {
 	srcFront: string;
+	srcFrontBg: string;
 	srcBack: string;
 	altFront: string;
 	altBack: string;
@@ -9,4 +10,8 @@ export interface CardFlipProps {
 	linkedIn?: string;
 	gitHub?: string;
 	name?: string;
+	firstname?: string;
+	lastname?: string;
+	number?: string;
+	characteristic?: string;
 }

@@ -3,7 +3,7 @@ import OrbitIcon from '@/components/global/orbitIcon';
 
 const Footer = () => {
 	return (
-		<footer className="flex flex-col relative items-center justify-center border-t border-border pt-16 pb-8 px-6 lg:px-8 w-full max-w-screen-xl mx-auto lg:pt-32">
+		<footer className="flex flex-col relative items-center justify-center border-t border-border pt-20 pb-8 px-6 lg:px-8 w-full max-w-screen-xl mx-auto">
 			<div className="hidden lg:block absolute -top-1/3 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
 			<div className="hidden lg:block absolute bottom-0 -left-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
 
@@ -16,18 +16,63 @@ const Footer = () => {
 						</Link>
 					</div>
 					<p className="text-muted-foreground mt-4 text-sm text-start">
-						Made by KitPes with chill vibes 💙💛
+						Made by KitPes
+						<br /> with chill vibes 💙💛
 					</p>
 				</div>
 
 				<div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">
 					<div className="md:grid md:grid-cols-2 md:gap-8">
-						<div className="">
+						{/* Resources */}
+						<div>
+							<h3 className="text-base font-medium text-white">Resources</h3>
+							<ul className="mt-4 text-sm text-muted-foreground">
+								<li className="mt-2">
+									<Link
+										href="/wiki/en"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										Wiki (En)
+									</Link>
+								</li>
+								<li className="mt-2">
+									<Link
+										href="/wiki/ru"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										Wiki (Ru)
+									</Link>
+								</li>
+								<li className="mt-2">
+									<Link
+										href="/roadmap"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										Roadmap
+									</Link>
+								</li>
+								<li className="mt-2">
+									<Link
+										href="/Whitepaper EN.pdf"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										Whitepaper
+									</Link>
+								</li>
+							</ul>
+						</div>
+
+						{/* Socials */}
+						<div className="mt-10 md:mt-0 flex flex-col">
 							<h3 className="text-base font-medium text-white">Socials</h3>
 							<ul className="mt-4 text-sm text-muted-foreground">
 								<li className="mt-2">
 									<Link
-										href=""
+										href="https://t.me/moneymesschannel"
+										target="_blank"
+										rel="noopener noreferrer"
 										className="hover:text-foreground transition-all duration-300"
 									>
 										Telegram (En)
@@ -35,7 +80,9 @@ const Footer = () => {
 								</li>
 								<li className="mt-2">
 									<Link
-										href=""
+										href="https://t.me/moneymesschannelru"
+										target="_blank"
+										rel="noopener noreferrer"
 										className="hover:text-foreground transition-all duration-300"
 									>
 										Telegram (Ru)
@@ -43,15 +90,9 @@ const Footer = () => {
 								</li>
 								<li className="mt-2">
 									<Link
-										href=""
-										className="hover:text-foreground transition-all duration-300"
-									>
-										YouTube
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link
-										href=""
+										href="https://x.com/moneymessgame"
+										target="_blank"
+										rel="noopener noreferrer"
 										className="hover:text-foreground transition-all duration-300"
 									>
 										<strong>X</strong> (Twitter)
@@ -59,80 +100,16 @@ const Footer = () => {
 								</li>
 							</ul>
 						</div>
-						<div className="mt-10 md:mt-0 flex flex-col">
-							<h3 className="text-base font-medium text-white">Integrations</h3>
-							<ul className="mt-4 text-sm text-muted-foreground">
-								<li className="">
-									<Link
-										href=""
-										className="hover:text-foreground transition-all duration-300"
-									>
-										Facebook
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link
-										href=""
-										className="hover:text-foreground transition-all duration-300"
-									>
-										Instagram
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link
-										href=""
-										className="hover:text-foreground transition-all duration-300"
-									>
-										Twitter
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link
-										href=""
-										className="hover:text-foreground transition-all duration-300"
-									>
-										LinkedIn
-									</Link>
-								</li>
-							</ul>
-						</div>
 					</div>
+
 					<div className="md:grid md:grid-cols-2 md:gap-8">
-						<div className="">
-							<h3 className="text-base font-medium text-white">Resources</h3>
-							<ul className="mt-4 text-sm text-muted-foreground">
-								<li className="mt-2">
-									<Link
-										href=""
-										className="hover:text-foreground transition-all duration-300"
-									>
-										Blog
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link
-										href=""
-										className="hover:text-foreground transition-all duration-300"
-									>
-										Case Studies
-									</Link>
-								</li>
-								<li className="mt-2">
-									<Link
-										href=""
-										className="hover:text-foreground transition-all duration-300"
-									>
-										Support
-									</Link>
-								</li>
-							</ul>
-						</div>
-						<div className="mt-10 md:mt-0 flex flex-col">
+						{/* Company */}
+						<div>
 							<h3 className="text-base font-medium text-white">Company</h3>
 							<ul className="mt-4 text-sm text-muted-foreground">
 								<li className="">
 									<Link
-										href=""
+										href="/about"
 										className="hover:text-foreground transition-all duration-300"
 									>
 										About Us
@@ -140,21 +117,75 @@ const Footer = () => {
 								</li>
 								<li className="mt-2">
 									<Link
-										href=""
+										href="/first-season"
 										className="hover:text-foreground transition-all duration-300"
 									>
-										Privacy Policy
+										First Season
 									</Link>
 								</li>
 								<li className="mt-2">
 									<Link
-										href=""
+										href="/donate"
 										className="hover:text-foreground transition-all duration-300"
 									>
-										Terms & Conditions
+										Donate
 									</Link>
 								</li>
 							</ul>
+						</div>
+
+						{/* Team */}
+						<div className="mt-10 md:mt-0 flex flex-col">
+							<h3 className="text-base font-medium text-white">Team</h3>
+							<ul className="mt-4 text-sm text-muted-foreground">
+								<li className="">
+									<Link
+										href="https://www.linkedin.com/in/irina-semichasova/"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										LinkedIn (Irine)
+									</Link>
+								</li>
+								<li className="mt-2">
+									<Link
+										href="https://www.linkedin.com/in/mafstat/"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										LinkedIn (Ihor)
+									</Link>
+								</li>
+							</ul>
+							{/* <h3 className="text-base font-medium text-white">Company</h3>
+							<ul className="mt-4 text-sm text-muted-foreground">
+								<li className="">
+									<Link
+										href="/about"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										About Us
+									</Link>
+								</li>
+								<li className="mt-2">
+									<Link
+										href="/first-season"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										First Season
+									</Link>
+								</li>
+								<li className="mt-2">
+									<Link
+										href="/donate"
+										className="hover:text-foreground transition-all duration-300"
+									>
+										Donate
+									</Link>
+								</li>
+							</ul> */}
 						</div>
 					</div>
 				</div>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const RoadMap = () => {
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
+		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
 			{/**Description */}
 			<section>
 				<Wrapper>
@@ -64,14 +64,6 @@ const RoadMap = () => {
 					</Container>
 				</Wrapper>
 			</section>
-			<Image
-				className="absolute "
-				src="/cards/rock2.png"
-				alt="planets"
-				width={200}
-				height={200}
-				style={{ left: '90px', bottom: '-80px' }}
-			/>
 		</div>
 	);
 };

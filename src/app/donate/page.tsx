@@ -90,7 +90,7 @@ const Donate = () => {
 			<section id="intro">
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
-						<div className="max-w-md mx-auto text-start md:text-center">
+						<div className="max-w-md mx-auto text-center">
 							<SectionBadge title="Donations" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
 								«With a little help from my friends»
@@ -127,7 +127,7 @@ const Donate = () => {
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
 									<b>To develop and promote the game, we need:</b>
 								</p>
-								<div className="font-black text-9xl py-5 ">
+								<div className="font-black text-6xl md:text-9xl py-5 ">
 									<Cover>$500,000</Cover>
 								</div>
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">

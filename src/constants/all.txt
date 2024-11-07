@@ -1,0 +1,1415 @@
+	
+	{
+		number: "009",
+		name: 'Margo Robo',
+		characteristic: 'Richness',
+		srcFront: '/characters/middle/card38.png',
+		altFront: 'Richness character',
+		altBack: 'Richness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0fff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	//{ name: 'Tyler Sweeft', characteristic: 'Richness' },
+
+	// Popularity
+	{
+		number: "010",
+		name: 'Povel Durev',
+		characteristic: 'Popularity',
+		srcFront: '/characters/middle/card23.png',
+		altFront: 'Popularity character',
+		altBack: 'Popularity character',
+		colorTo: '#080E4C',
+		colorFrom: '#ffff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "011",
+		name: 'Satoshi Hellomoto',
+		characteristic: 'Popularity',
+		srcFront: '/characters/middle/card03.png',
+		altFront: 'Popularity character',
+		altBack: 'Popularity character',
+		colorTo: '#080E4C',
+		colorFrom: '#ffff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "012",
+		name: 'Jackie Chwan',
+		characteristic: 'Popularity',
+		srcFront: '/characters/middle/card26.png',
+		altFront: 'Popularity character',
+		altBack: 'Popularity character',
+		colorTo: '#080E4C',
+		colorFrom: '#ffff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "013",
+		name: 'Lion Messiah',
+		characteristic: 'Popularity',
+		srcFront: '/characters/middle/card13.png',
+		altFront: 'Popularity character',
+		altBack: 'Popularity character',
+		colorTo: '#080E4C',
+		colorFrom: '#ffff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "014",
+		name: 'LebrOne James',
+		characteristic: 'Popularity',
+		srcFront: '/characters/middle/card17.png',
+		altFront: 'Popularity character',
+		altBack: 'Popularity character',
+		colorTo: '#080E4C',
+		colorFrom: '#ffff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "015",
+		name: 'Hack Ma',
+		characteristic: 'Popularity',
+		srcFront: '/characters/middle/card16.png',
+		altFront: 'Popularity character',
+		altBack: 'Popularity character',
+		colorTo: '#080E4C',
+		colorFrom: '#ffff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "016",
+		name: 'Buff Warrant',
+		characteristic: 'Popularity',
+		srcFront: '/characters/middle/card27.png',
+		altFront: 'Popularity character',
+		altBack: 'Popularity character',
+		colorTo: '#080E4C',
+		colorFrom: '#ffff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "017",
+		name: 'Michael BloomBig',
+		characteristic: 'Popularity',
+		srcFront: '/characters/middle/card30.png',
+		altFront: 'Popularity character',
+		altBack: 'Popularity character',
+		colorTo: '#080E4C',
+		colorFrom: '#ffff0f',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	//{ name: 'Donna Gaga', characteristic: 'Popularity' },
+	//{ name: 'Zandaia', characteristic: 'Popularity' },
+
+	// Attractiveness
+	{
+		number: "018",
+		name: 'Patrick Makhomes',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card14.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "019",
+		name: 'Elan Mosk',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card01.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "020",
+		name: 'Billie Stylish',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card22.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "021",
+		name: 'Charleez Tiron',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card25.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "022",
+		name: 'Ariadna Grant',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card33.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "023",
+		name: 'Selene Gomes',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card07.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "024",
+		name: 'Irena Shayk',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card19.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "025",
+		name: 'Ursula Fonder Line',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card05.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "026",
+		name: 'Kim Kong-fun',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card02.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "027",
+		name: 'Jeff Besos',
+		characteristic: 'Attractiveness',
+		srcFront: '/characters/middle/card36.png',
+		altFront: 'Attractiveness character',
+		altBack: 'Attractiveness character',
+		colorTo: '#080E4C',
+		colorFrom: '#0ffcff',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+
+	// Dominion
+	{
+		number: "028",
+		name: 'Scarlit Yohansen',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card08.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	//{ name: 'Buyonce', characteristic: 'Dominion' },
+	{
+		number: "029",
+		name: 'Christian Penaldo',
+		characteristic: 'Richness',
+		srcFront: '/characters/middle/card09.png',
+		altFront: 'Richness character',
+		altBack: 'Richness character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "030",
+		name: 'Tim Brody',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card29.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "031",
+		name: 'Madronna',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card15.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "032",
+		name: 'Divine Johnzon',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card37.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "033",
+		name: 'Papa Frank',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card20.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "034",
+		name: 'Opra Winfred',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card12.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "035",
+		name: 'Steven Kong',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card06.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "036",
+		name: 'Chaquira',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card32.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "037",
+		name: 'Emma Vatson',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card21.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+	{
+		number: "038",
+		name: 'Ri Anna',
+		characteristic: 'Dominion',
+		srcFront: '/characters/middle/card10.png',
+		altFront: 'Dominion character',
+		altBack: 'Dominion character',
+		colorTo: '#ff0f0f',
+		colorFrom: '#080E4C',
+		username: '@durev',
+		body: "I'm glad the game works on Telegram",
+	},
+
+
+
+
+Базовые — самые простые карточки, которые легко найти и собрать. Подходят для начального уровня игры и обладают минимальными характеристиками.
+
+Усиленные — чуть более редкие карты, обладающие улучшенными способностями. Эти карточки помогают усилить стратегию на начальных этапах игры.
+
+Элитарные — карточки, которые встречаются реже и дают игрокам преимущества в характеристиках и навыках. Элитарные карты позволяют создавать более продвинутые комбинации в бою.
+
+Героические — мощные карты, которые значительно влияют на ход игры. Героические карточки обладают уникальными способностями и редкими эффектами, которые повышают шансы на победу.
+
+Легендарные — выдающиеся карточки с мощными характеристиками и навыками, значительно увеличивающими силу команды. Легендарные карты — это редкие артефакты, которые достаются только опытным игрокам.
+
+Божественные — самые эксклюзивные и труднодоступные карты. Божественные карточки обладают невероятной силой и уникальными эффектами, которые способны изменить баланс сил в игре.
+
+
+--------------------------------
+
+Common (Базовые) — самые простые карточки, которые легко найти и собрать. Подходят для начального уровня игры и обладают минимальными характеристиками.
+Процент выпадения: 50%
+
+Enhanced (Усиленные) — карты, которые чуть реже встречаются и обладают улучшенными характеристиками. Помогают усилить стратегию на начальных этапах игры.
+Процент выпадения: 30%
+
+Elite (Элитарные) — редкие карты, которые дают игрокам значительные преимущества в характеристиках и навыках. Позволяют создавать более продвинутые комбинации в бою.
+Процент выпадения: 10%
+
+Heroic (Героические) — мощные карты, которые значительно влияют на ход игры. Обладают уникальными способностями и редкими эффектами, повышающими шансы на победу.
+Процент выпадения: 5%
+
+Legendary (Легендарные) — выдающиеся карточки с мощными характеристиками и навыками, значительно увеличивающими силу команды. Эти карты — редкие артефакты, которые достаются только опытным игрокам.
+Процент выпадения: 3%
+
+Divine (Божественные) — самые эксклюзивные и труднодоступные карты с невероятной силой и уникальными эффектами, способными изменить баланс сил в игре.
+Процент выпадения: 2%
+
+
+import React from 'react';
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
+
+import Wrapper from '@/components/global/wrapper';
+import { Button } from '@/components/ui/button';
+import Container from '@/components/global/container';
+import SectionBadge from '@/components/ui/section-badge';
+import { LampContainer } from '@/components/ui/lamp';
+import CardFlip from '@/components/CardFlip';
+import CardSection from '@/components/CardSection';
+import { getRandomCharacters } from '@/utils/characterUtils';
+
+import characters from '@/constants/characters';
+
+import { cn } from '@/lib/utils';
+
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from '@/components/ui/card';
+import GameAttribute from '@/components/moneymess/Card/GameAttribute';
+
+export const metadata: Metadata = {
+	title: 'First season of MoneyMess',
+	robots: {
+		index: true,
+		follow: true,
+	},
+};
+
+const FirstSeason = () => {
+	const dominion = characters.filter(
+		(char) => char.characteristic === 'dominion'
+	);
+
+	dominion.sort(() => Math.random() - 0.5);
+
+	const richness = characters.filter(
+		(char) => char.characteristic === 'richness'
+	);
+
+	richness.sort(() => Math.random() - 0.5);
+
+	const attractiveness = characters.filter(
+		(char) => char.characteristic === 'attractiveness'
+	);
+
+	attractiveness.sort(() => Math.random() - 0.5);
+
+	const popularity = characters.filter(
+		(char) => char.characteristic === 'popularity'
+	);
+
+	popularity.sort(() => Math.random() - 0.5);
+
+	const randomCharacters = getRandomCharacters(1);
+
+	console.log(dominion);
+
+	return (
+		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
+					<LampContainer>
+						<div className="flex flex-col items-center justify-center relative w-full text-center">
+							<h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8 w-[80%]">
+								moneymess <br /> first season started right now
+							</h2>
+							<p className="text-muted-foreground mt-6 max-w-md mx-auto">
+								From small contributions, a great idea takes shape.
+							</p>
+							<Button variant="white" className="mt-6" asChild>
+								<Link href="#intro">
+									Read more
+									<ArrowRight className="w-4 h-4 ml-2" />
+								</Link>
+							</Button>
+						</div>
+					</LampContainer>
+				</Wrapper>
+			</section>
+
+			<section>
+				<Wrapper>
+					<Container>
+						<div className="flex flex-col items-center justify-center h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-10 col-span-1 xl:col-span-2 justify-items-center items-center">
+								<div className="relative">
+									<div className="absolute top-1/2 left-1/2 -z-10 gradient-richness w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+
+									<div className="flex flex-col items-center justify-center py-20 h-full">
+										<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+											<div className="">
+												<CardFlip
+													srcFront={richness[0].srcFront}
+													srcFrontBg={richness[0].srcFrontBg}
+													srcBack={richness[0].srcBack}
+													altFront={richness[0].altFront}
+													altBack={richness[0].altBack}
+													colorTo={richness[0].colorTo}
+													colorFrom={richness[0].colorFrom}
+													name={richness[0].name}
+													firstname={richness[0].firstname}
+													lastname={richness[0].lastname}
+													number={richness[0].number}
+													characteristic={richness[0].characteristic}
+												/>
+											</div>
+
+											{/* <div className="w-[285px]">
+												<div className="mx-auto text-center pb-10">
+													<SectionBadge title="Traits" />
+													<h2 className="text-2xl lg:text-3xl font-black uppercase mt-6">
+														Dominion
+													</h2>
+													<p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p>
+												</div>
+												<p className="text-justify">
+													Это показатель того, насколько персонаж может
+													оказывать влияние на окружающих. Власть помогает
+													доминировать над другими карточками, продвигая вашу
+													стратегию. Чем выше власть вашего персонажа, тем
+													сильнее его влияние в квестах и взаимодействиях с
+													другими игроками. В конфликтах или при выборе действий
+													власть может стать решающим фактором.
+												</p>
+											</div> */}
+
+											<div className="col-span-1 px-6">
+												<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+													<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+														Как влияет на взаимодействие:
+													</h2>
+													<p className="text-muted-foreground mt-6">
+														Увеличивает влияние персонажа на события в игре
+													</p>
+												</div>
+												<p className="text-justify">
+													Карточки с высоким уровнем власти могут "подчинить"
+													других персонажей в ситуациях противостояний или
+													коопераций. Это открывает дополнительные пути для
+													решения квестов, даёт вам больше выбора и контроль над
+													исходом взаимодействий.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								
+							</div>
+
+							{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="relative">
+									<div className="absolute top-1/2 left-1/2 -z-10 gradient-attractiveness w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+
+									<div className="flex flex-col items-center justify-center h-full">
+										<div className="grid grid-cols-1 md:grid-cols-2 gap-10 col-span-1 xl:col-span-2 justify-items-center items-center">
+											<div>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
+											</div>
+											<div>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div className="relative">
+									<div className="absolute top-1/2 left-1/2 -z-10 gradient-richness w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+
+									<div className="flex flex-col items-center justify-center h-full">
+										<div className="grid grid-cols-1 md:grid-cols-2 gap-10 col-span-1 xl:col-span-2 justify-items-center items-center">
+											<div>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
+											</div>
+											<div>
+												<p>
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. A optio rerum dicta nesciunt? Laudantium
+													inventore, ratione distinctio numquam aperiam
+													temporibus veniam quos quam doloremque vel ipsum
+													aspernatur mollitia, accusamus a. Lorem ipsum dolor
+													sit amet consectetur adipisicing elit. A optio rerum
+													dicta nesciunt? Laudantium inventore, ratione
+													distinctio numquam aperiam temporibus veniam quos quam
+													doloremque vel ipsum aspernatur mollitia, accusamus a.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> */}
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Richness */}
+			<section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-richness w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront={richness[0].srcFront}
+										srcFrontBg={richness[0].srcFrontBg}
+										srcBack={richness[0].srcBack}
+										altFront={richness[0].altFront}
+										altBack={richness[0].altBack}
+										colorTo={richness[0].colorTo}
+										colorFrom={richness[0].colorFrom}
+										name={richness[0].name}
+										firstname={richness[0].firstname}
+										lastname={richness[0].lastname}
+										number={richness[0].number}
+										characteristic={richness[0].characteristic}
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="Traits" />
+										<h2 className="text-2xl lg:text-3xl font-black uppercase mt-6">
+											Dominion
+										</h2>
+										{/* <p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p> */}
+									</div>
+									<p className="text-justify">
+										Это показатель того, насколько персонаж может оказывать
+										влияние на окружающих. Власть помогает доминировать над
+										другими карточками, продвигая вашу стратегию. Чем выше
+										власть вашего персонажа, тем сильнее его влияние в квестах и
+										взаимодействиях с другими игроками. В конфликтах или при
+										выборе действий власть может стать решающим фактором.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Как влияет на взаимодействие:
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Увеличивает влияние персонажа на события в игре
+										</p>
+									</div>
+									<p className="text-justify">
+										Карточки с высоким уровнем власти могут "подчинить" других
+										персонажей в ситуациях противостояний или коопераций. Это
+										открывает дополнительные пути для решения квестов, даёт вам
+										больше выбора и контроль над исходом взаимодействий.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Popularity */}
+			<section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-popularity w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront={popularity[0].srcFront}
+										srcFrontBg={popularity[0].srcFrontBg}
+										srcBack={popularity[0].srcBack}
+										altFront={popularity[0].altFront}
+										altBack={popularity[0].altBack}
+										colorTo={popularity[0].colorTo}
+										colorFrom={popularity[0].colorFrom}
+										name={popularity[0].name}
+										firstname={popularity[0].firstname}
+										lastname={popularity[0].lastname}
+										number={popularity[0].number}
+										characteristic={popularity[0].characteristic}
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="Traits" />
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Popularity
+										</h2>
+										{/* <p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p> */}
+									</div>
+									<p className="text-justify">
+										Популярность показывает, насколько ваш персонаж востребован
+										и известен в игровом мире. Высокая популярность даёт
+										персонажу дополнительные преимущества в общественном мнении
+										и поддержке. С большим уровнем популярности можно проще
+										добиваться успеха в публичных квестах и заручаться
+										поддержкой других игроков.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										{/* <SectionBadge title="The Process" /> */}
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Как влияет на взаимодействие:
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Позволяет карточке получать больше фанатов и бонусов.
+										</p>
+									</div>
+									<p className="text-justify">
+										Как влияет на взаимодействие: Чем выше популярность, тем
+										больше персонаж может "вдохновлять" других, что помогает
+										манипулировать их действиями. Популярные карточки чаще
+										привлекают к себе внимание и могут получать дополнительные
+										бонусы за счёт симпатий игроков.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Attractiveness */}
+			<section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-attractiveness w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem]" />
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront={attractiveness[0].srcFront}
+										srcFrontBg={attractiveness[0].srcFrontBg}
+										srcBack={attractiveness[0].srcBack}
+										altFront={attractiveness[0].altFront}
+										altBack={attractiveness[0].altBack}
+										colorTo={attractiveness[0].colorTo}
+										colorFrom={attractiveness[0].colorFrom}
+										name={attractiveness[0].name}
+										firstname={attractiveness[0].firstname}
+										lastname={attractiveness[0].lastname}
+										number={attractiveness[0].number}
+										characteristic={attractiveness[0].characteristic}
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="Traits" />
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Attractiveness
+										</h2>
+										{/* <p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p> */}
+									</div>
+									<p className="text-justify">
+										Привлекательность — это способность персонажа обворожить
+										окружающих. Она открывает двери к выгодным взаимодействиям и
+										помогает устанавливать контакты. Чем привлекательнее ваш
+										персонаж, тем проще ему найти союзников или влиять на
+										симпатии аудитории. Когда вам нужно завоевать популярность
+										или выиграть спор за счёт личного обаяния — эта
+										характеристика на вашей стороне.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										{/* <SectionBadge title="The Process" /> */}
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Как влияет на взаимодействие:
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Усиливает внешнюю привлекательность персонажа
+										</p>
+									</div>
+									<p>
+										Карточки с высокой привлекательностью могут "очаровать"
+										других персонажей, делая их союзниками или ослабляя влияние
+										противников. Ваш персонаж может использовать это для
+										создания союзов и получения бонусов в квестах.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Richness */}
+			<section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-dominion w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem]" />
+
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront={dominion[0].srcFront}
+										srcFrontBg={dominion[0].srcFrontBg}
+										srcBack={dominion[0].srcBack}
+										altFront={dominion[0].altFront}
+										altBack={dominion[0].altBack}
+										colorTo={dominion[0].colorTo}
+										colorFrom={dominion[0].colorFrom}
+										name={dominion[0].name}
+										firstname={dominion[0].firstname}
+										lastname={dominion[0].lastname}
+										number={dominion[0].number}
+										characteristic={dominion[0].characteristic}
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="Traits" />
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Richness
+										</h2>
+										{/* <p className="text-muted-foreground mt-6">
+										Увеличивает доходность карточки, что может дать больше ресурсов
+										</p> */}
+									</div>
+									<p className="text-justify">
+										Богатство персонажа — это его финансовые ресурсы и доступ к
+										роскошной жизни. Оно помогает в достижении целей, когда
+										нужны быстрые и мощные решения. Высокий уровень богатства
+										открывает доступ к дорогим ресурсам, которые могут изменить
+										ход игры в вашу пользу.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-center pb-10">
+										{/* <SectionBadge title="The Process" /> */}
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Как влияет на взаимодействие:
+										</h2>
+										<p className="text-muted-foreground mt-6 text-center">
+											Увеличивает доходность карточки, что может дать больше
+											ресурсов
+										</p>
+									</div>
+									<p className="text-justify">
+										Богатые персонажи могут "покупать" помощь других карточек,
+										ускорять выполнение задач или подкупать противников. В
+										критические моменты богатство — это универсальный
+										инструмент, который может решить многие проблемы с
+										минимальными потерями.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* <section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-popularity w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront="/cards/popularity.jpeg"
+										srcBack="/cards/card-back.jpg"
+										altFront="Dominion character"
+										altBack="Dominion character"
+										colorTo="#ddd"
+										colorFrom="#ffff0f"
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="The Process" />
+										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+											Three Clicks to Your Dream Site
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Inventore illo explicabo laudantium quisquam numquam saepe
+										fugit repellat mollitia, enim, libero deleniti quam
+										necessitatibus vel ab quod, porro exercitationem sequi
+										possimus! Exercitationem amet, nostrum molestias cum labore
+										commodi ducimus quas accusantium rem, doloribus sapiente
+										voluptas ipsa error non accusamus sequi at.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										<SectionBadge title="The Process" />
+										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+											Three Clicks to Your Dream Site
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Inventore illo explicabo laudantium quisquam numquam saepe
+										fugit repellat mollitia, enim, libero deleniti quam
+										necessitatibus vel ab quod, porro exercitationem sequi
+										possimus! Exercitationem amet, nostrum molestias cum labore
+										commodi ducimus quas accusantium rem, doloribus sapiente
+										voluptas ipsa error non accusamus sequi at.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section> */}
+		</div>
+	);
+};
+
+export default FirstSeason;
+
+
+		{/* Richness */}
+			<section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-richness w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront={richness[0].srcFront}
+										srcFrontBg={richness[0].srcFrontBg}
+										srcBack={richness[0].srcBack}
+										altFront={richness[0].altFront}
+										altBack={richness[0].altBack}
+										colorTo={richness[0].colorTo}
+										colorFrom={richness[0].colorFrom}
+										name={richness[0].name}
+										firstname={richness[0].firstname}
+										lastname={richness[0].lastname}
+										number={richness[0].number}
+										characteristic={richness[0].characteristic}
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="Traits" />
+										<h2 className="text-2xl lg:text-3xl font-black uppercase mt-6">
+											Dominion
+										</h2>
+										{/* <p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p> */}
+									</div>
+									<p className="text-justify">
+										Это показатель того, насколько персонаж может оказывать
+										влияние на окружающих. Власть помогает доминировать над
+										другими карточками, продвигая вашу стратегию. Чем выше
+										власть вашего персонажа, тем сильнее его влияние в квестах и
+										взаимодействиях с другими игроками. В конфликтах или при
+										выборе действий власть может стать решающим фактором.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Как влияет на взаимодействие:
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Увеличивает влияние персонажа на события в игре
+										</p>
+									</div>
+									<p className="text-justify">
+										Карточки с высоким уровнем власти могут "подчинить" других
+										персонажей в ситуациях противостояний или коопераций. Это
+										открывает дополнительные пути для решения квестов, даёт вам
+										больше выбора и контроль над исходом взаимодействий.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Popularity */}
+			<section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-popularity w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront={popularity[0].srcFront}
+										srcFrontBg={popularity[0].srcFrontBg}
+										srcBack={popularity[0].srcBack}
+										altFront={popularity[0].altFront}
+										altBack={popularity[0].altBack}
+										colorTo={popularity[0].colorTo}
+										colorFrom={popularity[0].colorFrom}
+										name={popularity[0].name}
+										firstname={popularity[0].firstname}
+										lastname={popularity[0].lastname}
+										number={popularity[0].number}
+										characteristic={popularity[0].characteristic}
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="Traits" />
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Popularity
+										</h2>
+										{/* <p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p> */}
+									</div>
+									<p className="text-justify">
+										Популярность показывает, насколько ваш персонаж востребован
+										и известен в игровом мире. Высокая популярность даёт
+										персонажу дополнительные преимущества в общественном мнении
+										и поддержке. С большим уровнем популярности можно проще
+										добиваться успеха в публичных квестах и заручаться
+										поддержкой других игроков.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										{/* <SectionBadge title="The Process" /> */}
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Как влияет на взаимодействие:
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Позволяет карточке получать больше фанатов и бонусов.
+										</p>
+									</div>
+									<p className="text-justify">
+										Как влияет на взаимодействие: Чем выше популярность, тем
+										больше персонаж может "вдохновлять" других, что помогает
+										манипулировать их действиями. Популярные карточки чаще
+										привлекают к себе внимание и могут получать дополнительные
+										бонусы за счёт симпатий игроков.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Attractiveness */}
+			<section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-attractiveness w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem]" />
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront={attractiveness[0].srcFront}
+										srcFrontBg={attractiveness[0].srcFrontBg}
+										srcBack={attractiveness[0].srcBack}
+										altFront={attractiveness[0].altFront}
+										altBack={attractiveness[0].altBack}
+										colorTo={attractiveness[0].colorTo}
+										colorFrom={attractiveness[0].colorFrom}
+										name={attractiveness[0].name}
+										firstname={attractiveness[0].firstname}
+										lastname={attractiveness[0].lastname}
+										number={attractiveness[0].number}
+										characteristic={attractiveness[0].characteristic}
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="Traits" />
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Attractiveness
+										</h2>
+										{/* <p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p> */}
+									</div>
+									<p className="text-justify">
+										Привлекательность — это способность персонажа обворожить
+										окружающих. Она открывает двери к выгодным взаимодействиям и
+										помогает устанавливать контакты. Чем привлекательнее ваш
+										персонаж, тем проще ему найти союзников или влиять на
+										симпатии аудитории. Когда вам нужно завоевать популярность
+										или выиграть спор за счёт личного обаяния — эта
+										характеристика на вашей стороне.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										{/* <SectionBadge title="The Process" /> */}
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Как влияет на взаимодействие:
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Усиливает внешнюю привлекательность персонажа
+										</p>
+									</div>
+									<p>
+										Карточки с высокой привлекательностью могут "очаровать"
+										других персонажей, делая их союзниками или ослабляя влияние
+										противников. Ваш персонаж может использовать это для
+										создания союзов и получения бонусов в квестах.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* Richness */}
+			<section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-dominion w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem]" />
+
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront={dominion[0].srcFront}
+										srcFrontBg={dominion[0].srcFrontBg}
+										srcBack={dominion[0].srcBack}
+										altFront={dominion[0].altFront}
+										altBack={dominion[0].altBack}
+										colorTo={dominion[0].colorTo}
+										colorFrom={dominion[0].colorFrom}
+										name={dominion[0].name}
+										firstname={dominion[0].firstname}
+										lastname={dominion[0].lastname}
+										number={dominion[0].number}
+										characteristic={dominion[0].characteristic}
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="Traits" />
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Richness
+										</h2>
+										{/* <p className="text-muted-foreground mt-6">
+										Увеличивает доходность карточки, что может дать больше ресурсов
+										</p> */}
+									</div>
+									<p className="text-justify">
+										Богатство персонажа — это его финансовые ресурсы и доступ к
+										роскошной жизни. Оно помогает в достижении целей, когда
+										нужны быстрые и мощные решения. Высокий уровень богатства
+										открывает доступ к дорогим ресурсам, которые могут изменить
+										ход игры в вашу пользу.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-center pb-10">
+										{/* <SectionBadge title="The Process" /> */}
+										<h2 className="text-3xl lg:text-3xl font-black uppercase mt-6">
+											Как влияет на взаимодействие:
+										</h2>
+										<p className="text-muted-foreground mt-6 text-center">
+											Увеличивает доходность карточки, что может дать больше
+											ресурсов
+										</p>
+									</div>
+									<p className="text-justify">
+										Богатые персонажи могут "покупать" помощь других карточек,
+										ускорять выполнение задач или подкупать противников. В
+										критические моменты богатство — это универсальный
+										инструмент, который может решить многие проблемы с
+										минимальными потерями.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+
+			{/* <section>
+				<Wrapper className="relative">
+					<div className="absolute top-1/2 left-1/2 -z-10 gradient-popularity w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+
+					<Container>
+						<div className="flex flex-col items-center justify-center py-20 h-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16 xl:col-span-2 justify-items-center items-center">
+								<div className="">
+									<CardFlip
+										srcFront="/cards/popularity.jpeg"
+										srcBack="/cards/card-back.jpg"
+										altFront="Dominion character"
+										altBack="Dominion character"
+										colorTo="#ddd"
+										colorFrom="#ffff0f"
+									/>
+								</div>
+
+								<div className="w-[285px]">
+									<div className="mx-auto text-center pb-10">
+										<SectionBadge title="The Process" />
+										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+											Three Clicks to Your Dream Site
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Inventore illo explicabo laudantium quisquam numquam saepe
+										fugit repellat mollitia, enim, libero deleniti quam
+										necessitatibus vel ab quod, porro exercitationem sequi
+										possimus! Exercitationem amet, nostrum molestias cum labore
+										commodi ducimus quas accusantium rem, doloribus sapiente
+										voluptas ipsa error non accusamus sequi at.
+									</p>
+								</div>
+
+								<div className="col-span-1 md:col-span-2 px-6">
+									<div className="max-w-lg mx-auto text-start md:text-center pb-10">
+										<SectionBadge title="The Process" />
+										<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
+											Three Clicks to Your Dream Site
+										</h2>
+										<p className="text-muted-foreground mt-6">
+											Vision to Reality in 3 Simple Steps
+										</p>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Inventore illo explicabo laudantium quisquam numquam saepe
+										fugit repellat mollitia, enim, libero deleniti quam
+										necessitatibus vel ab quod, porro exercitationem sequi
+										possimus! Exercitationem amet, nostrum molestias cum labore
+										commodi ducimus quas accusantium rem, doloribus sapiente
+										voluptas ipsa error non accusamus sequi at.
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section> */}
+
+			{/** How it works */}
+			<section>
+				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+					{/* <Container>
+						<div className="max-w-md mx-auto text-start md:text-center flex flex-col justify-center items-center">
+							<Image
+								src="/cards/rock.png"
+								alt="planets"
+								width={300}
+								height={300}
+								quality={100}
+							/>
+							
+							<h2 className="text-4xl mt-8 md:text-5xl lg:text-xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+								And have fun!
+							</h2>
+							<p className="text-center text-muted-foreground mt-6 ">
+								Because the main goal is to have fun and bring you something
+								more exciting than a simple Telegram clicker. So buckle up and
+								let's get started!
+							</p>
+						</div>
+					</Container> */}
+					<Container>
+						<div className="flex flex-col items-center justify-center py-10 md:py-10 w-full">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
+								{perks.map((perk) => (
+									<div
+										key={perk.title}
+										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
+									>
+										{/* <div className="flex items-center justify-center">
+											<perk.icon className="w-8 h-8" />
+										</div> */}
+										<div className="whitespace-pre-wrap text-6xl font-thin tracking-tighter text-white">
+											<NumberTicker value={perk.value} />
+										</div>
+
+										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
+										<p className="text-muted-foreground mt-2 text-justify">
+											{perk.info}
+										</p>
+									</div>
+								))}
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section>
+			{/* <section>
+				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+					<Container className="relative z-[999999]">
+						<div className="flex items-center justify-center w-full -mt-40">
+							<div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between w-full px-4 md:px-8 rounded-lg lg:rounded-2xl border border-border/80 py-4 md:py-8">
+								<div className="flex flex-col items-start gap-4 w-full">
+									<h4 className="text-xl md:text-2xl font-semibold text-purple-400">
+										Follow my twitter account
+									</h4>
+									<p className="text-base text-muted-foreground">
+										Be up to date with my new undertakings ,Projects and more
+									</p>
+								</div>
+								<div className="flex flex-col items-start gap-2 md:min-w-80 mt-5 md:mt-0 w-full md:w-max">
+									<form
+										action="#"
+										className="flex flex-col md:flex-row items-center gap-2 w-full md:max-w-xs"
+									>
+										<Input
+											required
+											type="email"
+											placeholder="Enter your email"
+											className="focus-visible:ring-0 focus-visible:ring-transparent focus-visible:border-primary duration-300 w-full"
+										/>
+										<Button
+											type="submit"
+											size="sm"
+											variant="secondary"
+											className="w-full md:w-max"
+										>
+											Subscribe
+										</Button>
+									</form>
+									<p className="text-xs p-3 text-muted-foreground">
+										By subscribing you agree with our{' '}
+										<Link href="#">Privacy Policy</Link>
+									</p>
+								</div>
+							</div>
+						</div>
+					</Container>
+				</Wrapper>
+			</section> */}

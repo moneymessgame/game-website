@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
 import { LampContainer } from '@/components/ui/lamp';
-import { BentoGridDemo } from '@/components/BentoGridSecondDemoRu';
+// import { BentoGridDemo } from '@/components/BentoGridSecondDemoRu';
 import { WobbleCard } from '@/components/ui/wobble-card';
 
 export const metadata: Metadata = {
@@ -101,7 +101,7 @@ const ArticleRu = () => {
 			</section>
 
 			{/** Bento Grid */}
-			<section>
+			{/* <section>
 				<Wrapper className="flex flex-col items-center justify-center relative pt-10 mt-6">
 					<Container>
 						<div className="max-w-xl mx-auto text-center">
@@ -117,7 +117,7 @@ const ArticleRu = () => {
 						</div>
 					</Container>
 				</Wrapper>
-				<BentoGridDemo />
+				
 				<Image
 					src="/assets/boy2.png"
 					width={250}
@@ -125,7 +125,7 @@ const ArticleRu = () => {
 					alt="Crypto"
 					className="absolute -right-4 lg:-right-[0%]  filter -bottom-[-2%] object-contain rounded-2xl"
 				/>
-			</section>
+			</section> */}
 
 			{/* Strategies */}
 			<section>

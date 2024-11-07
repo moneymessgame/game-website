@@ -30,6 +30,60 @@ export const perks = [
 	},
 ];
 
+export const aboutSeason = [
+	{
+		icon: Icons.auth,
+		title: 'Main traits',
+		value: 4,
+		info: 'The main goal of the player is to level up their character cards by improving one of four traits: Dominion, Attractiveness, Popularity, and Wealth. The player must build the strongest card collection possible while accumulating in-game points',
+	},
+	{
+		icon: Icons.handshake,
+		title: 'Lively characters',
+		value: 38,
+		info: 'The characters in the game are famous personalities in our metaverse. Players develop them by completing text-based quests, where each day, a question with four answer options is presented for each character. Each choice boosts one attribute while reducing others.',
+	},
+	{
+		icon: Icons.launch,
+		title: 'Cards rarity',
+		value: 6,
+		info: 'Cards are divided into six rarity levels: from common, frequently found cards with minimal attributes, to divine — the rarest and most powerful, capable of drastically changing the balance of the game. The drop rate of cards decreases as their rarity increases.',
+	},
+	{
+		icon: Icons.launch,
+		title: 'Fun level in the game',
+		value: 99999,
+		info: 'Create a unique persona for your character, giving them distinct traits, style, mannerisms, and behavior. Transform your character into a one-of-a-kind hero and turn them into an NFT.',
+	},
+];
+
+export const firstPageStats = [
+	{
+		icon: Icons.auth,
+		title: 'All cards',
+		value: 228,
+		info: '',
+	},
+	{
+		icon: Icons.handshake,
+		title: 'mln Telegram users',
+		value: 950,
+		info: '',
+	},
+	{
+		icon: Icons.launch,
+		title: 'Active users on the site',
+		value: 1,
+		info: '',
+	},
+	{
+		icon: Icons.launch,
+		title: 'Cups of coffee drunk',
+		value: 577,
+		info: '',
+	},
+];
+
 export const wikiEn = [
 	{
 		icon: Icons.bolt,
@@ -137,10 +191,10 @@ export const clickersEn = [
 		title: 'Clickers: Simplicity and Accessibility',
 		info: 'Clickers on Telegram have become an important part of crypto games due to their simplicity and accessibility. They are services that automate the completion of click-based tasks, allowing users to earn digital coins or other resources that can be exchanged for fiat or cryptocurrency.',
 	},
-	{ 
+	{
 		icon: Icons.seo,
 		title: 'Miners: A New Earning Format',
-		info: 'Miners are applications that use the user\'s computing power to mine cryptocurrency. There are also versions of such applications on Telegram, allowing anyone to earn cryptocurrency using their smartphone. Miners typically require setup and connection to a pool to stabilize income, after which the mining process becomes automated.',
+		info: "Miners are applications that use the user's computing power to mine cryptocurrency. There are also versions of such applications on Telegram, allowing anyone to earn cryptocurrency using their smartphone. Miners typically require setup and connection to a pool to stabilize income, after which the mining process becomes automated.",
 	},
 ];
 
@@ -183,16 +237,19 @@ export const featuresRu = [
 export const NFTGames = [
 	{
 		title: 'CryptoKitties',
+		icon: Icons.seo,
 		description:
 			'This game was one of the first popular NFT games, allowing players to collect, breed, and trade unique digital cats. Each CryptoKitty is a unique NFT with its characteristics.',
 	},
 	{
 		title: 'Axie Infinity',
+		icon: Icons.seo,
 		description:
 			'In this game, players collect and breed creatures called Axie. Players can earn Smooth Love Potion (SLP) tokens, which can be exchanged for cryptocurrency. Axie Infinity has attracted over 2 million active users and significantly impacted the NFT gaming market.',
 	},
 	{
 		title: 'Decentraland',
+		icon: Icons.seo,
 		description:
 			'This is a virtual world where users can buy, develop, and rent virtual land plots. Decentraland offers a rich and diverse gaming experience that includes both social and commercial opportunities.',
 	},
@@ -323,7 +380,7 @@ export const reviews = [
 	{
 		name: 'Jackie Chwan',
 		username: '@chwan',
-		body: "The game is as cool as I am.",
+		body: 'The game is as cool as I am.',
 	},
 	{
 		name: 'Steven Kong',
@@ -333,7 +390,7 @@ export const reviews = [
 	{
 		name: 'Margo Robo',
 		username: '@robo',
-		body: "I turned out beautiful and interesting in the game.",
+		body: 'I turned out beautiful and interesting in the game.',
 	},
 	{
 		name: 'Divine Johnzon',
@@ -343,7 +400,7 @@ export const reviews = [
 	{
 		name: 'Jeff Besos',
 		username: '@besos',
-		body: "Want to go to space? Play this game.",
+		body: 'Want to go to space? Play this game.',
 	},
 ];
 
@@ -409,7 +466,7 @@ export const projectsRu = [
 	},
 ];
 
-export 	const cards = [
+export const cards = [
 	{
 		title: 'Forest Adventure',
 		src: '/cards/1card.jpg',

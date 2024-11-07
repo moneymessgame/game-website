@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 	},
 };
 
-const Donate = () => {
+const Test = () => {
 	return (
 		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
 			{/** Lamp Header */}
@@ -75,7 +75,7 @@ const Donate = () => {
 						<div className="max-w-xl mx-auto text-center" id="intro">
 							<SectionBadge title="Introduction" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
-								How to Start Playing and Investing in NFT Games
+								3 How to Start Playing and Investing in NFT Games
 							</h2>
 						</div>
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
@@ -112,7 +112,7 @@ const Donate = () => {
 						<div className="max-w-md mx-auto text-center">
 							<SectionBadge title="NFT" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								What are NFTs and how do they work in games?
+								2 What are NFTs and how do they work in games?
 							</h2>
 						</div>
 					</Container>
@@ -167,7 +167,7 @@ const Donate = () => {
 						<div className="max-w-xl mx-auto text-center">
 							<SectionBadge title="Successful NFT Games" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
-								Examples of Successful NFT Games
+								1Examples of Successful NFT Games
 							</h2>
 						</div>
 					</Container>
@@ -545,4 +545,4 @@ const Donate = () => {
 	);
 };
 
-export default Donate;
+export default Test;

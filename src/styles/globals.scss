@@ -144,16 +144,20 @@
   background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg);
 }
 
-.gradient-dominion {
+.gradient-stone {
+  background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(181,237,252) 0deg, rgb(0, 135, 255) 67.5deg, rgb(40,138,244) 198.75deg, rgb(148, 84, 211) 251.25deg );
+}
+
+.gradient-attractiveness {
   background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(255, 0, 0) 0deg, rgb(255, 0, 98) 67.5deg, rgb(153, 37, 37) 198.75deg, rgb(163, 52, 24) 251.25deg, rgb(196, 54, 97) 301.88deg, rgb(255, 30, 225) 360deg);
 }
 .gradient-richness {
   background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(0, 255, 42) 0deg, rgb(0, 255, 200) 67.5deg, rgb(37, 153, 95) 198.75deg, rgb(98, 163, 24) 251.25deg, rgb(123, 196, 54) 301.88deg, rgb(255, 30, 225) 360deg);
 }
-.gradient-attractiveness {
+.gradient-popularity {
   background: conic-gradient(from 230.29deg at 51.63% 52.16%, #0ffcff 0deg, rgb(0, 255, 200) 67.5deg, rgb(37, 149, 153) 198.75deg, rgb(24, 124, 163) 251.25deg, rgb(54, 127, 196) 301.88deg, rgb(255, 30, 225) 360deg);
 }
-.gradient-popularity {
+.gradient-dominion {
   background: conic-gradient(from 230.29deg at 51.63% 52.16%, #ffff0f 0deg, rgb(255, 230, 0) 67.5deg, rgb(128, 153, 37) 198.75deg, rgb(163, 103, 24) 251.25deg, rgb(196, 123, 54) 301.88deg, rgb(255, 30, 225) 360deg);
 }
 

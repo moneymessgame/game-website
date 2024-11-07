@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import React from 'react';
-import { BentoGrid, BentoGridItem } from './ui/bento-grid';
+import { BentoGrid, BentoCard } from '@/components/ui/bento-grid';
 import { IconBoxAlignRightFilled } from '@tabler/icons-react';
 import {
 	CircleArrowOutDownLeft,
@@ -13,7 +13,7 @@ export function BentoGridDemo() {
 	return (
 		<BentoGrid className="max-w-4xl mx-auto">
 			{items.map((item, i) => (
-				<BentoGridItem
+				<BentoCard
 					key={i}
 					title={item.title}
 					description={item.description}

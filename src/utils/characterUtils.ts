@@ -9,12 +9,16 @@ export	const getRandomCharacters = (count: number): CharacterType[] => {
 		if (!uniqueCharacters.has(character.characteristic)) {
 			const newCharacter: CharacterType = {
 				srcFront: character.srcFront || '',
-				srcBack: '/cards/card-back.jpg',
+				srcFrontBg: character.srcFrontBg || '',
+				srcBack: '',
 				altFront: character.altFront || '',
 				altBack: character.altBack || '',
 				colorTo: character.colorTo || '',
 				colorFrom: character.colorFrom || '',
 				name: character.name || '',
+				firstname: character.firstname || '',
+				lastname: character.lastname || '',
+				number: character.number || '',
 				characteristic: character.characteristic || '',
 			};
 			uniqueCharacters.set(character.characteristic, newCharacter);
