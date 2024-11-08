@@ -71,7 +71,7 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 			className="absolute z-40 object-cover w-[329px] h-[390px] bottom-0 object-center overflow-hidden"
 		/>
 
-		<div
+		{/* <div
 			className={`absolute top-1/2 left-1/2 z-40 w-full -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0  blur-[10rem] ${
 				characteristic === 'dominion'
 					? 'gradient-dominion'
@@ -83,7 +83,7 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 					? 'gradient-attractiveness'
 					: 'gradient'
 			}`}
-		/>
+		/> */}
 
 		<div
 			className={`absolute  w-[100%] h-[100%] z-40 bg-gradient-to-t to-25% bottom-0 ${

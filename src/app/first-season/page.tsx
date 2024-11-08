@@ -77,7 +77,7 @@ const FirstSeason = () => {
 								moneymess <br /> first season started right now
 							</h1>
 							<p className="text-muted-foreground mt-6 max-w-md mx-auto">
-								From small contributions, a great idea takes shape.
+								Sure, let's get started as quickly as possible!
 							</p>
 							<Link
 								href="https://t.me/moneymesschannel"
@@ -115,44 +115,33 @@ const FirstSeason = () => {
 								<Container>
 									<div className="text-base md:text-lg p-4 justify-center">
 										<h3 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
-											Collect and gather unique game cards
+											Collect unique game cards
 										</h3>
 										<p>
 											Expand your collection of game cards, level up acquired
 											characters, creating a unique personality for each one.
-											Turn your game card into an NFT.
 										</p>
-										<Link
-											href="https://t.me/moneymesschannel"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<PulsatingButton className="mt-8">
-												Play right now
-											</PulsatingButton>
-										</Link>
+										
 									</div>
 									<div className="text-base md:text-lg p-4 items-center justify-center">
 										<h3 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
-											First season of MoneyMess
+											Upgrade your characters
 										</h3>
 										<p>
-											Complete various exciting tasks and quests daily. Level up
-											your character in four attributes:&nbsp;
+											Level up your character in four attributes:&nbsp;
 											<span className="text-[#ffff0f]">dominion</span>,&nbsp;
 											<span className="text-[#0ffcff]">popularity</span>,&nbsp;
 											<span className="text-[#0fff0f]">richness</span> and&nbsp;
 											<span className="text-[#ff0f0f]">attractiveness</span>.
 										</p>
-										<Link
-											href="https://t.me/moneymesschannel"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<PulsatingButton className="mt-8">
-												More details about the first season
-											</PulsatingButton>
-										</Link>
+									</div>
+									<div className="text-base md:text-lg p-4 items-center justify-center">
+										<h3 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
+											Farm tokens of each attribute
+										</h3>
+										<p>
+											Collect tokens of each character attribute to level up the card. You can only level up one attribute at a time.
+										</p>
 									</div>
 								</Container>
 								{/* Image */}
@@ -173,44 +162,22 @@ const FirstSeason = () => {
 								<Container>
 									<div className="text-base md:text-lg p-4 justify-center">
 										<h3 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
-											Collect and gather unique game cards
+											Team up with friends
 										</h3>
 										<p>
-											Expand your collection of game cards, level up acquired
-											characters, creating a unique personality for each one.
-											Turn your game card into an NFT.
+											Playing with friends is more fun and productive. Form groups to get more items and resources.
 										</p>
-										<Link
-											href="https://t.me/moneymesschannel"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<PulsatingButton className="mt-8">
-												Play right now
-											</PulsatingButton>
-										</Link>
 									</div>
 								</Container>
 
 								<Container>
 									<div className="text-base md:text-lg p-4 justify-center">
 										<h3 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
-											Collect and gather unique game cards
+											Create unique NFTs
 										</h3>
 										<p>
-											Expand your collection of game cards, level up acquired
-											characters, creating a unique personality for each one.
-											Turn your game card into an NFT.
+											The game records results on the TON blockchain, and users will receive unique NFTs based on the season's results.
 										</p>
-										<Link
-											href="https://t.me/moneymesschannel"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<PulsatingButton className="mt-8">
-												Play right now
-											</PulsatingButton>
-										</Link>
 									</div>
 								</Container>
 							</div>
@@ -226,7 +193,7 @@ const FirstSeason = () => {
 						<div className="max-w-md mx-auto text-center">
 							{/* <SectionBadge title="Donations" /> */}
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								«With a little help from my friends»
+								Level up the character's unique attributes
 							</h2>
 						</div>
 					</Container>
@@ -234,14 +201,7 @@ const FirstSeason = () => {
 						<div className="flex flex-col items-center justify-center py-10 h-full ">
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									Let’s start by introducing ourselves. We are the team of
-									developers and enthusiasts behind the game MoneyMess. We are
-									creating a large-scale, ambitious gaming project. To further
-									develop it and attract users, we need to secure early
-									investments. The game is cyclical, and with each new season,
-									we will be adding interesting and unique mechanics, while
-									players’ achievements will be saved on the blockchain and
-									carried over to the next season.
+									In the MoneyMess universe, all game characters fight to increase one of the main attributes: dominion, popularity, richness, and attractiveness. Let's take a closer look at each attribute:
 								</p>
 							</div>
 						</div>
@@ -436,7 +396,7 @@ const FirstSeason = () => {
 						<div className="max-w-md mx-auto text-center">
 							{/* <SectionBadge title="Donations" /> */}
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								«With a little help from my friends»
+								A huge selection of unique characters
 							</h2>
 						</div>
 					</Container>
@@ -444,14 +404,7 @@ const FirstSeason = () => {
 						<div className="flex flex-col items-center justify-center py-10 h-full ">
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									Let’s start by introducing ourselves. We are the team of
-									developers and enthusiasts behind the game MoneyMess. We are
-									creating a large-scale, ambitious gaming project. To further
-									develop it and attract users, we need to secure early
-									investments. The game is cyclical, and with each new season,
-									we will be adding interesting and unique mechanics, while
-									players’ achievements will be saved on the blockchain and
-									carried over to the next season.
+									In the first season, players are given a wide selection of different characters with unique traits and interesting interactions. Open packs, collect your own card collection, enjoy the game, and have fun.
 								</p>
 							</div>
 						</div>
@@ -513,7 +466,7 @@ const FirstSeason = () => {
 						<div className="max-w-md mx-auto text-center">
 							{/* <SectionBadge title="Donations" /> */}
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								«With a little help from my friends»
+								All of the above and much, much more
 							</h2>
 						</div>
 					</Container>
@@ -521,14 +474,7 @@ const FirstSeason = () => {
 						<div className="flex flex-col items-center justify-center py-10 h-full ">
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									Let’s start by introducing ourselves. We are the team of
-									developers and enthusiasts behind the game MoneyMess. We are
-									creating a large-scale, ambitious gaming project. To further
-									develop it and attract users, we need to secure early
-									investments. The game is cyclical, and with each new season,
-									we will be adding interesting and unique mechanics, while
-									players’ achievements will be saved on the blockchain and
-									carried over to the next season.
+									In fact, let's remind you that you're lucky to have found our incredible game, MoneyMess. Just give it a try, and you won't be able to stop playing. You won't even notice how you'll get all your friends and acquaintances hooked on this fun. Go for it!
 								</p>
 							</div>
 						</div>
@@ -576,12 +522,10 @@ const FirstSeason = () => {
 							/>
 
 							<h2 className="text-4xl mt-8 md:text-5xl lg:text-xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-								And have fun!
+								The stone again.
 							</h2>
 							<p className="text-center text-muted-foreground mt-6 ">
-								Because the main goal is to have fun and bring you something
-								more exciting than a simple Telegram clicker. So buckle up and
-								let's get started!
+								It might be some kind of secret in the game, but you won't know until you play MoneyMess.
 							</p>
 							<Link
 								href="https://t.me/moneymesschannel"

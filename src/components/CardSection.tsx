@@ -34,13 +34,16 @@ const CardSection: React.FC<CardSectionProps> = ({
 								<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
 									<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
 										<GameCardFront
-											key={index}
 											srcFront={card.srcFront}
+											srcFrontBg={card.srcFrontBg}
+											srcBack={card.srcBack}
 											colorTo={card.colorTo}
 											colorFrom={card.colorFrom}
 											name={card.name}
-											characteristic={card.characteristic}
+											firstname={card.firstname}
+											lastname={card.lastname}
 											number={card.number}
+											characteristic={card.characteristic}
 											altFront={card.altFront}
 										/>
 									</div>
