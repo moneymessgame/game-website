@@ -1,8 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 
-import Wrapper from '@/components/global/wrapper';
-import Container from '@/components/global/container';
+import { Container, Wrapper } from '@/components/global';
 import CardDemo from '@/components/blocks/cards-demo-2';
 
 export const metadata: Metadata = {
@@ -32,8 +31,8 @@ const AllArticles = () => {
 								/>
 								<CardDemo
 									backgroundImage='bg-[url("/assets/bg2.jpg")] bg-cover'
-									avatarSrc="/cards/irine.png"
-									author="Irine"
+									avatarSrc="/cards/ihor.png"
+									author="Ihor"
 									time="4 мин."
 									title="Что такое Play2Earn"
 									description="И как на этом заработать"
@@ -49,22 +48,22 @@ const AllArticles = () => {
 								<CardDemo
 									backgroundImage='bg-[url("/assets/bg4.jpg")] bg-cover'
 									avatarSrc="/cards/gus.png"
-									author="Ihor"
+									author="Gus"
 									time="4 мин."
 									title="TON и криптоигры:"
 									description="Как зарабатывать на играх с TON токенами"
 								/>
 								<CardDemo
 									backgroundImage='bg-[url("/assets/bg4.jpg")] bg-cover'
-									avatarSrc="/cards/gus.png"
-									author="Gus"
+									avatarSrc="/cards/ihor.png"
+									author="Ihor"
 									time="3 мин."
 									title="Как выбрать первую Play2Earn игру для заработка без вложений"
 									description="Ответим на эти вопросы и предложим стратегии для успешного старта."
 								/>
 								<CardDemo
 									backgroundImage='bg-[url("/assets/bg4.jpg")] bg-cover'
-									avatarSrc="/cards/gus.png"
+									avatarSrc="/cards/irine.png"
 									author="Irine"
 									time="5 мин."
 									title="Пассивный доход на играх:"

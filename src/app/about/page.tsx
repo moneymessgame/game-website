@@ -3,10 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
-import Container from '@/components/global/container'
-import { LampContainer } from '@/components/ui/lamp';
+import { Container, Wrapper } from '@/components/global';
+import { Button, LampContainer } from '@/components/ui';
 import TeamSection from '@/components/TeamSection';
 
 export const metadata: Metadata = {

@@ -3,13 +3,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
-import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
-import { LampContainer } from '@/components/ui/lamp';
-import { Cover } from '@/components/ui/cover';
-import CopyToClipboard from '@/components/ui/copy-to-clipboard';
+import { Container, Wrapper } from '@/components/global';
+import { Button, CopyToClipboard, Cover, LampContainer, SectionBadge } from '@/components/ui';
 
 export const metadata: Metadata = {
 	title: 'Donate to MoneyMess',

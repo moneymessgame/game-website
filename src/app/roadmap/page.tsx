@@ -1,11 +1,10 @@
 import React from 'react';
 import { Metadata } from 'next';
-
-import Wrapper from '@/components/global/wrapper';
-import Container from '@/components/global/container';
-import Roadmap from '@/components/Roadmap';
-import PulsatingButton from '@/components/ui/pulsating-button';
 import Link from 'next/link';
+
+import Roadmap from '@/components/Roadmap';
+import { Container, Wrapper } from '@/components/global';
+import { PulsatingButton } from '@/components/ui';
 
 export const metadata: Metadata = {
 	title: 'Roadmap MoneyMess',

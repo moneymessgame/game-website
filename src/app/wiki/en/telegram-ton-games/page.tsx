@@ -4,14 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
-import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
-import { LampContainer } from '@/components/ui/lamp';
+import { Container, Wrapper } from '@/components/global';
+import { Button, LampContainer, SectionBadge, WobbleCard } from '@/components/ui';
 import { Icons } from '@/components';
 import { clickersEn } from '@/constants';
-import { WobbleCard } from '@/components/ui/wobble-card';
 
 export const metadata: Metadata = {
 	title: 'How to Earn with Crypto Games',

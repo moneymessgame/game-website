@@ -4,21 +4,10 @@ import Link from 'next/link';
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
-import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
+import { Container, Wrapper } from '@/components/global';
+import { Button, Card, CardDescription, CardHeader, CardTitle, LampContainer, SectionBadge, WobbleCard } from '@/components/ui';
 import { TonTokensRu } from '@/constants';
 import { cn } from '@/lib/utils';
-import { LampContainer } from '@/components/ui/lamp';
-import {
-	Card,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
-
-import { WobbleCard } from '@/components/ui/wobble-card';
 import CardHover from '@/components/CardHover';
 
 export const metadata: Metadata = {

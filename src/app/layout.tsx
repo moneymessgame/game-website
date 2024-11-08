@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import '@/styles/globals.scss';
 import Navbar from '@/components/navigation/navbar';
 import Footer from '@/components/navigation/footer';
-import { Toaster } from '@/components/ui/toaster';
+import { Toaster } from '@/components/ui';
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://moneymess.fun/'),

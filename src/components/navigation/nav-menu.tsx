@@ -5,15 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import OrbitIcon from '@/components/global/orbitIcon';
-import {
-	NavigationMenu,
-	NavigationMenuContent,
-	NavigationMenuItem,
-	NavigationMenuLink,
-	NavigationMenuList,
-	NavigationMenuTrigger,
-	navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
+import {	NavigationMenu,	NavigationMenuContent,	NavigationMenuItem,	NavigationMenuLink,	NavigationMenuList,	NavigationMenuTrigger,	navigationMenuTriggerStyle } from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { wikiRu, wikiEn } from '@/constants';
 

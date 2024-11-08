@@ -3,15 +3,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Wrapper from '@/components/global/wrapper';
-import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
-import { LampContainer } from '@/components/ui/lamp';
+import { Container, Wrapper } from '@/components/global';
+import { LampContainer, Marquee, NumberTicker, PulsatingButton, SectionBadge } from '@/components/ui';
 import CardFlip from '@/components/CardFlip';
-import NumberTicker from '@/components/ui/number-ticker';
 import { aboutSeason } from '@/constants';
-import Marquee from '@/components/ui/marquee';
-import PulsatingButton from '@/components/ui/pulsating-button';
 import characters from '@/constants/characters';
 import GameCardFront from '@/components/moneymess/Card/GameCardFront';
 import { cn } from '@/lib/utils';

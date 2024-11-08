@@ -2,13 +2,12 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { Gamepad2 } from 'lucide-react';
 
-import { buttonVariants } from '@/components/ui/button';
-import { Gamepad2, ScrollText } from 'lucide-react';
+import { buttonVariants, CoolMode } from '@/components/ui';
 import OrbitIcon from '@/components/global/orbitIcon';
 import { MobileNav } from '@/components/navigation/mobile-nav';
 import { NavMenu } from '@/components/navigation/nav-menu';
-import { CoolMode } from '../ui/cool-mode';
 
 type Props = {};
 

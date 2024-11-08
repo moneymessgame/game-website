@@ -2,23 +2,21 @@
 
 import React, { useEffect, useState } from 'react';
 import { getRandomCharacters } from '@/lib/characterUtils';
-import { CharacterType } from '@/types/main-page';
 import CardSection from './CardSection';
+import { CharacterType } from '@/types/main-page';
 import { CardSectionGenerateProps } from '@/types/card-section-generate';
 
 export default function CardSectionGenerate({
 	title = '',
 	description = '',
-	numberOfCharacters = 1, // Устанавливаем значение по умолчанию
+	numberOfCharacters = 1,
 }: CardSectionGenerateProps) {
-	// Создание состояния для случайных персонажей
 	const [randomCharacters, setRandomCharacters] = useState<CharacterType[]>([]);
 
-	// Генерация персонажей на клиенте при первом рендере
 	useEffect(() => {
-		const characters = getRandomCharacters(numberOfCharacters); // Используем переданное количество
+		const characters = getRandomCharacters(numberOfCharacters);
 		setRandomCharacters(characters);
-	}, [numberOfCharacters]); // Добавлено зависимости для useEffect
+	}, [numberOfCharacters]); 
 
 	return (
 		<CardSection

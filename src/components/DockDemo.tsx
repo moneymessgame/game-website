@@ -3,15 +3,9 @@
 import React from 'react';
 import Link from 'next/link';
 import { MailIcon } from 'lucide-react';
+
 import { ny } from '@/lib/util';
-import { buttonVariants } from '@/components/ui/button';
-import { Dock, DockIcon } from './ui/dock';
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipProvider,
-	TooltipTrigger,
-} from '@/components/ui/tooltip';
+import { buttonVariants, Dock, DockIcon, Tooltip,	TooltipContent,	TooltipProvider, TooltipTrigger } from '@/components/ui';
 import { DockDemoProps } from '@/types/dock-demo';
 
 export type IconProps = React.HTMLAttributes<SVGElement>;

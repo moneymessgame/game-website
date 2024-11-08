@@ -4,13 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
-import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
-import { LampContainer } from '@/components/ui/lamp';
-// import { BentoGridDemo } from '@/components/BentoGridSecondDemoRu';
-import { WobbleCard } from '@/components/ui/wobble-card';
+import { Container, Wrapper } from '@/components/global';
+import { Button, LampContainer, SectionBadge, WobbleCard } from '@/components/ui';
 
 export const metadata: Metadata = {
 	title: 'Пассивный доход',
@@ -99,33 +94,6 @@ const ArticleRu = () => {
 					</Container>
 				</Wrapper>
 			</section>
-
-			{/** Bento Grid */}
-			{/* <section>
-				<Wrapper className="flex flex-col items-center justify-center relative pt-10 mt-6">
-					<Container>
-						<div className="max-w-xl mx-auto text-center">
-							<SectionBadge title="Как выбрать игру" />
-							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-12">
-								Как выбрать игру с пассивными механиками дохода
-							</h2>
-							<p className="text-muted-foreground mt-6 max-w-md mx-auto mb-12">
-								Чтобы создать пассивный доход в Play2Earn играх, важно правильно
-								выбрать проект, который предлагает подходящие механики. Вот
-								несколько критериев, которые помогут вам выбрать такую игру:
-							</p>
-						</div>
-					</Container>
-				</Wrapper>
-				
-				<Image
-					src="/assets/boy2.png"
-					width={250}
-					height={250}
-					alt="Crypto"
-					className="absolute -right-4 lg:-right-[0%]  filter -bottom-[-2%] object-contain rounded-2xl"
-				/>
-			</section> */}
 
 			{/* Strategies */}
 			<section>

@@ -4,13 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Gamepad2 } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
-import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
+import { Container, Wrapper } from '@/components/global';
+import { Button, LampContainer, SectionBadge, WobbleCard } from '@/components/ui';
 import { playToEarn } from '@/constants';
-import { LampContainer } from '@/components/ui/lamp';
-import { WobbleCard } from '@/components/ui/wobble-card';
 
 export const metadata: Metadata = {
 	title: 'What is Play2Earn and How to Make Money with It',

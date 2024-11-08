@@ -1,8 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 
-import Wrapper from '@/components/global/wrapper';
-import Container from '@/components/global/container';
+import { Container, Wrapper } from '@/components/global';
 import CardDemo from '@/components/blocks/cards-demo-2';
 
 export const metadata: Metadata = {
@@ -56,16 +55,16 @@ const AllArticles = () => {
 								/>
 								<CardDemo
 									backgroundImage='bg-[url("/assets/bg1.jpg")] bg-cover'
-									avatarSrc="/cards/gus.png"
-									author="Gus"
+									avatarSrc="/cards/ihor.png"
+									author="Ihor"
 									time="3 min read"
 									title="How to Choose Your First Play2Earn Game to Earn Without Investment"
 									description="We will answer these questions and offer strategies for a successful start."
 								/>
 								<CardDemo
 									backgroundImage='bg-[url("/assets/bg2.jpg")] bg-cover'
-									avatarSrc="/cards/gus.png"
-									author="Gus"
+									avatarSrc="/cards/irine.png"
+									author="Irine"
 									time="2 min read"
 									title="Passive Income in Games:"
 									description="Top Strategies for Play2Earn Games"

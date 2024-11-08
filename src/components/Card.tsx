@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import { BorderBeam } from '@/components/ui';
 import { DockDemo } from './DockDemo';
 import { HyperTextDemo } from './HyperTextDemo';

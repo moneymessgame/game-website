@@ -4,12 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
-import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
-import { LampContainer } from '@/components/ui/lamp';
-import { WobbleCard } from '@/components/ui/wobble-card';
+import { Container, Wrapper } from '@/components/global';
+import { Button, LampContainer, SectionBadge, WobbleCard } from '@/components/ui';
 
 export const metadata: Metadata = {
 	title: 'Как выбрать первую Play2Earn игру',

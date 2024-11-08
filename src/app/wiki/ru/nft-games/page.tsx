@@ -4,22 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Gem } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
-import Container from '@/components/global/container';
-import SectionBadge from '@/components/ui/section-badge';
+import { Container, Wrapper } from '@/components/global';
+import { Button, Card, CardDescription, CardHeader, CardTitle, LampContainer, SectionBadge, WobbleCard} from '@/components/ui';
 import { featuresRu, NFTGamesRu } from '@/constants';
 import { Icons } from '@/components';
 import { cn } from '@/lib/utils';
-import { LampContainer } from '@/components/ui/lamp';
-import {
-	Card,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
-
-import { WobbleCard } from '@/components/ui/wobble-card';
 
 export const metadata: Metadata = {
 	title: 'Игры с NFT: как они работают и как заработать',
@@ -29,8 +18,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: 'Игры с NFT: как они работают и как заработать',
-		description:
-			'Игры с NFT: как они работают и как заработать',
+		description: 'Игры с NFT: как они работают и как заработать',
 		type: 'article',
 		publishedTime: '2024-09-22T00:21:00.000Z',
 		authors: 'MoneyMess',

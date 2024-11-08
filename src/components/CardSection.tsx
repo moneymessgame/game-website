@@ -1,8 +1,6 @@
-import CardFlip from './CardFlip';
-import Container from '@/components/global/container';
+import {Container, Wrapper} from '@/components/global';
 import { CardSectionProps } from '@/types/card-section';
 import GameCardFront from '@/components/moneymess/Card/GameCardFront';
-import Wrapper from './global/wrapper';
 
 const CardSection: React.FC<CardSectionProps> = ({
 	title,

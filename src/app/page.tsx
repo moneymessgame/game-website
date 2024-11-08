@@ -4,15 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { UserIcon } from 'lucide-react';
 
-import Wrapper from '@/components/global/wrapper';
-import Container from '@/components/global/container';
+import { Container, Wrapper } from '@/components/global';
+import { Marquee, SectionBadge, NumberTicker, PulsatingButton } from '@/components/ui';
 import { reviews, firstPageStats } from '@/constants';
-import SectionBadge from '@/components/ui/section-badge';
-import Marquee from '@/components/ui/marquee';
 import { TextGenerateEffectDemo } from '@/components/TextGenerateEffectDemo';
 import { cn } from '@/lib/utils';
-import NumberTicker from '@/components/ui/number-ticker';
-import PulsatingButton from '@/components/ui/pulsating-button';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
