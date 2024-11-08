@@ -6,9 +6,9 @@ import {
 	VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { roadmapData } from '@/lib/data';
 import { useTheme } from 'next-themes';
 import { motion, useInView } from 'framer-motion';
+import { roadmapData } from '@/constants';
 
 export default function Roadmap() {
 	const { theme } = useTheme();

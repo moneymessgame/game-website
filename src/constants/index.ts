@@ -1,4 +1,7 @@
+import React from 'react';
 import { Icons } from '@/components';
+import { Orbit } from 'lucide-react';
+
 
 export const navItems = [
 	{ name: 'About', link: '/about' },
@@ -7,6 +10,32 @@ export const navItems = [
 	{ name: 'Wiki Eng', link: '/wiki/en' },
 	{ name: 'Wiki Ru', link: '/wiki/ru' },
 	{ name: 'Donate', link: '/donate' },
+];
+
+export const roadmapData = [
+	{
+		description:
+			'Main Game Launch, Referral System, Mining Updates, Daily Rewards, Community Management, Marketing and PR',
+		icon: React.createElement(Orbit),
+		date: '4th Quarter 2024',
+	},
+	{
+		description:
+			'Special cards, Wallet in-game implementation, LVL ratings, Achievements',
+		icon: React.createElement(Orbit),
+		date: '1th Quarter 2025',
+	},
+	{
+		description:
+			'On-chain infrastructure development, «Partner» blockchain announcements',
+		icon: React.createElement(Orbit),
+		date: '2th Quarter 2025',
+	},
+	{
+		description: 'And more goodies are yet to be brought to life',
+		icon: React.createElement(Orbit),
+		date: '',
+	},
 ];
 
 export const perks = [
@@ -41,13 +70,13 @@ export const aboutSeason = [
 		icon: Icons.handshake,
 		title: 'Lively characters',
 		value: 38,
-		info: 'The characters in the game are famous personalities in our metaverse. Players develop them by completing text-based quests, where each day, a question with four answer options is presented for each character. Each choice boosts one attribute while reducing others.',
+		info: 'The characters in the game are famous personalities in our metaverse. Players develop them by completing text-based quests, where each day, a question with four answer options is presented for each character. Each choice boosts one trait while reducing others.',
 	},
 	{
 		icon: Icons.launch,
 		title: 'Cards rarity',
 		value: 6,
-		info: 'Cards are divided into six rarity levels: from common, frequently found cards with minimal attributes, to divine — the rarest and most powerful, capable of drastically changing the balance of the game. The drop rate of cards decreases as their rarity increases.',
+		info: 'Cards are divided into six rarity levels: from common, frequently found cards with minimal traits, to divine — the rarest and most powerful, capable of drastically changing the balance of the game. The drop rate of cards decreases as their rarity increases.',
 	},
 	{
 		icon: Icons.launch,
@@ -60,7 +89,7 @@ export const aboutSeason = [
 export const firstPageStats = [
 	{
 		icon: Icons.auth,
-		title: 'All cards',
+		title: 'Total cards',
 		value: 228,
 		info: '',
 	},

@@ -1,19 +1,4 @@
-interface Character {
-	srcBack: string;
-	number: string;
-	name: string;
-	firstname: string;
-	lastname: string;
-	characteristic: string;
-	srcFront: string;
-	srcFrontBg: string;
-	altFront: string;
-	altBack: string;
-	colorTo: string;
-	colorFrom: string;
-	username: string;
-	body: string;
-}
+import { CharacterProps } from '../types/character';
 
 // Characteristics:
 // - dominion: Leaders and those seeking power/control
@@ -33,7 +18,7 @@ interface Character {
 // /backgrounds/room.jpeg - Office/work environments
 // /backgrounds/library.jpg - Study/knowledge settings
 
-const characters: Character[] = [
+const characters: CharacterProps[] = [
 	{
 		number: '001',
 		name: 'Tom Kook',
@@ -47,7 +32,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -63,7 +48,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -79,7 +64,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -95,7 +80,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -111,7 +96,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -127,7 +112,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -143,7 +128,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -159,7 +144,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -175,7 +160,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -191,7 +176,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -207,7 +192,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -223,7 +208,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -239,7 +224,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -255,7 +240,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -271,7 +256,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -287,7 +272,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -303,7 +288,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -319,7 +304,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -335,7 +320,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -351,7 +336,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -367,7 +352,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -383,7 +368,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -399,7 +384,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -415,7 +400,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -431,7 +416,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -447,7 +432,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -463,7 +448,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -479,7 +464,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -495,7 +480,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -511,7 +496,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -527,7 +512,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -543,7 +528,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -559,7 +544,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -575,7 +560,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -591,7 +576,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ff0f0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -607,7 +592,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0fff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -623,7 +608,7 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#ffff0f',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
 	{
@@ -639,11 +624,9 @@ const characters: Character[] = [
 		colorTo: '#080E4C',
 		colorFrom: '#0ffcff',
 		username: '@durev',
-		srcBack:'',
+		srcBack: '',
 		body: "I'm glad the game works on Telegram",
 	},
-
-
 ];
 
 export default characters;

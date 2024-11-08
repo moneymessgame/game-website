@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BorderBeam } from '@/components/ui/border-beam';
+import { BorderBeam } from '@/components/ui';
 import { DockDemo } from './DockDemo';
 import { HyperTextDemo } from './HyperTextDemo';
 import { TextGenerateEffectDemo } from './TextGenerateEffectDemo';

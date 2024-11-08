@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { getRandomCharacters } from '@/utils/characterUtils';
+import { getRandomCharacters } from '@/lib/characterUtils';
 import { CharacterType } from '@/types/main-page';
 import CardSection from './CardSection';
 import { CardSectionGenerateProps } from '@/types/card-section-generate';

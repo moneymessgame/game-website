@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { BorderBeam } from '@/components/ui/border-beam';
+import { BorderBeam } from '@/components/ui';
 import GameCardFront from '@/components/moneymess/Card/GameCardFront';
 import GameCardBack from '@/components/moneymess/Card/GameCardBack';
 import { CardFlipProps } from '@/types/card-flip';

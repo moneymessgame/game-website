@@ -1,34 +1,18 @@
+import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import { UserIcon } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
 import Container from '@/components/global/container';
-import { perks, reviews, aboutSeason, firstPageStats } from '@/constants';
-import OrbitIcon from '@/components/global/orbitIcon';
-import { UserIcon } from 'lucide-react';
+import { reviews, firstPageStats } from '@/constants';
 import SectionBadge from '@/components/ui/section-badge';
 import Marquee from '@/components/ui/marquee';
-import { FocusCards } from '@/components/ui/focus-cards';
 import { TextGenerateEffectDemo } from '@/components/TextGenerateEffectDemo';
 import { cn } from '@/lib/utils';
-import { TweetComponent } from '@/components/TweetComponent';
-import CardSpread from '@/components/animata/Card/card-spread';
-import { cards, tweets } from '@/constants/index';
-import CardSectionGenerate from '@/components/CardSectionGenerate';
-
 import NumberTicker from '@/components/ui/number-ticker';
-
 import PulsatingButton from '@/components/ui/pulsating-button';
-
-import characters from '@/constants/characters';
-import CardSection from '@/components/CardSection';
-
-import GameCardFront from '@/components/moneymess/Card/GameCardFront';
-
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
 	title: 'MoneyMess',
@@ -39,8 +23,6 @@ export const metadata: Metadata = {
 };
 
 const HomePage = () => {
-	const firstRow = characters.slice(0, characters.length / 2);
-	const secondRow = characters.slice(characters.length / 2);
 	const reviewsList = reviews;
 
 	return (
@@ -89,24 +71,6 @@ const HomePage = () => {
 										height={482}
 										className="z-20 object-cover min-w-full min-h-full bottom-0 object-center overflow-hidden"
 									/>
-
-									{/* <Image
-											src="/assets/hero-3.png"
-											alt="MoneyMess"
-											width={400}
-											height={830}
-											quality={80}
-											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
-										/> */}
-
-									{/* <Image
-											src="/assets/hero-5.png"
-											alt="MoneyMess"
-											width={700}
-											height={454}
-											quality={80}
-											className="z-20 object-cover w-full bottom-0 object-center overflow-hidden"
-										/> */}
 								</div>
 
 								<div className="-m-30">
@@ -125,60 +89,6 @@ const HomePage = () => {
 					</Container>
 				</Wrapper>
 			</section>
-
-			{/* <FocusCards cards={cards} /> */}
-
-			{/**Characters */}
-			{/* <CardSection
-				title="Characters"
-				description="Choose your character and his/her main trait"
-				cards={[
-					{
-						srcFront: '/characters/middle/card01.png',
-						srcBack: '/cards/card-back.jpg',
-						altFront: 'Dominion character',
-						altBack: 'Dominion character',
-						colorTo: '#9c40ff',
-						colorFrom: '#ff0f0f',
-						name: 'Elan Mosk',
-					},
-					{
-						srcFront: '/characters/middle/card02.png',
-						srcBack: '/cards/card-back.jpg',
-						altFront: 'Beauty character',
-						altBack: 'Richness character',
-						colorTo: '#9c40ff',
-						colorFrom: '#0ffcff',
-						name: 'Kim Kong-fun',
-					},
-					{
-						srcFront: '/characters/middle/card25.png',
-						srcBack: '/cards/card-back.jpg',
-						altFront: 'Richness character',
-						altBack: 'Richness character',
-						colorTo: '#9c40ff',
-						colorFrom: '#ffff0f',
-						name: 'Charleez Tiron',
-					},
-					{
-						srcFront: '/characters/middle/card20.png',
-						srcBack: '/cards/card-back.jpg',
-						altFront: 'Popularity character',
-						altBack: 'Popularity character',
-						colorTo: '#9c40ff',
-						colorFrom: '#0fff0f',
-						name: 'Papi Frank',
-					},
-				]}
-				colorTo={''}
-				colorFrom={''}
-			/> */}
-
-			{/* <CardSectionGenerate
-				title="Characters"
-				description="Choose your character and his/her main trait"
-				numberOfCharacters={4}
-			/> */}
 
 			{/** Intro */}
 			<section>
@@ -234,7 +144,7 @@ const HomePage = () => {
 										</h3>
 										<p>
 											Complete various exciting tasks and quests daily. Level up
-											your character in four attributes:&nbsp;
+											your character in four traits:&nbsp;
 											<span className="text-[#ffff0f]">dominion</span>,&nbsp;
 											<span className="text-[#0ffcff]">popularity</span>,&nbsp;
 											<span className="text-[#0fff0f]">richness</span> and&nbsp;
@@ -260,7 +170,6 @@ const HomePage = () => {
 			{/** Testimonials */}
 			<section id="reviews">
 				<Wrapper className="flex flex-col items-center justify-center relative">
-					{/* <div className="hidden md:block absolute -top-1/4 -left-1/3 w-72 h-72 bg-indigo-500 rounded-full blur-[10rem] -z-10"></div> */}
 					<Container>
 						<div className="px-6">
 							<div
@@ -276,88 +185,6 @@ const HomePage = () => {
 
 						<div className="py-10 w-full">
 							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
-								{/* <div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]" /> */}
-
-								{/* <Marquee pauseOnHover className="[--duration:20s] select-none">
-									{firstRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-													<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
-														{characteristic === 'dominion' ? (
-															<DominionCard />
-														) : characteristic === 'popularity' ? (
-															<PopularityCard />
-														) : characteristic === 'richness' ? (
-															<RichnessCard />
-														) : characteristic === 'attractiveness' ? (
-															<AttractivenessCard />
-														) : null} 
-
-														<GameCardFront
-															key={review.name}
-															srcFront={review.srcFront}
-															srcFrontBg={review.srcFrontBg}
-															srcBack={review.srcBack}
-															colorTo={review.colorTo}
-															colorFrom={review.colorFrom}
-															name={review.name}
-															firstname={review.firstname}
-															lastname={review.lastname}
-															characteristic={review.characteristic}
-															number={review.number}
-															altFront={review.altFront}
-														/>
-													</div>
-												</div>
-											</div>
-											<blockquote className="mt-2 text-sm">
-												{review.body}
-											</blockquote> 
-										</figure>
-									))}
-								</Marquee>
-								<Marquee
-									reverse
-									pauseOnHover
-									className="[--duration:20s] select-none"
-								>
-									{secondRow.map((review) => (
-										<figure
-											key={review.name}
-											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
-											)}
-										>
-											<div className="flex flex-row items-center gap-2">
-												<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-													<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
-														<GameCardFront
-															key={review.name}
-															srcFront={review.srcFront}
-															srcFrontBg={review.srcFrontBg}
-															colorTo={review.colorTo}
-															colorFrom={review.colorFrom}
-															name={review.name}
-															firstname={review.firstname}
-															lastname={review.lastname}
-															characteristic={review.characteristic}
-															number={review.number}
-															altFront={review.altFront}
-														/>
-													</div>
-												</div>
-											</div>
-										</figure>
-									))}
-								</Marquee> */}
 								<Marquee pauseOnHover className="[--duration:20s] select-none">
 									{reviewsList.map((review) => (
 										<figure
@@ -422,33 +249,6 @@ const HomePage = () => {
 				</Wrapper>
 			</section>
 
-			{/* Tweets */}
-			{/* <section>
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
-					<Container>
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2">
-							{tweets.map((tweet, index) => {
-								return (
-									<div key={index} className={`shadow-md rounded-lg p-4 `}>
-										<TweetComponent
-											username={tweet.username}
-											handle={tweet.handle}
-											avatarUrl={tweet.avatarUrl}
-											replyTo={tweet.replyTo}
-											text={tweet.text}
-											time={tweet.time}
-											date={tweet.date}
-											likes={tweet.likes}
-											replies={tweet.replies}
-										/>
-									</div>
-								);
-							})}
-						</div>
-					</Container>
-				</Wrapper>
-			</section> */}
-
 			{/** Introduction */}
 			<section id="stats">
 				<Wrapper className="flex flex-col items-center justify-center relative pt-12">
@@ -487,9 +287,6 @@ const HomePage = () => {
 										key={perk.title}
 										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
 									>
-										{/* <div className="flex items-center justify-center">
-											<perk.icon className="w-8 h-8" />
-										</div> */}
 										<div className="whitespace-pre-wrap text-6xl font-thin tracking-tighter text-white">
 											<NumberTicker value={perk.value} />
 										</div>
@@ -508,17 +305,19 @@ const HomePage = () => {
 						<div className="max-w-md mx-auto text-start md:text-center flex flex-col justify-center items-center">
 							<Image
 								src="/cards/rock.png"
-								alt="planets"
+								alt="rock"
 								width={300}
 								height={300}
 								quality={100}
 							/>
 
 							<h4 className="text-2xl mt-8 lg:text-3xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-								Even this stone has its own story, but you don't. 
+								Even this stone has its own story, but you don't.
 							</h4>
 							<p className="text-center text-muted-foreground mt-6 ">
-							Lately, nothing has been happening with the stone. And even it spent the weekend more interestingly than you. Hurry up and start playing.
+								Lately, nothing has been happening with the stone. And even it
+								spent the weekend more interestingly than you. Hurry up and
+								start playing.
 							</p>
 							<Link
 								href="https://t.me/moneymesschannel"

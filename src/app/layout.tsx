@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
 import '@/styles/globals.scss';
-import { Inter } from 'next/font/google';
-import { Montserrat } from 'next/font/google';
 import Navbar from '@/components/navigation/navbar';
 import Footer from '@/components/navigation/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('http://localhost:3000'),
+	metadataBase: new URL('https://moneymess.fun/'),
 	title: {
 		default: 'MoneyMess',
 		template: '%s - P2E Telegram mini app game based on Ton',

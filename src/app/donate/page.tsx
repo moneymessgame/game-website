@@ -54,27 +54,21 @@ const Donate = () => {
 						<div className="flex flex-col items-center justify-center py-6 md:py-6 w-full">
 							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900 gap-7">
 								<div>
-									<p>
-										TON wallet:
-									</p>
+									<p>TON wallet:</p>
 									<CopyToClipboard
 										text={'UQBgfOQ1ukrW_-cWsYFMy7rM_RtkO-VL8UpN3Rg68jjNAzIy'}
 										currency={'TON'}
 									/>
 								</div>
 								<div>
-									<p>
-										ETHEREUM wallet:
-									</p>
+									<p>ETHEREUM wallet:</p>
 									<CopyToClipboard
 										text={'0x357d8fA29bb2C6a65EC34AD744C887fBab6CCF01'}
 										currency={'ETH'}
 									/>
 								</div>
 								<div>
-									<p>
-										SOLANA wallet:
-									</p>
+									<p>SOLANA wallet:</p>
 									<CopyToClipboard
 										text={'91aLofMAABaNAc8n62yet3Y23czjmnmGVRGhZGhbRcsL'}
 										currency={'SOL'}
@@ -114,14 +108,14 @@ const Donate = () => {
 									Everyone who supports us and our project at this stage can
 									expect a significant return on their investment, unique
 									rewards and bonuses, and their name will forever go down in
-									the history of the game universe as one of its{' '}
+									the history of the game universe as one of its
 									<b>
 										<i>Patriarch</i>
-									</b>{' '}
-									or, of course,{' '}
+									</b>
+									or, of course,
 									<b>
 										<i>Matriarch</i>
-									</b>{' '}
+									</b>
 									of the game.
 								</p>
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
@@ -131,16 +125,19 @@ const Donate = () => {
 									<Cover>$500,000</Cover>
 								</div>
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									These funds will be used for initial marketing, team
-									expansion, and bringing in top specialists. All this is to
-									show players, investors, and interested people what a web3
-									project can be when it is made with passion. We are truly
-									creating a revolution in the world of web3 game development.
-									This isn’t just another “tap-to-play” game, but the future, a
-									great future, the greatest future. A world where every
-									player’s efforts will truly be rewarded. We are building a new
-									world, a gaming metaverse on the TON blockchain, where every
-									second of your time and every action you take has value.
+									<strong>
+										These funds will be used for initial marketing, team
+										expansion, and bringing in top specialists.
+									</strong>
+									<br />
+									All this is to show players, investors, and interested people
+									what a web3 project can be when it is made with passion. We
+									are truly creating a revolution in the world of web3 game
+									development. This isn’t just another “tap-to-play” game, but
+									the future, a great future, the greatest future. A world where
+									every player’s efforts will truly be rewarded. We are building
+									a new world, a gaming metaverse on the TON blockchain, where
+									every second of your time and every action you take has value.
 								</p>
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
 									A free donation to support the project can be made to any of
@@ -149,9 +146,9 @@ const Donate = () => {
 									help.
 								</p>
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									Okay, okay, maybe not{' '}
+									Okay, okay, maybe not
 									<b>
-										<i>endlessly</i>
+										<i> endlessly</i>
 									</b>
 									. After all, as programmers, we know that infinity is, well, a
 									lot!

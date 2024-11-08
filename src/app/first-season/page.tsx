@@ -2,37 +2,19 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
 
 import Wrapper from '@/components/global/wrapper';
-import { Button } from '@/components/ui/button';
 import Container from '@/components/global/container';
 import SectionBadge from '@/components/ui/section-badge';
 import { LampContainer } from '@/components/ui/lamp';
 import CardFlip from '@/components/CardFlip';
-import CardSection from '@/components/CardSection';
-import { getRandomCharacters } from '@/utils/characterUtils';
 import NumberTicker from '@/components/ui/number-ticker';
 import { aboutSeason } from '@/constants';
-
 import Marquee from '@/components/ui/marquee';
-
 import PulsatingButton from '@/components/ui/pulsating-button';
-
 import characters from '@/constants/characters';
 import GameCardFront from '@/components/moneymess/Card/GameCardFront';
-
 import { cn } from '@/lib/utils';
-
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card';
-import GameAttribute from '@/components/moneymess/Card/GameAttribute';
 
 export const metadata: Metadata = {
 	title: 'First season of MoneyMess',
@@ -88,12 +70,6 @@ const FirstSeason = () => {
 									Play right now
 								</PulsatingButton>
 							</Link>
-							{/* <Button variant="white" className="mt-6" asChild>
-								<Link href="#intro">
-									Read more
-									<ArrowRight className="w-4 h-4 ml-2" />
-								</Link>
-							</Button> */}
 						</div>
 					</LampContainer>
 				</Wrapper>
@@ -105,7 +81,8 @@ const FirstSeason = () => {
 						<div className="max-w-xl mx-auto text-center" id="intro">
 							<SectionBadge title="About First Season" />
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6 mb-6">
-								Whew, so what awaits us in the game, and specifically in First Season?
+								Whew, so what awaits us in the game, and specifically in First
+								Season?
 							</h2>
 						</div>
 
@@ -121,14 +98,13 @@ const FirstSeason = () => {
 											Expand your collection of game cards, level up acquired
 											characters, creating a unique personality for each one.
 										</p>
-										
 									</div>
 									<div className="text-base md:text-lg p-4 items-center justify-center">
 										<h3 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
 											Upgrade your characters
 										</h3>
 										<p>
-											Level up your character in four attributes:&nbsp;
+											Level up your character in four traits:&nbsp;
 											<span className="text-[#ffff0f]">dominion</span>,&nbsp;
 											<span className="text-[#0ffcff]">popularity</span>,&nbsp;
 											<span className="text-[#0fff0f]">richness</span> and&nbsp;
@@ -137,10 +113,11 @@ const FirstSeason = () => {
 									</div>
 									<div className="text-base md:text-lg p-4 items-center justify-center">
 										<h3 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
-											Farm tokens of each attribute
+											Farm tokens of each trait
 										</h3>
 										<p>
-											Collect tokens of each character attribute to level up the card. You can only level up one attribute at a time.
+											Collect tokens of each character trait to level up the
+											card. You can only level up one trait at a time.
 										</p>
 									</div>
 								</Container>
@@ -165,7 +142,8 @@ const FirstSeason = () => {
 											Team up with friends
 										</h3>
 										<p>
-											Playing with friends is more fun and productive. Form groups to get more items and resources.
+											Playing with friends is more fun and productive. Form
+											groups to get more items and resources.
 										</p>
 									</div>
 								</Container>
@@ -176,7 +154,8 @@ const FirstSeason = () => {
 											Create unique NFTs
 										</h3>
 										<p>
-											The game records results on the TON blockchain, and users will receive unique NFTs based on the season's results.
+											The game records results on the TON blockchain, and users
+											will receive unique NFTs based on the season's results.
 										</p>
 									</div>
 								</Container>
@@ -191,9 +170,8 @@ const FirstSeason = () => {
 				<Wrapper className="flex flex-col items-center justify-center relative pt-12">
 					<Container>
 						<div className="max-w-md mx-auto text-center">
-							{/* <SectionBadge title="Donations" /> */}
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
-								Level up the character's unique attributes
+								Level up the character's unique traits
 							</h2>
 						</div>
 					</Container>
@@ -201,7 +179,10 @@ const FirstSeason = () => {
 						<div className="flex flex-col items-center justify-center py-10 h-full ">
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									In the MoneyMess universe, all game characters fight to increase one of the main attributes: dominion, popularity, richness, and attractiveness. Let's take a closer look at each attribute:
+									In the MoneyMess universe, all game characters fight to
+									increase one of the main traits: dominion, popularity,
+									richness, and attractiveness. Let's take a closer look at each
+									trait:
 								</p>
 							</div>
 						</div>
@@ -209,6 +190,7 @@ const FirstSeason = () => {
 				</Wrapper>
 			</section>
 
+			{/** Cards */}
 			<section>
 				<Wrapper>
 					<Container>
@@ -394,7 +376,6 @@ const FirstSeason = () => {
 				<Wrapper className="flex flex-col items-center justify-center relative pt-12">
 					<Container>
 						<div className="max-w-md mx-auto text-center">
-							{/* <SectionBadge title="Donations" /> */}
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
 								A huge selection of unique characters
 							</h2>
@@ -404,7 +385,10 @@ const FirstSeason = () => {
 						<div className="flex flex-col items-center justify-center py-10 h-full ">
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									In the first season, players are given a wide selection of different characters with unique traits and interesting interactions. Open packs, collect your own card collection, enjoy the game, and have fun.
+									In the first season, players are given a wide selection of
+									different characters with unique traits and interesting
+									interactions. Open packs, collect your own card collection,
+									enjoy the game, and have fun.
 								</p>
 							</div>
 						</div>
@@ -412,6 +396,7 @@ const FirstSeason = () => {
 				</Wrapper>
 			</section>
 
+			{/* Rewiews */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative py-12">
 					<Container>
@@ -464,7 +449,6 @@ const FirstSeason = () => {
 				<Wrapper className="flex flex-col items-center justify-center relative pt-12">
 					<Container>
 						<div className="max-w-md mx-auto text-center">
-							{/* <SectionBadge title="Donations" /> */}
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
 								All of the above and much, much more
 							</h2>
@@ -474,7 +458,11 @@ const FirstSeason = () => {
 						<div className="flex flex-col items-center justify-center py-10 h-full ">
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<p className="text-base md:text-lg text-foreground/80 mt-6 text-justify">
-									In fact, let's remind you that you're lucky to have found our incredible game, MoneyMess. Just give it a try, and you won't be able to stop playing. You won't even notice how you'll get all your friends and acquaintances hooked on this fun. Go for it!
+									In fact, let's remind you that you're lucky to have found our
+									incredible game, MoneyMess. Just give it a try, and you won't
+									be able to stop playing. You won't even notice how you'll get
+									all your friends and acquaintances hooked on this fun. Go for
+									it!
 								</p>
 							</div>
 						</div>
@@ -494,13 +482,9 @@ const FirstSeason = () => {
 										key={perk.title}
 										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
 									>
-										{/* <div className="flex items-center justify-center">
-											<perk.icon className="w-8 h-8" />
-										</div> */}
 										<div className="whitespace-pre-wrap text-6xl font-thin tracking-tighter text-white">
 											<NumberTicker value={perk.value} />
 										</div>
-
 										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
 										<p className="text-muted-foreground mt-2 text-justify">
 											{perk.info}
@@ -515,17 +499,23 @@ const FirstSeason = () => {
 						<div className="max-w-md mx-auto text-start md:text-center flex flex-col justify-center items-center">
 							<Image
 								src="/cards/rock.png"
-								alt="planets"
+								alt="rock"
 								width={300}
 								height={300}
 								quality={100}
 							/>
 
 							<h2 className="text-4xl mt-8 md:text-5xl lg:text-xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-								The stone again.
+								Let me just be hear
 							</h2>
 							<p className="text-center text-muted-foreground mt-6 ">
-								It might be some kind of secret in the game, but you won't know until you play MoneyMess.
+								Just in case you need a rock-solid friend and a steady
+								presence... Someone who’s always here to keep the game rolling.
+							</p>
+							<p className="text-center text-muted-foreground mt-6 ">
+								Truly yours,
+								<br />
+								The Stone.
 							</p>
 							<Link
 								href="https://t.me/moneymesschannel"

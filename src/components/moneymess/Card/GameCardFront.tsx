@@ -1,9 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { ThumbsUp, Crown, Heart, Banknote } from "lucide-react"
+import { ThumbsUp, Crown, Heart, Banknote } from 'lucide-react';
 import { GameCardFrontProps } from '@/types/game-card-front';
-import SectionBadge from '@/components/ui/section-badge';
 
 const GameCardFront: React.FC<GameCardFrontProps> = ({
 	srcFront,
@@ -34,20 +33,6 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 			className="absolute z-20 object-cover w-[390px] h-[390px] bottom-0 object-center blur-[1px]"
 		/>
 
-		{/* <div
-			className={`absolute top-1/2 left-1/2 z-30 w-full -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem] ${
-				characteristic === 'dominion'
-					? 'gradient-dominion'
-					: characteristic === 'popularity'
-					? 'gradient-popularity'
-					: characteristic === 'richness'
-					? 'gradient-richness'
-					: characteristic === 'attractiveness'
-					? 'gradient-attractiveness'
-					: 'gradient'
-			}`}
-		/> */}
-
 		<div
 			className={`absolute  w-[100%] h-[100%] z-30 bg-gradient-to-b to-4% top-0 ${
 				characteristic === 'dominion'
@@ -71,20 +56,6 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 			className="absolute z-40 object-cover w-[329px] h-[390px] bottom-0 object-center overflow-hidden"
 		/>
 
-		{/* <div
-			className={`absolute top-1/2 left-1/2 z-40 w-full -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0  blur-[10rem] ${
-				characteristic === 'dominion'
-					? 'gradient-dominion'
-					: characteristic === 'popularity'
-					? 'gradient-popularity'
-					: characteristic === 'richness'
-					? 'gradient-richness'
-					: characteristic === 'attractiveness'
-					? 'gradient-attractiveness'
-					: 'gradient'
-			}`}
-		/> */}
-
 		<div
 			className={`absolute  w-[100%] h-[100%] z-40 bg-gradient-to-t to-25% bottom-0 ${
 				characteristic === 'dominion'
@@ -99,33 +70,16 @@ const GameCardFront: React.FC<GameCardFrontProps> = ({
 			}`}
 		/>
 
-		{/* <div className="absolute z-50 top-2 left-2 text-left">
-			<SectionBadge title={characteristic} />
-		</div> */}
-
-		{/* <div className="absolute z-50 bottom-2 right-2 text-left">
-			<Image
-				src="/game/qr-moneymess.jpg"
-				alt="QR code"
-				width={50}
-				height={50}
-				className="rounded-md"
-			/>
-		</div> */}
-
-
-
 		<div className="absolute z-50 top-2 right-2 text-right">
-		{characteristic === 'dominion' ? (
-			<Crown className="text-[#ffff0f]" strokeWidth={1} size={40} />
-		) : characteristic === 'popularity' ? (
-			<ThumbsUp className="text-[#0ffcff]" strokeWidth={1} size={40} />
-		) : characteristic === 'richness' ? (
-			<Banknote className="text-[#0fff0f]" strokeWidth={1} size={40} />
-		) : characteristic === 'attractiveness' ? (
-			<Heart className="text-[#ff0f0f]" strokeWidth={1} size={40} />
-		) : null}
-		
+			{characteristic === 'dominion' ? (
+				<Crown className="text-[#ffff0f]" strokeWidth={1} size={40} />
+			) : characteristic === 'popularity' ? (
+				<ThumbsUp className="text-[#0ffcff]" strokeWidth={1} size={40} />
+			) : characteristic === 'richness' ? (
+				<Banknote className="text-[#0fff0f]" strokeWidth={1} size={40} />
+			) : characteristic === 'attractiveness' ? (
+				<Heart className="text-[#ff0f0f]" strokeWidth={1} size={40} />
+			) : null}
 		</div>
 
 		<div className="absolute z-50 top-2 left-2 text-left">

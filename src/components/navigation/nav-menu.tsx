@@ -65,7 +65,9 @@ export function NavMenu() {
 						</NavigationMenuContent>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuTrigger>WIKI EN</NavigationMenuTrigger>
+						<Link href="/wiki/en">
+							<NavigationMenuTrigger>WIKI EN</NavigationMenuTrigger>
+						</Link>
 						<NavigationMenuContent>
 							<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
 								{wikiEn.map((component) => (
@@ -81,7 +83,9 @@ export function NavMenu() {
 						</NavigationMenuContent>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuTrigger>WIKI RU</NavigationMenuTrigger>
+						<Link href="/wiki/ru">
+							<NavigationMenuTrigger>WIKI RU</NavigationMenuTrigger>
+						</Link>
 						<NavigationMenuContent>
 							<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
 								{wikiRu.map((component) => (

@@ -1,11 +1,8 @@
 'use client';
 
-import Image from 'next/image';
-
 import {ThumbsUp} from "lucide-react";
 
 import { GameCardFrontProps } from '@/types/game-card-front';
-import SectionBadge from '@/components/ui/section-badge';
 
 import {
 	Card,
