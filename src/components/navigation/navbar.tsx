@@ -39,7 +39,9 @@ export default function Navbar({}: Props) {
 				<CoolMode>
 					<div className="flex items-center gap-4">
 						<Link
-							href="#"
+							href="https://t.me/moneymessbot"
+							target="_blank"
+							rel="noopener noreferrer"
 							className={buttonVariants({
 								size: 'sm',
 								className: 'flex bg-ring hover:bg-accent gap-3 px-8 py-5',

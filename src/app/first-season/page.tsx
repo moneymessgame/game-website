@@ -57,7 +57,7 @@ const FirstSeason = () => {
 								Sure, let's get started as quickly as possible!
 							</p>
 							<Link
-								href="https://t.me/moneymesschannel"
+								href="https://t.me/moneymessbot"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -513,7 +513,7 @@ const FirstSeason = () => {
 								The Stone.
 							</p>
 							<Link
-								href="https://t.me/moneymesschannel"
+								href="https://t.me/moneymessbot"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

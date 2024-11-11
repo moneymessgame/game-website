@@ -130,7 +130,7 @@ const HomePage = () => {
 											Turn your game card into an NFT.
 										</p>
 										<Link
-											href="https://t.me/moneymesschannel"
+											href="https://t.me/moneymessbot"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
@@ -319,7 +319,7 @@ const HomePage = () => {
 								start playing.
 							</p>
 							<Link
-								href="https://t.me/moneymesschannel"
+								href="https://t.me/moneymessbot"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
