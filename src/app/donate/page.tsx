@@ -4,7 +4,13 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 import { Container, Wrapper } from '@/components/global';
-import { Button, CopyToClipboard, Cover, LampContainer, SectionBadge } from '@/components/ui';
+import {
+	Button,
+	CopyToClipboard,
+	Cover,
+	LampContainer,
+	SectionBadge,
+} from '@/components/ui';
 
 export const metadata: Metadata = {
 	title: 'Donate to MoneyMess',
@@ -29,12 +35,6 @@ const Donate = () => {
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto">
 									From small contributions, a great idea takes shape.
 								</p>
-								<Button variant="white" className="mt-6" asChild>
-									<Link href="#intro">
-										Read more
-										<ArrowRight className="w-4 h-4 ml-2" />
-									</Link>
-								</Button>
 							</div>
 						</LampContainer>
 					</Container>
