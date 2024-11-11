@@ -5,7 +5,12 @@ import Link from 'next/link';
 import { UserIcon } from 'lucide-react';
 
 import { Container, Wrapper } from '@/components/global';
-import { Marquee, SectionBadge, NumberTicker, PulsatingButton } from '@/components/ui';
+import {
+	Marquee,
+	SectionBadge,
+	NumberTicker,
+	PulsatingButton,
+} from '@/components/ui';
 import { reviews, firstPageStats } from '@/constants';
 import { TextGenerateEffectDemo } from '@/components/TextGenerateEffectDemo';
 import { cn } from '@/lib/utils';
@@ -109,7 +114,7 @@ const HomePage = () => {
 											width={400}
 											height={830}
 											quality={80}
-											className="z-20 object-cover w-[400px] h-[830px] bottom-0 object-center overflow-hidden"
+											className="z-20  w-[400px] h-[830px] bottom-0 object-center overflow-hidden"
 										/>
 									</div>
 								</Container>
@@ -164,12 +169,12 @@ const HomePage = () => {
 			</section>
 
 			{/** Testimonials */}
-			<section id="reviews">
-				<Wrapper className="flex flex-col items-center justify-center relative">
+			<section id="reviews" className="overflow-x-hidden">
+				<Wrapper className="flex flex-col items-center justify-center relative w-full max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg overflow-hidden">
 					<Container>
 						<div className="px-6">
 							<div
-								className="max-w-md md:max-w-xl mx-auto text-center"
+								className="max-w-sm md:max-w-xl mx-auto text-center"
 								id="intro"
 							>
 								<SectionBadge title="Game cards" />
@@ -186,7 +191,7 @@ const HomePage = () => {
 										<figure
 											key={review.name}
 											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
+												'relative max-w-full cursor-pointer overflow-hidden rounded-xl border p-4',
 												'border-zinc-50/[.9] bg-background over:bg-zinc-50/[.15]'
 											)}
 										>
@@ -216,7 +221,7 @@ const HomePage = () => {
 										<figure
 											key={review.name}
 											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
+												'relative max-w-full cursor-pointer overflow-hidden rounded-xl border p-4',
 												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
 											)}
 										>
@@ -250,7 +255,6 @@ const HomePage = () => {
 				<Wrapper className="flex flex-col items-center justify-center relative pt-12">
 					<Container>
 						<div className="max-w-md mx-auto text-center">
-							{/* <SectionBadge title="Donations" /> */}
 							<h2 className="text-3xl lg:text-4xl font-black uppercase mt-6">
 								Not just a game, but a fairy tale
 							</h2>
@@ -277,18 +281,17 @@ const HomePage = () => {
 					<div className="absolute top-1/2 left-1/2 -z-10 gradient-stone w-1/4 -translate-x-1/2 h-1/8 -translate-y-1/2 inset-0 blur-[10rem]" />
 					<Container>
 						<div className="flex flex-col items-center justify-center py-10 md:py-10 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
+							<div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-4 w-full justify-items-center divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
 								{firstPageStats.map((perk) => (
 									<div
 										key={perk.title}
-										className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4"
+										className="flex flex-col items-center md:items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4 text-center md:text-start"
 									>
 										<div className="whitespace-pre-wrap text-6xl font-thin tracking-tighter text-white">
 											<NumberTicker value={perk.value} />
 										</div>
-
 										<h3 className="text-lg font-medium mt-4">{perk.title}</h3>
-										<p className="text-muted-foreground mt-2 text-justify">
+										<p className="text-muted-foreground mt-2 text-justify md:text-left">
 											{perk.info}
 										</p>
 									</div>
@@ -310,7 +313,7 @@ const HomePage = () => {
 							<h4 className="text-2xl mt-8 lg:text-3xl md:!leading-snug font-black uppercase text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
 								Even this stone has its own story, but you don't.
 							</h4>
-							<p className="text-center text-muted-foreground mt-6 ">
+							<p className="text-center text-muted-foreground mt-6">
 								Lately, nothing has been happening with the stone. And even it
 								spent the weekend more interestingly than you. Hurry up and
 								start playing.

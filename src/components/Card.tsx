@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({
 	subtitle,
 }) => (
 	<div className="m-4">
-		<div className="flex w-full max-w-xs flex-col items-center justify-center overflow-hidden rounded-lg border md:shadow-xl mt-10">
+		<div className="flex w-full max-w-xs flex-col items-center justify-center rounded-lg border md:shadow-xl mt-10">
 			<div className=" -m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-0 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
 				<Image
 					src={src}

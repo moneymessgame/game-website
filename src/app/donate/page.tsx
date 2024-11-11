@@ -43,7 +43,7 @@ const Donate = () => {
 
 			{/** Donation Wallets */}
 			<section>
-				<Wrapper className="flex flex-col items-center justify-center py-12 relative">
+				<Wrapper className="flex flex-col items-center justify-center pb-12 relative">
 					<div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]" />
 					<Container>
 						<div className="flex flex-col items-center justify-center py-6 md:py-6 w-full">
