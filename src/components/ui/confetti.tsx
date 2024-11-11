@@ -11,6 +11,7 @@ import React, {
 	useMemo,
 	useRef,
 } from 'react';
+import { sendGAEvent } from '@next/third-parties/google';
 
 import type {
 	GlobalOptions as ConfettiGlobalOptions,
@@ -102,9 +103,12 @@ interface ConfettiButtonProps extends ButtonProps {
 
 function ConfettiButton({ options, children, ...props }: ConfettiButtonProps) {
 	const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+		sendGAEvent({ event: 'Play right now', value: 'click' });
+
 		const rect = event.currentTarget.getBoundingClientRect();
 		const x = rect.left + rect.width / 2;
 		const y = rect.top + rect.height / 2;
+
 		confetti({
 			...options,
 			origin: {

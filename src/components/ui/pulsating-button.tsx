@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { sendGAEvent } from '@next/third-parties/google';
 
 import { cn } from "@/lib/utils";
 
@@ -19,6 +20,7 @@ export default function PulsatingButton({
 }: PulsatingButtonProps) {
   return (
     <button
+			onClick={() => sendGAEvent({event: 'Play right now', value: 'click'})}
       className={cn(
         "relative text-center cursor-pointer flex justify-center items-center rounded-lg text-white bg-ring px-4 py-2",
         className,
