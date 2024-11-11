@@ -23,14 +23,15 @@ export default function Navbar({}: Props) {
         justify-between h-full mx-auto 
         md:max-w-screen-xl"
 			>
-				<div className="flex items-start">
-					<Link href="/" className="flex items-center gap-2 py-2">
-						<OrbitIcon className="w6 h-6 ml-1 font-thin fill-100 text-white light-line-icon" />
-						<span className="text-lg font-black uppercase">MoneyMess</span>
-					</Link>
-					<div className="flex p-[2px]">
+				<div className="flex items-center justify-center content-center">
+					<div className="flex">
 						<MobileNav />
 					</div>
+					<Link href="/" className="flex  text-center gap-2">
+						<OrbitIcon className="hidden sm:block w6 h-6 m-2 font-thin fill-100 text-white light-line-icon" />
+						<span className="text-2xl font-black uppercase">MoneyMess</span>
+					</Link>
+					
 					<div className="flex px-1">
 						<NavMenu />
 					</div>
