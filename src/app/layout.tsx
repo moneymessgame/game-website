@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Montserrat } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
@@ -97,6 +99,7 @@ export default function RootLayout({
 					<Footer />
 					<Toaster />
 				</div>
+				<GoogleAnalytics gaId="G-5DVP4V26W8" />
 			</body>
 		</html>
 	);
