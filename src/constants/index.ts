@@ -4,12 +4,13 @@ import { Orbit } from 'lucide-react';
 
 
 export const navItems = [
-	{ name: 'About', link: '/about' },
-	{ name: 'Roadmap', link: '/roadmap' },
 	{ name: 'First Season', link: '/first-season' },
+	{ name: 'Donate', link: '/donate' },
+	{ name: 'Home', link: '/' },
+	{ name: 'About Us', link: '/about' },
+	{ name: 'Roadmap', link: '/roadmap' },
 	{ name: 'Wiki Eng', link: '/wiki/en' },
 	{ name: 'Wiki Ru', link: '/wiki/ru' },
-	{ name: 'Donate', link: '/donate' },
 ];
 
 export const roadmapData = [

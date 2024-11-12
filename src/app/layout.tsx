@@ -8,7 +8,8 @@ import { cn } from '@/lib/utils';
 import '@/styles/globals.scss';
 import Navbar from '@/components/navigation/navbar';
 import Footer from '@/components/navigation/footer';
-import { Toaster } from '@/components/ui';
+import { ScrollToTop, Toaster } from '@/components/ui';
+import { Wrapper } from '@/components/global';
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://moneymess.fun/'),
@@ -88,17 +89,19 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					'min-h-screen bg-background text-foreground antialiased max-w-full overflow-x-hidden',
+					'min-h-screen bg-background text-foreground antialiased max-w-full ',
 					font.className,
 					montserrat.className
 				)}
 			>
 				<div className="flex flex-col items-center w-full">
 					<Navbar />
-					<div className='pt-14'>
 						{children}
-					</div>
+						<Wrapper>
+							<ScrollToTop />
+						</Wrapper>
 					<Footer />
+					
 					<Toaster />
 				</div>
 				<GoogleAnalytics gaId="G-5DVP4V26W8" />

@@ -114,7 +114,7 @@ const HomePage = () => {
 											width={400}
 											height={830}
 											quality={80}
-											className="z-20  w-[400px] h-[830px] bottom-0 object-center overflow-hidden"
+											className="z-20 bottom-0 object-center overflow-hidden"
 										/>
 									</div>
 								</Container>

@@ -62,6 +62,7 @@ export {
 	SheetDescription,
 } from './sheet';
 export { Toaster } from './sonner';
+export { default as ScrollToTop } from './scroll-to-top';
 export { SparklesCore } from './sparkles';
 export { StickyScroll } from './sticky-scroll-reveal';
 export { TextGenerateEffect } from './text-generate-effect';

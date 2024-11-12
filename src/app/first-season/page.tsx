@@ -51,7 +51,7 @@ const FirstSeason = () => {
 					<LampContainer>
 						<div className="flex flex-col items-center justify-center relative w-full text-center">
 							<h1 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase mt-8 w-[80%]">
-								moneymess <br /> first season started right now
+								moneymess <br /> first season starts right now
 							</h1>
 							<p className="text-muted-foreground mt-6 max-w-md mx-auto">
 								Sure, let's get started as quickly as possible!

@@ -6,7 +6,7 @@ import { Gamepad2 } from 'lucide-react';
 
 import { buttonVariants, CoolMode } from '@/components/ui';
 import OrbitIcon from '@/components/global/orbitIcon';
-import { MobileNav } from '@/components/navigation/mobile-nav';
+import { MobileNav } from '@/components/navigation/mobile-nav/index';
 import { NavMenu } from '@/components/navigation/nav-menu';
 
 type Props = {};

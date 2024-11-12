@@ -25,7 +25,7 @@ const AboutUs = () => {
 						<LampContainer>
 							<div className="flex flex-col items-center justify-center relative w-full text-center">
 								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase w-[100%]">
-									About us: behind the scenes dfdfdfdfdfdffdfdfdfdfdfdfdfdfdf
+									About us: behind the scenes
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto ">
 									Our team is a group of young blockchain and technology
