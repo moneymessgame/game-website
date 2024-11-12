@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Script from 'next/script';
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Montserrat } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
@@ -63,16 +62,16 @@ export const metadata: Metadata = {
 		// ],
 	},
 	twitter: {
-    card: 'summary_large_image',
+		card: 'summary_large_image',
 		title: 'MoneyMess P2E Game',
 		description: 'MoneyMess is a mini app P2E Game based on Ton & Telegram',
-    creator: 'KitPes',
-    // images: ['https://nextjs.org/og.png'], // Must be an absolute URL
-  },
+		creator: 'KitPes',
+		// images: ['https://nextjs.org/og.png'], // Must be an absolute URL
+	},
 	verification: {
-    google: 'google',
-    yandex: 'yandex',
-    yahoo: 'yahoo',
+		google: 'google',
+		yandex: 'yandex',
+		yahoo: 'yahoo',
 	},
 	category: 'web3',
 };
@@ -96,15 +95,15 @@ export default function RootLayout({
 			>
 				<div className="flex flex-col items-center w-full">
 					<Navbar />
-						{children}
-						<Wrapper>
-							<ScrollToTop />
-						</Wrapper>
+					{children}
+					<Wrapper>
+						<ScrollToTop />
+					</Wrapper>
 					<Footer />
-					
+
 					<Toaster />
 				</div>
-				<GoogleAnalytics gaId="G-5DVP4V26W8" />
+				<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID as string} />
 			</body>
 		</html>
 	);
