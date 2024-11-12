@@ -26,14 +26,14 @@ export const metadata: Metadata = {
 
 const Article = () => {
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
+		<div className="w-full relative flex items-center justify-center flex-col py-2">
 			{/** Lamp Header */}
 			<section id="title">
 				<Wrapper className="flex flex-col items-center justify-center relative">
 					<Container>
 						<LampContainer>
-							<div className="flex flex-col items-center justify-center relative w-full text-center">
-								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase w-[60%]">
+							<div className="flex flex-col items-center justify-center relative w-full text-center pt-6">
+								<h2 className="text-3xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase w-[80%]">
 									What is Play2Earn and How to Make Money with It
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto text-justify">

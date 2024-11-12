@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const Donate = () => {
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
+		<div className="w-full relative flex items-center justify-center flex-col  md:px-0 py-2">
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
 					<Container>

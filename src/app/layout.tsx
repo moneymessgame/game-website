@@ -95,7 +95,9 @@ export default function RootLayout({
 			>
 				<div className="flex flex-col items-center w-full">
 					<Navbar />
-					{children}
+					<div className='pt-14'>
+						{children}
+					</div>
 					<Footer />
 					<Toaster />
 				</div>

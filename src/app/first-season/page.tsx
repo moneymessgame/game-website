@@ -45,7 +45,7 @@ const FirstSeason = () => {
 	popularity.sort(() => Math.random() - 0.5);
 
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-2">
+		<div className="w-full relative flex items-center justify-center flex-col py-2">
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center py-2 relative">
 					<LampContainer>

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const Article = () => {
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
+		<div className="w-full relative flex items-center justify-center flex-col py-8">
 			{/** Lamp Header */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">

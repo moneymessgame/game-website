@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const AboutUs = () => {
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 py-8">
+		<div className="w-full relative flex items-center justify-center flex-col py-8">
 			{/** Lamp Header */}
 			<section>
 				<Wrapper className="flex flex-col items-center justify-center relative">
@@ -25,7 +25,7 @@ const AboutUs = () => {
 						<LampContainer>
 							<div className="flex flex-col items-center justify-center relative w-full text-center">
 								<h2 className="text-2xl lg:text-5xl xl:text-6xl lg:!leading-snug font-black uppercase w-[100%]">
-									About us: <br /> behind the scenes
+									About us: behind the scenes dfdfdfdfdfdffdfdfdfdfdfdfdfdfdf
 								</h2>
 								<p className="text-muted-foreground mt-6 max-w-md mx-auto ">
 									Our team is a group of young blockchain and technology

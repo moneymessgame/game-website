@@ -27,7 +27,7 @@ const HomePage = () => {
 	const reviewsList = reviews;
 
 	return (
-		<div className="w-full relative flex items-center justify-center flex-col px-4 md:px-0 pt-8">
+		<div className="w-full relative flex items-center justify-center flex-col pt-8">
 			{/**Header */}
 			<section>
 				<Wrapper>
