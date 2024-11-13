@@ -7,7 +7,8 @@ import { cn } from '@/lib/utils';
 import '@/styles/globals.scss';
 import Navbar from '@/components/navigation/navbar';
 import Footer from '@/components/navigation/footer';
-import { ScrollToTop, Toaster } from '@/components/ui';
+import { ScrollToTop } from '@/components/ui';
+import { Toaster } from '@/components/ui/toaster';
 import { Wrapper } from '@/components/global';
 
 export const metadata: Metadata = {

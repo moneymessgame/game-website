@@ -1,9 +1,9 @@
 'use client';
 import { useRef } from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui';
 import { ClipboardCopy } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import { Input } from '@/components/ui/input';
+import { Input } from '@/components/ui';
 
 interface CopyToClipboardProps {
 	text: string;
@@ -44,9 +44,10 @@ export default function CopyToClipboard({
 	};
 
 	const showSuccessToast = () => {
+		console.log('showing success toast');
 		toast({
-			title: 'Copied to clipboard',
-			description: 'The text has been copied to your clipboard.',
+			title: 'Copied wallet',
+			description: 'The wallet has been copied to your clipboard.',
 		});
 	};
 

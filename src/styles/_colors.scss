@@ -12,8 +12,9 @@
   );
 
   @each $color, $rgb in $colors {
-    --#{$color}-rgb: #{$rgb};
-    --#{$color}: rgb(var(--#{$color}-rgb));
+    --#{"#{$color}-rgb"}: #{$rgb};
+    --#{"#{$color}"}: rgb(var(--#{$color}-rgb));
+
   }
 
   --bg-opacity-1: rgba(var(--white-rgb), 0.03);

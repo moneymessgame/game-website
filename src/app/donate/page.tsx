@@ -1,7 +1,5 @@
 import React from 'react';
 import { Metadata } from 'next';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 
 import { Container, Wrapper } from '@/components/global';
 import {

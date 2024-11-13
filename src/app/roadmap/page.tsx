@@ -64,7 +64,7 @@ const RoadMap = () => {
 								</p>
 							</div>
 							<Link
-								href="/Whitepaper EN.pdf"
+								href="/WhitepaperEN.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
