@@ -35,22 +35,16 @@ const HomePage = () => {
 
 					<Container>
 						<div className="flex flex-col items-center justify-center py-20 h-full">
-							<Link
-								href="https://t.me/moneymesschannel"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<button className="group relative grid overflow-hidden rounded-full px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200">
-									<span>
-										<span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
-									</span>
-									<span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
-									<span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/40"></span>
-									<span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1.5">
-										<span className="text-lg font-black">Tap2Earn game</span>
-									</span>
-								</button>
-							</Link>
+							<button className="group relative grid overflow-hidden rounded-full px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200">
+								<span>
+									<span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+								</span>
+								<span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
+								<span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/40"></span>
+								<span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1.5">
+									<span className="text-lg font-black">Tap2Earn game</span>
+								</span>
+							</button>
 
 							<div className="flex flex-col items-center max-w-3xl w-11/12 md:w-full">
 								<div className="flex flex-col items-center justify-center">
@@ -103,7 +97,7 @@ const HomePage = () => {
 						</div>
 
 						<div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-							<div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 ">
+							<div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 ">
 								{/* Image */}
 								<Container>
 									<div className="relative flex items-center justify-center mx-auto mt-8">
@@ -130,7 +124,7 @@ const HomePage = () => {
 											Turn your game card into an NFT.
 										</p>
 										<Link
-											href="https://t.me/moneymessbot"
+											href="https://t.me/moneymessbot/view"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
@@ -152,12 +146,24 @@ const HomePage = () => {
 											<span className="text-[#ff0f0f]">attractiveness</span>.
 										</p>
 										<Link
-											href="https://t.me/moneymesschannel"
-											target="_blank"
-											rel="noopener noreferrer"
+											href="/first-season"
 										>
 											<PulsatingButton className="mt-8">
 												More details about the first season
+											</PulsatingButton>
+										</Link>
+									</div>
+									<div className="text-base md:text-lg p-4 justify-center">
+										<h3 className="text-2xl lg:text-3xl font-black uppercase mt-6 mb-6">
+											Your support inspires our development team!
+										</h3>
+										<p>
+											Take the first step toward creating a new season! Your
+											donation helps the game grow.
+										</p>
+										<Link href="/donate">
+											<PulsatingButton className="mt-8">
+												Donate now
 											</PulsatingButton>
 										</Link>
 									</div>
@@ -319,7 +325,7 @@ const HomePage = () => {
 								start playing.
 							</p>
 							<Link
-								href="https://t.me/moneymessbot"
+								href="https://t.me/moneymessbot/view"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

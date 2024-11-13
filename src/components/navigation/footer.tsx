@@ -53,7 +53,7 @@ const Footer = () => {
 								</li>
 								<li className="mt-2">
 									<Link
-										href="/Whitepaper EN.pdf"
+										href="/WhitepaperEN.pdf"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="hover:text-foreground transition-all duration-300"
@@ -95,7 +95,7 @@ const Footer = () => {
 										rel="noopener noreferrer"
 										className="hover:text-foreground transition-all duration-300"
 									>
-										<strong>X</strong> (Twitter)
+										<strong>X</strong> (ex Twitter)
 									</Link>
 								</li>
 							</ul>

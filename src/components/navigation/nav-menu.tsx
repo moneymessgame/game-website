@@ -5,7 +5,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import OrbitIcon from '@/components/global/orbitIcon';
-import {	NavigationMenu,	NavigationMenuContent,	NavigationMenuItem,	NavigationMenuLink,	NavigationMenuList,	NavigationMenuTrigger,	navigationMenuTriggerStyle } from '@/components/ui';
+import {
+	NavigationMenu,
+	NavigationMenuContent,
+	NavigationMenuItem,
+	NavigationMenuLink,
+	NavigationMenuList,
+	NavigationMenuTrigger,
+	navigationMenuTriggerStyle,
+} from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { wikiRu, wikiEn } from '@/constants';
 
@@ -22,7 +30,9 @@ export function NavMenu() {
 									<NavigationMenuLink asChild>
 										<a
 											className="flex h-full w-full select-none flex-col justify-end rounded-md bg-ring p-6 no-underline outline-none focus:shadow-md"
-											href="/"
+											href="https://t.me/moneymessbot/view"
+											target="_blank"
+											rel="noopener noreferrer"
 										>
 											<div className="flex w-6 h-6 items-center justify-center ">
 												<OrbitIcon className="w-6 h-6 font-light fill-200 text-white light-line-icon" />
@@ -44,11 +54,11 @@ export function NavMenu() {
 										</a>
 									</NavigationMenuLink>
 								</li>
-								<ListItem href="/about" title="About Us">
-									Meet the team behind MoneyMess
-								</ListItem>
 								<ListItem href="/first-season" title="First Season">
 									Behind the scenes
+								</ListItem>
+								<ListItem href="/about" title="About Us">
+									Meet the team behind MoneyMess
 								</ListItem>
 								<ListItem href="/roadmap" title="Roadmap">
 									Outlines important stages of the app

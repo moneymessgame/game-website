@@ -57,7 +57,7 @@ const FirstSeason = () => {
 								Sure, let's get started as quickly as possible!
 							</p>
 							<Link
-								href="https://t.me/moneymessbot"
+								href="https://t.me/moneymessbot/view"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -396,7 +396,7 @@ const FirstSeason = () => {
 				<Wrapper className="flex flex-col items-center justify-center relative py-12">
 					<Container>
 						<div className=" w-full">
-							<div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden">
+							<div className="relative flex h-full w-[100vw] flex-col items-center justify-center overflow-hidden">
 								<div className="absolute top-1/2 left-1/2 -z-10 gradient w-1/4 -translate-x-1/2 h-1/8 -translate-y-1/2 inset-0 blur-[10rem]" />
 
 								<Marquee pauseOnHover className="[--duration:20s] select-none">
@@ -404,13 +404,13 @@ const FirstSeason = () => {
 										<figure
 											key={review.name}
 											className={cn(
-												'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
+												'relative cursor-pointer overflow-hidden rounded-md lg:rounded-xl border',
 												'border-zinc-50/[.1] bg-background over:bg-zinc-50/[.15]'
 											)}
 										>
 											<div className="flex flex-row items-center gap-2">
-												<div className="m-4 w-[285px] h-[390px] rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-													<div className="w-[100%] h-[100%] overflow-hidden relative rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
+												<div className=" min-w-[285px] h-[390px] rounded-md lg:rounded-xl ring-1 ring-inset ring-foreground/20 bg-opacity-10 backdrop-blur-3xl">
+													<div className="w-[100%] h-[100%] relative overflow-hidden rounded-md lg:rounded-xl bg-foreground/10 shadow-2xl ring-1">
 														<GameCardFront
 															key={review.name}
 															srcFront={review.srcFront}
@@ -513,7 +513,7 @@ const FirstSeason = () => {
 								The Stone.
 							</p>
 							<Link
-								href="https://t.me/moneymessbot"
+								href="https://t.me/moneymessbot/view"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

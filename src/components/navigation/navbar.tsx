@@ -27,9 +27,9 @@ export default function Navbar({}: Props) {
 					<div className="flex">
 						<MobileNav />
 					</div>
-					<Link href="/" className="flex  text-center gap-2">
-						<OrbitIcon className="hidden sm:block w6 h-6 m-2 font-thin fill-100 text-white light-line-icon" />
-						<span className="text-2xl font-black uppercase">MoneyMess</span>
+					<Link href="/" className="flex items-center justify-center content-center text-center gap-2">
+						<OrbitIcon className="hidden sm:flex w6 h-6 m-2 font-thin fill-100 text-white light-line-icon" />
+						<span className="flex text-xl font-black uppercase">MoneyMess</span>
 					</Link>
 					
 					<div className="flex px-1">
@@ -40,12 +40,12 @@ export default function Navbar({}: Props) {
 				<CoolMode>
 					<div className="flex items-center gap-4">
 						<Link
-							href="https://t.me/moneymessbot"
+							href="https://t.me/moneymessbot/view"
 							target="_blank"
 							rel="noopener noreferrer"
 							className={buttonVariants({
 								size: 'sm',
-								className: 'flex bg-ring hover:bg-accent gap-3 px-8 py-5',
+								className: 'flex bg-ring hover:bg-accent gap-3 px-6 py-5',
 							})}
 						>
 							<Gamepad2 className="h-6 w-6" />
