@@ -12,9 +12,11 @@ import { Toaster } from '@/components/ui/toaster';
 import { Wrapper } from '@/components/global';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://moneymess.fun/'),
+	metadataBase: new URL(
+		process.env.NEXT_PUBLIC_BASE_URL || 'https://moneymess.fun'
+	),
 	title: {
-		default: 'MoneyMess',
+		default: 'MoneyMess | P2E Telegram Game',
 		template: '%s - P2E Telegram mini app game based on Ton',
 	},
 	description: 'P2E Game based on Ton & Telegram',
@@ -36,24 +38,27 @@ export const metadata: Metadata = {
 		'Web3 games',
 		'Web3 ecosystem',
 	],
-	authors: { name: 'KitPes', url: 'https://kitpes.fun' },
+	authors: {
+		name: 'KitPes',
+		url: process.env.NEXT_PUBLIC_BASE_DEVELOPERS_URL || 'https://kitpes.fun',
+	},
 	creator: 'KitPes',
 	publisher: 'KitPes',
 	openGraph: {
-		title: 'MoneyMess P2E Game',
+		title: 'MoneyMess - P2E Telegram Mini App Game',
 		description: 'MoneyMess is a mini app P2E Game based on Ton & Telegram',
 		siteName: 'MoneyMess',
-		url: 'https://moneymess.fun',
+		url: process.env.NEXT_PUBLIC_BASE_URL || 'https://moneymess.fun',
 		locale: 'en-US',
 		type: 'website',
-		images: [
-			{
-				url: '/assets/og-image.png', // Must be an absolute URL
-				width: 1280,
-				height: 720,
-				alt: 'MoneyMess P2E Game',
-			},
-		],
+		// images: [
+		// 	{
+		// 		url: '/assets/opengraph-image.png', // Must be an absolute URL
+		// 		width: 1200,
+		// 		height: 630,
+		// 		alt: 'MoneyMess P2E Game',
+		// 	},
+		// ],
 		// videos: [
 		// 	{
 		// 		url: 'https://moneymess.fun/og.mp4', // Must be an absolute URL
