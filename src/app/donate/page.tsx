@@ -9,6 +9,7 @@ import {
 	LampContainer,
 	SectionBadge,
 } from '@/components/ui';
+import { TransferForm } from '@/components/TransferForm';
 
 export const metadata: Metadata = {
 	title: 'Donate to MoneyMess',
@@ -151,6 +152,11 @@ const Donate = () => {
 					</Container>
 				</Wrapper>
 			</section>
+
+			<div className="container mx-auto p-4 flex flex-col items-center">
+				<h1 className="text-3xl font-bold mb-8">Send Tokens</h1>
+				<TransferForm />
+			</div>
 
 			{/** Donation Wallets */}
 			<section>
